@@ -1,3 +1,7 @@
+/* Fast Click Initialise */
+$(function() {
+    FastClick.attach(document.body);
+});
 
 /*-----------------------------------------------------------------------------------*/
 /*	MENU HOVER ON TOUCH-able DEVICE
