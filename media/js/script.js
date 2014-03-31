@@ -72,10 +72,6 @@ jQuery(document).ready(function() {
 		});
 	}
 	attachClickFn();
-
-	if(jQuery.browser.webkit) {
-		jQuery('html').addClass('webkit');
-	}
 });
 jQuery(window).load(function () {
 	resizeHero();
