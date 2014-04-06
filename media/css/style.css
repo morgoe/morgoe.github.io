@@ -16,23 +16,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-ol, ul {
-  list-style: none; }
-
-html {
-  margin: 0 !important;
-  font-family: "Sorts Mill Goudy", Georgia, Serif;
-  font-size: 22px; }
-
-body {
-  line-height: 1.5;
-  color: #222222;
-  border: 20px solid #222222;
-  -webkit-text-size-adjust: none; }
-
-.stacklapopup-content {
-  font-family: "Sorts Mill Goudy", Georgia, Serif; }
-
 .clearfix {
   zoom: 1; }
   .clearfix:before {
@@ -47,16 +30,60 @@ body {
     overflow: hidden;
     clear: both; }
 
-section {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem 0 0; }
-  section > article {
-    padding: 0 1rem; }
+ol, ul {
+  list-style: none; }
 
-img, iframe {
-  display: block;
-  width: 100%; }
+html {
+  margin: 0 !important;
+  font-family: "Sorts Mill Goudy", Georgia, Serif;
+  font-size: 20px; }
+
+body {
+  line-height: 1.5;
+  color: #222222;
+  border-left: 20px solid #222222;
+  border-right: 20px solid #222222;
+  -webkit-text-size-adjust: none;
+  position: relative; }
+  body.has-header {
+    padding-top: 44px; }
+
+p {
+  font-size: 1rem;
+  word-wrap: break-word; }
+
+p + p,
+blockquote + p,
+p + blockquote {
+  margin-top: 1rem; }
+
+h1, h2, h3, h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1, h2, h3 {
+  font-family: "ATC Overlook", Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+  line-height: 1;
+  text-align: center; }
+
+h2 {
+  font-size: 2.827rem; }
+
+h3 {
+  font-size: 1.999rem; }
+
+h4 {
+  font-size: 1.414rem; }
+
+small {
+  font-size: 0.707rem; }
 
 strong {
   font-weight: bold; }
@@ -64,61 +91,104 @@ strong {
 em {
   font-style: italic; }
 
-h1, h3.title, .cta {
-  font-family: "ATC Overlook", Lucida Sans Unicode, Lucida Grande, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-h1 {
-  text-align: center;
-  font-size: 3.273rem;
-  line-height: 1; }
-
-h2 {
-  font-size: 2.618rem; }
-
-h3.title {
-  text-align: left; }
-
-.webkit h1 {
-  color: white;
-  background: #222222 url(/wp-content/uploads/fill.jpg) no-repeat;
-  background-size: 100%;
-  background-position: 0px 0px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-h3,
-.cta {
-  text-align: center;
-  font-size: 2.023rem; }
-
-h4 {
-  font-size: 1.618rem; }
-
-h5 {
-  font-size: 1.25rem; }
-
-p {
-  font-size: 1rem;
-  word-wrap: break-word; }
-
-p + p,
-blockquote + p {
-  margin-top: 1rem; }
-
 ul {
-  padding-left: 1.5rem; }
+  padding-left: 1.414rem; }
 
 blockquote {
   font-style: italic;
-  padding: 0.5rem 3rem 0;
+  padding: 0 2.827rem;
   font-size: 1.25rem;
+  line-height: 1.4;
   text-align: center; }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer; }
+  a:hover, a:active {
+    color: #e70d31; }
+  a:active {
+    position: relative;
+    top: 1px; }
+
+img, iframe {
+  display: block;
+  width: 100%; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  z-index: 1;
+  height: 44px;
+  font-size: 22px;
+  background: white;
+  box-shadow: 0 0 5px #222222; }
+  header ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0; }
+  header li {
+    display: block;
+    float: left;
+    margin: 12px 15px 7px; }
+    header li:hover, header li.active {
+      border-bottom: 3px solid #e70d31; }
+    header li:first-child {
+      display: none; }
+      header li:first-child:hover, header li:first-child.active {
+        border-bottom: none;
+        color: #e70d31; }
+  header a {
+    display: block;
+    line-height: 1;
+    text-decoration: none; }
+    header a:hover {
+      color: inherit; }
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  left: -130px;
+  top: 0;
+  z-index: 1;
+  width: 120px;
+  height: 100%;
+  font-size: 22px;
+  background: #222222;
+  color: white; }
+  .mobile-nav ul {
+    padding: 0; }
+  .mobile-nav li {
+    display: block;
+    margin: 4px 0; }
+    .mobile-nav li:hover, .mobile-nav li.active {
+      border-right: 5px solid #e70d31; }
+  .mobile-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 12px 0; }
+
+.mobile-nav-closer {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+section {
+  max-width: 1440px;
+  margin: 0 auto; }
+  section > article {
+    padding: 1.414rem 2.827rem; }
+
 .paragraph {
-  padding: 0 5rem;
-  margin-bottom: 1rem; }
+  padding-left: 11.994rem;
+  margin-bottom: 1.414rem; }
 
 .responsive-video {
   position: relative;
@@ -131,58 +201,49 @@ blockquote {
     right: 0;
     bottom: 0; }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-  cursor: pointer; }
-  a:hover, a:active {
-    color: #e70d31; }
-
 .important {
   color: #e70d31;
   cursor: pointer; }
 
-.cta-wrapper {
-  text-align: center;
-  padding: 40px 0 80px; }
-
 .cta {
+  display: table;
+  margin: 2.827rem auto 1.999rem;
+  padding: 10px 20px;
   border: 2px solid #222222;
-  text-decoration: none;
-  padding: 10px 20px; }
+  text-decoration: none; }
   .cta:hover {
     border-color: #e70d31; }
   .cta:active {
     background: #e70d31;
     border-color: white;
     color: white; }
-
-.border {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1; }
+  .cta h3 {
+    display: block;
+    margin: 0;
+    line-height: 1; }
 
 .hero {
+  display: table;
+  height: 720px;
+  width: 100%;
+  max-width: none;
+  padding: 1.414rem;
   position: relative;
   transition: 0.3s;
-  padding: 20px;
-  height: 40rem;
-  max-width: none;
   background-size: cover;
   background-position: center; }
 
 .hero-content {
-  transition: 0.3s;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 90px; }
+  display: table-cell;
+  vertical-align: middle;
+  transition: 0.3s; }
+  .hero-content h1 {
+    margin: 0; }
+  .hero-content h3 {
+    font-family: "Sorts Mill Goudy", Georgia, Serif;
+    text-align: center;
+    text-transform: none;
+    margin: 0; }
 
 .portfolio-piece .hero-content {
   color: white;
@@ -230,18 +291,20 @@ a {
 
 @media (min-width: 1490px) {
   html {
-    font-size: 24px; }
+    font-size: 22px; }
+
+  .hero {
+    height: 920px; }
 
   h3.title {
     text-align: right;
-    width: 20rem; }
+    width: 11.994rem; }
 
   .paragraph {
-    padding: 0;
-    padding-left: 20rem; } }
+    padding-left: 11.994rem; } }
 @media (max-width: 960px) {
-  .hero {
-    height: 30rem; } }
+  .paragraph {
+    padding-left: 3.998rem; } }
 @media (max-width: 768px) {
   html {
     font-size: 20px; }
@@ -249,22 +312,68 @@ a {
   body {
     border-width: 15px; }
 
+  header {
+    position: absolute;
+    left: 0;
+    right: 0; }
+
   .hero {
-    padding: 15px;
-    height: 20rem; }
+    padding: 1rem;
+    height: 520px; }
 
   .paragraph {
-    padding: 0 1rem; }
+    padding-left: 1rem; }
 
   blockquote {
     padding-left: 1rem;
     padding-right: 1rem; } }
 @media (max-width: 568px) {
+  html {
+    overflow-x: hidden; }
+
+  body {
+    left: 0;
+    transition: left 1s; }
+    body.mobile-nav-open {
+      left: 120px; }
+      body.mobile-nav-open .mobile-nav-closer {
+        display: block; }
+
+  .mobile-nav {
+    display: block;
+    left: -135px; }
+
+  h1 {
+    font-size: 2.827rem; }
+
+  h2 {
+    font-size: 1.999rem; }
+
+  h3 {
+    font-size: 1.414rem; }
+
+  h4 {
+    font-size: 1rem; }
+
+  header ul {
+    margin: 0; }
+  header li {
+    display: none; }
+  header li:first-child,
+  header li.active {
+    display: block; }
+
+  section > article {
+    padding: 0 1.414rem; }
+
   .col-2 {
     width: 100%; }
 
   .hero {
-    height: 15rem; } }
+    height: 320px; }
+
+  .cta {
+    margin-top: 1.999rem; } }
 @media (max-width: 480px) {
   html {
     font-size: 18px; }
@@ -272,8 +381,11 @@ a {
   body {
     border-width: 10px; }
 
+  .mobile-nav {
+    left: -130px; }
+
   .hero {
-    padding: 10px; }
+    height: 240px; }
 
   .paragraph {
     padding: 0; } }
@@ -284,49 +396,11 @@ a {
   body {
     border-width: 5px; }
 
-  .hero {
-    padding: 5px; } }
+  .mobile-nav {
+    left: -125px; } }
 @media (max-height: 320px) {
   html {
     font-size: 16px; }
 
   .scroll-down {
     bottom: -15px; } }
-@keyframes myfirst {
-  0% {
-    color: red; }
-
-  25% {
-    color: yellow; }
-
-  50% {
-    color: blue; }
-
-  100% {
-    color: green; } }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-.stacklapopup-user-top {
-  height: auto !important;
-  font-size: 2rem;
-  text-align: center; }
-
-.stacklapopup-user-name {
-  position: relative; }
-  .stacklapopup-user-name:after {
-    background: none;
-    content: attr(data-text);
-    left: 0;
-    position: absolute;
-    text-shadow: 1px 2px 0px #222222, 0px 1px 50px white;
-    top: 0;
-    z-index: -1; }
-
-.stacklapopup-user-bottom, .stacklapopup-avatar {
-  display: none; }

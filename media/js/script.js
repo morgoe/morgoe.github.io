@@ -6,7 +6,7 @@ $(function() {
 /*-----------------------------------------------------------------------------------*/
 /*	MENU HOVER ON TOUCH-able DEVICE
 /*-----------------------------------------------------------------------------------*/
-jQuery(function($){
+$(function($){
 	//Fix dropdown bootstrap
 	$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); })
 				.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});
@@ -44,55 +44,62 @@ whatAmI[6] = 'eating lasagne made by <a href="https://twitter.com/Amelia_Lewis";
 var widgetDescriptionStuff = "Here's some stuff I'm into, powered by <a href='//www.stackla.com' target='_blank'>Stackla</a>. I don't moderate this, so there's probably design stuff, fashion, porn, music, test posts and the occasional selfie. Enjoy! Alternatively, check out my <a class='js-filter-portfolio important'>portfolio</a>!";
 var widgetDescriptionPortfolio = "These are some of the things I've made over the years - some are designed, others just coded up. Check out the descriptions in each for more info! If you're interested in working with me, <a class='important' href='mailto:morgancarter1@gmail.com'>drop me a line</a>. Otherwise, when you're bored, go check out some more <a class='js-filter-stuff'>stuff I like</a>.";
 
-jQuery('.js-what-am-i-refresh').click(function() {
+$('.js-what-am-i-refresh').click(function() {
 	whatAmICounter++;
-	jQuery('.js-what-am-i').html(whatAmI[whatAmICounter%whatAmI.length]);
-	var spinnything = jQuery(this);
+	$('.js-what-am-i').html(whatAmI[whatAmICounter%whatAmI.length]);
+	var spinnything = $(this);
 	spinnything .addClass('animate');
 	setTimeout(function() {
 		spinnything .removeClass('animate');
 	}, 1000);
 });
-jQuery(document).ready(function() {
+$(document).ready(function() {
 	window.scrollTo(0, 0);
 	resizeHero();
 
-	jQuery('.js-widget-description').html(widgetDescriptionStuff);
+	$('.js-widget-description').html(widgetDescriptionStuff);
 
 	var attachClickFn = function() {
-		jQuery('.js-filter-portfolio').click(function() {
+		$('.js-filter-portfolio').click(function() {
 			StacklaFluidWidget.changeFilter(75,960);
-			jQuery('.js-widget-description').html(widgetDescriptionPortfolio);
+			$('.js-widget-description').html(widgetDescriptionPortfolio);
 			attachClickFn();
 		});
-		jQuery('.js-filter-stuff').click(function() {
+		$('.js-filter-stuff').click(function() {
 			StacklaFluidWidget.changeFilter(75,957);
-			jQuery('.js-widget-description').html(widgetDescriptionStuff);
+			$('.js-widget-description').html(widgetDescriptionStuff);
 			attachClickFn();
 		});
 	}
 	attachClickFn();
+
+	$('.js-open-mobile-nav').click(function() {
+		$('body').toggleClass('mobile-nav-open');
+	});
+	$('.js-close-mobile-nav').click(function() {
+		$('body').removeClass('mobile-nav-open');
+	});
 });
-jQuery(window).load(function () {
+$(window).load(function () {
 	resizeHero();
 });
-jQuery(window).resize(function() {
+$(window).resize(function() {
 	resizeHero();
 });
-jQuery(window).scroll(function() {
-	var scrollPos = 3 * jQuery(window).scrollTop()/jQuery(window).height();
-	jQuery('.hero-bg').css('opacity', scrollPos);
-	jQuery('.hero-text').css('opacity', 1-scrollPos);
+$(window).scroll(function() {
+	var scrollPos = 3 * $(window).scrollTop()/$(window).height();
+	$('.hero-bg').css('opacity', scrollPos);
+	$('.hero-text').css('opacity', 1-scrollPos);
 });
 function resizeHero() {
-	var heroHeight = jQuery('.js-hero-height-one').height() + jQuery('.js-hero-height-two').height() + jQuery('.js-hero-height-three').height();
-	jQuery('.js-hero-content').height(heroHeight);
-	jQuery('.js-hero-content').width(jQuery('.js-hero').width());
-	jQuery('.js-hero').outerHeight(jQuery(window).height());
+	var heroHeight = $('.js-hero-height-one').height() + $('.js-hero-height-two').height() + $('.js-hero-height-three').height();
+	$('.js-hero-content').height(heroHeight);
+	$('.js-hero-content').width($('.js-hero').width());
+	$('.js-hero').outerHeight($(window).height());
 };
 
-jQuery('.js-scroll-down').click(function() {
-	jQuery('html,body').animate({
-		scrollTop: jQuery('.js-scroll-to').offset().top
+$('.js-scroll-down').click(function() {
+	$('html,body').animate({
+		scrollTop: $('.js-scroll-to').offset().top
 	}, 400);
 });

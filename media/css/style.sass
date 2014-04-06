@@ -1,3 +1,9 @@
+$_1: 1rem
+$_2: 1.414rem
+$_3: 1.999rem
+$_4: 2.827rem
+$_5: 3.998rem
+
 $black: #222
 $red: #e70d31
 
@@ -19,24 +25,6 @@ $red: #e70d31
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
-
-ol, ul
-	list-style: none
-
-html
-	margin: 0 !important
-	font-family: "Sorts Mill Goudy", Georgia, Serif
-	font-size: 22px
-
-body
-	line-height: 1.5
-	color: #222
-	border: 20px solid #222
-	-webkit-text-size-adjust: none
-
-.stacklapopup-content
-	font-family: "Sorts Mill Goudy", Georgia, Serif
-
 .clearfix
 	zoom: 1
 	&:before
@@ -50,72 +38,164 @@ body
 		height: 0
 		overflow: hidden
 		clear: both
+ol, ul
+	list-style: none
 
-section
-	max-width: 1440px
-	margin: 0 auto
-	padding: 2rem 0 0
-	> article
-		padding: 0 1rem
 
+html
+	margin: 0 !important
+	font-family: "Sorts Mill Goudy", Georgia, Serif
+	font-size: 20px
+
+body
+	line-height: 1.5
+	color: #222
+	border-left: 20px solid #222
+	border-right: 20px solid #222
+	-webkit-text-size-adjust: none
+	&.has-header
+		padding-top: 44px
+
+	position: relative
+p
+	font-size: $_1
+	word-wrap: break-word
+p + p,
+blockquote + p,
+p + blockquote
+	margin-top: $_1
+
+h1, h2, h3, h4
+	margin: $_2 0 0.5rem
+	font-weight: inherit
+	line-height: 1.2
+h1, h2, h3
+	font-family: 'ATC Overlook', Lucida Sans Unicode, Lucida Grande, sans-serif
+	font-weight: bold
+	text-transform: uppercase
+h1
+	margin-top: 0
+	font-size: $_5
+	line-height: 1
+	text-align: center
+h2
+	font-size: $_4
+h3
+	font-size: $_3
+h4
+	font-size: $_2
+
+small
+	font-size: 0.707rem
+strong
+	font-weight: bold
+em
+	font-style: italic
+ul
+	padding-left: $_2
+blockquote
+	font-style: italic
+	padding: 0 $_4
+	font-size: 1.25rem
+	line-height: 1.4
+	text-align: center
+
+a
+	color: inherit
+	text-decoration: underline
+	cursor: pointer
+	&:hover, &:active
+		color: $red
+	&:active
+		position: relative
+		top: 1px
 
 img, iframe
 	display: block
 	width: 100%
 
-strong
-	font-weight: bold
+header
+	position: fixed
+	top: 0
+	left: 20px
+	right: 20px
+	z-index: 1
 
-em
-	font-style: italic
+	height: 44px
+	font-size: 22px
 
-h1, h3.title, .cta
-	font-family: 'ATC Overlook', Lucida Sans Unicode, Lucida Grande, sans-serif
-	font-weight: bold
-	text-transform: uppercase
+	background: white
+	box-shadow: 0 0 5px $black
+	ul
+		display: table
+		margin: 0 auto
+		padding: 0
+	li
+		display: block
+		float: left
+		margin: 12px 15px 7px
+		&:hover,
+		&.active
+			border-bottom: 3px solid $red
+		&:first-child
+			display: none
+			&:hover,
+			&.active
+				border-bottom: none
+				color: $red
+	a
+		display: block
+		line-height: 1
+		text-decoration: none
+		&:hover
+			color: inherit
+.mobile-nav
+	display: none
+	position: absolute
+	left: -130px
+	top: 0
+	z-index: 1
 
-h1
-	text-align: center
-	font-size: 3.273rem
-	line-height: 1
+	width: 120px
+	height: 100%
+	font-size: 22px
 
-h2
-	font-size: 2.618rem
-
-h3.title
-	text-align: left
-
-.webkit h1
+	background: $black
 	color: white
-	background: $black url(/wp-content/uploads/fill.jpg) no-repeat
-	background-size: 100%
-	background-position: 0px 0px
-	-webkit-background-clip: text
-	-webkit-text-fill-color: transparent
-h3,
-.cta
-	text-align: center
-	font-size: 2.023rem
-h4
-	font-size: 1.618rem
-h5
-	font-size: 1.25rem
-p
-	font-size: 1rem
-	word-wrap: break-word
-p + p,
-blockquote + p
-	margin-top: 1rem
-ul
-	padding-left: 1.5rem
-blockquote
-	font-style: italic
-	padding: 0.5rem 3rem 0
-	font-size: 1.25rem
-	text-align: center
+	ul
+		padding: 0
+	li
+		display: block
+		margin: 4px 0
+		&:hover,
+		&.active
+			border-right: 5px solid $red
+	a
+		display: block
+		text-decoration: none
+		padding: 3px 12px 0
+.mobile-nav-closer
+	display: none
+	cursor: pointer
+
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+	z-index: 1
+
+
+section
+	max-width: 1440px
+	margin: 0 auto
+	> article
+		padding: $_2 $_4
+
 .paragraph
-	padding: 0 5rem
-	margin-bottom: 1rem
+	padding-left: $_5*3
+	margin-bottom: $_2
 .responsive-video
 	position: relative
 	padding-bottom: 56.25%
@@ -126,55 +206,50 @@ blockquote
 		left: 0
 		right: 0
 		bottom: 0
-a
-	color: inherit
-	text-decoration: underline
-	cursor: pointer
-	&:hover, &:active
-		color: $red
 .important
 	color: $red
 	cursor: pointer
-.cta-wrapper
-	text-align: center
-	padding: 40px 0 80px
 .cta
+	display: table
+	margin: $_4 auto $_3
+	padding: 10px 20px
 	border: 2px solid $black
 	text-decoration: none
-	padding: 10px 20px
 	&:hover
 		border-color: $red
 	&:active
 		background: $red
 		border-color: white
 		color: white
-
-.border
-	width: 100%
-	height: 100%
-	position: fixed
-	top: 0
-	left: 0
-	z-index: -1
+	h3
+		display: block
+		margin: 0
+		line-height: 1
 
 .hero
+	display: table
+	height: 720px
+	width: 100%
+	max-width: none
+	padding: $_2
+
 	position: relative
 	transition: 0.3s
-	padding: 20px
-	height: 40rem
-	max-width: none
 	background-size: cover
 	background-position: center
 
 .hero-content
+	display: table-cell
+	vertical-align: middle
 	transition: 0.3s
-	margin: auto
-	position: absolute
-	top: 0
-	left: 0
-	bottom: 0
-	right: 0
-	height: 90px
+	h1
+		margin: 0
+	h3
+		font-family: "Sorts Mill Goudy", Georgia, Serif
+		text-align: center
+		text-transform: none
+		margin: 0
+
 .portfolio-piece
 	.hero-content
 		color: white
@@ -237,41 +312,81 @@ a
 
 @media (min-width: 1490px)
 	html
-		font-size: 24px
+		font-size: 22px
+	.hero
+		height: 920px
 	h3.title
 		text-align: right
-		width: 20rem
+		width: $_5*3
 	.paragraph
-		padding: 0
-		padding-left: 20rem
+		padding-left: $_5*3
 @media (max-width: 960px)
-	.hero
-		height: 30rem
+	.paragraph
+		padding-left: $_5
 @media (max-width: 768px)
 	html
 		font-size: 20px
 	body
 		border-width: 15px
+	header
+		position: absolute
+		left: 0
+		right: 0
 	.hero
-		padding: 15px
-		height: 20rem
+		padding: $_1
+		height: 520px
 	.paragraph
-		padding: 0 1rem
+		padding-left: $_1
 	blockquote
-		padding-left: 1rem
-		padding-right: 1rem
+		padding-left: $_1
+		padding-right: $_1
 @media (max-width: 568px)
+	html
+		overflow-x: hidden
+	body
+		left: 0
+		transition: left 1s
+		&.mobile-nav-open
+			left: 120px
+			.mobile-nav-closer
+				display: block
+	.mobile-nav
+		display: block
+		left: -135px
+	h1
+		font-size: $_4
+	h2
+		font-size: $_3
+	h3
+		font-size: $_2
+	h4
+		font-size: $_1
+	header
+		ul
+			margin: 0
+		li
+			display: none
+		li:first-child,
+		li.active
+			display: block
+	section
+		> article
+			padding: 0 $_2
 	.col-2
 		width: 100%
 	.hero
-		height: 15rem
+		height: 320px
+	.cta
+		margin-top: $_3
 @media (max-width: 480px)
 	html
 		font-size: 18px
 	body
 		border-width: 10px
+	.mobile-nav
+		left: -130px
 	.hero
-		padding: 10px
+		height: 240px
 	.paragraph
 		padding: 0
 
@@ -280,48 +395,11 @@ a
 		font-size: 16px
 	body
 		border-width: 5px
-	.hero
-		padding: 5px
+	.mobile-nav
+		left: -125px
 
 @media (max-height: 320px)
 	html
 		font-size: 16px
 	.scroll-down
 		bottom: -15px
-
-@keyframes myfirst
-	0%
-		color: red
-	25%
-		color: yellow
-	50%
-		color: blue
-	100%
-		color: green
-
-
-@-webkit-keyframes spin
-	0%
-		-webkit-transform: rotate(0deg)
-	100%
-		-webkit-transform: rotate(360deg)
-
-
-.stacklapopup-user-top
-	height: auto !important
-	font-size: 2rem
-	text-align: center
-
-.stacklapopup-user-name
-	position: relative
-	&:after
-		background: none
-		content: attr(data-text)
-		left: 0
-		position: absolute
-		text-shadow: 1px 2px 0px #222, 0px 1px 50px white
-		top: 0
-		z-index: -1
-
-.stacklapopup-user-bottom, .stacklapopup-avatar
-	display: none
