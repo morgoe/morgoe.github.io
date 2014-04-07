@@ -38,9 +38,9 @@ $red: #e70d31
 		height: 0
 		overflow: hidden
 		clear: both
-ol, ul
+nav ul,
+ul.grid
 	list-style: none
-
 
 html
 	margin: 0 !important
@@ -49,10 +49,11 @@ html
 
 body
 	line-height: 1.5
-	color: #222
-	border-left: 20px solid #222
-	border-right: 20px solid #222
+	color: $black
+	border-left: 20px solid black
+	border-right: 20px solid black
 	-webkit-text-size-adjust: none
+	overflow-x: hidden
 	&.has-header
 		padding-top: 44px
 
@@ -94,11 +95,17 @@ em
 ul
 	padding-left: $_2
 blockquote
+	display: table
 	font-style: italic
-	padding: 0 $_4
 	font-size: 1.25rem
 	line-height: 1.4
-	text-align: center
+	margin: 0 auto 0.25rem
+	padding: 0.5rem 0.5rem 0.25rem $_2
+	border-left: 4px solid $black
+	&:before
+		content: "\201c"
+	&:after
+		content: "\201d"
 
 a
 	color: inherit
@@ -191,11 +198,19 @@ section
 	max-width: 1440px
 	margin: 0 auto
 	> article
-		padding: $_2 $_4
+		padding: $_2
 
 .paragraph
-	padding-left: $_5*3
 	margin-bottom: $_2
+h3.title,
+.paragraph p,
+.paragraph ul
+	max-width: 620px
+	margin-left: auto
+	margin-right: auto
+blockquote
+	max-width: 920px
+
 .responsive-video
 	position: relative
 	padding-bottom: 56.25%
@@ -253,7 +268,7 @@ section
 .portfolio-piece
 	.hero-content
 		color: white
-		text-shadow: 2px 2px 2px $black
+		text-shadow: 1px 1px 0 rgba($black, 0.5), 2px 2px 0 rgba($black, 0.5), 3px 3px 0 rgba($black, 0.5)
 
 
 .grid
@@ -315,14 +330,12 @@ section
 		font-size: 22px
 	.hero
 		height: 920px
-	h3.title
-		text-align: right
-		width: $_5*3
 	.paragraph
-		padding-left: $_5*3
+		blockquote
+			max-width: 1020px
+			font-size: $_2
 @media (max-width: 960px)
-	.paragraph
-		padding-left: $_5
+
 @media (max-width: 768px)
 	html
 		font-size: 20px
@@ -335,17 +348,13 @@ section
 	.hero
 		padding: $_1
 		height: 520px
-	.paragraph
-		padding-left: $_1
-	blockquote
-		padding-left: $_1
-		padding-right: $_1
 @media (max-width: 568px)
 	html
 		overflow-x: hidden
 	body
 		left: 0
-		transition: left 1s
+		-webkit-transition: left 0.5s
+		transition: left 0.5s
 		&.mobile-nav-open
 			left: 120px
 			.mobile-nav-closer
@@ -397,6 +406,9 @@ section
 		border-width: 5px
 	.mobile-nav
 		left: -125px
+	section > img.image-tilt
+		width: 150%
+		margin-left: -25%
 
 @media (max-height: 320px)
 	html

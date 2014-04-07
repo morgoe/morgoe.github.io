@@ -103,3 +103,15 @@ $('.js-scroll-down').click(function() {
 		scrollTop: $('.js-scroll-to').offset().top
 	}, 400);
 });
+
+
+
+window.addEventListener('deviceorientation', function(eventData) {
+	var xTilt = 10 * eventData.gamma * (15/180);
+	if (xTilt > 15)
+		xTilt = 15;
+	else if (xTilt < -15)
+		xTilt = -15;
+
+	$('.js-tilt-image').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
+}, false);
