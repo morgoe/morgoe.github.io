@@ -16,6 +16,7 @@ window.addEventListener('deviceorientation', function(eventData) {
 
 
 $(document).ready(function() {
+	window.scrollTo(0, 0);
 	$('#fullpage').fullpage();
 	$('button').click(function() {
 		$.fn.fullpage.moveSectionDown();

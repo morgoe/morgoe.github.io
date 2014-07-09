@@ -23,7 +23,7 @@
 		text-align: inherit;
 	}
 	.hero .pull-right {
-		padding-top: 24px;
+		padding: 24px 12px 0;
 		text-align: inherit;
 	}
 }
