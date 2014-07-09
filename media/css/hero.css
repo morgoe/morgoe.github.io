@@ -14,6 +14,31 @@
 	padding-left: 1em;
 	padding-top: 86px;
 }
+
+
+
+
+.animate-before {
+	visibility: hidden;
+	-webkit-filter: blur(10px);
+	-webkit-transition: -webkit-filter 0.5s ease;
+}
+.animate-before-2 {
+	-webkit-transition: -webkit-filter 0.75s ease;
+}
+.animate-before-3 {
+	-webkit-transition: -webkit-filter 1s ease;
+}
+.animate-before-4 {
+	-webkit-transition: -webkit-filter 1.25s ease;
+}
+.animate-after {
+	visibility: visible;
+	-webkit-filter: blur(0px);
+}
+
+
+
 @media (max-width: 767px) {
 	.hero {
 		max-width: 440px;
@@ -25,6 +50,10 @@
 	.hero .pull-right {
 		padding: 24px 12px 0;
 		text-align: inherit;
+	}
+	.animate-before {
+		visibility: visible;
+		-webkit-filter: blur(0);
 	}
 }
 @media (max-width: 320px) {

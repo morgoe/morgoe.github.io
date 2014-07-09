@@ -21,4 +21,10 @@ $(document).ready(function() {
 	$('button').click(function() {
 		$.fn.fullpage.moveSectionDown();
 	});
+	$('body').one('mousemove', function() {
+		$('.js-animate-1').addClass('animate-after');
+		$('.js-animate-2').addClass('animate-after');
+		$('.js-animate-3').addClass('animate-after');
+		$('.js-animate-4').addClass('animate-after');
+	} );
 });
