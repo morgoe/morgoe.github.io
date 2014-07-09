@@ -20,20 +20,22 @@
 
 .animate-before {
 	visibility: hidden;
+	opacity: 0;
 	-webkit-filter: blur(10px);
-	-webkit-transition: -webkit-filter 0.5s ease;
+	-webkit-transition: -webkit-filter 0.5s ease, opacity 0.5s;
 }
 .animate-before-2 {
-	-webkit-transition: -webkit-filter 0.75s ease;
+	-webkit-transition: -webkit-filter 1s ease, opacity 1s;
 }
 .animate-before-3 {
-	-webkit-transition: -webkit-filter 1s ease;
+	-webkit-transition: -webkit-filter 1.5s ease, opacity 1.5s;
 }
 .animate-before-4 {
-	-webkit-transition: -webkit-filter 1.25s ease;
+	-webkit-transition: -webkit-filter 2s ease, opacity 2s;
 }
 .animate-after {
 	visibility: visible;
+	opacity: 1;
 	-webkit-filter: blur(0px);
 }
 
@@ -52,6 +54,7 @@
 		text-align: inherit;
 	}
 	.animate-before {
+		opacity: 1;
 		visibility: visible;
 		-webkit-filter: blur(0);
 	}
