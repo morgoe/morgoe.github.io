@@ -1,0 +1,35 @@
+.hero {
+	text-align: center;
+	max-width: 740px;
+	margin: 0 auto;
+}
+.hero .pull-left span {
+	margin-bottom: 3px;
+}
+.hero .pull-left {
+	text-align: right;
+}
+.hero .pull-right {
+	text-align: left;
+	padding-left: 1em;
+	padding-top: 74px;
+}
+@media (max-width: 767px) {
+	.hero {
+		max-width: 440px;
+	}
+	.hero .pull-left {
+		float: none;
+		text-align: inherit;
+	}
+	.hero .pull-right {
+		padding-top: 24px;
+		text-align: inherit;
+	}
+}
+.blurrybg {
+	background-image: url("../images/hover.gif");
+	background-size: cover;
+	color: white;
+	text-align: center;
+}

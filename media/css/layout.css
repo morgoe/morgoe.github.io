@@ -1,0 +1,30 @@
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.grid-4-12 {
+	width: 33.33%;
+}
+.grid-5-12 {
+	width: 41.66%;
+}
+.grid-6-12 {
+	width: 50%;
+}
+.grid-7-12 {
+	width: 58.33%;
+}
+.grid-8-12 {
+	width: 66.66%;
+}
+@media (max-width: 767px) {
+	.grid-4-12,
+	.grid-5-12,
+	.grid-6-12,
+	.grid-7-12,
+	.grid-8-12 {
+		width: 100%;
+	}
+}
