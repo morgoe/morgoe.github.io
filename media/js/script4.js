@@ -18,9 +18,11 @@ $(document).ready(function() {
 
 	function setBokeh() {
 		$('.item.walker').each(function() {
-			var randomSize = (2 * Math.random()) + 1;
+			var random = Math.random();
+			var randomSize = 2 * random + 1;
+			var randomOpacity = 0.15 + 0.5 * (1-random);
 			var transform = 'translate3d(-50%, -50%, 130px) scale3d(' + randomSize + ',' + randomSize + ',1)';
-			$(this).find('div').css('opacity', 0.75*Math.random()).css('transform', transform);
+			$(this).find('div').css('opacity', randomOpacity).css('transform', transform);
 		});
 		setTimeout(function() {
 			setBokeh()
@@ -74,7 +76,7 @@ $(document).ready(function() {
 		});
 
 	}, world);
-	
+
 	setTimeout(function() {
 		setBokeh();
 	}, 10);
