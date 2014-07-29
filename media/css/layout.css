@@ -28,3 +28,29 @@
 		width: 100%;
 	}
 }
+
+form > * {
+	margin-top: 12px;
+}
+form > *:first-child {
+	margin-top: 0;
+}
+input,
+textarea {
+	width: 300px;
+	padding: 5px 7px 2px;
+	background: white;
+	background: rgba(255,255,255, 0.8);
+}
+::-webkit-input-placeholder {
+   color: inherit;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: inherit;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: inherit;  
+}
+:-ms-input-placeholder {  
+   color: inherit;  
+}

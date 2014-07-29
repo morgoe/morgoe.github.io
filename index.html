@@ -11,20 +11,27 @@
 	<![endif]-->
 
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="media/css/Burner.min.css" />
+	<link rel="stylesheet" type="text/css" href="media/css/Flora.min.css" />
 	<link rel="stylesheet" type="text/css" href="media/css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="media/css/typography.css" />
 	<link rel="stylesheet" type="text/css" href="media/css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="media/css/hero.css" />
+	<link rel="stylesheet" type="text/css" href="media/css/home.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src='media/js/jquery-1.8.1.min.js'></script>
 	<script src='media/js/fastclick.js'></script>
 	<script src='media/js/jquery.fullPage.min.js'></script>
 	<script src="media/js/jquery.easings.min.js"></script>
-	<script src='media/js/script2.js'></script>
+	<script src='media/js/Burner.min.js'></script>
+	<script src='media/js/Flora.min.js'></script>
+	<script src='media/js/script4.js'></script>
+	<style>
+	</style>
 </head>
-<body class="home blog">
+<body>
 	<div id="fullpage">
-		<div class="section">
+		<section class="section bg-white">
 			<div class="hero clearfix">
 				<div class="pull-left grid-7-12">
 					<span class="f-large pull-left animate-before js-animate-1">
@@ -36,16 +43,41 @@
 				</div>
 				<div class="pull-right grid-5-12">
 					<p class="f-large animate-before animate-before-3 js-animate-3">
-						I’m an interaction designer based in Sydney. I design beautiful websites.
+						I’m an interaction designer based in Sydney. I make beautiful websites.
 					</p>
-					<button data-text="Discover" class="animate-before animate-before-4 js-animate-4"></button>
+					<span class="animate-before animate-before-4 js-animate-4">
+						<button class="">Explore</button>
+					</span>
+					<!-- <button class="animate-before animate-before-4 js-animate-4">Explore</button> -->
+					
 				</div>
 			</div>
-		</div>
-		<div class="section blurrybg"><h1>Hello</h1></div>
-		<div class="section blurrybg"><h1>Hello</h1></div>
-		<div class="section blurrybg"><h1>Hello</h1></div>
-		<div class="section blurrybg"><h1>Hello</h1></div>
+		</section>
+		<section class="section dark bg-blue align-center" id="js-particle-container">
+			<!-- <canvas id="testCanvas"></canvas> -->
+			<ul id="bokeh"></ul>
+			<div class="text">
+				<h2 class="uppercase">About me</h2>
+				<p class="f-large">
+					I'm currently working at <a href="http://stackla.com" target="_blank">Stackla</a> as a Web/UX Designer. I love music and pretty things. Right now I'm listening to <a href="http://open.spotify.com/track/6YaCKTSSA6WuaSzyCSJVCg" target="_blank">Martha by Tom Waits</a>.
+				</p>
+			</div>
+		</section>
+		<section class="section blurrybg"><h1>Hello</h1></section>
+		<section class="section dark bg-green align-center">
+			<div class="text">
+				<h2 class="uppercase">Contact me</h2>
+				<p class="f-large">
+					If you'd like to get in touch, you can contact me at <a href="https://twitter.com/morgoe876" target="_blank">@morgoe876</a> or fill in this:
+				</p>
+				<form>
+					<input type="text" placeholder="Name">
+					<input type="email" placeholder="Email Address">
+					<textarea placeholder="I like to eat poo."></textarea>
+					<button>Submit</button>
+				</form>
+			</div>
+		</section>
 	</div>
 </body>
 </html>

@@ -21,17 +21,18 @@
 .animate-before {
 	visibility: hidden;
 	opacity: 0;
-	-webkit-filter: blur(10px);
-	-webkit-transition: -webkit-filter 0.5s ease, opacity 0.5s;
+	-webkit-transform: translateZ(0);
+	-webkit-filter: blur(5px);
+	-webkit-transition: -webkit-filter 2.2s ease, opacity 1s ease;
 }
 .animate-before-2 {
-	-webkit-transition: -webkit-filter 1s ease, opacity 1s;
+	-webkit-transition: -webkit-filter 2.3s ease, opacity 1.5s ease;
 }
 .animate-before-3 {
-	-webkit-transition: -webkit-filter 1.5s ease, opacity 1.5s;
+	-webkit-transition: -webkit-filter 2.4s ease, opacity 2s ease;
 }
 .animate-before-4 {
-	-webkit-transition: -webkit-filter 2s ease, opacity 2s;
+	-webkit-transition: -webkit-filter 2.5s ease, opacity 2.5s ease;
 }
 .animate-after {
 	visibility: visible;
