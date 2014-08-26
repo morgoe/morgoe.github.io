@@ -115,3 +115,18 @@ window.addEventListener('deviceorientation', function(eventData) {
 
 	$('.js-tilt-image').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
 }, false);
+
+
+
+$(document).ready(function() {
+	console.log($('.cta a'))
+	$('.cta a').hover(function() {
+		console.log($(this).parent())
+		$(this).closest('.cta').addClass('hover');
+		if ($(this).parent('article').hasClass('cta-another'))
+			$(this).closest('.cta').addClass('another');
+	}, function() {
+		$(this).closest('.cta').removeClass('hover').removeClass('another');
+	});
+
+});

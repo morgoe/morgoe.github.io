@@ -1,47 +1,41 @@
-@mixin gradient($start, $end) {
-	background: $start; /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  $start 0%, $end 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$start), color-stop(100%,$end)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg,  $start 0%,$end 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg,  $start 0%,$end 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg,  $start 0%,$end 100%); /* IE10+ */
-	background: linear-gradient(135deg,  $start 0%,$end 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.superscript {
+	margin-bottom: 3px;
 }
-@mixin text-gradient($start, $end) {
-	background: -webkit-gradient(linear,left top,right top,from($start),to($end));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: $start;
+.hi-im {
+	padding-right: 313px;
 }
-@mixin cover() {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;	
+.short-width {
+	max-width: 380px;
 }
-
-.hero {
-	text-align: center;
-	max-width: 742px;
-	margin: 0 auto;
-	.pull-left {
-		text-align: right;
-		span {
-			margin-bottom: 3px;
-		}
+.offset-top {
+	padding-top: 154px;
+}
+.offset-top-large {
+	padding-top: 144px;
+}
+.me {
+	border-radius: 50%;
+	margin-bottom: 18px;
+	box-shadow: 0 2px 5px rgba(black, 0.15), 0 0 20px rgba(black, 0.12);
+}
+.img-viewer {
+	position: relative;
+	background: #eee;
+	height: 90vh;
+	overflow: hidden;
+	&:after {
+		content: "";
+		@include cover;
+		box-shadow: inset 0 2px 5px rgba(black, 0.25), inset 0 0 20px rgba(black, 0.4);
 	}
-	.pull-right {
-		text-align: left;
-		padding-left: 1em;
-		padding-top: 86px;
+	img {
+		position: absolute;
+		height: 100%;
 	}
 }
-
-
-
-
+h1 + p {
+	clear: right;
+}
 
 
 .animate-before {
@@ -71,14 +65,6 @@
 @media (max-width: 767px) {
 	.hero {
 		max-width: 440px;
-		.pull-left {
-			float: none;
-			text-align: inherit;
-		}
-		.pull-right {
-			padding: 24px 12px 0;
-			text-align: inherit;
-		}
 	}
 	.animate-before {
 		opacity: 1;
@@ -87,12 +73,6 @@
 	}
 }
 @media (max-width: 320px) {
-	.hero .pull-right {
-		padding: 12px 12px 0;
-	}
-	.hero p.f-large {
-		padding-bottom: 26px;
-	}
 }
 
 
@@ -124,91 +104,45 @@ section {
 			color: #A6BDE0;
 		}
 	}
-	&.bg-green {
-		@include gradient(#253F30, #122C24);
+	&.bg-black {
+		@include gradient(#000, #3d3d3d);
 		.text {
 			position: relative;
-			@include text-gradient(#b5af89, #f3f5ea);
-		}
-		input, textarea {
-			background: #101519;
-			background: rgba(#101519, 0.4);
-			color: #f3f5ea;
-
-			border-color: #5D796D;
-			&:focus {
-				outline: none;
-				border-color: #9AC0AB;				
-			}
-			$placeholderColour: #5D796D;
-			&::-webkit-input-placeholder {
-			   color: $placeholderColour;
-			}
-			&:-moz-placeholder { /* Firefox 18- */
-			   color: $placeholderColour;  
-			}
-			&::-moz-placeholder {  /* Firefox 19+ */
-			   color: $placeholderColour;  
-			}
-			&:-ms-input-placeholder {  
-			   color: $placeholderColour;  
-			}
+			@include text-gradient(#fff, #e0e0e0);
 		}
 		a,
 		button {
-			color: #EC604C;
+			$yellow: #ffb800;
+			color: $yellow;
+			border-color: initial;
+			border-width: 2px;
+			box-shadow: 0 2px 5px rgba($yellow, 0.15), 0 0 20px rgba($yellow, 0.12);
+			&:hover {
+				box-shadow: 0 2px 8px rgba($yellow, 0.35), 0 0 30px rgba($yellow, 0.17);
+				&:active {
+					box-shadow: none;
+					border-color: initial;
+				}
+			}
+		}
+	}
+	&.bg-wheat {
+		@include gradient(#c6bfad, #d1d2cd);
+		.text {
+			position: relative;
+			color: #333;
+			// @include text-gradient(#b5af89, #f3f5ea);
+		}
+		a {
+			&:hover {
+				color: #b15a3c;
+			}
 		}
 	}
 	.text {
-		a {
-			-webkit-text-fill-color: initial;
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-			&:active {
-				position: relative;
-				top: 1px;
-			}
-		}
-		form {
+		a,
+		button {
 			-webkit-text-fill-color: initial;
 		}
-	}
-	canvas {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;	
-	}
-}
-#bokeh {
-	@include cover;
-	overflow: hidden;
-	@mixin bokeh-shadow($colour) {
-		box-shadow: 0 0 40px 20px $colour;
-	}
-	&:after {
-		content: "";
-		display: block;
-		background: url('../images/noise.png');
-		background-size: 250px 250px;
-		@include cover;
-	}
-	.item {
-		div {
-			opacity: 0;
-			transition: all 10s ease;
-			width: 150px;
-			height: 150px;
-			background-size: 150px 150px;
-			transform: translate3d(-50%, -50%, 0px);
-		}
-	}
-	.particle {
-		position: absolute;
 	}
 }

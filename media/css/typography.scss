@@ -10,33 +10,6 @@
 }
 
 
-*,
-*:before,
-*:after {
-	padding: 0;
-	border: 0;
-	margin: 0;
-	vertical-align: baseline;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.clearfix {
-	zoom: 1;
-	&:before {
-		content: ".";
-		display: block;
-		height: 0;
-		overflow: hidden;
-	}
-	&:after {
-		content: ".";
-		display: block;
-		height: 0;
-		overflow: hidden;
-		clear: both;
-	}
-}
 
 body {
 	font-family: "Merriweather", Georgia, Serif;
@@ -103,34 +76,40 @@ h4 {
 	line-height: 24px;
 	margin-bottom: -7px;
 }
-p {
-	&.f-large {
-		padding-bottom: 36px;
-		max-width: 36em;
-		margin: 0 auto;
+// p {
+// 	&.f-large {
+// 		padding-bottom: 36px;
+// 		max-width: 36em;
+// 	}
+// 	&.f-medium {
+// 		padding-bottom: 30px;
+// 	}
+// 	&.f-small {
+// 		padding-bottom: 18px;
+// 	}
+// }
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+	&:hover {
+		text-decoration: underline;
 	}
-	&.f-medium {
-		padding-bottom: 30px;
-	}
-	&.f-small {
-		padding-bottom: 18px;
+	&.button:hover {
+		text-decoration: none;
+	}	
+	&:active {
+		position: relative;
+		top: 1px;
 	}
 }
-
-input,
-textarea {
-	display: block;
-	font-family: inherit;
-	font-size: 24px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid;
-}
-button {
+button,
+.button {
 	font-family: "ATC Overlook";
 	font-size: 24px;
 	text-transform: uppercase;
 	padding: 5px 30px 8px;
+	margin-top: 36px;
 	background: none;
 	border: 1px solid #ddd;
 	cursor: pointer;
@@ -140,21 +119,14 @@ button {
 	box-shadow: 0 2px 5px rgba(black, 0.15), 0 0 20px rgba(black, 0.12);
 	transition: box-shadow 0.5s ease;
 	&:hover {
-		box-shadow: 0 4px 7px rgba(black, 0.25), 0 0 30px rgba(black, 0.17);
+		box-shadow: 0 2px 8px rgba(black, 0.35), 0 0 30px rgba(black, 0.17);
 		&:active {
 			box-shadow: 0 0 5px rgba(black, 0.1);
 			border-color: #bbb;
-			transition: box-shadow 0.1s ease;
+			transition: box-shadow 0.05s ease;
 		}
 	}
 
-	// &:hover,
-	// &:active {
-	// 	background-image: url('../images/hover.gif');
-	// 	color: white;
-	// 	border-color: transparent;
-	// 	box-shadow: 0 0 50px #762d1b;
-	// }
 	&:focus {
 		outline: none;
 	}

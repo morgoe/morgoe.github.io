@@ -1,0 +1,43 @@
+@media (max-width: 959px) {
+	.container {
+		display: block;
+		> div {
+			display: block;
+		}
+	}
+	.grid {
+		width: 100% !important;
+		padding: 10px;
+	}
+	.offset-top {
+		padding-top: 0;
+	}
+	.short-width {
+		margin: 0 auto;
+	}
+	.pull-right {
+		float: none;
+	}
+	.align-right {
+		text-align: inherit;
+	}
+	.mobile-align-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.hi-im {
+		padding-right: 178px;
+	}
+	.mobile-hide {
+		display: none;
+		margin: 0 auto;
+	}
+	.grid + .grid {
+		padding-top: 0;
+	}
+	.me {
+		
+	}
+}
