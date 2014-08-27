@@ -56,18 +56,25 @@ $(document).ready(function() {
 			$.fn.fullpage.moveSectionDown();
 	});
 
-	// $('body').one('mousemove', function() {
-	// 		$('.js-animate-1').addClass('animate-after');
-	// 		$('.js-animate-2').addClass('animate-after');
-	// 		$('.js-animate-3').addClass('animate-after');
-	// 		$('.js-animate-4').addClass('animate-after');
-	// });
+	$('body').one('mousemove', function() {
+		$('.js-animate-1').addClass('animate-after');
+		setTimeout(function() {
+			$('.js-animate-2').addClass('animate-after');	
+		}, 50);
+		setTimeout(function() {
+			$('.js-animate-3').addClass('animate-after');	
+		}, 100);
+		setTimeout(function() {
+			$('.js-animate-4').addClass('animate-after');	
+		}, 150);
+	});
 
 
 	$('#fullpage').fullpage({
 		anchors: ['welcome', 'about', 'trueskate', 'asntm', 'stackla', 'contact'],
 		css3: true
 	});
+
 
 	$(window).resize(function() {
 		if ($(window).width() < 960) {
