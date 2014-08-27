@@ -30,15 +30,24 @@ $(function() {
     }
 }(jQuery));
 
-window.addEventListener('deviceorientation', function(eventData) {
-		var xTilt = 10 * eventData.gamma * (15/180);
-		if (xTilt > 15)
-				xTilt = 15;
-		else if (xTilt < -15)
-				xTilt = -15;
+function fitImage(img) {
+    var realWidth = img.naturalWidth(),
+    realHeight = img.naturalHeight(),
+    imgWrapper = $(img).parent(),
+    windowWidth = imgWrapper.width(),
+    windowHeight = imgWrapper.height();
 
-		$('.js-tilt-image').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
-}, false);
+    // use largest scale factor of horizontal/vertical
+    var scale_h = windowWidth / realWidth;
+    var scale_v = windowHeight / realHeight;
+    var scale = scale_h > scale_v ? scale_h : scale_v;
+
+    // now scale the img
+    img.width(scale * realWidth);
+    img.height(scale * realHeight);
+}
+
+
 
 
 $(document).ready(function() {
@@ -60,22 +69,26 @@ $(document).ready(function() {
 		css3: true
 	});
 
-	function fitImage(img) {
-        var realWidth = img.naturalWidth(),
-        realHeight = img.naturalHeight(),
-        imgWrapper = $(img).parent(),
-        windowWidth = imgWrapper.width(),
-        windowHeight = imgWrapper.height();
+	$(window).resize(function() {
+		if ($(window).width() < 960) {
+			$('.img-viewer').each(function() {
+				var h = $(window).height() - $(this).parent().prev().height();
+				// $(this).height(h);
+				$(this).css('top', $(this).parent().prev().innerHeight())
+				fitImage($(this));
+			});
+		}
+	}).resize();
 
-        // use largest scale factor of horizontal/vertical
-        var scale_h = windowWidth / realWidth;
-        var scale_v = windowHeight / realHeight;
-        var scale = scale_h > scale_v ? scale_h : scale_v;
+	window.addEventListener('deviceorientation', function(eventData) {
+		var xTilt = 10 * eventData.gamma * (15/180);
+		if (xTilt > 15)
+				xTilt = 15;
+		else if (xTilt < -15)
+				xTilt = -15;
 
-        // now scale the img
-        img.width(scale * realWidth);
-        img.height(scale * realHeight);
-	}
+		$('.img-viewer').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
+	}, false);
 
 	$('body').mousemove(function(event) {
 		var x = event.pageX / $(window).width();
