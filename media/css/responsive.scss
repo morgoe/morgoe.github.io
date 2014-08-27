@@ -8,6 +8,9 @@
 			display: block;
 		}
 	}
+	section {
+		padding: 0 12px;
+	}
 	.grid {
 		width: 100% !important;
 		padding: 12px 0;
@@ -44,11 +47,13 @@
 
 	.container.wide {
 		@include cover();
+		left: 12px;
+		right: 12px;
 	}
 	.img-viewer {
 		@include cover();
 		height: auto;
-		margin: 0 -15px;
+		margin: 0 -12px;
 		/* &:after {
 			display: none;
 		} */
