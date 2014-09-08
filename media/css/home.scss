@@ -75,12 +75,10 @@ h1 + p {
 .animate-before {
 	opacity: 0;
 	-webkit-transform: translateZ(0);
-	-webkit-filter: blur(5px);
 	-webkit-transition: 2s ease;
 }
 .animate-after {
 	opacity: 1;
-	-webkit-filter: blur(0px);
 }
 
 
