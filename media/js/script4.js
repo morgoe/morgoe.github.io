@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 
 	$('#fullpage').fullpage({
-		anchors: ['welcome', 'about', 'trueskate', 'asntm', 'stackla', 'contact'],
+		anchors: ['welcome', 'about', 'trueskate', 'stackla', 'manchester', 'asntm', 'myer', 'contact'],
 		css3: true
 	});
 
