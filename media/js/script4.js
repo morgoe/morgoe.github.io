@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 
 	$('#fullpage').fullpage({
-		anchors: ['welcome', 'about', 'trueskate', 'stackla', 'manchester', 'asntm', 'myer', 'contact'],
+		anchors: ['welcome', 'about', 'trueskate', 'admin', 'stackla', 'manchester', 'asntm', 'myer', 'contact'],
 		css3: true
 	});
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
 				xTilt = 15;
 		else if (xTilt < -15)
 				xTilt = -15;
-		console.log(xTilt);
+		// console.log(xTilt);
 
 		$('.img-viewer').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
 	}, false);
