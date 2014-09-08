@@ -31,28 +31,13 @@
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em; }
 
-.icon-phone:before {
-  content: '\e800'; }
-
-/* '' */
-.icon-right:before {
-  content: '\e801'; }
-
-/* '' */
-.icon-mail:before {
-  content: '\e802'; }
-
-/* '' */
-.icon-dribbble:before {
-  content: '\e803'; }
-
-/* '' */
-.icon-twitter:before {
-  content: '\e804'; }
-
-/* '' */
-.icon-fw {
-  width: 1.28571429em; }
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-right:before { content: '\e801'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-dribbble:before { content: '\e803'; } /* '' */
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-doc-text:before { content: '\e805'; } /* '' */
+.icon-fw { width: 1.28571429em; }
 
 *,
 *:before,
