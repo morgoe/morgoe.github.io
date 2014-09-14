@@ -22,6 +22,9 @@ $cream: #f3eee3;
 @import 'utilities';
 @import 'typography';
 
+body {
+    background: $brown;
+}
 img {
     display: block;
     width: 100%;
@@ -147,18 +150,18 @@ a {
 
 /* Sections */
 section {
-    overflow: hidden;
+    // overflow: hidden;
 }
 .section-withBackground {
     // margin-top: -13px;
 }
 .section-header {
-    margin-top: -3%;
+    margin-top: -5%;
 }
 .section-background {
     background-position: top center;
     background-size: 100% auto;
-    padding: 40px 15px 20px;
+    padding: 8px 15px 40px;
 }
 .section-light {
     color: $brown;
@@ -220,7 +223,6 @@ section {
 /* Hero */
 .hero {
     color: $cream;
-    background: $brown;
     padding: 0 0 30px;
 }
 .hero-text {
@@ -241,6 +243,7 @@ section {
     margin: 0;
     padding: 0;
     list-style: none;
+    cursor: move;
 }
 .slideshow-padding {
     padding-left: 0;

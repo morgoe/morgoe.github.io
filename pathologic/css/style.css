@@ -405,7 +405,7 @@ th {
 body {
   font-family: "Quattrocento Sans";
   font-size: 15px;
-  line-height: 18px;
+  line-height: 20px;
   color: #421703; }
 
 h1,
@@ -431,10 +431,19 @@ h5,
 
 h2 {
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 30px;
+  white-space: nowrap; }
 
 p {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 15px; }
+  p:last-child {
+    margin-bottom: 0; }
+
+body {
+  background: #421703; }
 
 img {
   display: block;
@@ -532,16 +541,13 @@ a {
   box-shadow: inset 4px 0px 5px rgba(0, 0, 0, 0.4); }
 
 /* Sections */
-section {
-  overflow: hidden; }
-
 .section-header {
-  margin-top: -3%; }
+  margin-top: -5%; }
 
 .section-background {
   background-position: top center;
   background-size: 100% auto;
-  padding: 40px 15px 20px; }
+  padding: 8px 15px 40px; }
 
 .section-light {
   color: #421703; }
@@ -584,7 +590,6 @@ section {
 /* Hero */
 .hero {
   color: #f3eee3;
-  background: #421703;
   padding: 0 0 30px; }
 
 .hero-text {
@@ -597,7 +602,8 @@ section {
 .slideshow {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  cursor: move; }
 
 .slideshow-padding {
   padding-left: 0;
