@@ -4,11 +4,17 @@ $(function() {
 });
 
 $(document).ready(function() {
-    console.log('a')
     $('.js-slick').slick({
+  		slide: 'li',
         lazyLoad: 'ondemand',
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
     });
-    console.log('b')
+
+    $('.js-toggleLanguage').click(function() {
+    	$('.js-toggleLanguage').toggleClass('active');
+    });
 });
