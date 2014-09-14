@@ -22,6 +22,22 @@ $cream: #f3eee3;
 @import 'utilities';
 @import 'typography';
 
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+
+/* Buttons */
 .btn {
     display: block;
     position: relative;
@@ -34,6 +50,8 @@ $cream: #f3eee3;
     text-shadow: 1px 1px 1px rgba(white, 0.4);
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+    font-weight: bold;
     &:before,
     &:after {
         content: "";
@@ -82,7 +100,7 @@ $cream: #f3eee3;
 .btn-large {
     display: table;
     width: auto;
-    padding: 13px 20px 7px;
+    padding: 13px 30px 10px;
     margin-bottom: 15px;
     background-position: center 90%;
     background-size: cover;
@@ -96,24 +114,13 @@ $cream: #f3eee3;
         bottom: 5px;
     }
 }
-img {
-    display: block;
-    width: 100%;
-}
-a {
-    // text-decoration: none;
-    color: inherit;
-    &:hover {
-        // text-decoration: underline;
-    }
-    &:active {
-        position: relative;
-        top: 1px;
-    }
-}
+
 
 
 /* Sections */
+section {
+    overflow: hidden;
+}
 .section-withBackground {
     // margin-top: -13px;
 }
@@ -184,7 +191,7 @@ a {
     padding: 0 0 30px;
 }
 .hero-text {
-    font-family: "Vollkorn";
+    font-family: "Quattrocento";
     font-size: 16px;
     line-height: 18px;
     // text-shadow: 0 0 18px rgba(black, 0.65);
