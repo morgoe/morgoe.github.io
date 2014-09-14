@@ -171,10 +171,11 @@ section {
 }
 .section-light {
     color: $brown;
+    text-shadow: 0 0 18px rgba($cream, 0.65);
 }
 .section-dark {
     color: $cream;
-    text-shadow: 0 0 18px rgba(black, 0.65);
+    text-shadow: 0 0 18px rgba(black, 0.65), 1px 1px 1px rgba(black, 0.2);
 }
 
 
