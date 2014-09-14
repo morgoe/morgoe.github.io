@@ -404,8 +404,8 @@ th {
 
 body {
   font-family: "Quattrocento Sans";
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 17px;
+  line-height: 24px;
   color: #421703; }
 
 h1,
@@ -427,21 +427,51 @@ h5,
   line-height: 1; }
 
 .btn-large {
-  font-size: 30px; }
+  font-size: 36px; }
 
 h2 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 36px;
   white-space: nowrap; }
 
 p {
-  max-width: 460px;
+  max-width: 520px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px; }
   p:last-child {
     margin-bottom: 0; }
 
+.large {
+  font-size: 19px;
+  line-height: 26px; }
+
+.small {
+  font-size: 15px;
+  line-height: 17px; }
+
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+    line-height: 20px; }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px; }
+
+  p {
+    max-width: 460px; }
+
+  .large {
+    font-size: 17px;
+    line-height: 22px; }
+
+  .small {
+    font-size: 13px;
+    line-height: 15px; }
+
+  .btn-large {
+    font-size: 30px; } }
 body {
   background: #421703; }
 
@@ -457,6 +487,20 @@ a {
   a:active, a.active {
     position: relative;
     top: 1px; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
 
 /* Buttons */
 .btn {
@@ -544,10 +588,13 @@ a {
 .section-header {
   margin-top: -5%; }
 
+.section-footer {
+  margin-bottom: -5%; }
+
 .section-background {
   background-position: top center;
   background-size: 100% auto;
-  padding: 8px 15px 40px; }
+  padding: 10px 15px 40px; }
 
 .section-light {
   color: #421703; }
@@ -558,23 +605,14 @@ a {
 
 /* Header */
 .header {
-  padding: 10px;
-  margin-top: 0;
-  background-position: bottom;
   position: relative;
-  z-index: 1;
-  zoom: 1; }
-  .header:before {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .header:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
+  z-index: 1; }
+
+.header-padding {
+  padding: 10px 10px 3px; }
+
+.header-background {
+  background-position: bottom center; }
 
 .header-social li:first-child a {
   background-position: 20% 90%; }
@@ -594,8 +632,6 @@ a {
 
 .hero-text {
   font-family: "Quattrocento";
-  font-size: 16px;
-  line-height: 18px;
   padding: 0 15px; }
 
 /* Slideshow */
@@ -623,11 +659,4 @@ a {
 .features-img {
   margin-bottom: 15px; }
 
-.features-text {
-  font-size: 13px;
-  line-height: 15px;
-  white-space: normal; }
-
 /* Footer */
-.section-footer {
-  padding-bottom: 40px; }

@@ -39,6 +39,9 @@ a {
         top: 1px;
     }
 }
+.clearfix {
+    @include clearfix();
+}
 
 
 /* Buttons */
@@ -158,10 +161,13 @@ section {
 .section-header {
     margin-top: -5%;
 }
+.section-footer {
+    margin-bottom: -5%;
+}
 .section-background {
     background-position: top center;
     background-size: 100% auto;
-    padding: 8px 15px 40px;
+    padding: 10px 15px 40px;
 }
 .section-light {
     color: $brown;
@@ -177,15 +183,14 @@ section {
 
 /* Header */
 .header {
-    padding: 10px;
-    margin-top: 0;
-    background-position: bottom;
-    // margin-bottom: -13px;
-    // padding-bottom: 17px;
-
     position: relative;
     z-index: 1;
-    @include clearfix();
+}
+.header-padding {
+    padding: 10px 10px 3px;
+}
+.header-background {
+    background-position: bottom center;
 }
 .header-social {
     li {
@@ -227,8 +232,6 @@ section {
 }
 .hero-text {
     font-family: "Quattrocento";
-    font-size: 16px;
-    line-height: 18px;
     // text-shadow: 0 0 18px rgba(black, 0.65);
     padding: 0 15px;
 }
@@ -264,16 +267,8 @@ section {
 .features-img {
     margin-bottom: 15px;
 }
-.features-text {
-    font-size: 13px;
-    line-height: 15px;
-    white-space: normal;
-}
 
 
 
 
 /* Footer */
-.section-footer {
-    padding-bottom: 40px;
-}
