@@ -17,6 +17,7 @@
 
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </head>
@@ -24,31 +25,59 @@
         <!-- <header class="header section-background" style="background-image: url('images/bg-btn.jpg');"> -->
         <header class="header section-withBackground">
             <div class="section-background header-padding header-background clearfix" style="background-image: url('images/bg-header.jpg');">
-                <ul class="u-inlineList pull-left header-social btn-group">
-                    <li>
-                        <a class="btn btn-small serif js-toggleLanguage active">EN</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small serif js-toggleLanguage">RU</a>
-                    </li>
-                </ul>
-                <ul class="u-inlineList pull-right header-social">
-                    <li>
-                        <a class="btn btn-small" href="https://www.facebook.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small" href="https://www.youtube.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small" href="https://twitter.com/IcePickLodge" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small" href="http://instagram.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small" href="https://vk.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-vk"></i></a>
-                    </li>
-                </ul>
+                <div class="header-offCanvas clearfix js-menu-toggle">
+                    <a class="btn btn-small pull-left js-menu-toggler"><i class="fa fa-fw fa-close"></i></a>
+                    <ul class="u-inlineList pull-left btn-group header-language">
+                        <li>
+                            <a class="btn btn-small serif js-language-toggler active">EN</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small serif js-language-toggler">RU</a>
+                        </li>
+                    </ul>
+                    <ul class="u-inlineList pull-right header-nav serif">
+                        <li>
+                            <a href="http://forum.ice-pick.com/viewforum.php?f=54" target="_blank">
+                                <img src="images/nav-forum.png" height="20">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.pathologic-game.com/en/media/#media" target="_blank">
+                                <img src="images/nav-media.png" height="20">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.pathologic-game.com/en/press/" target="_blank">
+                                <img src="images/nav-press.png" height="20">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.pathologic-game.com/en/about-us/#about-us" target="_blank">
+                                <img src="images/nav-aboutUs.png" height="20">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-onCanvas clearfix js-menu-toggle active">
+                    <a class="btn btn-small pull-left js-menu-toggler"><i class="fa fa-fw fa-reorder"></i></a>
+                    <ul class="u-inlineList pull-right header-social">
+                        <li>
+                            <a class="btn btn-small" href="https://www.facebook.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small" href="https://www.youtube.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small" href="https://twitter.com/IcePickLodge" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small" href="http://instagram.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small" href="https://vk.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <img class="section-footer" src="images/bg-header-bottom.png">
         </header>
@@ -83,28 +112,45 @@
                 <h2 class="u-textCenter">Screenshots</h2>
                 <ul class="js-slick slideshow">
                     <li>
-                        <img src="images/screenshot-tragedian.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-tragedian.jpg" title="Tragedian.">
+                            <img src="images/screenshot-tragedian.jpg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="js-imagePopup" href="images/screenshot-maria.jpg" title="Maria.">
+                            <img src="images/screenshot-maria.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-maria.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-night.jpg" title="Night.">
+                            <img src="images/screenshot-night.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-night.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-executor.jpg" title="Executor.">
+                            <img src="images/screenshot-executor.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-executor.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-inventory.jpg" title="Inventory.">
+                            <img src="images/screenshot-inventory.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-inventory.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-revolver.jpg" title="Revolver.">
+                            <img src="images/screenshot-revolver.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-revolver.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-maria2.jpg" title="Maria2.">
+                            <img src="images/screenshot-maria2.jpg">
+                        </a>
                     </li>
                     <li>
-                        <img src="images/screenshot-maria2.jpg">
-                    </li>
-                    <li>
-                        <img src="images/screenshot-shadow.jpg">
+                        <a class="js-imagePopup" href="images/screenshot-shadow.jpg" title="Shadow.">
+                            <img src="images/screenshot-shadow.jpg">
+                        </a>
                     </li>
                 </ul>
             </div>

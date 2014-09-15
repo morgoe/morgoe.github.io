@@ -21,6 +21,8 @@ $cream: #f3eee3;
 @import 'reset';
 @import 'utilities';
 @import 'typography';
+@import 'magnific-popup';
+@import 'magnific-popup-extra';
 
 body {
     background: $brown;
@@ -179,9 +181,6 @@ section {
 }
 
 
-
-
-
 /* Header */
 .header {
     position: relative;
@@ -220,6 +219,39 @@ section {
                 }
             }
         }
+    }
+}
+.header-language {
+    margin-left: 10px;
+}
+.header-nav {
+    height: 32px;
+    max-width: calc(100% - 122px);
+    padding: 6px 0 6px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(5%,rgba(255,255,255,1)), color-stop(95%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+
+    li {
+        margin: 0 10px;
+    }
+    img {
+        width: auto;
+
+    }
+}
+.header-offCanvas {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.header-onCanvas {
+    display: none;
+    &.active {
+        display: block;
     }
 }
 
