@@ -21,247 +21,261 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </head>
-    <body>
-        <!-- <header class="header section-background" style="background-image: url('images/bg-btn.jpg');"> -->
-        <header class="header section-withBackground">
-            <div class="section-background header-padding header-background clearfix" style="background-image: url('images/bg-header.jpg');">
-                <div class="header-offCanvas clearfix js-menu-toggle">
-                    <a class="btn btn-small pull-left js-menu-toggler"><i class="fa fa-fw fa-close"></i></a>
-                    <ul class="u-inlineList pull-left btn-group header-language">
-                        <li>
-                            <a class="btn btn-small serif js-language-toggler active">EN</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-small serif js-language-toggler">RU</a>
-                        </li>
-                    </ul>
-                    <ul class="u-inlineList pull-right header-nav serif">
-                        <li>
-                            <a href="http://forum.ice-pick.com/viewforum.php?f=54" target="_blank">
-                                <img src="images/nav-forum.png" height="20">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.pathologic-game.com/en/media/#media" target="_blank">
-                                <img src="images/nav-media.png" height="20">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.pathologic-game.com/en/press/" target="_blank">
-                                <img src="images/nav-press.png" height="20">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.pathologic-game.com/en/about-us/#about-us" target="_blank">
-                                <img src="images/nav-aboutUs.png" height="20">
-                            </a>
-                        </li>
-                    </ul>
+    <body>  
+            <nav class="menu js-menu">
+                <a class="btn btn-small pull-left js-menu-toggler menu-toggler">
+                    <i class="fa fa-fw fa-close"></i>
+                </a>
+                <div class="menu-content u-verticalCenter u-textCenter serif">
+                    <div>
+                        <div class="menu-language">
+                            <label class=" menu-language--label pull-left">Language:</label>
+                            <ul class="u-inlineList pull-left">
+                                <li>
+                                    <a class="menu-language--link js-language-toggler active">EN</a>
+                                </li>
+                                <li>
+                                    <a class="menu-language--link js-language-toggler">RU</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="menu-list ">
+                            <li class="menu-item">
+                                <a class="menu-link" href="http://forum.ice-pick.com/viewforum.php?f=54" target="_blank">
+                                    <i class="fa fa-fw fa-comments"></i> Forum
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="http://www.pathologic-game.com/en/media/#media" target="_blank">
+                                    <i class="fa fa-fw fa-image"></i> Media
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="http://www.pathologic-game.com/en/press/" target="_blank">
+                                    <i class="fa fa-fw fa-file-text-o"></i> Press
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="http://www.pathologic-game.com/en/about-us/#about-us" target="_blank">
+                                    <i class="fa fa-fw fa-users"></i> About Us
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="http://www.pathologic-game.com/">
+                                    <i class="fa fa-fw fa-desktop"></i> View Desktop Site
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="header-onCanvas clearfix js-menu-toggle active">
-                    <a class="btn btn-small pull-left js-menu-toggler"><i class="fa fa-fw fa-reorder"></i></a>
-                    <ul class="u-inlineList pull-right header-social">
-                        <li>
-                            <a class="btn btn-small" href="https://www.facebook.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-small" href="https://www.youtube.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-small" href="https://twitter.com/IcePickLodge" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-small" href="http://instagram.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-small" href="https://vk.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-vk"></i></a>
-                        </li>
-                    </ul>
+            </nav>
+
+            <header class="header section-withBackground">
+                <div class="section-background header-padding header-background clearfix" style="background-image: url('images/bg-header.jpg');">
+                    <div class="clearfix">
+                        <a class="btn btn-small pull-left js-menu-toggler">
+                            <i class="fa fa-fw fa-reorder"></i>
+                        </a>
+                        <ul class="u-inlineList pull-right header-social">
+                            <li>
+                                <a class="btn btn-small" href="https://www.facebook.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-small" href="https://www.youtube.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-small" href="https://twitter.com/IcePickLodge" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-small" href="http://instagram.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-small" href="https://vk.com/icepicklodge" target="_blank"><i class="fa fa-fw fa-vk"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <img class="section-footer" src="images/bg-header-bottom.png">
-        </header>
+                <img class="section-footer" src="images/bg-header-bottom.png">
+            </header>
 
-        <section class="hero">
-            <img src="images/h1.jpg">
-            <p class="u-textCenter hero-text large">
-                <strong>
-                    “In Pathologic, everything is terrible
-                    <br>
-                    and it’s all your fault.”
-                </strong>
-            </p>
-            <p class="u-textCenter hero-text large">Pathologic is a plot-driven survival open world adventure game for PC (Windows / MAC / Linux), PS4 and Xbox One</p>
-            <a class="btn btn-large serif u-center" href="http://kickstarter.pathologic-game.com/" target="_blank">Kickstart Us</a>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-town-top.png">
-            <div class="section-background section-dark" style="background-image: url('images/bg-town.jpg');">
-                <h2 class="u-textCenter">What is Pathologic?</h2>
-                
-                <p>A plague breaks out in a remote steppe town full of weird local traditions. Three healers try to fight it: a scientist from the Capital, the son of a local shaman, and a half-crazed girl. Each of them has their own idea of how the terrible disease came to be, and what is real magic to one of them becomes backwards superstitions to another.</p>
-
-                <p>Taking on the role of any of these doctors, you’ll try to overcome the invisible evil while doing your best not to succumb to the disease, to bandits, hunger, and fatigue; scavenging and bartering for pills, bread, and milk. But it’s hard to survive in Pathologic—the remake of a ruthless and critically acclaimed Russian survival adventure game from 2005!</p>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-canvas2-top.png">
-            <div class="section-background section-light slideshow-padding" style="background-image: url('images/bg-canvas2.jpg');">
-                <h2 class="u-textCenter">Screenshots</h2>
-                <ul class="js-slick slideshow">
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-tragedian.jpg" title="Tragedian.">
-                            <img src="images/screenshot-tragedian.jpg">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-maria.jpg" title="Maria.">
-                            <img src="images/screenshot-maria.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-night.jpg" title="Night.">
-                            <img src="images/screenshot-night.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-executor.jpg" title="Executor.">
-                            <img src="images/screenshot-executor.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-inventory.jpg" title="Inventory.">
-                            <img src="images/screenshot-inventory.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-revolver.jpg" title="Revolver.">
-                            <img src="images/screenshot-revolver.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-maria2.jpg" title="Maria2.">
-                            <img src="images/screenshot-maria2.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="js-imagePopup" href="images/screenshot-shadow.jpg" title="Shadow.">
-                            <img src="images/screenshot-shadow.jpg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-destruction-top.png">
-            <div class="section-background section-dark" style="background-image: url('images/bg-destruction.jpg');">
-                <h2 class="u-textCenter">What Pathologic Feels Like</h2>
-                
-                <p>It’s a game that always makes you feel in a pinch—but being in a pinch also feels worth it. Whichever of the three playable characters you choose, your goal will always be to determine the origins of Sand Plague and save the Town (or what’s left of it). But in order to do that you’ll first have to survive, and that won’t be an easy task.</p>
-
-                <p>The plot of Pathologic is broken into twelve days, each of them bringing new stories, quests, and events. Time flows mercilessly: if you fail to finish a task when it’s due, the opportunity goes away—as do human lives. You are completely free to roam and explore the Town, bartering, talking to strangers and generally surviving.</p>
-
-                <p>The hero needs to eat and sleep, to take care of his immune system—it’s the only thing that can preserve him from being infected with the Plague. To do all that you’ll need resources: fresh water, bandages, bullets; even bread and coffee grains, but inflation and panic will steal things from you, making merchants greedy and turning the townsfolk into shameless bandits.</p>
-
-                <p>But your scariest enemy is not a bandit armed to his teeth, but rather the disease itself.</p>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-canvas-top.png">
-            <div class="section-background section-light slideshow-padding" style="background-image: url('images/bg-canvas.jpg');">
-                <h2 class="u-textCenter">Features</h2>
-                <ul class="js-slick slideshow">
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-disease.jpg">
-                        <p class="small">Do you think doctors are only there to ease the pain? What if it means you have to cut out someone’s heart in order to produce the medicine? Your instruments are crude, and you’ll have to fight the Plague on many levels. Searching for its roots to help the town is your main goal, but the Plague is also right here, in the streets, in your own body. It’s great to finish a quest and come one step closer to your goal, but it won’t matter if you’re dying.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-plague.jpg">
-                        <p class="small"><strong>The epidemic is realistically simulated</strong>, which means that it’ll unfold in real time, affecting both the gameplay mechanics and the plot. Do you need to cut corners in a hurry, or perhaps you’re looking for a butcher? Tough luck—if the district you need is infected, it’ll become a danger zone. Shops’ll close, houses’ll lock down, and the air itself’ll become poisonous. But you may not have another option.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-survival.jpg">
-                        <p class="small">You’ll find no zombies here—it’s the real deal. Hunger, thirst, fatigue, immune resistance, and reputation are all gameplay mechanics, but you’ll also find out that sometimes your affection towards certain characters or your weariness can’t be expressed in numbers. Your enemy is relentless and heartless. Ask yourself: does survival only mean the preservation of your body?</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-trade.jpg">
-                        <p class="small">You’ll always be hard pressed for resources, money not excluded. But money can’t save your life—you can’t eat it, you can’t heal with it, and you may find out money is worthless. So you’ll barter with townsfolk, and that’ll keep you afloat… if you’re fine with taking bullets from kids and trading your only gun for a loaf of bread.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-fight.jpg">
-                        <p class="small">Fights are both simple and hard. You’ll find threats here and there: the bandits at night, the marauders, the sick insane with pain, and simply those who don’t like you. Pathologic is not a shooter—it doesn’t take many bullets to kill someone. But you may only have one left, or your gun may misfire, or perhaps you simply won’t like killing innocent victims. Running or hiding is generally preferable, but you can’t run forever.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-explore.jpg">
-                        <p class="small">Explore both the town and the characters. In Pathologic nothing is accidental—every place and every person has a story to tell. You are free to go anywhere making your own story, but remember that no one and nothing will wait for you.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-town.jpg">
-                        <p class="small">The town is living and breathing. The weather and the time of day is not the only thing that keeps changing: the prices rise and fall depending on the situation, and various events happen in the streets—everything realized in full immersive 3D. People will die, meet one another, perform rituals, and generally live. Sometimes you’ll be there to intervene. Sometimes you won’t.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-time.jpg">
-                        <p class="small">Time is always running, and for the most part it’s running out. There are so many things to do in the Town… which means you’ll have to choose. You can still pause the game and save whenever you want if needed, but while playing you’ll have to remember to manage the most precious of resources—the one you can’t buy or barter for.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-characters.jpg">
-                        <p class="small">Three playable characters with different storylines. Pathologic isn’t your generic “choose the race and get called differently” game. The Bachelor’s, The Haruspex’s and the Chagelling’s storylines contain different quests and events. Each of them will lead you to an answer—but you’ll also find out that it’s just the fraction of the whole truth, a single person’s perspective.</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-choices.jpg">
-                        <p class="small">Choices matter. Once again, it works on many levels. Do you finish a sidequest risking to die tomorrow, or do you let it go? Whom do you save, a man of noble intentions that have backfired or his less-than-honorable father who is innocent in this particular case? Do you try to keep your cool, or do your emotions get the best of you?</p>
-                    </li>
-                    <li class="features-listItem">
-                        <img class="features-img" src="images/feature-big.jpg">
-                        <p class="small">Pathologic is a big game. The full walkthrough with three characters will take you up to 72 hours. And it’s not grinding: each in-game day you’ll face new quests, new events, new plotlines, and new circumstances.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-maria-top.png">
-            <div class="section-background section-dark" style="background-image: url('images/bg-maria.jpg');">
-                <h2 class="u-textCenter">Why Pathologic?</h2>
-                <p>The uniqueness of Pathologic lies in the ideas that fill its fabric, not in its genre or setting (though we like to think that they’re pretty unusual too). We don’t want to make another game that lies to you that in order to save the world you just need to kill the bad guy. It’s not that simple. Never that simple.</p>
-
-                <p>We don’t shy away from making a game challenging in every aspect—from scavenging and fighting to facing tough questions with no right answer. The Town is there for you. Just go for it. The only crime is inaction.</p>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-landscape-top.png">
-            <div class="section-background section-light" style="background-image: url('images/bg-landscape.jpg');">
-                <h2 class="u-textCenter">Pathologic in the Press</h2>
-                <ul>
-                    <li>“Pathologic Reimagined”: a very in-depth look on the game by Adam Smith of Rock, Paper, Shotgun.</li>
-
-                    <li>Eurogamer: “It's a horror game unlike any other as the nefarious force isn't just some demonic army, mad scientist or mythical boogeyman, but rather a plague. As such, you can't kick its butt - as it doesn't have one - and it will kill people. Lots of people.”</li>
-
-                    <li>PC Gamer: “The game wasn't good in any of the ways you would traditionally associate the word, but it was weird and interesting—filled with ideas and ambition, but lacking the technical mastery to really pull them off. It was broken in so many ways. At the same time, it was a game that's completely unforgettable. A remake, then, could be an ideal solution.”</li>
-
-                    <li>Kill Screen: “In Pathologic, everything is terrible and it’s all your fault.”</li>
-
-                    <li>Death by Beta: “As survival games go, Pathologic from Ice-Pick Lodge seems to stand out. First off, no zombies.”</li>
-
-                    <li>VG 24/7: “One of the coolest things about is that you can’t really “win” as such – you can’t save everyone, and you can’t defeat the plague ravaging the town.”</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-withBackground">
-            <img class="section-header" src="images/bg-brown-top.png">
-            <div class="section-background section-dark">
+            <section class="hero">
+                <img src="images/h1.jpg">
+                <p class="u-textCenter hero-text large">
+                    <strong>
+                        “In Pathologic, everything is terrible
+                        <br>
+                        and it’s all your fault.”
+                    </strong>
+                </p>
+                <p class="u-textCenter hero-text large">Pathologic is a plot-driven survival open world adventure game for PC (Windows / MAC / Linux), PS4 and Xbox One</p>
                 <a class="btn btn-large serif u-center" href="http://kickstarter.pathologic-game.com/" target="_blank">Kickstart Us</a>
-                <p class="u-textCenter"><a class="link" href="http://www.pathologic-game.com/">View Desktop Site</a></p>
-                <img class="u-center" src="images/glyph.png" style="width:64px;">
-            </div>
-        </section>
+            </section>
 
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-town-top.png">
+                <div class="section-background section-dark" style="background-image: url('images/bg-town-short.jpg');">
+                    <h2 class="u-textCenter">What is Pathologic?</h2>
+                    
+                    <p>A plague breaks out in a remote steppe town full of weird local traditions. Three healers try to fight it: a scientist from the Capital, the son of a local shaman, and a half-crazed girl. Each of them has their own idea of how the terrible disease came to be, and what is real magic to one of them becomes backwards superstitions to another.</p>
+
+                    <p>Taking on the role of any of these doctors, you’ll try to overcome the invisible evil while doing your best not to succumb to the disease, to bandits, hunger, and fatigue; scavenging and bartering for pills, bread, and milk. But it’s hard to survive in Pathologic—the remake of a ruthless and critically acclaimed Russian survival adventure game from 2005!</p>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-canvas2-top.png">
+                <div class="section-background section-light slideshow-padding" style="background-image: url('images/bg-canvas2-short.jpg');">
+                    <h2 class="u-textCenter">Screenshots</h2>
+                    <ul class="js-slick slideshow">
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-tragedian.jpg" title="Tragedian.">
+                                <img src="images/screenshot-tragedian.jpg">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-maria.jpg" title="Maria.">
+                                <img src="images/screenshot-maria.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-night.jpg" title="Night.">
+                                <img src="images/screenshot-night.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-executor.jpg" title="Executor.">
+                                <img src="images/screenshot-executor.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-inventory.jpg" title="Inventory.">
+                                <img src="images/screenshot-inventory.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-revolver.jpg" title="Revolver.">
+                                <img src="images/screenshot-revolver.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-maria2.jpg" title="Maria2.">
+                                <img src="images/screenshot-maria2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-imagePopup" href="images/screenshot-shadow.jpg" title="Shadow.">
+                                <img src="images/screenshot-shadow.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-destruction-top.png">
+                <div class="section-background section-dark" style="background-image: url('images/bg-destruction.jpg');">
+                    <h2 class="u-textCenter">What Pathologic Feels Like</h2>
+                    
+                    <p>It’s a game that always makes you feel in a pinch—but being in a pinch also feels worth it. Whichever of the three playable characters you choose, your goal will always be to determine the origins of Sand Plague and save the Town (or what’s left of it). But in order to do that you’ll first have to survive, and that won’t be an easy task.</p>
+
+                    <p>The plot of Pathologic is broken into twelve days, each of them bringing new stories, quests, and events. Time flows mercilessly: if you fail to finish a task when it’s due, the opportunity goes away—as do human lives. You are completely free to roam and explore the Town, bartering, talking to strangers and generally surviving.</p>
+
+                    <p>The hero needs to eat and sleep, to take care of his immune system—it’s the only thing that can preserve him from being infected with the Plague. To do all that you’ll need resources: fresh water, bandages, bullets; even bread and coffee grains, but inflation and panic will steal things from you, making merchants greedy and turning the townsfolk into shameless bandits.</p>
+
+                    <p>But your scariest enemy is not a bandit armed to his teeth, but rather the disease itself.</p>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-canvas-top.png">
+                <div class="section-background section-light slideshow-padding" style="background-image: url('images/bg-canvas-short.jpg');">
+                    <h2 class="u-textCenter">Features</h2>
+                    <ul class="js-slick slideshow">
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-disease.jpg">
+                            <p class="small">Do you think doctors are only there to ease the pain? What if it means you have to cut out someone’s heart in order to produce the medicine? Your instruments are crude, and you’ll have to fight the Plague on many levels. Searching for its roots to help the town is your main goal, but the Plague is also right here, in the streets, in your own body. It’s great to finish a quest and come one step closer to your goal, but it won’t matter if you’re dying.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-plague.jpg">
+                            <p class="small"><strong>The epidemic is realistically simulated</strong>, which means that it’ll unfold in real time, affecting both the gameplay mechanics and the plot. Do you need to cut corners in a hurry, or perhaps you’re looking for a butcher? Tough luck—if the district you need is infected, it’ll become a danger zone. Shops’ll close, houses’ll lock down, and the air itself’ll become poisonous. But you may not have another option.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-survival.jpg">
+                            <p class="small">You’ll find no zombies here—it’s the real deal. Hunger, thirst, fatigue, immune resistance, and reputation are all gameplay mechanics, but you’ll also find out that sometimes your affection towards certain characters or your weariness can’t be expressed in numbers. Your enemy is relentless and heartless. Ask yourself: does survival only mean the preservation of your body?</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-trade.jpg">
+                            <p class="small">You’ll always be hard pressed for resources, money not excluded. But money can’t save your life—you can’t eat it, you can’t heal with it, and you may find out money is worthless. So you’ll barter with townsfolk, and that’ll keep you afloat… if you’re fine with taking bullets from kids and trading your only gun for a loaf of bread.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-fight.jpg">
+                            <p class="small">Fights are both simple and hard. You’ll find threats here and there: the bandits at night, the marauders, the sick insane with pain, and simply those who don’t like you. Pathologic is not a shooter—it doesn’t take many bullets to kill someone. But you may only have one left, or your gun may misfire, or perhaps you simply won’t like killing innocent victims. Running or hiding is generally preferable, but you can’t run forever.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-explore.jpg">
+                            <p class="small">Explore both the town and the characters. In Pathologic nothing is accidental—every place and every person has a story to tell. You are free to go anywhere making your own story, but remember that no one and nothing will wait for you.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-town.jpg">
+                            <p class="small">The town is living and breathing. The weather and the time of day is not the only thing that keeps changing: the prices rise and fall depending on the situation, and various events happen in the streets—everything realized in full immersive 3D. People will die, meet one another, perform rituals, and generally live. Sometimes you’ll be there to intervene. Sometimes you won’t.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-time.jpg">
+                            <p class="small">Time is always running, and for the most part it’s running out. There are so many things to do in the Town… which means you’ll have to choose. You can still pause the game and save whenever you want if needed, but while playing you’ll have to remember to manage the most precious of resources—the one you can’t buy or barter for.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-characters.jpg">
+                            <p class="small">Three playable characters with different storylines. Pathologic isn’t your generic “choose the race and get called differently” game. The Bachelor’s, The Haruspex’s and the Chagelling’s storylines contain different quests and events. Each of them will lead you to an answer—but you’ll also find out that it’s just the fraction of the whole truth, a single person’s perspective.</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-choices.jpg">
+                            <p class="small">Choices matter. Once again, it works on many levels. Do you finish a sidequest risking to die tomorrow, or do you let it go? Whom do you save, a man of noble intentions that have backfired or his less-than-honorable father who is innocent in this particular case? Do you try to keep your cool, or do your emotions get the best of you?</p>
+                        </li>
+                        <li class="features-listItem">
+                            <img class="features-img" src="images/feature-big.jpg">
+                            <p class="small">Pathologic is a big game. The full walkthrough with three characters will take you up to 72 hours. And it’s not grinding: each in-game day you’ll face new quests, new events, new plotlines, and new circumstances.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-maria-top.png">
+                <div class="section-background section-dark" style="background-image: url('images/bg-maria-short.jpg');">
+                    <h2 class="u-textCenter">Why Pathologic?</h2>
+                    <p>The uniqueness of Pathologic lies in the ideas that fill its fabric, not in its genre or setting (though we like to think that they’re pretty unusual too). We don’t want to make another game that lies to you that in order to save the world you just need to kill the bad guy. It’s not that simple. Never that simple.</p>
+
+                    <p>We don’t shy away from making a game challenging in every aspect—from scavenging and fighting to facing tough questions with no right answer. The Town is there for you. Just go for it. The only crime is inaction.</p>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-landscape-top.png">
+                <div class="section-background section-light" style="background-image: url('images/bg-landscape.jpg');">
+                    <h2 class="u-textCenter">Pathologic in the Press</h2>
+                    <ul>
+                        <li>“Pathologic Reimagined”: a very in-depth look on the game by Adam Smith of Rock, Paper, Shotgun.</li>
+
+                        <li>Eurogamer: “It's a horror game unlike any other as the nefarious force isn't just some demonic army, mad scientist or mythical boogeyman, but rather a plague. As such, you can't kick its butt - as it doesn't have one - and it will kill people. Lots of people.”</li>
+
+                        <li>PC Gamer: “The game wasn't good in any of the ways you would traditionally associate the word, but it was weird and interesting—filled with ideas and ambition, but lacking the technical mastery to really pull them off. It was broken in so many ways. At the same time, it was a game that's completely unforgettable. A remake, then, could be an ideal solution.”</li>
+
+                        <li>Kill Screen: “In Pathologic, everything is terrible and it’s all your fault.”</li>
+
+                        <li>Death by Beta: “As survival games go, Pathologic from Ice-Pick Lodge seems to stand out. First off, no zombies.”</li>
+
+                        <li>VG 24/7: “One of the coolest things about is that you can’t really “win” as such – you can’t save everyone, and you can’t defeat the plague ravaging the town.”</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-withBackground">
+                <img class="section-header" src="images/bg-brown-top.png">
+                <div class="section-background section-dark">
+                    <a class="btn btn-large serif u-center" href="http://kickstarter.pathologic-game.com/" target="_blank">Kickstart Us</a>
+                    <img class="footer-image u-center" src="images/glyph.png" style="width:64px;">
+                </div>
+            </section>
     </body>
 </html>

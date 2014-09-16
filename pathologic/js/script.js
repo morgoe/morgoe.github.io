@@ -18,8 +18,17 @@ $(document).ready(function() {
     	$('.js-language-toggler').toggleClass('active');
     });
 
+
+    /* Off-canvas Menu */
+    var animating = false;
     $('.js-menu-toggler').click(function() {
-    	$('.js-menu-toggle').toggleClass('active');
+        if (!animating) {
+            animating = true;
+            $('.js-menu').toggleClass('is-open');
+            setTimeout(function() {
+                animating = false;
+            }, 500);
+        }
     });
 
 	$('.js-imagePopup').magnificPopup({

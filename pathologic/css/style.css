@@ -905,7 +905,7 @@ a {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   /* For some Androids */ }
-  a:active, a.active {
+  a:active {
     position: relative;
     top: 1px; }
 
@@ -1025,6 +1025,62 @@ a {
   color: #f3eee3;
   text-shadow: 0 0 18px rgba(0, 0, 0, 0.65), 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
+/* Menu */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.85);
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.65), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  color: #f3eee3;
+  font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s; }
+  .menu > div {
+    padding: 10px; }
+  .menu.is-open {
+    opacity: 1;
+    pointer-events: auto; }
+
+.menu-toggler {
+  margin-top: 10px;
+  top: 0;
+  left: 10px;
+  z-index: 1; }
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menu-item {
+  margin-top: 20px; }
+
+.menu-link {
+  text-decoration: none; }
+  .menu-link:active {
+    text-decoration: underline; }
+
+.menu-language {
+  display: table;
+  margin: 0 auto; }
+
+.menu-language--label {
+  margin-right: 5px; }
+
+.menu-language--link {
+  cursor: pointer;
+  padding: 2px 2px 0px; }
+  .menu-language--link.active {
+    background: #f3eee3;
+    color: #421703;
+    text-shadow: none; }
+
 /* Header */
 .header {
   position: relative;
@@ -1047,9 +1103,6 @@ a {
 .header-social li:first-child + li + li + li + li a {
   background-position: 50% 90%; }
 
-.header-language {
-  margin-left: 10px; }
-
 .header-nav {
   height: 32px;
   max-width: calc(100% - 122px);
@@ -1062,16 +1115,6 @@ a {
     margin: 0 10px; }
   .header-nav img {
     width: auto; }
-
-.header-offCanvas {
-  display: none; }
-  .header-offCanvas.active {
-    display: block; }
-
-.header-onCanvas {
-  display: none; }
-  .header-onCanvas.active {
-    display: block; }
 
 /* Hero */
 .hero {
@@ -1108,3 +1151,5 @@ a {
   margin-bottom: 15px; }
 
 /* Footer */
+.footer-image {
+  margin-bottom: -20px; }
