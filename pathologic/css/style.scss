@@ -375,9 +375,9 @@ body.menu-isOpen {
 
     background: white;
     border: 1px solid #eee;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px rgba(black, 0.15), 0 0 20px rgba(black, 0.12);
     &:active {
-        box-shadow: none;
+        box-shadow: 0 2px 5px rgba(black, 0), 0 0 20px rgba(black, 0);
         border-color: #ddd;
     }
 }
