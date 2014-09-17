@@ -23,6 +23,7 @@ $cream: #f3eee3;
 @import 'typography';
 @import 'magnific-popup';
 @import 'magnific-popup-extra';
+@import 'slick';
 
 body {
     background: $brown;
@@ -35,6 +36,8 @@ a {
     color: inherit;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
+    text-decoration: underline;
+    cursor: pointer;
     &:active {
         position: relative;
         top: 1px;
@@ -187,7 +190,7 @@ section {
 
 /* Menu */
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -205,10 +208,13 @@ section {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s;
-    &.is-open {
+    .menu-isOpen & {
         opacity: 1;
         pointer-events: auto;
     }
+}
+body.menu-isOpen {
+    overflow: hidden;
 }
 .menu-toggler {
     margin-top: 10px;
@@ -226,9 +232,6 @@ section {
 }
 .menu-link {
     text-decoration: none;
-    &:active {
-        text-decoration: underline;
-    }
 }
 .menu-language {
     display: table;
@@ -240,6 +243,7 @@ section {
 .menu-language--link {
     cursor: pointer;
     padding: 2px 2px 0px;
+    text-decoration: none;
     &.active {
         background: $cream;
         color: $brown;
@@ -359,6 +363,55 @@ section {
     margin-bottom: 15px;
 }
 
+
+
+/* Press */
+.press-item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px;
+
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.12);
+    &:active {
+        box-shadow: none;
+        border-color: #ddd;
+    }
+}
+.press-author {
+    @include clearfix();
+    margin-bottom: 8px;
+}
+.press-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+.press-name {
+    margin-top: 4px;
+    line-height: 17px;
+}
+.press-quote {
+    &:after {
+        position: absolute;
+        font-size: 170px;
+        line-height: 1;
+        font-weight: bold;
+        color: #f2efee;
+        content: "\201D";
+        margin-left: -20px;
+        right: 0;
+        margin-top: -40px;
+    }
+    span {
+        position: relative;
+        text-shadow: 0 1px white, 0 -1px white, 1px 0 white, -1px 0 white;
+        z-index: 1;
+    }
+}
 
 
 
