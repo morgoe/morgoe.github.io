@@ -97,10 +97,12 @@ $(document).ready(function() {
 			}
 			xTilt += 15;
 
-			var w = -($('.img-viewer img').width() - $('.img-viewer').width()) / 30 * xTilt;
-			$('.js-this').text(w);
-			$('.img-viewer img').css('transform', 'translate3d(' + w + 'px, 0, 0)');
-			// $('.img-viewer img').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
+			$('.img-viewer').each(function() {
+				var that = $(this);
+				var img = $(this).find('img');
+				var w = -(img.width() - that.width()) / 30 * xTilt;
+				img.css('transform', 'translate3d(' + w + 'px, 0, 0)');
+			});
 		}, false);
 	} else {
 		$('body').mousemove(function(event) {
