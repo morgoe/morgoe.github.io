@@ -80,7 +80,12 @@ $(document).ready(function() {
 		if ($(window).width() < 960) {
 			$('.img-viewer').each(function() {
 				var h = $(window).height() - $(this).parent().prev().height();
-				$(this).css('top', $(this).parent().prev().innerHeight())
+				$(this).css('top', $(this).parent().prev().innerHeight());
+				fitImage($(this));
+			});
+		} else {
+			$('.img-viewer').each(function() {
+				$(this).css('top', 0);
 				fitImage($(this));
 			});
 		}
