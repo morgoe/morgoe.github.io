@@ -90,12 +90,17 @@ $(document).ready(function() {
 	if ($('html').hasClass('touch')) {
 		window.addEventListener('deviceorientation', function(eventData) {
 			var xTilt = 10 * eventData.gamma * (15/180);
-			if (xTilt > 15)
-					xTilt = 15;
-			else if (xTilt < -15)
-					xTilt = -15;
+			if (xTilt > 15) {
+				xTilt = 15;
+			} else if (xTilt < -15) {
+				xTilt = -15;
+			}
+			xTilt += 15;
+
 			$('.js-this').text(xTilt);
-			$('.img-viewer img').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
+			var w = $('.img-viewer img').width() - $('.img-viewer').width() / 30 * xTilt;
+			$('.img-viewer img').css('transform', 'translate3d(' + w + 'px, 0, 0)');
+			// $('.img-viewer img').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
 		}, false);
 	} else {
 		$('body').mousemove(function(event) {
