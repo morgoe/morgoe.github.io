@@ -97,8 +97,8 @@ $(document).ready(function() {
 			}
 			xTilt += 15;
 
-			$('.js-this').text(xTilt);
-			var w = $('.img-viewer img').width() - $('.img-viewer').width() / 30 * xTilt;
+			var w = ($('.img-viewer img').width() - $('.img-viewer').width()) / 30 * xTilt;
+			$('.js-this').text(w);
 			$('.img-viewer img').css('transform', 'translate3d(' + w + 'px, 0, 0)');
 			// $('.img-viewer img').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
 		}, false);
