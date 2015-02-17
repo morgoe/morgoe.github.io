@@ -14,6 +14,24 @@
 	@include clearfix();
 }
 
+.section {
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	padding: 50px 0;
+	> div {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.no-padding {
+	padding: 0;
+	> div {
+		padding: 0 12px;
+	}
+}
+
 .container {
 	margin: 0 auto;
 	display: table;

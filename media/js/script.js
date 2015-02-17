@@ -58,7 +58,9 @@ function fitImage(img) {
 $(document).ready(function() {
 
 	$('button').click(function() {
-			$.fn.fullpage.moveSectionDown();
+		$("html, body").animate({
+			scrollTop: $(window).height()
+		}, 750);
 	});
 
 	$('body').one('mousemove', function() {
@@ -74,13 +76,6 @@ $(document).ready(function() {
 		}, 150);
 	});
 
-
-	$('#fullpage').fullpage({
-		anchors: ['welcome', 'about', 'trueskate', 'admin', 'stackla', 'manchester', 'asntm', 'myer', 'contact'],
-		css3: true
-	});
-
-
 	$(window).resize(function() {
 		if ($(window).width() < 960) {
 			$('.img-viewer').each(function() {
@@ -89,6 +84,7 @@ $(document).ready(function() {
 				fitImage($(this));
 			});
 		}
+		$('#fullpage section').height($(window).height());
 	}).resize();
 
 	if ($('html').hasClass('touch')) {

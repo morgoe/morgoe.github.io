@@ -118,7 +118,6 @@ section {
 	&.bg-blue {
 		@include gradient(#0c1707, #243638);
 		.text {
-			// position: relative;
 			@include text-gradient(#fdeeb5, #e95f5c);
 		}
 		a {
@@ -152,7 +151,6 @@ section {
 		.text {
 			position: relative;
 			color: #333;
-			// @include text-gradient(#b5af89, #f3f5ea);
 		}
 		a {
 			&:hover {
