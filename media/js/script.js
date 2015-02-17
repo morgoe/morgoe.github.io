@@ -94,36 +94,34 @@ $(document).ready(function() {
 					xTilt = 15;
 			else if (xTilt < -15)
 					xTilt = -15;
-
-			$('.img-viewer').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
+			$('.js-this').text(xTilt);
+			$('.img-viewer img').css('transform', 'translate3d(' + xTilt + '%, 0, 0)');
 		}, false);
-	}
+	} else {
+		$('body').mousemove(function(event) {
+			var x = event.pageX / $(window).width();
+			var y = event.pageY / $(window).height();
+			$('.img-viewer').each(function() {
+				var img = $(this).find('img');
+				fitImage(img);
 
-	$('body').mousemove(function(event) {
-		var x = event.pageX / $(window).width();
-		var y = event.pageY / $(window).height();
-		$('.img-viewer').each(function() {
-			var img = $(this).find('img');
-			fitImage(img);
+				var diffX = img.width() - $(this).width();
+				var diffY = img.height() - $(this).height();
+				var xTilt = (1.3 * ((diffX * x) - diffX/2)) + diffX/2;
+				var yTilt = (1.3 * ((diffY * y) - diffY/2)) + diffY/2;
 
-			var diffX = img.width() - $(this).width();
-			var diffY = img.height() - $(this).height();
-			var xTilt = (1.3 * ((diffX * x) - diffX/2)) + diffX/2;
-			var yTilt = (1.3 * ((diffY * y) - diffY/2)) + diffY/2;
-
-			if (yTilt > diffY) {
-				yTilt = diffY;
-			} else if (yTilt < 0) {
-				yTilt = 0;
-			}
-			if (xTilt > diffX) {
-				xTilt = diffX;
-			} else if (xTilt < 0) {
-				xTilt = 0;
-			}
-			img.css('transform', 'translate3d(' + -xTilt + 'px, ' + -yTilt + 'px, 0)')
+				if (yTilt > diffY) {
+					yTilt = diffY;
+				} else if (yTilt < 0) {
+					yTilt = 0;
+				}
+				if (xTilt > diffX) {
+					xTilt = diffX;
+				} else if (xTilt < 0) {
+					xTilt = 0;
+				}
+				img.css('transform', 'translate3d(' + -xTilt + 'px, ' + -yTilt + 'px, 0)')
+			});
 		});
-	});
-
-
+	}
 });
