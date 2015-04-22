@@ -1,0 +1,25 @@
+<nav class="m-siteNavigation padding--small">
+	<a class="m-siteNavigation-logo" href="{{ site.baseurl }}/"></a>
+	<ul class="m-siteNavigation-list u-text--small u-listUnstyled u-listInline">
+		<li>
+			<a class="m-siteNavigation-link" href="{{ site.baseurl }}/">Home</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-link" href="{{ site.baseurl }}/work">Work</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-link" href="{{ site.baseurl }}/about">About</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-highlight" href="mailto:{{site.email}}">Contact Me</a>
+		</li>
+	</ul>
+
+	<div class="trigger u-hidden">
+		{% for page in site.pages %}
+			{% if page.title %}
+			<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+			{% endif %}
+		{% endfor %}
+	</div>
+</nav>

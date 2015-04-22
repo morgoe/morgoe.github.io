@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Morgan Carter - Product Design</title>
+	<meta name="description" content="Late last year I read Axiomatic CSS and Lobotomized Owls by Heydon Pickering, and I’ve now had the chance to put this into practice. I recommend reading the ...">
+
+	<link rel="stylesheet" href="/css/my.css">
+	<link rel="canonical" href="http://yourdomain.com/2015/04/22/true-skate.html">
+	<link rel="alternate" type="application/rss+xml" title="Morgan Carter - Product Design" href="http://yourdomain.com/feed.xml" />
+
+	<script>
+	(function(d) {
+		var config = {
+			kitId: 'jnt2rqo',
+			scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+</script>
+</head>
+
+	<body>
+
+		<nav class="m-siteNavigation padding--small">
+	<a class="m-siteNavigation-logo" href="/"></a>
+	<ul class="m-siteNavigation-list u-text--small u-listUnstyled u-listInline">
+		<li>
+			<a class="m-siteNavigation-link" href="/">Home</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-link" href="/work">Work</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-link" href="/about">About</a>
+		</li>
+		<li>
+			<a class="m-siteNavigation-highlight" href="mailto:morgancarter1@gmail.com">Contact Me</a>
+		</li>
+	</ul>
+
+	<div class="trigger u-hidden">
+		
+			
+			<a class="page-link" href="/about/">About</a>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<a class="page-link" href="/work/">Work</a>
+			
+		
+	</div>
+</nav>
+
+		<div class="container padding--large margin-large">
+			<div class="container--small">
+	<div class="u-textCenter">
+		<h1 class="post-title">True Skate</h1>
+		<h5 class="margin-none">Apr 22, 2015</h5>
+	</div>
+	
+	<p>Late last year I read <a href="http://alistapart.com/article/axiomatic-css-and-lobotomized-owls">Axiomatic CSS and Lobotomized Owls</a> by Heydon Pickering, and I’ve now had the chance to put this into practice. I recommend reading the article, but the gist of it is this:</p>
+
+<pre><code>* + * {
+    margin-top: 1.5em;
+}
+</code></pre>
+
+<p>They’re the lobotomized owls. </p>
+
+<p>Basically, anything that follows anything else, will have a margin-top. It’s the basis of this site, and I’ve also used it as the basis in <a href="http://deputy.com">Deputy 3</a>, which is a highly complex web app.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<h4 id="proportional-margins">Proportional margins</h4>
+
+<p>Right here, you’ve just seen one benefit of this little bit of code. See how the margin between this paragraph and the header above is smaller than the margin between the header and the preceding paragraph? It’s following basic Gestalt principles of proximity - the header belongs to this paragraph, not the one before it. I didn’t have to do anything there.</p>
+
+<p>I don’t have to manually style everything - writing H1’s to have a margin-top of 20px and margin-bottom of 10px, buttons to have a different margin (that’s also dependent on how big it is), a table has something else, a form has another, a row again. Everything is just done, and everything follows the vertical rhythm of the page.</p>
+
+<h4 id="nesting">Nesting</h4>
+
+<p>Consider a form:</p>
+
+<div class="row">
+	<div class="col-sm-6">
+		<form class="card padding--small">
+			<div class="form-group">
+				<label>Username</label>
+				<input class="form-control" type="text" />
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label>First name</label>
+					<input class="form-control" type="text" />
+				</div>
+				<div class="col-sm-6">
+					<label>Last name</label>
+					<input class="form-control" type="text" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Email address</label>
+				<input class="form-control" type="email" />
+			</div>
+			<div class="form-footer">
+				<button class="btn-default">Cancel</button>
+				<button class="btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+	<div class="col-sm-6">
+		<pre><code>&lt;form class="card padding--small"&gt;
+    &lt;div class="form-group"&gt;
+    	&lt;label&gt;Username&lt;/label&gt;
+    	&lt;input class="form-control" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group row"&gt;
+    	&lt;div class="col-sm-6"&gt;
+    		&lt;label&gt;First name&lt;/label&gt;
+    		&lt;input class="form-control" type="text"&gt;
+    	&lt;/div&gt;
+    	&lt;div class="col-sm-6"&gt;
+    		&lt;label&gt;Last name&lt;/label&gt;
+    		&lt;input class="form-control" type="text"&gt;
+    	&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+    	&lt;label&gt;Email address&lt;/label&gt;
+    	&lt;input class="form-control" type="email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-footer"&gt;
+    	&lt;button class="btn-default"&gt;Cancel&lt;/button&gt;
+    	&lt;button class="btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+	</div>
+</div>
+
+<h4 id="speed">Speed</h4>
+
+<p>As I mentioned previously, over at <a href="http://deputy.com">Deputy</a>, we’ve been redesigning and overhauling the web application. This meant upgrading from Bootstrap 2 to 3 (yes, the lobotomized owls play nicely with Bootstrap), moving the site from a min-width of 960px to a mobile-friendly one, and bringing the entire aesthetic of the product in line with the rest of the company. And to help me rewrite the CSS from scratch, I used Lobotomized Owls. Here’s a sneak peak of one of the simpler screens.</p>
+
+<p><img src="/images/lobotomized-owls/my-week.jpg" alt="Cat" /></p>
+
+<p>I want to emphasise that all of the vertical rhythm and spacing, for every single element on that screen, is handled by the owls. Every single aspect of the vertical rhythm of the entire app is set either with <code>* + *</code>, <code>* + .margin-compact</code> and <code>* + .margin-none</code>.</p>
+
+<p>This has been a pretty massive undertaking, but considering how massive it really is, we’ve done a really incredible job in getting it done so quickly. I have to say in part it’s due to these owls, plus a few other helper functions such as:</p>
+
+<pre><code>.padding {
+	padding: 0.75em 1.5em;
+}
+.padding--large {
+	padding: 1.5em 3em;
+}
+</code></pre>
+
+<h2 id="catches">Catches</h2>
+
+<h4 id="some-things-dont-want-a-top-margin">Some things don’t want a top-margin</h4>
+
+<p>If I’m laying out a grid, I don’t want the second column in my grid (or the 3rd, 4th) to have a top-margin. So we need to add:</p>
+
+<pre><code>.col-xs-1, col-xs-2, ... {
+	margin-top: 0;
+}
+</code></pre>
+
+<p>Another example is having inline buttons, as in my form above. Sometimes, this is possible to control with certain classes (like .form-footer), having child buttons have no margin top. </p>
+
+<pre><code>.form-footer &gt; button {
+    margin-top: 0;
+}
+</code></pre>
+
+<p>But other times this isn’t feasable. I haven’t found a clean way to work around this that works in all situations. For these times, I have this bit of code:</p>
+
+<pre><code>.margin-none {
+    margin-top: 0;
+}
+</code></pre>
+
+<p>It can lead to dirty HTML, so if anyone has a good way to solve this issue, please let me know!</p>
+
+<h4 id="sometimes-you-want-a-smaller-margin">Sometimes you want a smaller margin</h4>
+
+<p>What if you don’t want a 24px margin, but just a 12px margin? That’s easy with this bit of code:</p>
+
+<pre><code>* + .margin-compact {
+    margin-top: 0.75em;
+}
+</code></pre>
+
+<p>However, again this can lead to dirty HTML:</p>
+
+<div class="row">
+	<div class="col-sm-6">
+		<form class="card padding--small">
+	        <div class="margin-compact">This</div>
+	        <div class="margin-compact">content</div>
+	        <div class="margin-compact">is</div>
+	        <div class="margin-compact">closer</div>
+	        <div class="margin-compact">together</div>
+	    </form>
+	</div>
+	<div class="col-sm-6">
+		<pre><code>&lt;form class="card padding--small"&gt;
+    &lt;div class="margin-compact"&gt;This&lt;/div&gt;
+    &lt;div class="margin-compact"&gt;content&lt;/div&gt;
+    &lt;div class="margin-compact"&gt;is&lt;/div&gt;
+    &lt;div class="margin-compact"&gt;closer&lt;/div&gt;
+    &lt;div class="margin-compact"&gt;together&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+	</div>
+</div>
+
+<p>Notice you don’t have to worry about the first div having a <code>.margin-compact</code>, because it’ll only trigger if it’s not the first child. However, it can get messy.</p>
+
+<p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+
+
+
+	<div class="u-text--center margin-large margin-bottom">
+		<a class="btn">See more work</a>
+	</div>
+</div>
+		</div>
+
+		<!-- <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Carter - Product Design</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Morgan Carter - Product Design</li>
+          <li><a href="mailto:morgancarter1@gmail.com">morgancarter1@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/morgoe">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">morgoe</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/morgoe876">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">morgoe876</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+ -->
+
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+html {
+	font-family: "Soleil";
+	font-size: $font_size;
+	line-height: $line_height;
+	color: $black_light;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Futura PT";
+}
+h1 {
+	font-size: 4rem;
+	line-height: 1;
+	color: $black;
+	text-align: center;
+}
+h2 {
+	font-size: 2rem;
+	line-height: 1;
+	color: $black;
+}
+h3 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: $black;
+}
+h4 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: $black;
+}
+h5 {
+	font-size: $rhythm / 2;
+	font-weight: normal;
+	color: $gray;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	+ p {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 1023px) {
+	html {
+		font-size: $font_size--mobile;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3,
+	h4 {
+		font-size: 1.25rem;
+	}
+}

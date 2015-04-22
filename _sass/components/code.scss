@@ -1,0 +1,12 @@
+code {
+	background: #eee;
+	color: $black_light;
+	padding: 3px 4px;
+}
+pre {
+	background: #eee;
+	padding: 0.35em 0.75em;
+	code {
+		padding: 0;
+	}
+}

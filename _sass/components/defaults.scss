@@ -1,0 +1,16 @@
+p {
+	color: $black_light;
+}
+a {
+	color: $blue;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		border-bottom: 2px solid;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+	@include noSelect();
+}

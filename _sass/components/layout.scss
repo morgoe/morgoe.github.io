@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+* + * {
+	margin-top: $rhythm;
+}
+* + .margin-large {
+	margin-top: $rhythm * 2;
+}
+* + .margin-compact {
+	margin-top: $rhythm / 2;
+}
+* + .margin-none {
+	margin-top: 0;
+}
+.margin-bottom {
+	margin-bottom: $rhythm;
+}
+
+.container,
+.container--small {
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	max-width: 1440px;
+}
+.container--small {
+	max-width: 768px;
+}
+.padding {
+	padding: $rhythm;
+}
+.padding--large {
+	padding: $rhythm $rhythm * 2;
+}
+.padding--small {
+	padding: $rhythm / 2;
+}
+@media (max-width: 767px) {
+	.padding--large {
+		padding: $rhythm;
+	}
+	.padding,
+	.padding--small {
+		padding: $rhythm / 2;
+	}
+}

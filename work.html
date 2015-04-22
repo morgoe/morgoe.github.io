@@ -1,0 +1,30 @@
+---
+layout: bare
+title:  "Work"
+categories: jekyll update
+permalink: /work/
+---
+
+<div class="container padding--large margin-large">
+	<h1>{{ page.title }}</h1>
+</div>
+
+<ul class="u-listUnstyled m-work-list">
+	{% for post in site.posts %}
+		<li class="m-work-item clearfix padding">
+			<div class="col-sm-4">
+				<p class="u-text--small u-color--gray">{{ post.role }}</p>
+				<h2 class="m-work-title">{{ post.title }}</h2>
+				<p>{{ post.description }}</p>
+
+				{% if post.is_blog %}
+					<a class="btn">View Case Study</a>
+				{% endif %}
+				{% if post.link %}
+					<a class="btn">Visit Site</a>
+				{% endif %}
+			</div>
+			<div class="col-sm-8 m-work-image" style="background-image: url(/images/work/{{post.image}})"></div>
+		</li>
+	{% endfor %}
+</ul>

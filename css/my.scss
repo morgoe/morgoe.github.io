@@ -1,0 +1,101 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// General Settings
+@import 'general/variables';
+@import 'general/reset';
+@import 'general/grid';
+@import 'general/mixins';
+@import 'general/typography';
+
+// Components
+@import 'components/layout';
+@import 'components/defaults';
+@import 'components/buttons';
+@import 'components/code';
+
+// Modules
+@import 'modules/home';
+@import 'modules/siteNavigation';
+@import 'modules/work';
+
+// Utilities
+@import 'utilities/color';
+@import 'utilities/display';
+@import 'utilities/layout';
+@import 'utilities/typography';
+
+
+
+// .tabs {
+// 	list-style: none;
+// 	@include clearfix();
+// 	border-bottom: 1px solid $gray_light;
+// 	> li {
+// 		position: relative;
+// 		float: left;
+// 		+ li {
+// 			margin-top: 0;
+// 			margin-left: 0.75em;
+// 		}
+// 		&:after {
+// 			display: none;
+// 			content: "";
+// 			position: absolute;
+// 			bottom: -1px;
+// 			left: 0;
+// 			right: 0;
+// 			height: 1px;
+// 			background: $black;
+// 		}
+// 		&.active {
+// 			font-weight: bold;
+// 		}
+// 		&:hover:after,
+// 		&.active:after {
+// 			display: block;
+// 		}
+// 		> a {
+// 			display: block;
+// 			padding: 6px 12px;
+// 			color: inherit;
+// 			&:hover {
+// 				border: none;
+// 			}
+// 		}
+// 	}
+// }
+// .tabs-content {
+// 	margin-top: 0;
+// }
+
+
+
+
+
+// .modal {
+// 	// display: none;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	width: 100%;
+// 	max-width: 768px;
+// 	margin: 30px auto;
+// 	background: white;
+// 	box-shadow: 0 50px 100px rgba(black, 0.3), 0 0 50px rgba(black, 0.15), 0 0 0 10000px rgba(black, 0.1);
+// 	border-radius: $borderRadius;
+// 	overflow: hidden;
+// }
+// .modal-header {
+// 	background: $black;
+// 	color: white;
+// 	padding: 0.75em 1.5em;
+// }
+// .modal-body {
+// 	margin-top: 0;
+// 	padding: 1.5em;
+// }
