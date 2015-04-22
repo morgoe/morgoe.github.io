@@ -10,25 +10,38 @@
 	height: 24px;
 	background: white;
 	border: 2px solid $black;
+	&:hover {
+		border-color: $black_light;
+	}
 }
 .m-siteNavigation-list {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 2px;
+	margin-top: 3px;
 	> li {
 		margin-left: $rhythm / 2;
 	}
 }
 .m-siteNavigation-link {
 	color: $gray_light;
+	border-color: transparent;
 	&:hover {
-		color: $gray;
-		border-color: $gray_light;
+		color: $black_lightest;
+		border-color: rgba($black_lightest, 0.33);
+	}
+	&.active {
+		color: $black_lightest;
+		&:hover {
+			border: none;
+			cursor: default;
+		}
 	}
 }
 .m-siteNavigation-highlight {
+	color: $blue;
+	border-color: transparent;
 	&:hover {
-		border-color: rgba($blue, 0.5);
+		// border-color: rgba($blue, 0.5);
 	}
 }
 

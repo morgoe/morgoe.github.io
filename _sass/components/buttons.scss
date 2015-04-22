@@ -1,9 +1,11 @@
 .btn {
 	font-size: 1.5rem;
+	line-height: 1;
 	display: inline-block;
+	color: $blue;
 	border-bottom: 3px solid rgba($blue, 0.5);
 	text-transform: none;
 	&:hover {
-		border-bottom: 3px solid;
+		border-color: $blue;
 	}
 }

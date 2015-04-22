@@ -1,0 +1,90 @@
+.m-heroText-hero {
+	margin-top: $rhythm;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+	> div {
+		display: table-cell;
+		padding-left: $rhythm / 2;
+		padding-right: $rhythm / 2;
+		&:first-child {
+			vertical-align: top;
+		}
+		&:last-child {
+			vertical-align: bottom;
+		}
+	}
+}
+.m-heroText-hero--home {
+	margin-top: $rhythm * 3.5;
+}
+.m-heroText-hello {
+	position: absolute;
+	margin-top: -$rhythm;
+	margin-left: $rhythm / 2;
+}
+.m-heroText-hello--aLittleBit {
+	margin-left: $rhythm;
+}
+.m-heroText-title {
+	margin-top: 0;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 5rem;
+	line-height: 4rem;
+}
+.m-heroText-paragraph {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-bottom: -1px;
+	text-align: justify;
+	a {
+		border-width: 3px;
+	}
+}
+.m-heroText-br {
+	display: none;
+}
+
+@media (max-width: 1023px) {
+	.m-heroText-hero {
+		> div {
+			display: table;
+			margin-top: 0;
+		}
+	}
+	.m-heroText-title,
+	.m-heroText-paragraph {
+		text-align: left;
+	}
+	.m-heroText-br {
+		display: inline;
+	}
+}
+@media (max-width: 767px) {
+	.m-heroText-hero {
+		margin-top: 0;
+		> div {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+		}
+	}
+	.m-heroText-hello,
+	.m-heroText-title,
+	.m-heroText-paragraph {
+		// text-align: center;
+	}
+	.m-heroText-title {
+		font-size: 3rem;
+		line-height: 2.5rem;
+	}
+	.m-heroText-paragraph {
+		font-size: 1rem;
+		line-height: $rhythm;
+	}
+	.m-heroText-hello--aLittleBit {
+		margin-left: $rhythm / 2;
+	}
+}
