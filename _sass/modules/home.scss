@@ -4,12 +4,15 @@
 	left: 0;
 	bottom: 0;
 	right: 25%;
-	z-index: 1;
+}
+.m-home-wrapper--invert {
+	display: none;
 }
 .m-home-me {
 	width: 25%;
 	background: $blue;
 	background: url('/assets/images/home/photo.jpg');
+	background: url('/assets/images/home/google.jpg');
 	// background: url('https://d13yacurqjgara.cloudfront.net/users/6084/screenshots/1984760/assemble.png');
 	background-size: cover;
 	background-position: 55% 20%;
@@ -34,8 +37,22 @@
 	.m-home-wrapper {
 		right: 0;
 	}
+	.m-home-wrapper--invert {
+		display: block;
+		width: 100vw;
+		top: 3rem;
+		left: auto;
+		z-index: 1;
+		.m-heroText-hello,
+		.m-heroText-title,
+		.m-heroText-paragraph {
+			color: white;
+		}
+	}
 	.m-home-me {
-		opacity: 0.25;
+		overflow: hidden;
+		// opacity: 0.25;
+		z-index: 1;
 		width: 33%;
 	}
 }

@@ -1,10 +1,21 @@
 .m-work-image {
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	box-shadow: 0 2px 5px rgba(black, 0.05), 0 14px 54px rgba(black, 0.15);
-	height: 85vh;
+	height: 50vh;
 }
+// .m-work-imageWrapper {
+// 	box-shadow: 0 2px 5px rgba(black, 0.05), 0 14px 54px rgba(black, 0.15);
+// 	height: 50vh;
+// 	padding: 0;
+// 	overflow: hidden;
+// 	img {
+// 		display: block;
+// 		width: 100%;
+// 	}
+// }
 .m-work-title {
 	margin-top: 0;
+	margin-bottom: $rhythm / 4;
 	font-size: 3rem;
 }

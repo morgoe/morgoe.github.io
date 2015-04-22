@@ -1,11 +1,16 @@
 ---
 layout:        post
+date:          2015-01-15
+
 title:         "Deputy 3"
 subtitle:      "Web App Redesign"
-date:          2015-04-23 21:46:16
-categories:    jekyll update
-is_blog:       true
+
 thumbnail:     deputy.png
+image:         deputy-3.png
+
+is_blog:       true
+role:          "UX/UI Design, Visual Direction & Coding"
+description:   "The Stackla Admin Portal allows clients to aggregate and curate their content, and edit their displays. The UX has been constantly improved with user testing, and is supported by a minimal design focusing on content and small bursts of colour."
 ---
 
 Late last year I read [Axiomatic CSS and Lobotomized Owls](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) by Heydon Pickering, and I've now had the chance to put this into practice. I recommend reading the article, but the gist of it is this:

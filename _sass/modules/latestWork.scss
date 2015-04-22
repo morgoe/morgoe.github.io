@@ -1,5 +1,6 @@
 .m-latestWork {
 	position: absolute;
+	z-index: 2;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -16,8 +17,10 @@
 	color: inherit;
 	border-radius: $borderRadius;
 	border: none;
+	transition: all 0.25s;
 	&:hover {
-		// background: rgba($blue, 0.1);
+		transform: scale(1.05);
+		transition: all 0.5s;
 		.m-latestWork-image {
 			transform: rotate(9deg);
 			transition: all 0.5s;

@@ -1,14 +1,16 @@
 ---
 layout:        post
-layout:        post
-title:         "True Skate"
+date:          2015-01-12
+
+title:         "Manchester United"
 subtitle:      "Social Microsite"
-thumbnail:     trueskate.png
-image:         trueskate.jpg
-date:          2015-04-22
-link:          http://social.trueskate.com/
-role:          "Web Design & Coding"
-description:   "True Skate is the #1 game on the app store in 70 countries. We used Stackla to create a microsite that would promote the brand's social media, engage users to post their own content, and drive sales."
+
+thumbnail:     manchester.png
+image:         manchester.jpg
+
+link:          http://social.manutd.com/
+role:          "Front-end Dev"
+description:   "The site allows fans to see all the content being produced by the club in one place across all their major accounts. It's a national site, serving multiple languages at once."
 ---
 
 Late last year I read [Axiomatic CSS and Lobotomized Owls](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) by Heydon Pickering, and I've now had the chance to put this into practice. I recommend reading the article, but the gist of it is this:

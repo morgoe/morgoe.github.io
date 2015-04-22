@@ -2,17 +2,16 @@ p {
 	color: $black_light;
 }
 a {
-	color: $blue;
-	color: inherit;
+	position: relative;
 	text-decoration: none;
 	cursor: pointer;
+	color: inherit;
 	border-bottom: 2px solid rgba($blue, 0.33);
 	&:hover {
 		color: $blue;
 		border-color: $blue;
 	}
 	&:active {
-		position: relative;
 		top: 1px;
 	}
 	@include noSelect();
