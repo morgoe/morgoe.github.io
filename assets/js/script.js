@@ -6,3 +6,19 @@
 
 /* Fast Click Initialise */
 FastClick.attach(document.body);
+
+
+/* Home */
+if ($('html').attr('id') == 'home') {
+	function animateIn() {
+		$('html').addClass('in');
+	}
+	$(window).resize(function() {
+		var h = $(window).height();
+		h -= $('.js-verticalAlign').height() / 2;
+		h -= $('.m-siteNavigation').outerHeight();
+		h -= $('.m-latestWork').outerHeight();
+		$('.js-verticalAlign').css('margin-top', h/2);
+		animateIn();
+	}).resize();
+}

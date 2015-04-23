@@ -1,5 +1,5 @@
 html {
-	font-family: "Soleil";
+	font-family: $font_body;
 	font-size: $font_size;
 	line-height: $line_height;
 	color: $black_light;
@@ -8,7 +8,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "Futura PT";
+	font-family: $font_header;
 }
 h1 {
 	font-size: 4rem;

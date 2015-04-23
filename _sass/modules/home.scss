@@ -11,9 +11,7 @@
 .m-home-me {
 	width: 25%;
 	background: $blue;
-	background: url('/assets/images/home/photo.jpg');
-	background: url('/assets/images/home/google.jpg');
-	// background: url('https://d13yacurqjgara.cloudfront.net/users/6084/screenshots/1984760/assemble.png');
+	background: url('/assets/images/home/me.jpg');
 	background-size: cover;
 	background-position: 55% 20%;
 	margin-top: 0;
@@ -21,6 +19,47 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
+}
+
+
+/* Animation */
+#home {
+	.m-heroText-hello,
+	.m-heroText-title,
+	.m-heroText-paragraph,
+	.m-home-me,
+	.m-latestWork,
+	.m-siteNavigation {
+		opacity: 0;
+	}
+	.m-heroText-hello {
+		transition: opacity 1s;
+	}
+	.m-heroText-title {
+		transition: opacity 1.25s 0.1s;
+	}
+	.m-heroText-paragraph {
+		transition: opacity 1.5s 0.2s;
+	}
+	.m-home-me {
+		transition: opacity 2s 0.3s;
+	}
+	.m-latestWork {
+		transition: opacity 2.5s 0.4s;
+	}
+	.m-siteNavigation {
+		transition: opacity 3s 0.5s;
+	}
+	&.in {
+		.m-heroText-hello,
+		.m-heroText-title,
+		.m-heroText-paragraph,
+		.m-home-me,
+		.m-latestWork,
+		.m-siteNavigation {
+			opacity: 1;
+		}
+	}
 }
 
 
@@ -40,7 +79,6 @@
 	.m-home-wrapper--invert {
 		display: block;
 		width: 100vw;
-		top: 3rem;
 		left: auto;
 		z-index: 1;
 		.m-heroText-hello,

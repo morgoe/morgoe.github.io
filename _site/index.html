@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="home">
 
 	<head>
 	<meta charset="utf-8">
@@ -8,20 +8,21 @@
 
 	<title>Morgan Carter - Product Design</title>
 	<meta name="description" content="I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 
 	<link rel="stylesheet" href="/assets/css/my.css">
 	<link rel="canonical" href="http://yourdomain.com/">
 	<link rel="alternate" type="application/rss+xml" title="Morgan Carter - Product Design" href="http://yourdomain.com/feed.xml" />
 
 	<script>
-	(function(d) {
-		var config = {
-			kitId: 'jnt2rqo',
-			scriptTimeout: 3000
-		},
-		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-	})(document);
-</script>
+		(function(d) {
+			var config = {
+				kitId: 'jnt2rqo',
+				scriptTimeout: 3000
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	</script>
 </head>
 
 
@@ -62,8 +63,8 @@
 	</div>
 </nav>
 
-		<div class="m-home-wrapper padding margin-large">
-	<div class="m-heroText-hero m-heroText-hero--home row">
+		<div class="m-home-wrapper padding margin-none">
+	<div class="m-heroText-hero m-heroText-hero--home row js-verticalAlign">
 		<div>
 			<p class="m-heroText-hello">Hi, I'm</p>
 			<h1 class="m-heroText-title">Morgan Carter</h1>
@@ -106,7 +107,7 @@
 </div>
 <div class="m-home-me">
 	<div class="m-home-wrapper m-home-wrapper--invert padding">
-		<div class="m-heroText-hero m-heroText-hero--home row">
+		<div class="m-heroText-hero m-heroText-hero--home row js-verticalAlign">
 			<div>
 				<p class="m-heroText-hello">Hi, I'm</p>
 				<h1 class="m-heroText-title">Morgan Carter</h1>
@@ -120,7 +121,8 @@
 
 
 
-		<script src="/assets/js/fastclick.js"></script>
+		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="/assets/js/fastclick.js"></script>
 <script src="/assets/js/script.js"></script>
 	</body>
 

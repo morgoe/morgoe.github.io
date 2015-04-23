@@ -6,19 +6,19 @@
 	box-sizing: border-box;
 }
 * + * {
-	margin-top: $rhythm;
+	margin-top: $line_height * 1em;
 }
 * + .margin-large {
-	margin-top: $rhythm * 2;
+	margin-top: $line_height * 2em;
 }
 * + .margin-compact {
-	margin-top: $rhythm / 2;
+	margin-top: $line_height / 2 * 1em;
 }
 * + .margin-none {
 	margin-top: 0;
 }
 .margin-bottom {
-	margin-bottom: $rhythm;
+	margin-bottom: $line_height * 1em;
 }
 
 .container,
@@ -36,7 +36,7 @@
 	padding: $rhythm;
 }
 .padding--large {
-	padding: $rhythm $rhythm * 2;
+	padding: $rhythm * 2;
 }
 .padding--small {
 	padding: $rhythm / 2;
