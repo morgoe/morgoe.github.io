@@ -1,0 +1,17 @@
+---
+published:     false
+layout:        post
+date:          2015-01-15
+categories:    
+- work
+
+title:         "Deputy 3"
+subtitle:      "Web App Redesign"
+
+thumbnail:     deputy.png
+image:         deputy-3.png
+
+is_caseStudy:  true
+role:          "UX/UI Design, Visual Direction & Coding"
+description:   "The Stackla Admin Portal allows clients to aggregate and curate their content, and edit their displays. The UX has been constantly improved with user testing, and is supported by a minimal design focusing on content and small bursts of colour."
+---

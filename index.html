@@ -4,7 +4,7 @@ siteNav: home
 body-id: home
 ---
 
-<div class="m-home-wrapper padding margin-none">
+<div class="m-home-wrapper padding margin--none">
 	<div class="m-heroText-hero m-heroText-hero--home row js-verticalAlign">
 		<div>
 			<p class="m-heroText-hello">Hi, I'm</p>
@@ -15,15 +15,15 @@ body-id: home
 		</div>
 	</div>
 
-	<div class="m-latestWork container--small">
+	<div class="m-latestWork">
 		<h4 class="m-latestWork-header">Latest Works</h4>
-		<ul class="u-listUnstyled margin-none row m-latestWork-list">
-			{% for post in site.posts limit:3 %}
+		<ul class="u-listUnstyled margin--none row m-latestWork-list">
+			{% for post in site.categories['work'] limit:3 %}
 				<li class="col-xs-6 col-sm-4 m-latestWork-item">
 					<a class="m-latestWork-work" href="{% if post.is_blog %}{{ post.url | prepend: site.baseurl }}{% endif %}{% if post.link %}{{post.link}}{% endif %}">
 						<img src="/assets/images/work/thumbnails/{{post.thumbnail}}" class="m-latestWork-image">
 						<strong>{{ post.title }}</strong>
-						<p class="m-latestWork-subtitle margin-none u-text--small">{{ post.subtitle }}</p>
+						<p class="m-latestWork-subtitle margin--none u-text--small">{{ post.subtitle }}</p>
 					</a>
 				</li>
 			{% endfor %}

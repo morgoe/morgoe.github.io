@@ -6,19 +6,19 @@ categories: jekyll update
 permalink: /work/
 ---
 
-<div class="container padding--large margin-none">
-	<h1>{{ page.title }}</h1>
+<div class="container padding--lg margin--none">
+	<h1 class="m-page-title">{{ page.title }}</h1>
 </div>
 
-<ul class="u-listUnstyled m-work-list">
-	{% for post in site.posts %}
-		<li class="m-work-item row padding">
+<ul class="u-listUnstyled m-work-list m-page-content padding">
+	{% for post in site.categories['work'] %}
+		<li class="m-work-item row margin--xl">
 			<div class="col-sm-4">
 				<p class="u-text--small u-color--gray">{{ post.role }}</p>
 				<h2 class="m-work-title">{{ post.title }}</h2>
 				<p>{{ post.description }}</p>
 
-				{% if post.is_blog %}
+				{% if post.is_caseStudy %}
 					<a class="btn" href="{{ post.url | prepend: site.baseurl }}">View Case Study</a>
 				{% endif %}
 				{% if post.link %}

@@ -8,13 +8,16 @@
 * + * {
 	margin-top: $line_height * 1em;
 }
-* + .margin-large {
+* + .margin--xl {
+	margin-top: $line_height * 3em;
+}
+* + .margin--lg {
 	margin-top: $line_height * 2em;
 }
-* + .margin-compact {
+* + .margin--sm {
 	margin-top: $line_height / 2 * 1em;
 }
-* + .margin-none {
+* + .margin--none {
 	margin-top: 0;
 }
 .margin-bottom {
@@ -22,31 +25,31 @@
 }
 
 .container,
-.container--small {
+.container--sm {
 	margin-left: auto;
 	margin-right: auto;
 }
 .container {
 	max-width: 1440px;
 }
-.container--small {
+.container--sm {
 	max-width: 768px;
 }
 .padding {
 	padding: $rhythm;
 }
-.padding--large {
+.padding--lg {
 	padding: $rhythm * 2;
 }
-.padding--small {
+.padding--sm {
 	padding: $rhythm / 2;
 }
 @media (max-width: 767px) {
-	.padding--large {
+	.padding--lg {
 		padding: $rhythm;
 	}
 	.padding,
-	.padding--small {
+	.padding--sm {
 		padding: $rhythm / 2;
 	}
 }
