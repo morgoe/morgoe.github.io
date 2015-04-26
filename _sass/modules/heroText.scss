@@ -60,6 +60,9 @@
 			margin-top: 0;
 		}
 	}
+	.m-heroText-hello {
+		margin-left: 0.5rem;
+	}
 	.m-heroText-title,
 	.m-heroText-paragraph {
 		text-align: left;
@@ -78,10 +81,8 @@
 			padding: 0;
 		}
 	}
-	.m-heroText-hello,
-	.m-heroText-title,
-	.m-heroText-paragraph {
-		// text-align: center;
+	.m-heroText-hello--aLittleBit {
+		margin-left: $rhythm / 2;
 	}
 	.m-heroText-title {
 		font-size: 3rem;
@@ -90,11 +91,5 @@
 	.m-heroText-paragraph {
 		font-size: 1rem;
 		line-height: $rhythm;
-	}
-	.m-heroText-hello {
-		margin-left: 0.5rem;
-	}
-	.m-heroText-hello--aLittleBit {
-		margin-left: $rhythm / 2;
 	}
 }

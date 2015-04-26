@@ -10,7 +10,7 @@ body-id: home
 	<div class="m-latestWork hidden">
 		<h4 class="m-latestWork-header">Latest Works</h4>
 		<ul class="u-listUnstyled margin--none row m-latestWork-list">
-			{% for post in site.categories['work'] limit:3 %}
+			{% for post in site.categories['work'] limit:0 %}
 				<li class="col-xs-6 col-sm-4 m-latestWork-item">
 					<a class="m-latestWork-work" href="{% if post.is_blog %}{{ post.url | prepend: site.baseurl }}{% endif %}{% if post.link %}{{post.link}}{% endif %}">
 						<img src="/assets/images/work/thumbnails/{{post.thumbnail}}" class="m-latestWork-image">
