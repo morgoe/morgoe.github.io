@@ -12,17 +12,17 @@ permalink: /work/
 
 <ul class="u-listUnstyled m-work-list m-page-content padding">
 	{% for post in site.categories['work'] %}
-		<li class="m-work-item row margin--xl">
+		<li class="m-work-item row">
 			<div class="col-sm-4">
 				<p class="u-text--small u-color--gray">{{ post.role }}</p>
 				<h2 class="m-work-title">{{ post.title }}</h2>
 				<p>{{ post.description }}</p>
 
 				{% if post.is_caseStudy %}
-					<a class="btn" href="{{ post.url | prepend: site.baseurl }}">View Case Study</a>
+					<a class="btn margin-sm" href="{{ post.url | prepend: site.baseurl }}">View Case Study</a>
 				{% endif %}
 				{% if post.link %}
-					<a class="btn" href="{{post.link}}" target="_blank">Visit Site</a>
+					<a class="btn margin-sm" href="{{post.link}}" target="_blank">Visit Site</a>
 				{% endif %}
 			</div>
 			<div class="col-sm-8">

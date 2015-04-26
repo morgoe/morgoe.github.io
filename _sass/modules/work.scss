@@ -1,4 +1,10 @@
+.m-work-item {
+	+ .m-work-item {
+		margin-top: 4rem;
+	}
+}
 .m-work-image {
+	background-color: $off_white;
 	background-size: cover;
 	background-position: top center;
 	box-shadow: 0 2px 5px rgba(black, 0.05), 0 14px 54px rgba(black, 0.15);
@@ -17,5 +23,15 @@
 .m-work-title {
 	margin-top: 0;
 	margin-bottom: $rhythm / 4;
-	font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+	.m-work-item {
+		+ .m-work-item {
+			margin-top: 1rem;
+		}
+		@include gradient(white, $off_white);
+		@include gradient($off_white, white);
+		padding-bottom: 1rem;
+	}
 }

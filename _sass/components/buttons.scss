@@ -9,3 +9,10 @@
 		border-color: $blue;
 	}
 }
+
+
+@media (max-width: 767px) {
+	.btn {
+		font-size: 1.25rem;
+	}
+}

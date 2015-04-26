@@ -12,10 +12,12 @@ FastClick.attach(document.body);
 if ($('html').attr('id') == 'home') {
 	$(window).resize(function() {
 		var h = $(window).height();
-		h -= $('.js-verticalAlign:visible').height() / 2;
-		h -= $('.m-siteNavigation:visible').outerHeight();
+		h -= $('.js-verticalAlign:visible').height();
 		h -= $('.m-latestWork:visible').outerHeight();
-		$('.js-verticalAlign').css('margin-top', h/2);
+		h -= $('.m-siteNavigation:visible').outerHeight();
+		h /= 2;
+		// h += $('.m-siteNavigation:visible').outerHeight();
+		$('.js-verticalAlign').css('margin-top', h);
 	}).resize();
 }
 $('html').addClass('in');

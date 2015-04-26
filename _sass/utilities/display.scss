@@ -1,9 +1,9 @@
-.u-hidden {
+.hidden {
 	display: none;
 }
 
 @media (max-width: 767px) {
-	.u-hidden--mobile {
+	.hidden--sm {
 		display: none !important;
 	}
 }
