@@ -5,16 +5,7 @@ body-id: home
 ---
 
 <div class="m-home-wrapper padding margin--none">
-	<div class="m-heroText-hero m-heroText-hero--home row js-verticalAlign">
-		<div>
-			<p class="m-heroText-hello">Hi, I'm</p>
-			<h1 class="m-heroText-title">Morgan Carter</h1>
-		</div>
-		<div>
-			<p class="m-heroText-paragraph"><br>I’m a product designer based in Sydney.<br class="m-heroText-br"> I turn complex ideas into intuitive, beautiful products.</p>
-			<a class="btn" href="/work">See my work</a>
-		</div>
-	</div>
+	{% include me.html %}
 
 	<div class="m-latestWork hidden">
 		<h4 class="m-latestWork-header">Latest Works</h4>
@@ -31,18 +22,9 @@ body-id: home
 		</ul>
 	</div>
 </div>
-<div class="m-home-me">
+<div class="m-home-me m-animation-5">
 	<div class="m-home-wrapper m-home-wrapper--invert padding">
-		<div class="m-heroText-hero m-heroText-hero--home row js-verticalAlign">
-			<div>
-				<p class="m-heroText-hello">Hi, I'm</p>
-				<h1 class="m-heroText-title">Morgan Carter</h1>
-			</div>
-			<div>
-				<p class="m-heroText-paragraph"><br>I’m a product designer based in Sydney.<br class="m-heroText-br"> I turn complex ideas into intuitive, beautiful products.</p>
-				<a class="btn" href="/work">See my work</a>
-			</div>
-		</div>
+		{% include me.html %}
 	</div>
 </div>
 

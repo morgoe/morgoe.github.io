@@ -1,42 +1,41 @@
-.m-page-title,
-.m-heroText-hello,
-.m-heroText-title,
-.m-page-content,
-.m-heroText-paragraph,
-.m-home-me,
-.m-latestWork,
-.m-siteNavigation {
+.m-animation-1,
+.m-animation-2,
+.m-animation-3,
+.m-animation-4,
+.m-animation-5,
+.m-animation-6,
+.m-animation-7 {
 	opacity: 0;
 }
-.m-page-title,
-.m-heroText-hello {
+.m-animation-1 {
 	transition: opacity 1s;
 }
-.m-page-content,
-.m-heroText-title {
+.m-animation-2 {
 	transition: opacity 1.25s 0.1s;
 }
-.m-heroText-paragraph {
+.m-animation-3 {
 	transition: opacity 1.5s 0.2s;
 }
-.m-home-me {
+.m-animation-4 {
 	transition: opacity 2s 0.3s;
 }
-.m-latestWork {
+.m-animation-5 {
 	transition: opacity 2.5s 0.4s;
 }
-.m-siteNavigation {
+.m-animation-6 {
 	transition: opacity 3s 0.5s;
 }
+.m-animation-7 {
+	transition: opacity 3.5s 0.6s;
+}
 .in {
-	.m-page-title,
-	.m-heroText-hello,
-	.m-heroText-title,
-	.m-page-content,
-	.m-heroText-paragraph,
-	.m-home-me,
-	.m-latestWork,
-	.m-siteNavigation {
+	.m-animation-1,
+	.m-animation-2,
+	.m-animation-3,
+	.m-animation-4,
+	.m-animation-5,
+	.m-animation-6,
+	.m-animation-7 {
 		opacity: 1;
 	}
 }
