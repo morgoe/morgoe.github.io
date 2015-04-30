@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html {% if page.body-id %}id="{{ page.body-id }}"{% endif %}>
+<html>
 
 	{% include head.html %}
 
-	<body>
+	<body {% if page.body-id %}id="{{ page.body-id }}"{% endif %}>
 		{% include header.html %}
 
 		{{ content }}

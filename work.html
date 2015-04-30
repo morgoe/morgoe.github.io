@@ -19,10 +19,10 @@ permalink: /work/
 				<p>{{ post.description }}</p>
 
 				{% if post.is_caseStudy %}
-					<a class="btn margin-sm" href="{{ post.url | prepend: site.baseurl }}">View Case Study</a>
+					<a class="btn margin--sm" href="{{ post.url | prepend: site.baseurl }}" data-text="View Case Study"></a>
 				{% endif %}
 				{% if post.link %}
-					<a class="btn margin-sm" href="{{post.link}}" target="_blank">Visit Site</a>
+					<a class="btn margin--sm" href="{{post.link}}" target="_blank" data-text="Visit Site"></a>
 				{% endif %}
 			</div>
 			<div class="col-sm-8">
@@ -31,3 +31,7 @@ permalink: /work/
 		</li>
 	{% endfor %}
 </ul>
+
+<a class="btn-footer" href="mailto:morgancarter1@gmail.com">
+	<span class="btn" data-text="Contact Me"></span>
+</a>

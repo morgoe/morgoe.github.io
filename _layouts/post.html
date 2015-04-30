@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<div class="container--sm">
-	<div class="u-textCenter">
-		<h1 class="m-page-title">{{ page.title }}</h1>
-		<h5 class="u-text--center margin--none hidden">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
-	</div>
+<div class="padding--lg margin--none">
+	<div class="container--sm">
+		<div class="u-textCenter">
+			<h1 class="m-page-title">{{ page.title }}</h1>
+			<h5 class="u-text--center margin--none hidden">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
+		</div>
 
-	<div class="m-page-content">
-		{{ content }}
-	</div>
-
-	<div class="u-text--center margin--lg margin-bottom">
-		<a class="btn" href="/work/">See more work</a>
+		<div class="m-page-content">
+			{{ content }}
+		</div>
 	</div>
 </div>
+
+<a class="btn-footer" href="/work/">
+	<span class="btn" data-text="See more work"></span>
+</a>

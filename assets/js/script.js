@@ -8,16 +8,41 @@
 FastClick.attach(document.body);
 
 
-/* Home */
-if ($('html').attr('id') == 'home') {
-	$(window).resize(function() {
-		var h = $(window).height();
-		h -= $('.js-verticalAlign:visible').height();
-		h -= $('.m-latestWork:visible').outerHeight();
-		h -= $('.m-siteNavigation:visible').outerHeight();
-		h /= 2;
-		// h += $('.m-siteNavigation:visible').outerHeight();
-		$('.js-verticalAlign').css('margin-top', h);
-	}).resize();
+/* Instant Click Initialise */
+InstantClick.init();
+
+
+/* Centre Home Hero Text */
+function centreHomeHero() {
+	var h = $(window).height();
+	h -= $('.js-verticalAlign:visible').height();
+	h -= $('.m-latestWork:visible').outerHeight();
+	h -= $('.m-siteNavigation:visible').outerHeight();
+	h /= 2;
+	// h += $('.m-siteNavigation:visible').outerHeight();
+	$('.js-verticalAlign').css('margin-top', h);
 }
-$('html').addClass('in');
+
+$(window).resize(function() {
+	if ($('body').attr('id') == 'home') {
+		centreHomeHero();
+	}
+}).resize();
+
+
+/* Page Animation */
+function animateIn() {
+	// $('body').removeClass('animate-in');
+	// $('body')[0].offset; // force reflow
+	$('body').addClass('animateBody--in');
+}
+
+
+InstantClick.on('change', function() {
+	animateIn();
+	$(window).resize();
+});
+
+/* Initial Animation */
+$('html').addClass('animateHeader--in');
+animateIn();

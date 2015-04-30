@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html {% if page.body-id %}id="{{ page.body-id }}"{% endif %}>
+<html>
 
 	{% include head.html %}
 
-	<body>
+	<body {% if page.body-id %}id="{{ page.body-id }}"{% endif %}>
 
 		{% include header.html %}
-
-		<div class="container padding--lg margin--none">
-			{{ content }}
-		</div>
+		
+		{{ content }}	
 
 		{% include foot.html %}
 

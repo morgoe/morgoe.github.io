@@ -1,12 +1,47 @@
 .btn {
+	position: relative;
 	font-size: 1.5rem;
-	line-height: 1;
+	line-height: 1.1;
 	display: inline-block;
 	color: $blue;
 	border-bottom: 3px solid rgba($blue, 0.5);
 	text-transform: none;
 	&:hover {
 		border-color: $blue;
+	}
+	&:before,
+	&:after {
+		content: attr(data-text);
+	}
+	&:before {
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0px;
+		color: transparent;
+		-webkit-text-stroke: 5px white;
+	}
+}
+.btn-footer {
+	background: $blue;
+	display: block;
+	text-align: center;
+	padding: $rhythm * 3;
+	.btn {
+		color: white;
+		border-color: rgba(white, 0.5);
+		&:after {
+			-webkit-text-stroke-color: $blue;
+		}
+	}
+	&:hover {
+		.btn {
+			border-color: white;
+		}
 	}
 }
 
