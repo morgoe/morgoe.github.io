@@ -50,6 +50,12 @@
 }
 
 @media (max-width: 767px) {
+	.m-siteNavigation {
+		text-align: center;
+		#home & {
+			visibility: hidden;
+		}
+	}
 	.m-siteNavigation-logo {
 		display: none;
 	}
