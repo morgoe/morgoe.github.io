@@ -22,7 +22,7 @@ permalink: /work/
 					<a class="btn margin--sm" href="{{ post.url | prepend: site.baseurl }}" data-text="View Case Study"></a>
 				{% endif %}
 				{% if post.link %}
-					<a class="btn margin--sm" href="{{post.link}}" target="_blank" data-text="Visit Site"></a>
+					<a class="btn margin--sm" href="{{post.link}}" target="_blank" data-text="{{post.link_text}}"></a>
 				{% endif %}
 			</div>
 			<div class="col-sm-8">

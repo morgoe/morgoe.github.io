@@ -1,5 +1,6 @@
 ---
 layout: default
+body-id: work
 ---
 
 <div class="padding--lg margin--none">
@@ -7,6 +8,7 @@ layout: default
 		<div class="u-textCenter">
 			<h1 class="m-page-title">{{ page.title }}</h1>
 			<h5 class="u-text--center margin--none hidden">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
+			<h5 class="u-text--center margin--none">Role: {{ page.role }}</h5>
 		</div>
 
 		<div class="m-page-content">
@@ -15,6 +17,13 @@ layout: default
 	</div>
 </div>
 
-<a class="btn-footer" href="/work/">
-	<span class="btn" data-text="See more work"></span>
-</a>
+{% if page.nextOne_link %}
+	<a class="btn-footer is-hasImage" href="/work/{{page.nextOne_link}}">
+		<div class="btn-footer-image" style="background-image: url(/assets/images/work/{{page.nextOne_img}})"></div>
+		<span class="btn" data-text="Next"></span>
+	</a>
+{% else %}
+	<a class="btn-footer" href="/work/">
+		<span class="btn is-noImage" data-text="See More Work"></span>
+	</a>
+{% endif %}

@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2015 20:22:18 +1000</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2015 20:22:18 +1000</lastBuildDate>
+    <pubDate>Sat, 02 May 2015 21:21:28 +1000</pubDate>
+    <lastBuildDate>Sat, 02 May 2015 21:21:28 +1000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -195,6 +195,43 @@
       </item>
     
       <item>
+        <title>Stackla Widgets</title>
+        <description>&lt;p&gt;When I joined Stackla, they already had a ‘widget’ system in place that would allow clients to embed the product into their websites. It had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. It was also used for any live event displays we did (until we developed the separate Event Screens).  &lt;/p&gt;
+
+&lt;p&gt;However, the widgets had a number of initial issues:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They were simple, static iFrames with fixed width and height. Responsive websites started becoming more and more popular around that time, and the widgets were totally unusable for those clients.&lt;/li&gt;
+  &lt;li&gt;They looked rather unattractive. Stackla didn’t have an internal designer until I joined, and a lot of the visuals had been rushed to get the MVP out.&lt;/li&gt;
+  &lt;li&gt;They were extremely difficult to customise. Because of that, albeit Stackla sold itself as a white label product, they would eventually end up looking pretty much identical for each client.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I did a bit of work to improve the existing product but it wasn’t until late 2013, when I was building the site of &lt;a href=&quot;http://asntm2.starworldasia.tv/&quot; target=&quot;_blank&quot;&gt;Asia’s Next Top Model&lt;/a&gt;, that we made the true quality leap. The client had almost no initial content, and the site was sold on the basis of Stackla’s pledge to compensate with fan-based content. The mobile optimisation was an automatic expectation. I pitched the idea of a responsive widget as a solution. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of widgets in an adaptive design scheme). I traced a prototype over a couple of days which ended up going live without further alterations. The client was very happy, and the Fluid Widget became Stackla’s best selling feature for the rest of my time working there.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-widgets/asntm.jpg&quot; alt=&quot;Asia&#39;s Next Top Model Fluid Widgets&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The first iteration of the Fluid Widget.&lt;/figcaption&gt;
+
+&lt;p&gt;As demand for the Fluid Widget grew, we expanded further its functionality. We made it more and more customisable, and refactored the code to be identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-widgets/wanted.png&quot; alt=&quot;Myer Fluid Widgets&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/wanted-shoes/&quot; target=&quot;_blank&quot;&gt;Wanted Shoes&lt;/a&gt; used the Fluid Widget as a Social eCommerce platform.&lt;/figcaption&gt;
+
+&lt;div class=&quot;u-responsiveMedia&quot;&gt;
+	&lt;iframe src=&quot;https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;
+
+</description>
+        <pubDate>Fri, 16 Jan 2015 00:00:00 +1100</pubDate>
+        <link>http://yourdomain.com/work/stackla-widgets</link>
+        <guid isPermaLink="true">http://yourdomain.com/work/stackla-widgets</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
         <title>Welcome To Jekyll</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -223,7 +260,7 @@
       </item>
     
       <item>
-        <title>Stackla Admin Portal</title>
+        <title>Stackla Admin</title>
         <description>
 </description>
         <pubDate>Wed, 14 Jan 2015 00:00:00 +1100</pubDate>
@@ -281,6 +318,19 @@
         <pubDate>Sat, 10 Jan 2015 00:00:00 +1100</pubDate>
         <link>http://yourdomain.com/work/myer</link>
         <guid isPermaLink="true">http://yourdomain.com/work/myer</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Melody Chord and Rhythm</title>
+        <description>
+</description>
+        <pubDate>Sat, 10 Jan 2015 00:00:00 +1100</pubDate>
+        <link>http://yourdomain.com/work/melody-chord-rhythm</link>
+        <guid isPermaLink="true">http://yourdomain.com/work/melody-chord-rhythm</guid>
         
         
         <category>work</category>

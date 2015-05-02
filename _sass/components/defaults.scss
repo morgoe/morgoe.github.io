@@ -17,5 +17,20 @@ a {
 	@include noSelect();
 }
 img {
-	
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+figcaption {
+	margin-top: 0;
+	text-align: center;
+	font-size: $rhythm / 2;
+	color: $gray;
+}
+ul {
+	margin-top: 0;
+	padding-left: $rhythm;
+	> li {
+		margin-top: $line_height / 4 * 1em;
+	}
 }

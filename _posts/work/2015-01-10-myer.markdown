@@ -11,5 +11,5 @@ thumbnail:     myer.png
 image:         myer.jpg
 
 role:          "Web Design & Front-end Dev"
-description:   "A number of widgets were built to support the livestream of the Myer Spring Summer 2015 Fashion Launch."
+description:   "A number of Stackla Widgets were built to support the livestream of the Myer Spring Summer 2015 Fashion Launch."
 ---

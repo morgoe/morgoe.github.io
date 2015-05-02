@@ -1,16 +1,20 @@
 ---
-layout:        post
-date:          2015-01-14
+layout:            post
+date:              2015-01-14
 categories:    
 - work
 
-title:         "Stackla Admin Portal"
-subtitle:      "Long-term iterative UX/UI"
+title:             "Stackla Admin"
+subtitle:          "Long-term iterative UX/UI"
 
-thumbnail:     stackla.png
-image:         stackla-admin.jpg
+thumbnail:         stackla.png
+image:             stackla-admin.jpg
 
-link:          http://stackla.com/
-role:          "UX/UI Design, Design Direction & Front-end Dev"
-description:   "The Stackla Admin Portal allows clients to aggregate and curate their content, and edit their displays. The UX has been constantly improved with user testing, and is supported by a minimal design focusing on content and small bursts of colour."
+is_caseStudy:      false
+
+role:              "UX/UI Design, Design Direction & Front-end Dev"
+description:       "The Stackla Admin allows clients to aggregate and curate their content, and edit their displays. Continual user testing combined with a minimal design led to massive improvements of usability, even as the product's features grew rapidly."
+
+nextOne_link:      stackla-widgets
+nextOne_img:       stackla-widgets.png
 ---
