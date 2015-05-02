@@ -38,13 +38,13 @@
 	padding: $rhythm * 5 $rhythm * 2.5;
 	background: none;
 	border: none;
-	transition: background 1s;
+	@include prefix(transition, background 1s);
 	.btn {
 		font-size: 2rem;
-		transition: border-color 1s;
+		@include prefix(transition, border-color 1s);
 		&:before,
 		&:after {
-			transition: all 1s;
+			@include prefix(transition, all 1s);
 		}
 
 	}
@@ -83,7 +83,7 @@
 	opacity: 0;
 	background-size: cover;
 	background-position: center;
-	transition: opacity 1s;
+	@include prefix(transition, opacity 1s);
 }
 
 

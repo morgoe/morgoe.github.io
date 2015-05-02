@@ -29,3 +29,11 @@
     background: -ms-linear-gradient(top, $start 0%, $end 100%); /* IE10+ */
     background: linear-gradient(to bottom, $start 0%, $end 100%); /* W3C */
 }
+
+@mixin prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}

@@ -29,8 +29,8 @@
 	}
 	&.active {
 		color: $black_lightest;
+		border-color: $black_lightest;
 		&:hover {
-			border: none;
 			cursor: default;
 		}
 	}

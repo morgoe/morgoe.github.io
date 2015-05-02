@@ -32,8 +32,8 @@ $(window).resize(function() {
 
 /* Page Animation */
 function animateIn() {
-	// $('body').removeClass('animate-in');
-	// $('body')[0].offset; // force reflow
+	$('body').removeClass('animate-in');
+	$('body')[0].offsetHeight; // force reflow
 	$('body').addClass('animateBody--in');
 }
 
