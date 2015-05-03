@@ -32,6 +32,9 @@
 		color: $gray;
 		border-color: rgba($gray, 0.5);
 	}
+	* + & {
+		margin-top: 1.5em;
+	}
 }
 .btn-footer {
 	display: block;
@@ -41,6 +44,7 @@
 	border: none;
 	@include prefix(transition, background 1s);
 	.btn {
+		margin-top: 0;
 		font-size: 2rem;
 		@include prefix(transition, border-color 1s);
 		&:before,
