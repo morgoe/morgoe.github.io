@@ -19,15 +19,13 @@ description:       "By moving from a static-dimensioned, rigidly-designed iFrame
 <!-- nextOne_img:       stackla-admin.jpg -->
 ---
 
-When I joined Stackla, they already had a ‘widget’ system in place that would allow clients to embed the product into their websites. It had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. At the time, it was also used for any live event displays we did.
+When I joined Stackla, they already had a Widget system in place that would allow clients to embed the product into their websites. The Widgets had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. They were also used for any live event displays we did at that time. However, the Widgets had a number of issues:
 
-However, the widgets had a number of initial issues:
-
-- They were simple, static iFrames with fixed width and height. Responsive websites started becoming more and more popular around that time, and the widgets were totally unusable for those clients.
+- They were simple, static iFrames with fixed width and height. Responsive websites were becoming more and more popular around that time, and the widgets were totally unusable for those clients.
 - They were pretty unattractive. Stackla didn’t have an internal designer until I joined, and a lot of the visuals had been rushed to get the MVP out.
 - They were extremely difficult to customise. Stackla sold itself as a white label product, but the Widgets were so rigid, that they ended up looking almost identical for each client.
 
-I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of <a href="http://asntm2.starworldasia.tv/" target="_blank">Asia's Next Top Model</a>, and the client had almost no content of their own - the show hadn't even started. However, there was a lot of hype on social media, so we decided to use that as the basis for the site - using a Widget. Since the site was to be responsive, I pitched the idea of a fluid widget, that would adapt to any screen size, as a solution. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was very happy, and the Fluid Widget became Stackla’s best selling feature for the rest of my time working there.
+I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of <a href="http://asntm2.starworldasia.tv/" target="_blank">Asia's Next Top Model</a>, and the client had almost no content of their own - the show hadn't even started. However, there was a lot of hype on social media, so we decided to use a Widget to embed fan content into the site. Since the site was to be responsive, I pitched the idea of a Fluid Widget, one that would adapt to any screen size. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static Widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was extremely happy - a barebones site was turned into a really content-heavy site, and social engagement was massively increased. The Fluid Widget became Stackla’s best selling feature for the rest of my time working there.
 
 ![Asia's Next Top Model Fluid Widgets][asntm]
 <figcaption>The first iteration of the Fluid Widget.</figcaption>

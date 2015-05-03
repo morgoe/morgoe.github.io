@@ -3,10 +3,14 @@ p {
 }
 a {
 	position: relative;
+	display: inline-block;
+	line-height: 1.2;
+	border-bottom: 2px solid rgba($blue, 0.33);
+	
 	text-decoration: none;
 	cursor: pointer;
 	color: inherit;
-	border-bottom: 2px solid rgba($blue, 0.33);
+	margin-top: 0;
 	&:hover {
 		color: $blue;
 		border-color: $blue;

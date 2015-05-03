@@ -17,7 +17,6 @@
 }
 .m-work-title {
 	margin-top: 0;
-	margin-bottom: $rhythm / 4;
 }
 .m-work-link {
 	margin-top: $line_height / 2 * 1em;
@@ -30,9 +29,13 @@
 			margin-top: 1rem;
 		}
 		padding-bottom: 1rem;
+		.col-sm-8 {
+			padding: 0;
+		}
 	}
 	.m-work-image {
 		height: 240px;
+		box-shadow: none;
 	}
 	.m-work-link {
 		margin-top: 0;

@@ -96,4 +96,10 @@
 			-webkit-text-stroke: 4px white;
 		}
 	}
+	.btn-footer {
+		padding: $rhythm * 2 0;
+		.btn {
+			font-size: 1.5rem;
+		}
+	}
 }
