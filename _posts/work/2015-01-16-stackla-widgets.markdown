@@ -30,7 +30,7 @@ I did a bit of work to improve the existing product, but it wasn’t until late 
 ![Asia's Next Top Model Fluid Widgets][asntm]
 <figcaption>The first iteration of the Fluid Widget.</figcaption>
 
-As demand for the Fluid Widget grew, we expanded further its functionality. We made it more and more customisable, and refactored the code to be nearly identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.
+As demand for the Fluid Widget grew, we further expanded its functionality. We made it more and more customisable, and refactored the code to be nearly identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.
 
 ![Myer Fluid Widgets][wanted]
 <figcaption><a href="https://stackla.com/case-studies/wanted-shoes/" target="_blank">Wanted Shoes</a> used the Fluid Widget as a Social eCommerce platform.</figcaption>

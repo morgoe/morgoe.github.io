@@ -38,3 +38,12 @@ ul {
 		margin-top: $line_height / 4 * 1em;
 	}
 }
+// When selecting a text, it does this:
+::selection {
+    color: white;
+    background: $black; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: white;
+    background: $black; /* Gecko Browsers */
+}
