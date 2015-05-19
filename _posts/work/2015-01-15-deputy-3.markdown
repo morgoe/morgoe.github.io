@@ -1,5 +1,4 @@
 ---
-published:     false
 layout:        post
 date:          2015-01-15
 categories:    
@@ -11,7 +10,17 @@ subtitle:      "Web App Redesign"
 thumbnail:     deputy.png
 image:         deputy-3.png
 
-is_caseStudy:  true
+is_caseStudy:  false
+
 role:          "UX/UI Design, Visual Direction & Coding"
-description:   "The Stackla Admin Portal allows clients to aggregate and curate their content, and edit their displays. The UX has been constantly improved with user testing, and is supported by a minimal design focusing on content and small bursts of colour."
+description:   "My first project at Deputy was a 6 month long overhaul of their desktop app. This included unifying the previous 6 years of product development, working with the iOS and Android teams to provide a consistent design, and developing a number of new features. "
 ---
+
+<div class="m-blogPost-imageCompare">
+	<img src="/assets/images/work/deputy/dell_v2.jpg">
+	<img src="/assets/images/work/deputy/dell_v3.jpg">
+</div>
+
+
+[sidePanel_v2]: /assets/images/work/deputy/dell_v2.jpg
+[sidePanel_v3]: /assets/images/work/deputy/dell_v3.jpg

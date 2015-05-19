@@ -25,6 +25,16 @@ img {
 	max-width: 100%;
 	margin: 0 auto;
 }
+blockquote {
+	font-family: "Charter";
+	font-style: italic;
+	font-size: 1.25rem;
+	margin-left: -1.5rem;
+	padding: 0.75rem 1.5rem;
+	color: $blue_gray;
+	border-left: 4px solid $blue_dark;
+	@include clearfix();
+}
 figcaption {
 	margin-top: 0;
 	text-align: center;
@@ -40,10 +50,12 @@ ul {
 }
 // When selecting a text, it does this:
 ::selection {
-    color: white;
-    background: $black; /* WebKit/Blink Browsers */
+    color: $blue_dark;
+    background: $yellow;
+    background: rgba($yellow, 0.25); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    color: white;
-    background: $black; /* Gecko Browsers */
+    color: $blue_dark;
+    background: $yellow;
+    background: rgba($yellow, 0.25); /* Gecko Browsers */
 }

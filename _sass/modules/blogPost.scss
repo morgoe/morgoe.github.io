@@ -1,3 +1,20 @@
 .m-page-title {
 	
 }
+.m-blogPost-imageCompare {
+	position: relative;
+	img:last-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-top: 0;
+		display: none;
+	}
+	&:hover {
+		img:last-child {
+			display: block;
+		}
+	}
+}
