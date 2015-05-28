@@ -25,6 +25,8 @@ When I joined Stackla, they already had a Widget system in place that would allo
 - They were pretty unattractive. Stackla didn’t have an internal designer until I joined, and a lot of the visuals had been rushed to get the MVP out.
 - They were extremely difficult to customise. Stackla sold itself as a white label product, but the Widgets were so rigid, that they ended up looking almost identical for each client.
 
+<blockquote>“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” <strong class="u-pullRight">-Peter Cassidy, Co-founder of <a href="https://stackla.com/" target="_blank">Stackla</a></strong></blockquote>
+
 I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of <a href="http://asntm2.starworldasia.tv/" target="_blank">Asia's Next Top Model</a>, and the client had almost no content of their own - the show hadn't even started. However, there was a lot of hype on social media, so we decided to use a Widget to embed fan content into the site. Since the site was to be responsive, I pitched the idea of a Fluid Widget, one that would adapt to any screen size. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static Widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was extremely happy - a barebones site was turned into a really content-heavy site, and social engagement was massively increased. The Fluid Widget became Stackla’s best selling feature for the rest of my time working there.
 
 ![Asia's Next Top Model Fluid Widgets][asntm]
@@ -32,13 +34,17 @@ I did a bit of work to improve the existing product, but it wasn’t until late 
 
 As demand for the Fluid Widget grew, we further expanded its functionality. We made it more and more customisable, and refactored the code to be nearly identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.
 
-![Myer Fluid Widgets][wanted]
+![Wanted Shoes Fluid Widget][wanted]
 <figcaption><a href="https://stackla.com/case-studies/wanted-shoes/" target="_blank">Wanted Shoes</a> used the Fluid Widget as a Social eCommerce platform.</figcaption>
 
-<div class="u-responsiveMedia">
+![Myer Fluid Widgets][myer]
+<figcaption><a href="https://stackla.com/case-studies/myer-spring-summer-launch/" target="_blank">Myer</a> used the Fluid Widgets to accompany a live streaming fashion show.</figcaption>
+
+<!--<div class="u-responsiveMedia">
 	<iframe src="https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true" frameborder="0" allowfullscreen></iframe>
 </div>
-<figcaption><a href="https://stackla.com/case-studies/sportsbet-tweet-powered-horse/" target="_blank">Sportsbet</a> used the Fluid Widget to create a data visualisation of a Tweet Powered Horse</figcaption>
+<figcaption><a href="https://stackla.com/case-studies/sportsbet-tweet-powered-horse/" target="_blank">Sportsbet</a> used the Fluid Widget to create a data visualisation of a Tweet Powered Horse</figcaption>-->
 
 [asntm]: /assets/images/work/stackla-widgets/asntm.jpg
 [wanted]: /assets/images/work/stackla-widgets/wanted.png
+[myer]: /assets/images/work/stackla-widgets/myer.jpg
