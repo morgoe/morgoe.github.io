@@ -46,3 +46,8 @@ InstantClick.on('change', function() {
 /* Initial Animation */
 $('html').addClass('animateHeader--in');
 animateIn();
+
+/* Google Analytics */
+$('#cta-seeMyWork').on('click', function() {
+	ga('send', 'event', 'button', 'click', 'cta-seeMyWork');
+});
