@@ -48,6 +48,6 @@ $('html').addClass('animateHeader--in');
 animateIn();
 
 /* Google Analytics */
-$('#cta-seeMyWork').on('click', function() {
+$('.js-cta-seeMyWork').on('click', function() {
 	ga('send', 'event', 'button', 'click', 'cta-seeMyWork');
 });
