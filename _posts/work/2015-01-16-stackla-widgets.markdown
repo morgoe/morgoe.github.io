@@ -3,18 +3,18 @@ layout:            post
 date:              2015-01-16
 categories:    
 - work
+siteNav: work
 
 title:             "Stackla Widgets"
 
 thumbnail:         stackla.png
-image:             /stackla-widgets/wanted.png
+image:             stackla-widgets/wanted.png
 
 is_caseStudy:      true
-caseStudy_live:    true
 
 role:              "UX/UI Design, Design Direction & Front-end Dev"
 description:       "By moving from a static-dimensioned, rigidly-designed iFrame solution to a responsive, easily customisable Javascript-embedded solution, the Stackla Widgets became the best selling feature of the product."
-
+description_short: "By focusing on a responsive and easily customisable design, the Stackla Widgets became the best selling feature of the product."
 <!-- nextOne_link:      stackla-admin -->
 <!-- nextOne_img:       stackla-admin.jpg -->
 ---

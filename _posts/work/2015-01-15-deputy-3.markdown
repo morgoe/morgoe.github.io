@@ -3,6 +3,7 @@ layout:        post
 date:          2015-01-15
 categories:    
 - work
+siteNav: work
 
 title:         "Deputy 3"
 subtitle:      "Web App Redesign"

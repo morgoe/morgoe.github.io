@@ -31,6 +31,7 @@ figcaption {
 	font-size: $rhythm / 2;
 	color: $gray;
 }
+ol,
 ul {
 	margin-top: 0;
 	padding-left: $rhythm;
@@ -38,6 +39,7 @@ ul {
 		margin-top: $line_height / 4 * 1em;
 	}
 }
+
 // When selecting a text, it does this:
 ::selection {
     color: $blue_dark;

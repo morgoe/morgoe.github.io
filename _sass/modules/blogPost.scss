@@ -18,3 +18,21 @@
 		}
 	}
 }
+.m-blogPost-link {
+	display: block;
+	border-bottom: none;
+	&:hover .btn {
+		border-color: $blue;
+	}
+}
+.m-blogPost-btn {
+	margin-top: 0;
+}
+.m-blogPost-thumbnail {
+	width: 3 * $rhythm;
+	height: 3 * $rhythm;
+	margin-right: $rhythm;
+	background: red;
+	float: left;
+	border-radius: 50%;
+}

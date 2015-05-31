@@ -1,0 +1,36 @@
+---
+layout: bare
+siteNav: blog
+title:  "Design Solutions"
+categories: jekyll update
+permalink: /design-solutions/
+---
+
+<div class="container--sm padding--lg margin--none m-animation-1">
+	<h1 class="m-page-title">{{ page.title }}</h1>
+	<p class="u-text--center">Common product design problems and how to solve them.</p>
+
+	<div>
+		<ul class="u-listUnstyled">
+			{% for post in site.categories['design-solutions'] %}
+				<li class="margin-bottom">
+					{% if post.is_live %}
+						<a class="m-blogPost-link" href="{{ post.url | prepend: site.baseurl }}">
+							<p class="u-text--small u-color--gray margin--none">{{ post.date | date: "%b %-d, %Y" }}</p>
+							<span class="btn btn--small m-blogPost-btn">{{ post.title }}</span>
+							<p class="margin--none">{{ post.description }}</p>
+						</a>
+					{% else %}
+						<p class="u-text--small u-color--gray margin--none">Coming soon...</p>
+						<a class="btn btn--small m-blogPost-btn disabled">{{ post.title }}</a>
+						<p class="margin--none u-color--gray">{{ post.description }}</p>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<a class="btn-footer" href="mailto:morgancarter1@gmail.com">
+	<span class="btn" data-text="Contact Me"></span>
+</a>

@@ -5,9 +5,188 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 May 2015 08:59:54 +0400</pubDate>
-    <lastBuildDate>Thu, 28 May 2015 08:59:54 +0400</lastBuildDate>
+    <pubDate>Sun, 31 May 2015 17:59:04 +0530</pubDate>
+    <lastBuildDate>Sun, 31 May 2015 17:59:04 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Affordance for Overflowing Content</title>
+        <description>&lt;p&gt;One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of that quality, but the majority of your users probably won’t upload one at all. &lt;/p&gt;
+
+&lt;p&gt;So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I’ll cover in my next post. &lt;/p&gt;
+
+&lt;h3 id=&quot;generic-faces&quot;&gt;Generic Faces&lt;/h3&gt;
+&lt;p&gt;Facebook solves this problem by using a generic silhouette as a placeholder avatar. This silhouette is also gender-specific. &lt;/p&gt;
+
+&lt;p&gt;I don’t think this is a great solution for a number of reasons. &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If you have two male users (or two female), their placeholder avatars look identical. Again, let’s assume only 10% of your users actually upload a photo - your design now becomes a lot more homogenous and confusing. &lt;/li&gt;
+  &lt;li&gt;If you weren’t already asking the user to set the gender, now that’s another option you need them to set. And if you make this setting optional, then what is the default gender? Make? Female? Androgynous alien?&lt;/li&gt;
+  &lt;li&gt;Many products (ie. Tumblr, OkCupid), have a less binary approach to gender. This makes things even more difficult. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, Facebook gets away with it because &lt;em&gt;everyone&lt;/em&gt; uploads a display photo. &lt;/p&gt;
+
+&lt;h3 id=&quot;gravatar&quot;&gt;Gravatar&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Research this&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fun-artwork&quot;&gt;Fun Artwork&lt;/h3&gt;
+&lt;p&gt;This approach is used by Twitter, Slack, Tumblr and I’m sure many more. It has a great benefit of reinforcing branding - Slack, for example, uses variations of their logo.  Looking back at your design in which no-one uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks fun, inviting, and *correct.&lt;/p&gt;
+
+&lt;p&gt;This approach can be great in some areas. Take Neopets? for example - each piece of art is unique and identifying. This makes it easy to recognise a user by their avatar, even if it’s a default. What’s their  favourite animal? &lt;/p&gt;
+
+&lt;p&gt;However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. You can’t recognise someone by their avatar, although it does provide some recognition when placed in context. &lt;/p&gt;
+
+&lt;h3 id=&quot;initials&quot;&gt;Initials&lt;/h3&gt;
+&lt;p&gt;Gmail, Dropbox and Apple take a third (and my favourite) approach. If your brand doesn’t really fit the Neopets vibe, you can simply use the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). &lt;/p&gt;
+
+&lt;p&gt;Gmail and Dropbox go further, adding a unique colour to each user. Joseph Parry is a red JP, and Joseph Primrose is a green JP. This provides a recognisable avatar in isolation, as well as in context. 
+This approach may give some issues in non-English languages*. &lt;/p&gt;
+
+&lt;p&gt;So how do we do it? You don’t want to pick any random colour out of the 16,777,216 possible variations because they’ll probably look terrible. So we just pick a few, no more than 10.&lt;/p&gt;
+
+&lt;p&gt;Next, we need to assign each user a colour. This can’t be randomly done upon render, because Joseph Parry needs to always be a red JP. The solution is no good if you refresh the page and he’s now green. &lt;/p&gt;
+
+&lt;p&gt;We can solve this problem using *hashes. We didn’t want to create another database entry for each user, so this allows us to calculate it on render, but have the same colour each time. &lt;/p&gt;
+
+&lt;p&gt;Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. &lt;/p&gt;
+
+&lt;p&gt;Try playing around with the example below, then check out  the code to see how it’s done. &lt;/p&gt;
+
+&lt;p&gt;My next post will detail how to encourage people to upload an avatar.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2015 00:00:00 +0530</pubDate>
+        <link>http://yourdomain.com/design-solutions/affordance-for-overflowing-content</link>
+        <guid isPermaLink="true">http://yourdomain.com/design-solutions/affordance-for-overflowing-content</guid>
+        
+        
+        <category>design-solutions</category>
+        
+      </item>
+    
+      <item>
+        <title>Encouraging Display Photo Uploads</title>
+        <description>&lt;p&gt;One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of that quality, but the majority of your users probably won’t upload one at all. &lt;/p&gt;
+
+&lt;p&gt;So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I’ll cover in my next post. &lt;/p&gt;
+
+&lt;h3 id=&quot;generic-faces&quot;&gt;Generic Faces&lt;/h3&gt;
+&lt;p&gt;Facebook solves this problem by using a generic silhouette as a placeholder avatar. This silhouette is also gender-specific. &lt;/p&gt;
+
+&lt;p&gt;I don’t think this is a great solution for a number of reasons. &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If you have two male users (or two female), their placeholder avatars look identical. Again, let’s assume only 10% of your users actually upload a photo - your design now becomes a lot more homogenous and confusing. &lt;/li&gt;
+  &lt;li&gt;If you weren’t already asking the user to set the gender, now that’s another option you need them to set. And if you make this setting optional, then what is the default gender? Make? Female? Androgynous alien?&lt;/li&gt;
+  &lt;li&gt;Many products (ie. Tumblr, OkCupid), have a less binary approach to gender. This makes things even more difficult. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, Facebook gets away with it because &lt;em&gt;everyone&lt;/em&gt; uploads a display photo. &lt;/p&gt;
+
+&lt;h3 id=&quot;gravatar&quot;&gt;Gravatar&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Research this&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fun-artwork&quot;&gt;Fun Artwork&lt;/h3&gt;
+&lt;p&gt;This approach is used by Twitter, Slack, Tumblr and I’m sure many more. It has a great benefit of reinforcing branding - Slack, for example, uses variations of their logo.  Looking back at your design in which no-one uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks fun, inviting, and *correct.&lt;/p&gt;
+
+&lt;p&gt;This approach can be great in some areas. Take Neopets? for example - each piece of art is unique and identifying. This makes it easy to recognise a user by their avatar, even if it’s a default. What’s their  favourite animal? &lt;/p&gt;
+
+&lt;p&gt;However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. You can’t recognise someone by their avatar, although it does provide some recognition when placed in context. &lt;/p&gt;
+
+&lt;h3 id=&quot;initials&quot;&gt;Initials&lt;/h3&gt;
+&lt;p&gt;Gmail, Dropbox and Apple take a third (and my favourite) approach. If your brand doesn’t really fit the Neopets vibe, you can simply use the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). &lt;/p&gt;
+
+&lt;p&gt;Gmail and Dropbox go further, adding a unique colour to each user. Joseph Parry is a red JP, and Joseph Primrose is a green JP. This provides a recognisable avatar in isolation, as well as in context. 
+This approach may give some issues in non-English languages*. &lt;/p&gt;
+
+&lt;p&gt;So how do we do it? You don’t want to pick any random colour out of the 16,777,216 possible variations because they’ll probably look terrible. So we just pick a few, no more than 10.&lt;/p&gt;
+
+&lt;p&gt;Next, we need to assign each user a colour. This can’t be randomly done upon render, because Joseph Parry needs to always be a red JP. The solution is no good if you refresh the page and he’s now green. &lt;/p&gt;
+
+&lt;p&gt;We can solve this problem using *hashes. We didn’t want to create another database entry for each user, so this allows us to calculate it on render, but have the same colour each time. &lt;/p&gt;
+
+&lt;p&gt;Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. &lt;/p&gt;
+
+&lt;p&gt;Try playing around with the example below, then check out  the code to see how it’s done. &lt;/p&gt;
+
+&lt;p&gt;My next post will detail how to encourage people to upload an avatar.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2015 00:00:00 +0530</pubDate>
+        <link>http://yourdomain.com/design-solutions/encouraging-upload</link>
+        <guid isPermaLink="true">http://yourdomain.com/design-solutions/encouraging-upload</guid>
+        
+        
+        <category>design-solutions</category>
+        
+      </item>
+    
+      <item>
+        <title>Placeholder Avatars</title>
+        <description>&lt;p&gt;One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of poorer quality, but the majority of your users probably won’t upload one at all. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/before-after.png&quot; alt=&quot;Before and After&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;With and without user-uploaded display photos. &lt;a href=&quot;https://dribbble.com/shots/1818748-Appon-Chat-Widget&quot; target=&quot;_blank&quot;&gt;Original by Olia Gozha&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I’ll cover in my next post. &lt;/p&gt;
+
+&lt;h3 id=&quot;generic-faces&quot;&gt;Generic Faces&lt;/h3&gt;
+&lt;p&gt;Facebook solves this problem by using a generic silhouette as a placeholder avatar, displaying either a male or female version depending on how you’ve set your gender.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/silhouettes.png&quot; alt=&quot;Generic Silhouettes&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Facebook&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;I don’t think this is a great solution for a number of reasons. &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If you have two users of the same sex, their placeholder avatars look identical. *Again, let’s assume only 10% of your users actually upload a photo - your design now becomes a lot more homogenous and confusing. &lt;/li&gt;
+  &lt;li&gt;If you weren’t already asking the user to set the gender, now that’s another option you need them to set. And if you make this setting optional, then what is the default gender? Male? Female? Androgynous alien?&lt;/li&gt;
+  &lt;li&gt;Many products (ie. *Tumblr, OKCupid), have a less binary *approach to gender that makes this *approach even more difficult. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, Facebook gets away with it because &lt;em&gt;everyone&lt;/em&gt; uploads a display photo, so this placeholder rarely shows.&lt;/p&gt;
+
+&lt;h3 id=&quot;fun-artwork&quot;&gt;Fun Artwork&lt;/h3&gt;
+&lt;p&gt;This approach is used by Twitter, Slack, Tumblr and I’m sure many more. It has a great benefit of reinforcing branding - Slack, for example, uses variations of their logo.  Looking back at the design in which no-one uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/slack.png&quot; alt=&quot;Slack Before and After&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Slack without any user-uploaded display photos still looks pretty good. &lt;a href=&quot;https://slack.com/is/team-communication&quot; target=&quot;_blank&quot;&gt;Original by Slack&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;This approach can be great if each placeholder were unique. However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. It’s difficult to recognise someone by their placeholder, although it does provide some recognition when placed alongside a few user-uploaded display photos.&lt;/p&gt;
+
+&lt;h3 id=&quot;initials&quot;&gt;Initials&lt;/h3&gt;
+&lt;p&gt;Gmail, Dropbox and Apple take a third (and my personal favourite) approach - using the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/apple.jpg&quot; width=&quot;320&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;iOS&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;Gmail and Dropbox go further, adding a unique colour to each user. Jerry Primrose is a red JP, and Jeremiah Philip is a green JP. This provides a recognisable avatar in isolation, as well as in context. Note that this solution may present problems in non-English countries where people don’t always have exactly 2 initials.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/dropbox.png&quot; width=&quot;383&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Dropbox&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;So how do we do it? You don’t want to pick any random colour out of the 16,777,216 possible variations because they’ll probably look terrible. So we just pick a few that fit the design, no more than 10.&lt;/p&gt;
+
+&lt;p&gt;Next, we need to assign each user a colour. This can’t be randomly done upon render, because Jerry Primrose must always be a red JP. The solution is no good if you refresh the page and he’s turned green. &lt;/p&gt;
+
+&lt;p&gt;We can solve this problem using *hashes. This lets us avoid creating another database entry for each user, by calculating it on render, but having the same colour each time. Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. &lt;/p&gt;
+
+&lt;p&gt;Try playing around with the example below, then check out the code to see how it’s done. &lt;/p&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;QbdQwY&quot; data-default-tab=&quot;result&quot; data-user=&quot;morgoe&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/morgoe/pen/QbdQwY/&quot;&gt;Placeholder Avatars&lt;/a&gt; by Morgan Carter (&lt;a href=&quot;http://codepen.io/morgoe&quot;&gt;@morgoe&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;My next post will detail how to encourage people to upload an avatar. If you’ve got a problem you’d like to suggest I tackle, please email me at &lt;a href=&quot;mailto:morgancarter1@gmail.com&quot;&gt;morgancarter1@gmail.com&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 30 May 2015 00:00:00 +0530</pubDate>
+        <link>http://yourdomain.com/design-solutions/placeholder-avatars</link>
+        <guid isPermaLink="true">http://yourdomain.com/design-solutions/placeholder-avatars</guid>
+        
+        
+        <category>design-solutions</category>
+        
+      </item>
     
       <item>
         <title>Lobotomized Owls in the Real World</title>
@@ -183,7 +362,7 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 31 Mar 2015 01:46:16 +0400</pubDate>
+        <pubDate>Tue, 31 Mar 2015 03:16:16 +0530</pubDate>
         <link>http://yourdomain.com/jekyll/update/owl-eyes</link>
         <guid isPermaLink="true">http://yourdomain.com/jekyll/update/owl-eyes</guid>
         
@@ -225,7 +404,7 @@
 &lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;--&gt;
 
 </description>
-        <pubDate>Fri, 16 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Fri, 16 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/stackla-widgets</link>
         <guid isPermaLink="true">http://yourdomain.com/work/stackla-widgets</guid>
         
@@ -242,40 +421,12 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Thu, 15 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Thu, 15 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/deputy-3</link>
         <guid isPermaLink="true">http://yourdomain.com/work/deputy-3</guid>
         
         
         <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome To Jekyll</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 14 Jan 2015 00:00:00 +0400</pubDate>
-        <link>http://yourdomain.com/blog/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://yourdomain.com/blog/welcome-to-jekyll</guid>
-        
-        
-        <category>blog</category>
         
       </item>
     
@@ -306,7 +457,7 @@
 &lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;
 
 </description>
-        <pubDate>Wed, 14 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Wed, 14 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/stackla-admin</link>
         <guid isPermaLink="true">http://yourdomain.com/work/stackla-admin</guid>
         
@@ -319,7 +470,7 @@
         <title>True Skate</title>
         <description>
 </description>
-        <pubDate>Tue, 13 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Tue, 13 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/true-skate</link>
         <guid isPermaLink="true">http://yourdomain.com/work/true-skate</guid>
         
@@ -332,7 +483,7 @@
         <title>Manchester United</title>
         <description>
 </description>
-        <pubDate>Mon, 12 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Mon, 12 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/manchester-united</link>
         <guid isPermaLink="true">http://yourdomain.com/work/manchester-united</guid>
         
@@ -345,35 +496,9 @@
         <title>Asia&#39;s Next Top Model</title>
         <description>
 </description>
-        <pubDate>Sun, 11 Jan 2015 00:00:00 +0400</pubDate>
+        <pubDate>Sun, 11 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/asias-model</link>
         <guid isPermaLink="true">http://yourdomain.com/work/asias-model</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Myer</title>
-        <description>
-</description>
-        <pubDate>Sat, 10 Jan 2015 00:00:00 +0400</pubDate>
-        <link>http://yourdomain.com/work/myer</link>
-        <guid isPermaLink="true">http://yourdomain.com/work/myer</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Melody Chord and Rhythm</title>
-        <description>
-</description>
-        <pubDate>Sat, 10 Jan 2015 00:00:00 +0400</pubDate>
-        <link>http://yourdomain.com/work/melody-chord-rhythm</link>
-        <guid isPermaLink="true">http://yourdomain.com/work/melody-chord-rhythm</guid>
         
         
         <category>work</category>

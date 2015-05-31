@@ -4,6 +4,7 @@ layout:        post
 date:          2015-01-15
 categories:    
 - work
+siteNav: work
 
 title:         "Stackla Event Screens"
 
