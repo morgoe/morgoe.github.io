@@ -3,6 +3,7 @@ layout:            post
 date:              2015-01-14
 categories:    
 - work
+siteNav: work
 
 title:             "Stackla Admin"
 subtitle:          "Long-term iterative UX/UI"

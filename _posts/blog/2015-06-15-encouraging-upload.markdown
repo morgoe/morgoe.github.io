@@ -2,13 +2,11 @@
 layout:        post
 date:          2015-06-15
 categories:    
-- design-solutions
+- coming-soon
 siteNav: blog
 
 title:             "Encouraging Display Photo Uploads"
 description:       "Lessen the problem of placeholder avatars by encouraging your users to upload a photo in the first place."
-
-is_live:           false
 ---
 
 One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of that quality, but the majority of your users probably won't upload one at all. 

@@ -7,7 +7,7 @@ siteNav: work
 
 title:             "Stackla Widgets"
 
-thumbnail:         stackla.png
+thumbnail:         stackla-widgets/thumbnail.png
 image:             stackla-widgets/wanted.png
 
 is_caseStudy:      true

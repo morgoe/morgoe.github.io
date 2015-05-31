@@ -2,13 +2,11 @@
 layout:        post
 date:          2015-06-30
 categories:    
-- design-solutions
+- coming-soon
 siteNav: blog
 
 title:             "Affordance for Overflowing Content"
 description:       "Users know to scroll if there's content cut off at the fold. However this isn't always possible in responsive design, so we need an alternative."
-
-is_live:           false
 ---
 
 One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of that quality, but the majority of your users probably won't upload one at all. 

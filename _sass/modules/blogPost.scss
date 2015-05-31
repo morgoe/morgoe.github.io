@@ -19,20 +19,35 @@
 	}
 }
 .m-blogPost-link {
-	display: block;
+	display: table;
+	width: 100%;
 	border-bottom: none;
+	> * {
+		display: table-cell;
+		vertical-align: top;
+	}
 	&:hover .btn {
 		border-color: $blue;
 	}
 }
+.m-blogPost-image {
+	width: 4 * $rhythm;
+	height: 4 * $rhythm;
+	> img {
+		border-radius: 50%;
+	}
+}
+.m-blogPost-description {
+	margin-top: 0;
+	padding-left: 1rem;
+}
 .m-blogPost-btn {
 	margin-top: 0;
 }
-.m-blogPost-thumbnail {
-	width: 3 * $rhythm;
-	height: 3 * $rhythm;
-	margin-right: $rhythm;
-	background: red;
-	float: left;
-	border-radius: 50%;
+
+@media (max-width: 767px) {
+	.m-blogPost-image {
+		width: 3 * $rhythm;
+		height: 3 * $rhythm;
+	}
 }

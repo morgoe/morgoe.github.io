@@ -7,8 +7,7 @@ html {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	font-family: $font_header;
 }
 h1 {
@@ -28,7 +27,7 @@ h3 {
 	color: $black;
 }
 h4 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: normal;
 	color: $black;

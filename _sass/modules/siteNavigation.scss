@@ -9,7 +9,7 @@
 	background: white;
 	border: 2px solid $black;
 	&:hover {
-		border-color: $black_light;
+		border-color: $gray;
 	}
 }
 .m-siteNavigation-list {
@@ -19,17 +19,20 @@
 	> li {
 		margin-left: $rhythm / 2;
 	}
+	.touch & > li {
+		margin-left: 1rem;
+	}
 }
 .m-siteNavigation-link {
 	color: $gray_light;
 	border-color: transparent;
 	&:hover {
-		color: $black_lightest;
+		color: $gray;
 		border-color: rgba($black_lightest, 0.33);
 	}
 	&.active {
 		color: $black_lightest;
-		border-color: $black_lightest;
+		border-color: rgba($black_lightest, 0.33);
 		&:hover {
 			cursor: default;
 		}
@@ -52,17 +55,20 @@
 @media (max-width: 767px) {
 	.m-siteNavigation {
 		text-align: center;
-		#home & {
-			visibility: hidden;
-		}
+		// #home & {
+		// 	visibility: hidden;
+		// }
 	}
 	.m-siteNavigation-logo {
 		display: none;
 	}
 	.m-siteNavigation-list {
 		margin-top: 0;
-		> li:first-child {
-			margin-left: 0;
+		> li {
+			margin-left: $rhythm;
+			&:first-child {
+				margin-left: 0;
+			}
 		}
 	}
 }

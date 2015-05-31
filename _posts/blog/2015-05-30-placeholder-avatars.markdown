@@ -6,9 +6,10 @@ categories:
 siteNav: blog
 
 title:             "Placeholder Avatars"
-description:       "Make your design look good and function well when none of your users have uploaded avatars."
 
-is_live:           true
+thumbnail:         placeholder-avatars/thumbnail.png
+
+description:       "Make your design look good and function well when none of your users have uploaded avatars."
 ---
 
 One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of poorer quality, but the majority of your users probably won't upload one at all. 
@@ -26,14 +27,14 @@ Facebook solves this problem by using a generic silhouette as a placeholder avat
 
 I don't think this is a great solution for a number of reasons. 
 
-1. If you have two users of the same sex, their placeholder avatars look identical. *Again, let’s assume only 10% of your users actually upload a photo - your design now becomes a lot more homogenous and confusing. 
+1. If you have two users of the same sex, their placeholder avatars look identical. Again, if we assume that only a minority of your users actually upload a photo, your design now becomes a lot more homogenous and confusing. 
 2. If you weren't already asking the user to set the gender, now that's another option you need them to set. And if you make this setting optional, then what is the default gender? Male? Female? Androgynous alien?
-3. Many products (ie. *Tumblr, OKCupid), have a less binary *approach to gender that makes this *approach even more difficult. 
+3. Many products (eg. OKCupid), have a less binary approach to gender that makes this solution even more complicated. 
 
-However, Facebook gets away with it because *everyone* uploads a display photo, so this placeholder rarely shows.
+However, Facebook gets away with it because **everyone** uploads a display photo, so this placeholder rarely shows.
 
 ### Fun Artwork
-This approach is used by Twitter, Slack, Tumblr and I'm sure many more. It has a great benefit of reinforcing branding - Slack, for example, uses variations of their logo.  Looking back at the design in which no-one uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.
+This approach is used by Twitter, Slack, Tumblr and I'm sure many more. It has a great benefit of reinforcing branding. Slack, for example, uses variations of their logo. Looking at a design in which no-one has uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.
 
 ![Slack Before and After][slack]
 <figcaption>Slack without any user-uploaded display photos still looks pretty good. <a href="https://slack.com/is/team-communication" target="_blank">Original by Slack</a>.</figcaption>
@@ -55,14 +56,14 @@ So how do we do it? You don't want to pick any random colour out of the 16,777,2
 
 Next, we need to assign each user a colour. This can't be randomly done upon render, because Jerry Primrose must always be a red JP. The solution is no good if you refresh the page and he’s turned green. 
 
-We can solve this problem using *hashes. This lets us avoid creating another database entry for each user, by calculating it on render, but having the same colour each time. Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. 
+We can solve this problem using hash codes. This lets us avoid creating another database entry for each user, by calculating it on render, but having the same colour each time. Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. 
 
 Try playing around with the example below, then check out the code to see how it's done. 
 
 <p data-height="268" data-theme-id="0" data-slug-hash="QbdQwY" data-default-tab="result" data-user="morgoe" class='codepen'>See the Pen <a href='http://codepen.io/morgoe/pen/QbdQwY/'>Placeholder Avatars</a> by Morgan Carter (<a href='http://codepen.io/morgoe'>@morgoe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-My next post will detail how to encourage people to upload an avatar. If you've got a problem you'd like to suggest I tackle, please email me at <a href="mailto:morgancarter1@gmail.com">morgancarter1@gmail.com</a>.
+My next post will detail how to encourage people to upload an avatar. If you've got a problem you'd like to suggest I tackle, please send me an email at <a href="{{ site.email }}">{{ site.email }}</a>.
 
 
 [before-after]: /assets/images/blog/placeholder-avatars/before-after.png

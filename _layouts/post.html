@@ -7,8 +7,13 @@ body-id: work
 	<div class="container--sm">
 		<div class="u-textCenter m-animation-1">
 			<h1 class="m-page-title">{{ page.title }}</h1>
-			<h5 class="u-text--center margin--none hidden">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
-			<h5 class="u-text--center margin--none">{{ page.role }}</h5>
+			<h5 class="u-text--center margin--none">
+				{% if page.role %}
+					{{ page.role }}
+				{% else %}
+					{{ page.date | date: "%-d %b, %Y" }}
+				{% endif %}
+			</h5>
 		</div>
 
 		<div class="m-page-content">
@@ -22,8 +27,17 @@ body-id: work
 		<div class="btn-footer-image" style="background-image: url(/assets/images/work/{{page.nextOne_img}})"></div>
 		<span class="btn" data-text="Next"></span>
 	</a>
-{% else %}
+{% elsif page.is_caseStudy %}
 	<a class="btn-footer" href="/work/">
-		<span class="btn is-noImage" data-text="See More Work"></span>
+		<span class="btn is-noImage" data-text="See more work"></span>
 	</a>
+{% else %}
+	<a class="btn-footer" href="/design-solutions/">
+		<span class="btn is-noImage" data-text="Read more posts"></span>
+	</a>
+{% endif %}
+
+
+{% if page.categories[work] %}
+poop
 {% endif %}

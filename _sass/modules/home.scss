@@ -1,8 +1,8 @@
 .m-home-wrapper {
 	position: absolute;
-	top: 0;
+	top: 50%;
+	@include prefix(transform, translateY(-50%));
 	left: 0;
-	bottom: 0;
 	right: 30%;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -37,39 +37,31 @@
 	.m-home-wrapper {
 		right: 0;
 	}
-	.m-home-wrapper--invert {
-		display: block;
-		width: 100vw;
-		left: auto;
-		z-index: 1;
-		.m-heroText-hello,
-		.m-heroText-title,
-		.m-heroText-paragraph {
-			color: white;
-		}
-	}
+	// .m-home-wrapper--invert {
+	// 	display: block;
+	// 	width: 100vw;
+	// 	left: auto;
+	// 	z-index: 1;
+	// 	.m-heroText-hello,
+	// 	.m-heroText-title,
+	// 	.m-heroText-paragraph {
+	// 		color: white;
+	// 	}
+	// }
 	.m-home-me {
-		overflow: hidden;
-		z-index: 1;
-		width: 33%;
+		display: none;
 	}
 }
 
-@media (max-width: 1023px) {
-	.m-home-me {
-		width: 50%;
-		// bottom: 180px;
-	}
-}
 
-@media (max-width: 767px) {
+@media (max-width: 767px), (max-height: 568px) {
 	.m-home-me {
-		// bottom: 130px;
+		display: none;
 	}
-}
 
-@media (max-height: 400px) {
-	.m-home-me {
-		bottom: 0;
+	.m-home-wrapper {
+		position: relative;
+		@include prefix(transform, none);
+		margin-top: $rhythm * 2;
 	}
 }

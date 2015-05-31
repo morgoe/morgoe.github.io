@@ -20,31 +20,9 @@ InstantClick.on('change', function() {
 	ga('send', 'pageview', location.pathname + location.search);
 });
 
-$(document).delegate('.js-cta-seeMyWork', 'click', function() {
-	ga('send', 'event', 'button', 'click', 'cta-seeMyWork');
-});
-
 
 /* Instant Click Initialise */
 InstantClick.init();
-
-
-/* Centre Home Hero Text */
-function centreHomeHero() {
-	var h = $(window).height();
-	h -= $('.js-verticalAlign:visible').height();
-	h -= $('.m-latestWork:visible').outerHeight();
-	h -= $('.m-siteNavigation:visible').outerHeight();
-	h /= 2;
-	// h += $('.m-siteNavigation:visible').outerHeight();
-	$('.js-verticalAlign').css('margin-top', h);
-}
-
-$(window).resize(function() {
-	if ($('body').attr('id') == 'home') {
-		centreHomeHero();
-	}
-}).resize();
 
 
 /* Page Animation */
