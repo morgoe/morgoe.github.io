@@ -22,38 +22,16 @@
 	bottom: -1px;
 	color: $gray_light;
 	border-bottom: none;
+	
+	.no-touch &:hover,
+	.no-touch &:visited:hover,
+	.touch &:visited:active,
+	.touch &:active {
+		color: $blue;
+	}
 	&:active {
 		top: auto;
 	}
-}
-.m-latestWork-work {
-	display: block;
-	text-align: center;
-	padding: $rhythm / 2;
-	color: inherit;
-	border-radius: $borderRadius;
-	border: none;
-	transition: all 0.25s;
-	&:hover {
-		transform: scale(1.05);
-		transition: all 0.5s;
-		.m-latestWork-image {
-			transform: rotate(9deg);
-			transition: all 0.5s;
-		}
-	}
-}
-.m-latestWork-image {
-	display: block;
-	margin: 0 auto;
-	border-radius: 50%;
-	height: $rhythm * 5;
-	width: $rhythm * 5;
-	transition: all 0.25s;
-}
-.m-latestWork-subtitle {
-	line-height: 1em;
-	color: $gray;
 }
 
 @media (max-width: 1023px) {

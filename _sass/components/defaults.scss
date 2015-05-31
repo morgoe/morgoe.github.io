@@ -11,12 +11,20 @@ a {
 	cursor: pointer;
 	color: inherit;
 	margin-top: 0;
-	&:hover {
+	.no-touch &:hover,
+	.touch &:active {
 		color: $blue;
-		border-color: $blue;
+		border-color: initial;
 	}
 	&:active {
 		top: 1px;
+	}
+	&:visited {
+		border-color: rgba($purple, 0.33);
+		.no-touch &:hover,
+		.touch &:active {
+			color: $purple;
+		}
 	}
 	@include noSelect();
 }

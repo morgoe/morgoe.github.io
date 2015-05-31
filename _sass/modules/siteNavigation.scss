@@ -8,7 +8,13 @@
 	height: 24px;
 	background: white;
 	border: 2px solid $black;
-	&:hover {
+	&:visited {
+		border-color: $black;
+	}
+	.no-touch &:hover,
+	.no-touch &:visited:hover,
+	.touch &:visited:active,
+	.touch &:active {
 		border-color: $gray;
 	}
 }
@@ -24,16 +30,24 @@
 	}
 }
 .m-siteNavigation-link {
-	color: $gray_light;
+	&,
+	&:visited {
+		color: $gray_light;	
+	}
 	border-color: transparent;
-	&:hover {
+	.no-touch &:hover,
+	.no-touch &:visited:hover,
+	.touch &:visited:active,
+	.touch &:active {
 		color: $gray;
 		border-color: rgba($black_lightest, 0.33);
 	}
 	&.active {
 		color: $black_lightest;
 		border-color: rgba($black_lightest, 0.33);
-		&:hover {
+		.no-touch &:hover,
+		.touch &:active {
+			color: $black_lightest;
 			cursor: default;
 		}
 	}
