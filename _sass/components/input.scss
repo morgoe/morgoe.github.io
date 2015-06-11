@@ -1,0 +1,53 @@
+.inputLabel {
+	display: block;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	+ .inputLabel {
+		margin-top: -1px;
+	}
+
+	color: $gray_light;
+	border: 1px solid $gray_lightest;
+	padding: 4px 8px;
+	font-size: 13px;
+	&:hover {
+		position: relative;
+		color: $blue;
+		border-color: $blue;
+	}
+}
+input,
+textarea {
+	display: block;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	color: $black_light;
+}
+
+::-webkit-input-placeholder {
+	transition: color 0.2s;
+	color: white;
+	font-style: italic;
+}
+::-moz-placeholder {
+	transition: color 0.2s;
+	color: white;
+	font-style: italic;  
+}
+:-ms-input-placeholder {  
+	transition: color 0.2s;
+	color: white;
+	font-style: italic;  
+}
+
+.inputLabel:hover ::-webkit-input-placeholder {
+	color: $gray_lightest;
+}
+.inputLabel:hover ::-moz-placeholder {
+	color: $gray_lightest;  
+}
+.inputLabel:hover :-ms-input-placeholder {  
+	color: $gray_lightest;  
+}

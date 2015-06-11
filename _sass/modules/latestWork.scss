@@ -1,6 +1,6 @@
 .m-latestWork-wrapper {
 	max-width: 880px;
-	margin: 5% auto 0;
+	margin: 10% auto 0;
 	@include clearfix();
 }
 .m-latestWork {
@@ -10,7 +10,7 @@
 }
 .m-latestWork-header {
 	position: relative;
-	border-bottom: 2px solid $gray_lightest;
+	border-bottom: 1px solid $gray_lightest;
 	line-height: 1;
 }
 .m-latestWork-title {
@@ -41,6 +41,13 @@
 	.m-latestWork-more {
 		bottom: 0;
 	}
+}
+
+@media (max-width: 767px), (max-height: 568px) {
+
+	.m-latestWork-wrapper {
+		margin-top: $rhythm;
+	}	
 }
 
 @media (max-width: 767px) {

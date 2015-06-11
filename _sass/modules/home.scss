@@ -23,6 +23,17 @@
 	bottom: 0;
 }
 
+@media (min-width: 1920px) {
+	.m-home-wrapper {
+		right: 15%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.m-home-wrapper {
+		right: 20%;
+	}
+}
 
 @media (max-width: 1200px) {
 	.m-home-wrapper {
@@ -37,17 +48,6 @@
 	.m-home-wrapper {
 		right: 0;
 	}
-	// .m-home-wrapper--invert {
-	// 	display: block;
-	// 	width: 100vw;
-	// 	left: auto;
-	// 	z-index: 1;
-	// 	.m-heroText-hello,
-	// 	.m-heroText-title,
-	// 	.m-heroText-paragraph {
-	// 		color: white;
-	// 	}
-	// }
 	.m-home-me {
 		display: none;
 	}
