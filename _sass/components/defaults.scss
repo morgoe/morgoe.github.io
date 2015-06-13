@@ -20,10 +20,10 @@ a {
 		top: 1px;
 	}
 	&:visited {
-		border-color: rgba($purple, 0.33);
+		border-color: rgba($black_light, 0.33);
 		.no-touch &:hover,
 		.touch &:active {
-			color: $purple;
+			color: $blue;
 		}
 	}
 	@include noSelect();

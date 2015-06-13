@@ -25,7 +25,8 @@
 }
 
 .container,
-.container--sm {
+.container--sm,
+.container--xs {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -34,6 +35,9 @@
 }
 .container--sm {
 	max-width: 768px;
+}
+.container--xs {
+	max-width: 568px;
 }
 .padding {
 	padding: $rhythm;

@@ -12,12 +12,8 @@
 	}
 	&:visited {
 		.btn {
-			color: $purple;
-			border-color: rgba($purple, 0.5);
-		}
-		.no-touch &:hover .btn,
-		.touch &:active .btn {
-			border-color: $purple;
+			color: inherit;
+			border-color: rgba($black_light, 0.33);
 		}
 	}
 }

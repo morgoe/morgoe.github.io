@@ -28,8 +28,8 @@
 		-webkit-text-stroke: 5px white;
 	}
 	&:visited {
-		color: $purple;
-		border-color: rgba($purple, 0.5);
+		color: inherit;
+		border-color: rgba($black_light, 0.33);
 	}
 	&[disabled],
 	&.disabled {
