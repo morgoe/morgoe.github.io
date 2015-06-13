@@ -43,7 +43,9 @@ figcaption {
 ol,
 ul {
 	margin-top: 0;
-	padding-left: $rhythm;
+	&:not(.u-listUnstyled) {
+		padding-left: $rhythm;	
+	}
 	> li {
 		margin-top: $line_height / 4 * 1em;
 	}
