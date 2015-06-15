@@ -43,7 +43,7 @@ figcaption {
 ol,
 ul {
 	margin-top: 0;
-	&:not(.u-listUnstyled) {
+	&:not(.u-listUnstyled):not(.u-listInline) {
 		padding-left: $rhythm;	
 	}
 	> li {
