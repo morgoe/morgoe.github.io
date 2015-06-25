@@ -3,7 +3,8 @@ html {
 	font-size: $font_size;
 	line-height: $line_height;
 	color: $black_light;
-	// -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 h1,
 h2,
