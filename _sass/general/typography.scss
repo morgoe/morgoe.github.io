@@ -7,42 +7,55 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 h1,
+.h1,
 h2,
-h3 {
+.h2,
+h3,
+.h3 {
 	font-family: $font_header;
 }
-h1 {
+h1,
+.h1 {
 	font-size: 4rem;
 	line-height: 1;
 	color: $black;
 	text-align: center;
 }
-h2 {
+h2,
+.h2 {
 	font-size: 3rem;
 	line-height: 1;
 	color: $black;
 }
-h3 {
+h3,
+.h3 {
 	font-size: 2rem;
 	font-weight: bold;
 	color: $black;
 }
-h4 {
+h4,
+.h4 {
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: normal;
 	color: $black;
 }
-h5 {
+h5,
+.h5 {
 	font-size: $rhythm / 2;
 	font-weight: normal;
 	color: $gray;
 }
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
-h5 {
+.h4,
+h5,
+.h5 {
 	+ p {
 		margin-top: 0;
 	}
@@ -66,13 +79,16 @@ blockquote {
 }
 
 @media (max-width: 767px) {
-	h1 {
+	h1,
+	.h1 {
 		font-size: 2rem;
 	}
-	h2 {
+	h2,
+	.h2 {
 		font-size: 1.5rem;
 	}
-	h3 {
+	h3,
+	.h3 {
 		font-size: 1.25rem;
 	}
 	blockquote {

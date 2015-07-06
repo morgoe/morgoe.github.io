@@ -28,11 +28,13 @@ a {
 	}
 	@include noSelect();
 }
-img {
+img,
+video {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 figcaption {
 	margin-top: 0;
@@ -61,4 +63,16 @@ ul {
     color: $blue_dark;
     background: $yellow;
     background: rgba($yellow, 0.25); /* Gecko Browsers */
+}
+
+
+input::selection {
+    color: white;
+    background: none;
+    background: rgba(white, 0.15); /* WebKit/Blink Browsers */
+}
+input::-moz-selection {
+    color: white;
+    background: none;
+    background: rgba(white, 0.15); /* Gecko Browsers */
 }

@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 18:57:19 +0530</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 18:57:19 +0530</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 14:26:13 +0530</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 14:26:13 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -374,6 +374,78 @@ This approach may give some issues in non-English languages*. &lt;/p&gt;
       </item>
     
       <item>
+        <title>Deputy 3</title>
+        <description>&lt;p&gt;Deputy is a workhorse application for any company that needs scheduled shifts for its employees. It supports scheduling, timesheets, workplace communication, and integrates with supporting software like Xero, Vend and Shopify. Deputy works with a desktop web application, an iPad app, an iPhone app and an Android app, all handling the same data in various ways, for various use cases (the mobile apps are primarily for employees, whereas the desktop app is primarily for employers).&lt;/p&gt;
+
+&lt;p&gt;When I joined Deputy, the product had been in development for just over 6 years. They’d gone through two major iterations of the software. The first version was fairly well-designed, but was overly complex and used dated design patterns. The second version simplified the UI significantly, but it had no conventions or consistency. This led to a lot of cognitive effort trying to understand each screen, as it had no relationship to the others.&lt;/p&gt;
+
+&lt;h3 id=&quot;project-goals&quot;&gt;Project goals&lt;/h3&gt;
+
+&lt;p&gt;My task was to lead the third iteration of the software - Deputy 3. This iteration had a few major goals:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It needed to support all features of both Deputy 1 and 2, while at the same time simplifying the UI&lt;/li&gt;
+  &lt;li&gt;It had to unify the design and product development of the desktop, tablet and mobile apps that had drifted apart over the years&lt;/li&gt;
+  &lt;li&gt;It had to work on any device (previous iterations were fixed-width, desktop-only apps)&lt;/li&gt;
+  &lt;li&gt;We needed to update from Bootstrap 2 to 3, which meant rewriting the CSS codebase from scratch&lt;/li&gt;
+  &lt;li&gt;It had to be more fun, inviting, and intuitive.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On top of all of this, we were also implementing new features. We planned to expand the functionality of the News Feed, adding comments and attachments; this would be rolled out simultaneously with updates to the mobile and tablet apps. We also added an easy way for employees to view past timesheets, upcoming shifts, see who they’d be working with, and claim open shifts.&lt;/p&gt;
+
+&lt;p&gt;And we only had 6 months.&lt;/p&gt;
+
+&lt;h3 id=&quot;getting-to-work&quot;&gt;Getting to work&lt;/h3&gt;
+
+&lt;p&gt;One of the benefits of working with start-ups is that there’s always someone new joining. I like to take these new employees and test the product with them while they’re still fresh-faced.&lt;/p&gt;
+
+&lt;p&gt;This user testing allowed me to focus my efforts on the aspects of the product most people found confusing. With tens of thousands of people using Deputy, I didn’t want to fix what wasn’t broken. The response we’ve received from the majority of users indicates we were successful here.&lt;/p&gt;
+
+&lt;p&gt;Once we had some direction, I started work on all three aspects of the project - code, user interface, and visual style. I like to alternate my focus. It’s useful to remove the restrictions of a developer mindset and focus purely on the design. I don’t usually bother with prototyping applications, as I can code up a functional prototype quickly, and once it’s in the browser it’s much quicker to edit data and design details.&lt;/p&gt;
+
+&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be researching and testing how best to provide affordance for a particular button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/information-architecture.jpg&quot; alt=&quot;Macro Design&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Macro design - card sorting helped us place each feature in its ideal place within the navigational structure.&lt;/figcaption&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/buttons.png&quot; alt=&quot;Micro Design&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Micro design - the iteration of accordion buttons.&lt;/figcaption&gt;
+
+&lt;p&gt;One problem we ran into again and again was the lack of time. A few really interesting ideas ended up being pushed out, but might get revisited later on. One idea that got cut was an ‘inline modal’. We needed a way to place a modal over a modal over a page, so I came up with the solution of making the first modal inline, not overlaid. Below is a messy prototype, but it demonstrates the solution pretty well.&lt;/p&gt;
+
+&lt;video width=&quot;768&quot; height=&quot;384&quot; autoplay=&quot;&quot; loop=&quot;&quot; poster=&quot;/assets/images/work/deputy/inline-modal.jpg&quot;&gt;
+	&lt;source src=&quot;/assets/images/work/deputy/inline-modal.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;figcaption&gt;Inline modal inspired by Material Design&#39;s use of animation.&lt;/figcaption&gt;
+
+&lt;p&gt;Another major issue was that we were trying to bring the desktop visually in line with the mobile apps, but many design decisions simply didn’t translate from mobile to desktop. We started by questioning some of the assumptions that had been made previously, and we ended up overhauling some key aspects of the mobile apps and meeting the designs in the middle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/transition.png&quot; alt=&quot;Transition from Deputy2 to Deputy3&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Unifying the desktop and mobile apps.&lt;/figcaption&gt;
+
+&lt;!-- One issue with the previous versions is that some forms were really long (Shift scheduling is a really complex beast to tackle, especially once you take into account differences between countries). The 2nd most popular device for Deputy users was the 1366x768px Dell laptops. This meant that for many users, the **Save** and **Cancel** buttons were out of sight (and out of mind). We solved this with an elegant solution I’ve written about in my blog - check it out. --&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I’ve seen how Reddit &lt;a href=&quot;https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/&quot;&gt;reacted&lt;/a&gt; when the design team increased the font size by 1px), but the response to the new version has been really positive. Deputy has already doubled its users (from 40,000 to 80,000) in the first half of this year. With this new release, and a few other key strategies, they’re estimating to end the year at 400,000 users.&lt;/p&gt;
+
+&lt;blockquote&gt;“I just wanted to send you a short note to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” &lt;strong class=&quot;u-pullRight&quot;&gt;–Jason Tait, a Deputy customer&lt;/strong&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 17 Jan 2015 00:00:00 +0530</pubDate>
+        <link>http://yourdomain.com/work/deputy-3</link>
+        <guid isPermaLink="true">http://yourdomain.com/work/deputy-3</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
         <title>Stackla Widgets</title>
         <description>&lt;p&gt;When I joined Stackla, they already had a Widget system in place that would allow clients to embed the product into their websites. The Widgets had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. They were also used for any live event displays we did at that time. However, the Widgets had a number of issues:&lt;/p&gt;
 
@@ -383,7 +455,7 @@ This approach may give some issues in non-English languages*. &lt;/p&gt;
   &lt;li&gt;They were extremely difficult to customise. Stackla sold itself as a white label product, but the Widgets were so rigid, that they ended up looking almost identical for each client.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” &lt;strong class=&quot;u-pullRight&quot;&gt;-Peter Cassidy, Co-founder of &lt;a href=&quot;https://stackla.com/&quot; target=&quot;_blank&quot;&gt;Stackla&lt;/a&gt;&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” &lt;strong class=&quot;u-pullRight&quot;&gt;–Peter Cassidy, Co-founder of &lt;a href=&quot;https://stackla.com/&quot; target=&quot;_blank&quot;&gt;Stackla&lt;/a&gt;&lt;/strong&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of &lt;a href=&quot;http://asntm2.starworldasia.tv/&quot; target=&quot;_blank&quot;&gt;Asia’s Next Top Model&lt;/a&gt;, and the client had almost no content of their own - the show hadn’t even started. However, there was a lot of hype on social media, so we decided to use a Widget to embed fan content into the site. Since the site was to be responsive, I pitched the idea of a Fluid Widget, one that would adapt to any screen size. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static Widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was extremely happy - a barebones site was turned into a really content-heavy site, and social engagement was massively increased. The Fluid Widget became Stackla’s best selling feature for the rest of my time working there.&lt;/p&gt;
 
@@ -407,23 +479,6 @@ This approach may give some issues in non-English languages*. &lt;/p&gt;
         <pubDate>Fri, 16 Jan 2015 00:00:00 +0530</pubDate>
         <link>http://yourdomain.com/work/stackla-widgets</link>
         <guid isPermaLink="true">http://yourdomain.com/work/stackla-widgets</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Deputy 3</title>
-        <description>&lt;div class=&quot;m-blogPost-imageCompare&quot;&gt;
-	&lt;img src=&quot;/assets/images/work/deputy/dell_v2.jpg&quot; /&gt;
-	&lt;img src=&quot;/assets/images/work/deputy/dell_v3.jpg&quot; /&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Thu, 15 Jan 2015 00:00:00 +0530</pubDate>
-        <link>http://yourdomain.com/work/deputy-3</link>
-        <guid isPermaLink="true">http://yourdomain.com/work/deputy-3</guid>
         
         
         <category>work</category>

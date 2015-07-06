@@ -41,3 +41,17 @@ InstantClick.on('change', function() {
 /* Initial Animation */
 $('html').addClass('animateHeader--in');
 animateIn();
+
+
+/* Input Label Focus */
+$(document)
+.on('focus', 'input, textarea', function() {
+	$(this).closest('.m-input-wrapper').addClass('is-focused');
+})
+.on('blur', 'input, textarea', function() {
+	$(this).closest('.m-input-wrapper').removeClass('is-focused');
+	if ($(this).val().length)
+		$(this).closest('.m-input-wrapper').addClass('is-notEmpty')
+	else
+		$(this).closest('.m-input-wrapper').removeClass('is-notEmpty')
+});

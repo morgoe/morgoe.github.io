@@ -8,16 +8,16 @@
 * + * {
 	margin-top: $line_height * 1em;
 }
-* + .margin--xl {
+.margin--xl {
 	margin-top: $line_height * 3em;
 }
-* + .margin--lg {
+.margin--lg {
 	margin-top: $line_height * 2em;
 }
-* + .margin--sm {
+.margin--sm {
 	margin-top: $line_height / 2 * 1em;
 }
-* + .margin--none {
+.margin--none {
 	margin-top: 0;
 }
 .margin-bottom {

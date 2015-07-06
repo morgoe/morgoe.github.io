@@ -1,3 +1,7 @@
+button {
+	background: none;
+	border: none;
+}
 .btn {
 	position: relative;
 	font-size: 1.5rem;
@@ -47,6 +51,17 @@
 .btn--small {
 	font-size: 1.25rem;
 	border-bottom-width: 2px;
+}
+.btn--modal {
+	color: white;
+	border-bottom-color: rgba(white, 0.5);
+	.no-touch &:hover,
+	.touch &:active {
+		color: white;
+	}
+	&:after {
+		-webkit-text-stroke: 5px $blue;
+	}
 }
 .btn-footer {
 	display: block;
@@ -112,6 +127,9 @@
 		&:after {
 			-webkit-text-stroke: 4px white;
 		}
+	}
+	.btn--modal:after {
+		-webkit-text-stroke: 4px $blue;
 	}
 	.btn--small {
 		font-size: inherit;
