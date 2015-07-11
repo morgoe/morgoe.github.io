@@ -80,13 +80,6 @@ function toggleContactModal(doState, stateMessage) {
 		setTimeout(function() { // Then remove the success state silently in the background
 			modal.removeClass('is-success');
 		}, 3000);
-	} else if (doState === 'error') {
-		// If error state, then show the error message
-		modal.addClass('is-error');
-		modal.find('.m-modal-messageText').text(stateMessage);
-		setTimeout(function() { // Then hide the error message, go back to the form
-			modal.removeClass('is-error');
-		}, 2000);
 	} else {
 		// Otherwise, just open/close the modal as usual
 		modal.toggleClass('is-open');
@@ -137,7 +130,7 @@ $(document).on('click', '#contactForm-submit', function(e){
 			inputURL.val('');
 		}
 		else {
-			toggleContactModal('error', 'Something went wrong. Please double check your details.');
+			// toggleContactModal('error', 'Something went wrong. Please double check your details.');
 		}
 		setTimeout(function() {
 			sendButton.attr("data-text", "Submit");	

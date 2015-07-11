@@ -28,15 +28,15 @@
 	background: $blue;
 
 	@include prefix(transform, scale(0));
-	-webkit-transition: -webkit-transform 0.5s, background 0.5s 0.5s;
-	transition: transform 0.5s, background 0.5s 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 	.is-open & {
 		@include prefix(transform, scale(10));
-		-webkit-transition: -webkit-transform 1.5s;
-		transition: transform 1.5s;
+		-webkit-transition: -webkit-transform 1.5s, background 0s 1s;
+		transition: transform 1.5s, background 0s 1s;
 	}
 	.is-success & {
-		background: $green;	
+		background: $green;
 	}
 }
 .m-modal-message {
@@ -50,20 +50,12 @@
 	bottom: 0;
 	
 	background: transparent;
-	z-index: -1;
-	transition: background 1s, z-index 0s 1s;
 	.is-success & {
-		transition: none;
+		z-index: 2;
 	}
 	.is-success.is-open & {
 		background: $green;
-		z-index: 2;
-		transition: background 1s;
-	}
-	.is-error & {
-		background: $red;
-		z-index: 2;
-		transition: background 1s;
+		@include prefix(transition, background 1s);
 	}
 }
 .m-modal-messageText {
@@ -74,8 +66,7 @@
 
 	opacity: 0;
 	@include prefix(transition, opacity 1s);
-	.is-success.is-open &,
-	.is-error.is-open & {
+	.is-success.is-open & {
 		opacity: 1;
 	}
 }
@@ -97,7 +88,7 @@
 		@include prefix(transition, opacity 1s 0.25s);
 	}
 	.is-success & {
-		@include prefix(transition, none);
+		opacity: 0;
 	}
 }
 .m-modal-title {
@@ -121,6 +112,10 @@
 	&:active {
 		top: 1rem;
 		margin-top: 1px;
+	}
+	.is-success & {
+		opacity: 0;
+		@include prefix(transition, opacity 1s);
 	}
 }
 
