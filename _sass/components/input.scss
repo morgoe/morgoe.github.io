@@ -75,6 +75,8 @@ input,
 textarea {
 	display: block;
 	width: 100%;
+	-webkit-appearance: none;
+    border-radius: 0;
 	background: none;
 	border: none;
 
@@ -165,5 +167,10 @@ textarea,
 	}
 	.m-input-error {
 		font-size: 10px;
+	}
+	input,
+	textarea,
+	.m-input-placeholder {
+		font-size: 16px;
 	}
 }
