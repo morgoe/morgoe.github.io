@@ -1,18 +1,103 @@
 .is-modalOpen {
 	overflow: hidden;
 }
-.m-modal {
+.m-modal-wrapper {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	margin-top: 0;
-	z-index: 3;
+	z-index: -1;
+	&.is-open {
+		z-index: 3;
+		transition: none;
+	}
+	> * + * {
+		margin-top: 0;
+	}
+	transition: z-index 0s 1s;
+}
+.m-modal-animation {
+	position: absolute;
+	top: -500px;
+	left: -500px;
+	width: 1000px;
+	height: 1000px;
+	border-radius: 50%;
 	background: $blue;
+
+	@include prefix(transform, scale(0));
+	-webkit-transition: -webkit-transform 0.5s, background 0.5s 0.5s;
+	transition: transform 0.5s, background 0.5s 0.5s;
+	.is-open & {
+		@include prefix(transform, scale(10));
+		-webkit-transition: -webkit-transform 1.5s;
+		transition: transform 1.5s;
+	}
+	.is-success & {
+		background: $green;	
+	}
+}
+.m-modal-message {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	background: transparent;
+	z-index: -1;
+	transition: background 1s, z-index 0s 1s;
+	.is-success & {
+		transition: none;
+	}
+	.is-success.is-open & {
+		background: $green;
+		z-index: 2;
+		transition: background 1s;
+	}
+	.is-error & {
+		background: $red;
+		z-index: 2;
+		transition: background 1s;
+	}
+}
+.m-modal-messageText {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+
+	opacity: 0;
+	@include prefix(transition, opacity 1s);
+	.is-success.is-open &,
+	.is-error.is-open & {
+		opacity: 1;
+	}
+}
+.m-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
 	color: white;
 	h2 {
 		color: inherit;
+	}
+	opacity: 0;
+	@include prefix(transition, opacity 0.25s);
+	.is-open & {
+		opacity: 1;
+		@include prefix(transition, opacity 1s 0.25s);
+	}
+	.is-success & {
+		@include prefix(transition, none);
 	}
 }
 .m-modal-title {
@@ -20,17 +105,22 @@
 }
 .m-modal-close {
 	position: absolute;
+	z-index: 1;
 	top: 1rem;
 	right: 1rem;
-	margin-top: 0;
-	line-height: 1.3;
+	line-height: 1;
 	width: 4rem;
 	height: 4rem;
 	font-size: 4rem;
+	color: white;
 	opacity: 0.5;
 	@include prefix(transition, opacity 0.25s);
 	&:hover {
 		opacity: 1;
+	}
+	&:active {
+		top: 1rem;
+		margin-top: 1px;
 	}
 }
 
@@ -44,6 +134,9 @@
 		width: 3rem;
 		height: 3rem;
 		font-size: 3rem;
+		&:active {
+			top: 0;
+		}
 	}
 	.m-modal-body {
 		margin-top: 3rem;

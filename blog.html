@@ -1,5 +1,5 @@
 ---
-layout: bare
+layout: default
 siteNav: blog
 title:  "Design Solutions"
 categories: jekyll update
@@ -12,8 +12,7 @@ permalink: /design-solutions/
 
 	<!-- <form class="m-form">
 		<div class="container--xs padding">
-			<h3 class="m-form-title u-color--white u-text--center">Newsletter Signup</h3>
-			<p class="u-color--white u-text--center">A new email for each new post, and never any spam.</p>
+			<p class="m-form-title">Get emailed about design solutions. No spam, ever.</p>
 			<div class="m-form-table">
 				<div class="m-form-cell">
 					<div class="m-input-wrapper">
@@ -26,7 +25,7 @@ permalink: /design-solutions/
 					</div>
 				</div>
 				<div class="m-form-cell m-form-cell--btn">
-					<button class="btn btn--modal" data-text="Submit"></button>
+					<button class="btn btn--modal btn--sm" data-text="Submit"></button>
 				</div>
 			</div>
 		</div>
@@ -37,7 +36,7 @@ permalink: /design-solutions/
 			{% for post in site.categories['coming-soon'] %}
 				<li class="margin-bottom">
 					<p class="u-text--small u-color--gray margin--none">Coming soon...</p>
-					<div class="btn btn--small m-blogPost-btn disabled" data-text="{{ post.title }}"></div>
+					<div class="btn btn--sm m-blogPost-btn disabled" data-text="{{ post.title }}"></div>
 					<p class="margin--none u-color--gray">{{ post.description }}</p>
 				</li>
 			{% endfor %}
@@ -49,7 +48,7 @@ permalink: /design-solutions/
 						</div>
 						<div class="m-blogPost-description">
 							<p class="u-text--small u-color--gray margin--none">{{ post.date | date: "%-d %b, %Y" }}</p>
-							<span class="btn btn--small m-blogPost-btn" data-text="{{ post.title }}"></span>
+							<span class="btn btn--sm m-blogPost-btn" data-text="{{ post.title }}"></span>
 							<p class="margin--none">{{ post.description }}</p>
 						</div>
 					</a>
@@ -59,6 +58,6 @@ permalink: /design-solutions/
 	</div>
 </div>
 
-<a class="btn-footer" href="mailto:{{ site.email }}">
+<!-- <a class="btn-footer" href="mailto:{{ site.email }}">
 	<span class="btn" data-text="Contact Me"></span>
-</a>
+</a> -->

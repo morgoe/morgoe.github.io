@@ -45,13 +45,102 @@ animateIn();
 
 /* Input Label Focus */
 $(document)
+.on('keyup', 'input, textarea', function() {
+	if ($(this).val().length)
+		$(this).closest('.m-input-wrapper').addClass('is-notEmpty')
+	else
+		$(this).closest('.m-input-wrapper').removeClass('is-notEmpty')
+})
 .on('focus', 'input, textarea', function() {
 	$(this).closest('.m-input-wrapper').addClass('is-focused');
 })
 .on('blur', 'input, textarea', function() {
 	$(this).closest('.m-input-wrapper').removeClass('is-focused');
-	if ($(this).val().length)
-		$(this).closest('.m-input-wrapper').addClass('is-notEmpty')
-	else
-		$(this).closest('.m-input-wrapper').removeClass('is-notEmpty')
+});
+
+
+/* Contact Me Modal */
+function toggleContactModal(doState, stateMessage) {
+	var btn = $('#contactMe-openModal');
+	var modal = $('#contactMe-modal');
+
+	// Offset
+	var left = btn[0].offsetLeft + btn.width()/2;
+	var top = btn[0].offsetTop + btn.height()/2;
+	modal.find('.m-modal-animation').css('margin-left', left).css('margin-top', top);
+
+	if (doState === 'success') {
+		// If success state, then show the success message
+		modal.addClass('is-success');
+		modal.find('.m-modal-messageText').text(stateMessage);
+		setTimeout(function() { // Then minimise the modal
+			modal.removeClass('is-open');
+			$('body').removeClass('is-modalOpen'); // Allow body scrolling
+		}, 2000);
+		setTimeout(function() { // Then remove the success state silently in the background
+			modal.removeClass('is-success');
+		}, 3000);
+	} else if (doState === 'error') {
+		// If error state, then show the error message
+		modal.addClass('is-error');
+		modal.find('.m-modal-messageText').text(stateMessage);
+		setTimeout(function() { // Then hide the error message, go back to the form
+			modal.removeClass('is-error');
+		}, 2000);
+	} else {
+		// Otherwise, just open/close the modal as usual
+		modal.toggleClass('is-open');
+		$('body').toggleClass('is-modalOpen'); // Prevent body scrolling
+	}
+}
+$(document).on('click', '#contactMe-openModal, #contactMe-closeModal', function() {
+	toggleContactModal();
+});
+
+/* Formspree Contact Form */
+$(document).on('click', '#contactForm-submit', function(e){
+	e.preventDefault(); // prevent the form to do the post.
+
+	var contactForm = $("#contactForm")[0],
+	inputName = $("#contactForm-name"),
+	inputEmail = $("#contactForm-email"),
+	inputMessage = $("#contactForm-message"),
+	inputURL = $("#contactForm-url"),
+	sendButton = $("#contactForm-submit");
+
+	inputURL.val(window.location.pathname); /* Set hidden input as URL */
+	window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
+
+	sendButton.attr("data-text", "Sending...");
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', '//formspree.io/morgancarter1@gmail.com', true);
+	xhr.setRequestHeader("Accept", "application/json")
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+	xhr.send(
+		"name=" + inputName.val() +
+		"&email=" + inputEmail.val() +
+		"&message=" + inputMessage.val() +
+		"&url=" + inputURL.val());
+
+	window.history.replaceState({}, '', inputURL.val()); /* Set URL back to what it was */
+
+	xhr.onloadend = function (res) {
+		if (res.target.status === 200){
+			toggleContactModal('success', 'Message sent!');
+
+			// Clear form values
+			inputName.val('').removeClass('is-notEmpty');
+			inputEmail.val('').removeClass('is-notEmpty');
+			inputMessage.val('').removeClass('is-notEmpty');
+			inputURL.val('');
+		}
+		else {
+			toggleContactModal('error', 'Something went wrong. Please double check your details.');
+		}
+		setTimeout(function() {
+			sendButton.attr("data-text", "Submit");	
+		}, 1000);
+	}
 });

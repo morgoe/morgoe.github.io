@@ -16,9 +16,6 @@ a {
 		color: $blue;
 		border-color: initial;
 	}
-	&:active {
-		top: 1px;
-	}
 	&:visited {
 		border-color: rgba($black_light, 0.33);
 		.no-touch &:hover,
@@ -28,6 +25,13 @@ a {
 	}
 	@include noSelect();
 }
+a,
+button {
+	position: relative;
+	&:active {
+		top: 1px;
+	}
+}
 img,
 video {
 	display: block;
@@ -35,6 +39,9 @@ video {
 	max-height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+video {
+	height: auto;
 }
 figcaption {
 	margin-top: 0;

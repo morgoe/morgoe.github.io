@@ -12,6 +12,7 @@ button {
 	border-bottom: 3px solid rgba($blue, 0.5);
 	text-transform: none;
 	.no-touch &:hover,
+	.no-touch &:focus,
 	.touch &:active {
 		border-color: initial;
 	}
@@ -48,7 +49,7 @@ button {
 		margin-top: 1.5em;
 	}
 }
-.btn--small {
+.btn--sm {
 	font-size: 1.25rem;
 	border-bottom-width: 2px;
 }

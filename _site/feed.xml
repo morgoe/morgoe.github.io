@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jul 2015 14:26:13 +0530</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2015 14:26:13 +0530</lastBuildDate>
+    <pubDate>Sat, 11 Jul 2015 11:05:51 +0530</pubDate>
+    <lastBuildDate>Sat, 11 Jul 2015 11:05:51 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -431,7 +431,7 @@ This approach may give some issues in non-English languages*. &lt;/p&gt;
 
 &lt;p&gt;In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I’ve seen how Reddit &lt;a href=&quot;https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/&quot;&gt;reacted&lt;/a&gt; when the design team increased the font size by 1px), but the response to the new version has been really positive. Deputy has already doubled its users (from 40,000 to 80,000) in the first half of this year. With this new release, and a few other key strategies, they’re estimating to end the year at 400,000 users.&lt;/p&gt;
 
-&lt;blockquote&gt;“I just wanted to send you a short note to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” &lt;strong class=&quot;u-pullRight&quot;&gt;–Jason Tait, a Deputy customer&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;“I just wanted to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” &lt;strong class=&quot;u-pullRight&quot;&gt;–Jason Tait, a Deputy customer&lt;/strong&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.&lt;/p&gt;
 
