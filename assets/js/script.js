@@ -72,14 +72,14 @@ function toggleContactModal(doState, stateMessage) {
 	if (doState === 'success') {
 		// If success state, then show the success message
 		modal.addClass('is-success');
-		modal.find('.m-modal-messageText').text(stateMessage);
+		modal.find('.m-modal-messageText').html(stateMessage);
 		setTimeout(function() { // Then minimise the modal
 			modal.removeClass('is-open');
 			$('body').removeClass('is-modalOpen'); // Allow body scrolling
-		}, 2000);
+		}, 4000);
 		setTimeout(function() { // Then remove the success state silently in the background
 			modal.removeClass('is-success');
-		}, 3000);
+		}, 5000);
 	} else {
 		// Otherwise, just open/close the modal as usual
 		modal.toggleClass('is-open');
@@ -121,7 +121,7 @@ $(document).on('click', '#contactForm-submit', function(e){
 
 	xhr.onloadend = function (res) {
 		if (res.target.status === 200){
-			toggleContactModal('success', 'Message sent!');
+			toggleContactModal('success', 'Thanks for contacting me!<br> I\'ll be in touch within a couple of days.');
 
 			// Clear form values
 			inputName.val('').removeClass('is-notEmpty');
