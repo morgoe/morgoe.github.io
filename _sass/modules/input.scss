@@ -8,12 +8,12 @@
 		}
 		.m-input:after {
 			left: 0;
-			@include prefix(transition, left 0.1s);
+			@include prefix(transition, left 0.15s);
 		}
 		.m-input-label:after,
 		.m-input-placeholder {
 			right: 100%;
-			@include prefix(transition, right 0.1s);
+			@include prefix(transition, right 0.15s);
 		}
 	}
 }
