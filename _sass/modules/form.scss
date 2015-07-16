@@ -1,0 +1,41 @@
+.m-form {
+	position: relative;
+	padding: $rhythm / 2 0;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -3rem;
+		right: -3rem;
+		bottom: 0;
+		z-index: -1;
+		background: $blue;
+	}
+}
+.m-form-title {
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+.m-form-table {
+	margin-top: 0.75rem;
+	display: table;
+	width: 100%;
+}
+.m-form-cell {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 100%;
+}
+.m-form-cell--btn {
+	padding-left: 1rem;
+	position: relative;
+	top: 2px;
+}
+
+@media (max-width: 767px) {
+	.m-form-cell--btn {
+		top: 1px;
+	}
+}

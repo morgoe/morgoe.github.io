@@ -16,7 +16,6 @@
 @import 'components/defaults';
 @import 'components/buttons';
 @import 'components/code';
-@import 'components/input';
 
 // Plugins
 @import 'plugins/instantClick';
@@ -24,8 +23,10 @@
 // Modules
 @import 'modules/about';
 @import 'modules/blogPost';
+@import 'modules/form';
 @import 'modules/heroText';
 @import 'modules/home';
+@import 'modules/input';
 @import 'modules/latestWork';
 @import 'modules/modal';
 @import 'modules/siteNavigation';
