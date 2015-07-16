@@ -90,6 +90,11 @@ textarea {
 	    -webkit-box-shadow: 0 0 0 100px $blue inset;
 	}
 }
+textarea {
+	line-height: 1.3;
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
 .m-input {
 	position: relative;
 	&:after {

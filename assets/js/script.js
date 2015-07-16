@@ -84,6 +84,7 @@ function toggleContactModal(doState, stateMessage) {
 		// Otherwise, just open/close the modal as usual
 		modal.toggleClass('is-open');
 		$('body').toggleClass('is-modalOpen'); // Prevent body scrolling
+		autosize($('#contactForm-message')); // Initialise autosize plugin
 	}
 }
 $(document).on('click', '#contactMe-openModal, #contactMe-closeModal', function() {
