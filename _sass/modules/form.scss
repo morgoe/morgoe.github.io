@@ -5,8 +5,8 @@
 		content: "";
 		position: absolute;
 		top: 0;
-		left: -3rem;
-		right: -3rem;
+		left: -$rhythm * 2;
+		right: -$rhythm * 2;
 		bottom: 0;
 		z-index: -1;
 		background: $blue;
@@ -35,6 +35,10 @@
 }
 
 @media (max-width: 767px) {
+	.m-form:after {
+		left: -$rhythm / 2;
+		right: -$rhythm / 2;
+	}
 	.m-form-cell--btn {
 		top: 1px;
 	}
