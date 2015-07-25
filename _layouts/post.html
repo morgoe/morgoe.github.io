@@ -4,19 +4,19 @@ body-id: work
 ---
 
 <div class="padding--lg margin--none">
-	<div class="container--sm">
-		<div class="u-textCenter m-animation-1">
-			<h1 class="m-page-title">{{ page.title }}</h1>
-			<h5 class="u-text--center margin--none">
-				{% if page.role %}
-					{{ page.role }}
-				{% else %}
-					{{ page.date | date: "%-d %b, %Y" }}
-				{% endif %}
-			</h5>
-		</div>
+	<div class="m-animation-1">
+		<h1 class="m-post-title">{{ page.title }}</h1>
+		<h5 class="u-text--center margin--none">
+			{% if page.role %}
+				{{ page.role }}
+			{% else %}
+				{{ page.date | date: "%-d %b, %Y" }}
+			{% endif %}
+		</h5>
+	</div>
 
-		<div class="m-page-content">
+	<div class="container--sm">
+		<div class="m-post-content">
 			{{ content }}
 		</div>
 	</div>

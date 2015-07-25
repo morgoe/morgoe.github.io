@@ -6,30 +6,34 @@ categories: jekyll update
 permalink: /design-solutions/
 ---
 
-<div class="padding--lg margin--none m-animation-1">
-	<h1 class="m-page-title">{{ page.title }}</h1>
-	<p class="u-text--center">Common design problems and how to solve them.</p>
-
-	{% include newsletter.html %}
+<div class="padding--lg margin--none">
+	<div class="m-animation-1">
+		<h1 class="m-page-title">{{ page.title }}</h1>
+		<p class="u-text--center margin--none">Common design problems and how to solve them.</p>
+	</div>
+	
+	<div class="m-animation-2">
+		{% include newsletter.html %}
+	</div>
 
 	<section class="container--xs">
-		<ul class="u-listUnstyled">
+		<ul class="u-listUnstyled m-post-content">
 			{% for post in site.categories['coming-soon'] %}
 				<li class="margin-bottom">
 					<p class="u-text--small u-color--gray margin--none">Coming soon...</p>
-					<div class="btn btn--sm m-blogPost-btn disabled" data-text="{{ post.title }}"></div>
+					<div class="btn btn--sm m-post-btn disabled" data-text="{{ post.title }}"></div>
 					<p class="margin--none u-color--gray">{{ post.description }}</p>
 				</li>
 			{% endfor %}
 			{% for post in site.categories['design-solutions'] %}
 				<li class="margin-bottom">
-					<a class="m-blogPost-link" href="{{ post.url | prepend: site.baseurl }}">
-						<div class="m-blogPost-image">
+					<a class="m-post-link" href="{{ post.url | prepend: site.baseurl }}">
+						<div class="m-post-image">
 							<img src="/assets/images/blog/{{ post.thumbnail }}">
 						</div>
-						<div class="m-blogPost-description">
+						<div class="m-post-description">
 							<p class="u-text--small u-color--gray margin--none">{{ post.date | date: "%-d %b, %Y" }}</p>
-							<span class="btn btn--sm m-blogPost-btn" data-text="{{ post.title }}"></span>
+							<span class="btn btn--sm m-post-btn" data-text="{{ post.title }}"></span>
 							<p class="margin--none">{{ post.description }}</p>
 						</div>
 					</a>

@@ -2,9 +2,11 @@
 	position: relative;
 	margin-top: 0;
 	z-index: 2;
+	@include clearfix();
 }
 .m-siteNavigation-logo {
-	display: inline-block;
+	display: block;
+	float: left;
 	width: 24px;
 	height: 24px;
 	background: white;
@@ -20,7 +22,8 @@
 	}
 }
 .m-siteNavigation-list {
-	display: inline-block;
+	display: block;
+	float: left;
 	vertical-align: top;
 	margin-top: 2px;
 	> li {

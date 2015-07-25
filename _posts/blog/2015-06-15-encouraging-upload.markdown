@@ -2,52 +2,73 @@
 layout:        post
 date:          2015-06-15
 categories:    
-- coming-soon
+- design-solutions
 siteNav: blog
 
 title:             "Encouraging Display Photo Uploads"
+
+thumbnail:         encouraging-upload/thumbnail.png
+
 description:       "Lessen the problem of placeholder avatars by encouraging your users to upload a photo in the first place."
 ---
 
-One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of that quality, but the majority of your users probably won't upload one at all. 
+So now that you’ve got beautiful placeholder avatars, let’s focus on encouraging our users to upload a display photo.
 
-So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I'll cover in my next post. 
+### Make it part of onboarding
 
-### Generic Faces
-Facebook solves this problem by using a generic silhouette as a placeholder avatar. This silhouette is also gender-specific. 
+A number of products include this as a step in the onboarding process, often making it difficult to skip.
 
-I don't think this is a great solution for a number of reasons. 
+[Gmail]
 
-1. If you have two male users (or two female), their placeholder avatars look identical. Again, let’s assume only 10% of your users actually upload a photo - your design now becomes a lot more homogenous and confusing. 
-2. If you weren't already asking the user to set the gender, now that's another option you need them to set. And if you make this setting optional, then what is the default gender? Make? Female? Androgynous alien?
-3. Many products (ie. Tumblr, OkCupid), have a less binary approach to gender. This makes things even more difficult. 
+However, this can be a tradeoff. Make it too easy to skip, and some users will. Make it too hard, and some might abandon the product before completing the onboarding.
 
-However, Facebook gets away with it because *everyone* uploads a display photo. 
+### Reasons and rewards
+
+Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user). 
+
+On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother with the solutions outlined in [Placeholder Avatars](/design-solutions/placeholder-avatars).
+
+A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.
+
+A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with *likes, but more importantly, potential business *shit.
+
+Reasons and rewards don’t necessarily have to be socially motivated. You might need a display photo to *something-not-socially-motivated, or your reward might be bonus points in a game product like *Duolingo.
+
+### Use their existing social display photos
+
+You can take advantage of the work the social media giants have done by simply grabbing the display photo from one of the user’s social networks. Many products now offer social logins, or allow you to connect your social networks after creating an account. If this suits your product, it’s a really simple way to practically guarantee getting a display photo for every user.
+
+### Entice them
+
+If there is no display photo uploaded, both Dropbox and Gmail show on placeholder to the user, and another to other users. You can use this to your benefit.
+
+<div style="background: #f6f8f8;">
+	<img src="/assets/images/blog/encouraging-upload/faceholder.gif" width="298">
+</div>
+<figcaption>Dropbox's placeholder avatar, or 'face holder'. <a href="***" target="_blank">Sourced from Dribbble</a>.</figcaption>
+
+Daniel Eden of [Dropbox](https://dropbox.com) said:
+
+<div class="m-post-quote margin--none">
+	<p>We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the face holder character significantly outperformed the initials.</p>
+
+	<p>The character lends itself a few things:</p>
+
+	<ul>
+		<li>It’s super cute, so people want to interact with it</li>
+		<li>Unlike the initials, it’s clearly not a representation of the user’s true identity</li>
+		<li>It looks like a placeholder. The dotted border just screams “change me!”</li>
+	</ul>
+</div>
+
+Twitter does something similar. ………….
+
+[Twitter]
 
 ### Gravatar
-*Research this*
 
-### Fun Artwork
-This approach is used by Twitter, Slack, Tumblr and I'm sure many more. It has a great benefit of reinforcing branding - Slack, for example, uses variations of their logo.  Looking back at your design in which no-one uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks fun, inviting, and *correct.
+Gravatar is interesting - and according to [UserOnboard](https://useronboard.com/)’s Samuel Hulick, *“seriously underused”*. Gravatar is a Global *R Avatar. If a user has uploaded an avatar on Gravatar, you and anyone else can grab it….
 
-This approach can be great in some areas. Take Neopets? for example - each piece of art is unique and identifying. This makes it easy to recognise a user by their avatar, even if it's a default. What's their  favourite animal? 
+Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.
 
-However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. You can't recognise someone by their avatar, although it does provide some recognition when placed in context. 
-
-### Initials
-Gmail, Dropbox and Apple take a third (and my favourite) approach. If your brand doesn't really fit the Neopets vibe, you can simply use the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). 
-
-Gmail and Dropbox go further, adding a unique colour to each user. Joseph Parry is a red JP, and Joseph Primrose is a green JP. This provides a recognisable avatar in isolation, as well as in context. 
-This approach may give some issues in non-English languages*. 
-
-So how do we do it? You don't want to pick any random colour out of the 16,777,216 possible variations because they'll probably look terrible. So we just pick a few, no more than 10.
-
-Next, we need to assign each user a colour. This can't be randomly done upon render, because Joseph Parry needs to always be a red JP. The solution is no good if you refresh the page and he’s now green. 
-
-We can solve this problem using *hashes. We didn't want to create another database entry for each user, so this allows us to calculate it on render, but have the same colour each time. 
-
-Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. 
-
-Try playing around with the example below, then check out  the code to see how it's done. 
-
-My next post will detail how to encourage people to upload an avatar.
+[faceholder]: /assets/images/blog/encouraging-upload/faceholder2.gif

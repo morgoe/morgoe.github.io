@@ -5,7 +5,7 @@
 .m-animation-5,
 .m-animation-6,
 .m-animation-7,
-.m-page-content > *,
+.m-post-content > *,
 .m-animation-header {
 	opacity: 0;
 }
@@ -22,27 +22,27 @@
 		@include prefix(transition, opacity 1s);
 	}
 	.m-animation-2,
-	.m-page-content > *:nth-child(1) {
+	.m-post-content > *:nth-child(1) {
 		@include prefix(transition, opacity 1.25s 0.1s);
 	}
 	.m-animation-3,
-	.m-page-content > *:nth-child(2) {
+	.m-post-content > *:nth-child(2) {
 		@include prefix(transition, opacity 1.5s 0.2s);
 	}
 	.m-animation-4,
-	.m-page-content > *:nth-child(3) {
+	.m-post-content > *:nth-child(3) {
 		@include prefix(transition, opacity 2s 0.3s);
 	}
 	.m-animation-5,
-	.m-page-content > *:nth-child(4) {
+	.m-post-content > *:nth-child(4) {
 		@include prefix(transition, opacity 2.5s 0.4s);
 	}
 	.m-animation-6,
-	.m-page-content > *:nth-child(5) {
+	.m-post-content > *:nth-child(5) {
 		@include prefix(transition, opacity 3s 0.5s);
 	}
 	.m-animation-7,
-	.m-page-content > * {
+	.m-post-content > * {
 		@include prefix(transition, opacity 3.5s 0.6s);
 	}
 	.m-animation-1,
@@ -52,7 +52,7 @@
 	.m-animation-5,
 	.m-animation-6,
 	.m-animation-7,
-	.m-page-content > * {
+	.m-post-content > * {
 		opacity: 1;
 	}
 }

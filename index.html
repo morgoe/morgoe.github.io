@@ -14,12 +14,12 @@ body-id: home
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/design-solutions">View more →</a>
 			</div>
 			{% for post in site.categories['design-solutions'] limit:1 %}
-				<a class="m-blogPost-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
-					<div class="m-blogPost-image">
+				<a class="m-post-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
+					<div class="m-post-image">
 						<img src="/assets/images/blog/{{ post.thumbnail }}">
 					</div>
-					<div class="m-blogPost-description">
-						<span class="btn btn--sm m-blogPost-btn" data-text="{{ post.title }}"></span>
+					<div class="m-post-description">
+						<span class="btn btn--sm m-post-btn" data-text="{{ post.title }}"></span>
 						<p class="margin--none u-text--small">{{ post.description }}</p>
 					</div>
 				</a>
@@ -31,12 +31,12 @@ body-id: home
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/work">View more →</a>
 			</div>
 			{% for post in site.categories['work'] limit:1 %}
-				<a class="m-blogPost-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
-					<div class="m-blogPost-image">
+				<a class="m-post-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
+					<div class="m-post-image">
 						<img src="/assets/images/work/{{ post.thumbnail }}">
 					</div>
-					<div class="m-blogPost-description">
-						<span class="btn btn--sm m-blogPost-btn" data-text="{{ post.title }}"></span>
+					<div class="m-post-description">
+						<span class="btn btn--sm m-post-btn" data-text="{{ post.title }}"></span>
 						<p class="margin--none u-text--small">{{ post.description_short }}</p>
 					</div>
 				</a>

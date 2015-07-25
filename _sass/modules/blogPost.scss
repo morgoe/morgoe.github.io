@@ -1,4 +1,22 @@
-.m-blogPost-link {
+.m-post-title {
+	font-size: 3rem;
+}
+.m-post-content {
+	* + h2,
+	* + h3,
+	* + h4 {
+		margin-top: $line_height * 1em / 2;
+	}
+}
+.m-post-quote {
+	padding-left: $rhythm;
+	font-style: italic;
+	color: $black_lightest;
+	p {
+		color: inherit;
+	}
+}
+.m-post-link {
 	display: table;
 	width: 100%;
 	border-bottom: none;
@@ -18,23 +36,26 @@
 		}
 	}
 }
-.m-blogPost-image {
+.m-post-image {
 	width: 4 * $rhythm;
 	height: 4 * $rhythm;
 	> img {
 		border-radius: 50%;
 	}
 }
-.m-blogPost-description {
+.m-post-description {
 	margin-top: 0;
 	padding-left: 1rem;
 }
-.m-blogPost-btn {
+.m-post-btn {
 	margin-top: 0;
 }
 
 @media (max-width: 767px) {
-	.m-blogPost-image {
+	.m-post-title {
+		font-size: 2rem;
+	}
+	.m-post-image {
 		width: 3 * $rhythm;
 		height: 3 * $rhythm;
 	}

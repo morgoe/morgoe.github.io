@@ -17,20 +17,20 @@ h3,
 h1,
 .h1 {
 	font-size: 4rem;
-	line-height: 1;
+	line-height: $line_height--header;
 	color: $black;
 	text-align: center;
 }
 h2,
 .h2 {
 	font-size: 3rem;
-	line-height: 1;
+	line-height: $line_height--header;
 	color: $black;
 }
 h3,
 .h3 {
 	font-size: 2rem;
-	font-weight: bold;
+	line-height: $line_height--header;
 	color: $black;
 }
 h4,
@@ -57,7 +57,7 @@ h4,
 h5,
 .h5 {
 	+ p {
-		margin-top: 0;
+		margin-top: $line_height * 1em / 12;
 	}
 }
 blockquote {
@@ -75,6 +75,10 @@ blockquote {
 @media (max-width: 1023px) {
 	html {
 		font-size: $font_size--mobile;
+	}
+	h3,
+	.h3 {
+		font-size: 1.5rem;
 	}
 }
 
