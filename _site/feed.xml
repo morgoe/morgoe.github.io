@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jul 2015 01:31:15 +0300</pubDate>
-    <lastBuildDate>Mon, 27 Jul 2015 01:31:15 +0300</lastBuildDate>
+    <pubDate>Mon, 27 Jul 2015 01:44:56 +0300</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2015 01:44:56 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -50,12 +50,12 @@
 &lt;div style=&quot;background: #f6f8f8;&quot;&gt;
 	&lt;img src=&quot;/assets/images/blog/encouraging-upload/faceholder.gif&quot; width=&quot;298&quot; /&gt;
 &lt;/div&gt;
-&lt;figcaption&gt;Dropbox&#39;s placeholder avatar, or &#39;face holder&#39;. &lt;a href=&quot;https://dribbble.com/shots/1972358-Faceholder&quot; target=&quot;_blank&quot;&gt;Sourced from Dribbble&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;figcaption&gt;Dropbox&#39;s placeholder avatar, or &#39;Faceholder&#39;. &lt;a href=&quot;https://dribbble.com/shots/1972358-Faceholder&quot; target=&quot;_blank&quot;&gt;Sourced from Dribbble&lt;/a&gt;.&lt;/figcaption&gt;
 
 &lt;p&gt;Daniel Eden of Dropbox said:&lt;/p&gt;
 
 &lt;div class=&quot;m-post-quote margin--none&quot;&gt;
-	&lt;p&gt;We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the face holder character significantly outperformed the initials.&lt;/p&gt;
+	&lt;p&gt;We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the faceholder character significantly outperformed the initials.&lt;/p&gt;
 
 	&lt;p class=&quot;margin--sm&quot;&gt;The character lends itself a few things:&lt;/p&gt;
 

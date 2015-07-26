@@ -51,12 +51,12 @@ If there is no display photo uploaded, both Dropbox and Gmail show on placeholde
 <div style="background: #f6f8f8;">
 	<img src="/assets/images/blog/encouraging-upload/faceholder.gif" width="298">
 </div>
-<figcaption>Dropbox's placeholder avatar, or 'face holder'. <a href="https://dribbble.com/shots/1972358-Faceholder" target="_blank">Sourced from Dribbble</a>.</figcaption>
+<figcaption>Dropbox's placeholder avatar, or 'Faceholder'. <a href="https://dribbble.com/shots/1972358-Faceholder" target="_blank">Sourced from Dribbble</a>.</figcaption>
 
 Daniel Eden of Dropbox said:
 
 <div class="m-post-quote margin--none">
-	<p>We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the face holder character significantly outperformed the initials.</p>
+	<p>We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the faceholder character significantly outperformed the initials.</p>
 
 	<p class="margin--sm">The character lends itself a few things:</p>
 
