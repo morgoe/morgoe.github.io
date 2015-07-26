@@ -109,7 +109,9 @@
 	.is-open & {
 		opacity: 0.5;
 		@include prefix(transition, opacity 1s 0.25s);
-		&:hover {
+		.no-touch &:focus,
+		.no-touch &:hover,
+		.touch &:active {
 			opacity: 1;
 			@include prefix(transition, opacity 0.25s);
 		}

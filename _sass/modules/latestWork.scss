@@ -21,11 +21,10 @@
 	right: 0;
 	bottom: -1px;
 	color: $gray_light;
-	border-bottom: none;
+	background: none !important;
 	
+	.no-touch &:focus,
 	.no-touch &:hover,
-	.no-touch &:visited:hover,
-	.touch &:visited:active,
 	.touch &:active {
 		color: $blue;
 	}

@@ -6,27 +6,36 @@ p {
 }
 a {
 	position: relative;
-	display: inline-block;
+	display: inline;
 	line-height: 1.2;
-	border-bottom: 2px solid rgba($blue, 0.33);
+	background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, rgba($blue, 0.5) 4%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, rgba($blue, 0.5) 4%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, rgba($blue, 0.5) 4%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, rgba($blue, 0.5) 4%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* IE10+ */
+	background: linear-gradient(to top,          transparent 0%, transparent 4%, rgba($blue, 0.5) 4%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* W3C */
 	
 	text-decoration: none;
 	cursor: pointer;
 	color: inherit;
 	margin-top: 0;
+	.no-touch &:focus,
 	.no-touch &:hover,
 	.touch &:active {
 		color: $blue;
-		border-color: initial;
+
+		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* W3C */
 	}
-	&:visited {
-		border-color: rgba($black_light, 0.33);
-		.no-touch &:hover,
-		.touch &:active {
-			color: $blue;
-		}
+	&[data-visited] {
+		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* W3C */
 	}
-	@include noSelect();
 }
 a,
 button {
@@ -34,6 +43,10 @@ button {
 	&:active {
 		top: 1px;
 	}
+	&:focus {
+		outline: none;
+	}
+	@include noSelect();
 }
 img,
 video {

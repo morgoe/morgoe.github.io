@@ -18,6 +18,7 @@ ga('create', 'UA-63372069-1', 'auto');
 
 InstantClick.on('change', function() {
 	ga('send', 'pageview', location.pathname + location.search);
+	initVisited();
 });
 
 
@@ -38,9 +39,24 @@ InstantClick.on('change', function() {
 	$(window).resize();
 });
 
+
 /* Initial Animation */
 $('html').addClass('animateHeader--in');
 animateIn();
+
+
+/* Revisiting Visited http://joelcalifa.com/blog/revisiting-visited */
+function initVisited() {
+	var a = 'visited-'+window.location.pathname;
+	localStorage.setItem('visited-'+window.location.pathname,true);
+	var links = document.getElementsByTagName('a');
+	for (i=0;i<links.length;i++) {   
+		var link = links[i];
+		if (link.host == window.location.host && localStorage.getItem('visited-' + link.pathname)) {
+			link.dataset.visited = true;
+		}
+	}
+}
 
 
 /* Input Label Focus */
@@ -108,7 +124,7 @@ $(document).on('click', '#contactForm-submit', function(e){
 	sendButton.attr("data-text", "Sending...");
 
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', '//formspree.io/morgancarter1@gmail.com', true);
+	xhr.open('POST', '//formspree.io/hello@morgancarter.com.au', true);
 	xhr.setRequestHeader("Accept", "application/json")
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 

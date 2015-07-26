@@ -19,24 +19,35 @@
 .m-post-link {
 	display: table;
 	width: 100%;
-	border-bottom: none;
+	background: none !important;
 	line-height: inherit;
 	> * {
-		display: table-cell;
 		vertical-align: top;
 	}
-	.no-touch &:hover .btn,
-	.touch &:active .btn {
-		border-color: $blue;
+	.no-touch &:focus .btn:after,
+	.no-touch &:hover .btn:after,
+	.touch &:active .btn:after {
+		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* W3C */
 	}
-	&:visited {
+	&[data-visited] {
 		.btn {
 			color: inherit;
-			border-color: rgba($black_light, 0.33);
+			&:after {
+				background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+				background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* IE10+ */
+				background: linear-gradient(to top,          transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* W3C */
+			}
 		}
 	}
 }
 .m-post-image {
+	display: block;
 	width: 4 * $rhythm;
 	height: 4 * $rhythm;
 	> img {
@@ -44,6 +55,7 @@
 	}
 }
 .m-post-description {
+	display: table-cell;
 	margin-top: 0;
 	padding-left: 1rem;
 }

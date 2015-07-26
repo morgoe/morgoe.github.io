@@ -138,6 +138,12 @@ textarea,
 }
 
 @media (max-width: 767px) {
+	.m-input {
+		&:after {
+			bottom: -0.5px;
+			height: 1.5px;
+		}
+	}
 	.m-input-label {
 		font-size: 12px;
 		margin-bottom: 0;

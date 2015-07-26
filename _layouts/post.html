@@ -15,10 +15,18 @@ body-id: work
 		</h5>
 	</div>
 
-	<div class="container--sm">
-		<div class="m-post-content">
+	<div class="m-post-content">
+		<div class="container--sm">
 			{{ content }}
 		</div>
+
+		{% if page.siteNav == 'blog' %}
+			<section>
+				{% include newsletter.html %}
+			</section>
+
+			<p class="container--sm">If you've got any alternative solutions to this problem, or want to suggest a new problem for me to tackle, please drop me a line at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+		{% endif %}
 	</div>
 </div>
 
@@ -27,11 +35,11 @@ body-id: work
 		<div class="btn-footer-image" style="background-image: url(/assets/images/work/{{page.nextOne_img}})"></div>
 		<span class="btn" data-text="Next"></span>
 	</a>
-{% elsif page.is_caseStudy %}
+{% elsif page.siteNav == 'work' %}
 	<a class="btn-footer" href="/work/">
 		<span class="btn is-noImage" data-text="See more work"></span>
 	</a>
-{% else %}
+{% elsif page.siteNav == 'blog' %}
 	<a class="btn-footer" href="/design-solutions/">
 		<span class="btn is-noImage" data-text="Read more posts"></span>
 	</a>

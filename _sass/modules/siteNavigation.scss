@@ -9,14 +9,13 @@
 	float: left;
 	width: 24px;
 	height: 24px;
-	background: white;
+	background: none !important;
 	border: 2px solid $black;
 	&:visited {
 		border-color: $black;
 	}
+	.no-touch &:focus,
 	.no-touch &:hover,
-	.no-touch &:visited:hover,
-	.touch &:visited:active,
 	.touch &:active {
 		border-color: $gray;
 	}
@@ -34,21 +33,29 @@
 	}
 }
 .m-siteNavigation-link {
+	color: $gray_light;
 	&,
-	&:visited {
-		color: $gray_light;	
+	&[data-visited] {
+		background: none;
 	}
-	border-color: transparent;
+	.no-touch &:focus,
 	.no-touch &:hover,
-	.no-touch &:visited:hover,
-	.touch &:visited:active,
 	.touch &:active {
 		color: $gray;
-		border-color: rgba($black_lightest, 0.33);
+		background: -moz-linear-gradient(bottom,     transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* W3C */
 	}
 	&.active {
 		color: $black_lightest;
-		border-color: rgba($black_lightest, 0.33);
+		background: -moz-linear-gradient(bottom,     transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* W3C */
+		.no-touch &:focus,
 		.no-touch &:hover,
 		.touch &:active {
 			color: $black_lightest;
@@ -58,9 +65,15 @@
 }
 .m-siteNavigation-highlight {
 	color: $blue;
-	border-color: transparent;
-	&:hover {
-		// border-color: rgba($blue, 0.5);
+	background: none;
+	.no-touch &:focus,
+	.no-touch &:hover,
+	.touch &:active {
+		background: -moz-linear-gradient(bottom,     transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* W3C */
 	}
 }
 
@@ -73,9 +86,7 @@
 @media (max-width: 767px) {
 	.m-siteNavigation {
 		text-align: center;
-		// #home & {
-		// 	visibility: hidden;
-		// }
+		float: none;
 	}
 	.m-siteNavigation-logo {
 		display: none;
