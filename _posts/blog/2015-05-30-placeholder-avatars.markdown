@@ -1,6 +1,6 @@
 ---
 layout:        post
-date:          2015-07-15
+date:          2015-07-27
 categories:    
 - design-solutions
 siteNav: blog
@@ -49,7 +49,9 @@ Gmail, Dropbox and Apple take a third (and my personal favourite) approach - usi
 
 Gmail and Dropbox go further, adding a unique colour to each user. Jerry Primrose is a red JP, and Jeremiah Philip is a green JP. This provides a recognisable avatar in isolation, as well as in context. Note that this solution may present problems in non-English countries where people don't always have exactly 2 initials.
 
-<img src="/assets/images/blog/placeholder-avatars/dropbox.png" width="383">
+<div style="background: #f6f9fc;">
+	<img src="/assets/images/blog/placeholder-avatars/dropbox.png" width="320">
+</div>
 <figcaption>Dropbox's placeholder avatars.</figcaption>
 
 So how do we do it? You don't want to pick any random colour out of the 16,777,216 possible variations because they'll probably look terrible. So we just pick a few that fit the design, no more than 10.

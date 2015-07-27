@@ -5,151 +5,9 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jul 2015 01:44:56 +0300</pubDate>
-    <lastBuildDate>Mon, 27 Jul 2015 01:44:56 +0300</lastBuildDate>
+    <pubDate>Mon, 27 Jul 2015 12:09:24 +0300</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2015 12:09:24 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
-    
-      <item>
-        <title>Encouraging Display Photo Uploads</title>
-        <description>&lt;p&gt;So now that you’ve got beautiful placeholder avatars, let’s focus on encouraging our users to upload a display photo.&lt;/p&gt;
-
-&lt;h3 id=&quot;reasons-and-rewards&quot;&gt;Reasons and rewards&lt;/h3&gt;
-
-&lt;p&gt;Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user). &lt;/p&gt;
-
-&lt;p&gt;On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother with the solutions outlined in &lt;a href=&quot;/design-solutions/placeholder-avatars&quot;&gt;Placeholder Avatars&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.&lt;/p&gt;
-
-&lt;div style=&quot;background: #d1eefc;&quot;&gt;
-	&lt;img src=&quot;/assets/images/blog/encouraging-upload/isabelfoo-socialmedia.png&quot; width=&quot;400&quot; /&gt;
-&lt;/div&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://dribbble.com/shots/1683533-Social-Media&quot; target=&quot;_blank&quot;&gt;Social Media&lt;/a&gt; by Isabel Foo.&lt;/figcaption&gt;
-
-&lt;p&gt;A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with likes, but more importantly, exposure to potential business relationships.&lt;/p&gt;
-
-&lt;p&gt;Reasons and rewards don’t need to be intrinsic, even a bit of supporting text (ie. &lt;em&gt;“adding a photo helps your friends identify you.”&lt;/em&gt;) goes a long way.&lt;/p&gt;
-
-&lt;h3 id=&quot;use-their-existing-social-display-photos&quot;&gt;Use their existing social display photos&lt;/h3&gt;
-
-&lt;p&gt;You can take advantage of the work the social media giants have done by simply grabbing the display photo from one of the user’s social networks. Many products now offer social logins, or allow you to connect your social networks after creating an account. If this suits your product, it’s a really simple way to practically guarantee getting a display photo for every user.&lt;/p&gt;
-
-&lt;h3 id=&quot;make-it-part-of-onboarding&quot;&gt;Make it part of onboarding&lt;/h3&gt;
-
-&lt;p&gt;A number of products include this as a step in the onboarding process, often making it difficult to skip or hard to ignore.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/encouraging-upload/okcupid.png&quot; alt=&quot;OKCupid Onboarding&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;OKCupid makes adding a display photo hard to ignore. It would probably help to also add some supporting copy, like &quot;profiles with photos get XX% more views&quot;.&lt;/figcaption&gt;
-
-&lt;p&gt;However, this can be a tradeoff. Make it too easy to skip, and some users will. Make it too hard, and some might abandon the product before completing the onboarding.&lt;/p&gt;
-
-&lt;h3 id=&quot;entice-them&quot;&gt;Entice them&lt;/h3&gt;
-
-&lt;p&gt;If there is no display photo uploaded, both Dropbox and Gmail show on placeholder to the user, and another to other users. You can use this to your benefit.&lt;/p&gt;
-
-&lt;div style=&quot;background: #f6f8f8;&quot;&gt;
-	&lt;img src=&quot;/assets/images/blog/encouraging-upload/faceholder.gif&quot; width=&quot;298&quot; /&gt;
-&lt;/div&gt;
-&lt;figcaption&gt;Dropbox&#39;s placeholder avatar, or &#39;Faceholder&#39;. &lt;a href=&quot;https://dribbble.com/shots/1972358-Faceholder&quot; target=&quot;_blank&quot;&gt;Sourced from Dribbble&lt;/a&gt;.&lt;/figcaption&gt;
-
-&lt;p&gt;Daniel Eden of Dropbox said:&lt;/p&gt;
-
-&lt;div class=&quot;m-post-quote margin--none&quot;&gt;
-	&lt;p&gt;We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the faceholder character significantly outperformed the initials.&lt;/p&gt;
-
-	&lt;p class=&quot;margin--sm&quot;&gt;The character lends itself a few things:&lt;/p&gt;
-
-	&lt;ul&gt;
-		&lt;li&gt;It’s super cute, so people want to interact with it&lt;/li&gt;
-		&lt;li&gt;Unlike the initials, it’s clearly not a representation of the user’s true identity&lt;/li&gt;
-		&lt;li&gt;It looks like a placeholder. The dotted border just screams “change me!”&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;gravatar&quot;&gt;Gravatar&lt;/h3&gt;
-
-&lt;p&gt;Gravatar is interesting - and according to &lt;a href=&quot;http://useronboard.com/&quot;&gt;UserOnboard&lt;/a&gt;’s Samuel Hulick, &lt;em&gt;“painfully underused”&lt;/em&gt;. Gravatar is a Globally Recognised Avatar. If a user has an account on Gravatar, and you have their email address, then you also have access to a display photo without the user needing to do anything within your product.&lt;/p&gt;
-
-&lt;p&gt;Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.&lt;/p&gt;
-
-&lt;p&gt;Design is never a one-size-fits-all deal, so the best solution for your product is likely some combination of the above. &lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 27 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://yourdomain.com/design-solutions/encouraging-upload</link>
-        <guid isPermaLink="true">http://yourdomain.com/design-solutions/encouraging-upload</guid>
-        
-        
-        <category>design-solutions</category>
-        
-      </item>
-    
-      <item>
-        <title>Placeholder Avatars</title>
-        <description>&lt;p&gt;One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of poorer quality, but the majority of your users probably won’t upload one at all. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/before-after.png&quot; alt=&quot;Before and After&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;With and without user-uploaded display photos. &lt;a href=&quot;https://dribbble.com/shots/1818748-Appon-Chat-Widget&quot; target=&quot;_blank&quot;&gt;Original by Olia Gozha&lt;/a&gt;.&lt;/figcaption&gt;
-
-&lt;p&gt;So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I’ll cover in my next post. &lt;/p&gt;
-
-&lt;h3 id=&quot;generic-faces&quot;&gt;Generic Faces&lt;/h3&gt;
-&lt;p&gt;Facebook solves this problem by using a generic silhouette as a placeholder avatar, displaying either a male or female version depending on how you’ve set your gender.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/silhouettes.png&quot; alt=&quot;Generic Silhouettes&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Facebook&#39;s placeholder avatars.&lt;/figcaption&gt;
-
-&lt;p&gt;I don’t think this is a great solution for a number of reasons. &lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;If you have two users of the same sex, their placeholder avatars look identical. Again, if we assume that only a minority of your users actually upload a photo, your design now becomes a lot more homogenous and confusing. &lt;/li&gt;
-  &lt;li&gt;If you weren’t already asking the user to set the gender, now that’s another option you need them to set. And if you make this setting optional, then what is the default gender? Male? Female? Androgynous alien?&lt;/li&gt;
-  &lt;li&gt;Many products (eg. OKCupid), have a less binary approach to gender that makes this solution even more complicated. &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;However, Facebook gets away with it because &lt;strong&gt;everyone&lt;/strong&gt; uploads a display photo, so this placeholder rarely shows.&lt;/p&gt;
-
-&lt;h3 id=&quot;fun-artwork&quot;&gt;Fun Artwork&lt;/h3&gt;
-&lt;p&gt;This approach is used by Twitter, Slack, Tumblr and I’m sure many more. It has a great benefit of reinforcing branding. Slack, for example, uses variations of their logo. Looking at a design in which no-one has uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/slack.png&quot; alt=&quot;Slack Before and After&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Slack without any user-uploaded display photos still looks pretty good. &lt;a href=&quot;https://slack.com/is/team-communication&quot; target=&quot;_blank&quot;&gt;Original by Slack&lt;/a&gt;.&lt;/figcaption&gt;
-
-&lt;p&gt;This approach can be great if each placeholder were unique. However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. It’s difficult to recognise someone by their placeholder, although it does provide some recognition when placed alongside a few user-uploaded display photos.&lt;/p&gt;
-
-&lt;h3 id=&quot;initials&quot;&gt;Initials&lt;/h3&gt;
-&lt;p&gt;Gmail, Dropbox and Apple take a third (and my personal favourite) approach - using the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/apple.jpg&quot; width=&quot;320&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;iOS&#39;s placeholder avatars.&lt;/figcaption&gt;
-
-&lt;p&gt;Gmail and Dropbox go further, adding a unique colour to each user. Jerry Primrose is a red JP, and Jeremiah Philip is a green JP. This provides a recognisable avatar in isolation, as well as in context. Note that this solution may present problems in non-English countries where people don’t always have exactly 2 initials.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/dropbox.png&quot; width=&quot;383&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Dropbox&#39;s placeholder avatars.&lt;/figcaption&gt;
-
-&lt;p&gt;So how do we do it? You don’t want to pick any random colour out of the 16,777,216 possible variations because they’ll probably look terrible. So we just pick a few that fit the design, no more than 10.&lt;/p&gt;
-
-&lt;p&gt;Next, we need to assign each user a colour. This can’t be randomly done upon render, because Jerry Primrose must always be a red JP. The solution is no good if you refresh the page and he’s turned green. &lt;/p&gt;
-
-&lt;p&gt;We can solve this problem using hash codes. This lets us avoid creating another database entry for each user, by calculating it on render, but having the same colour each time. Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. &lt;/p&gt;
-
-&lt;p&gt;Try playing around with the example below, then check out the code to see how it’s done. &lt;/p&gt;
-
-&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;QbdQwY&quot; data-default-tab=&quot;result&quot; data-user=&quot;morgoe&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/morgoe/pen/QbdQwY/&quot;&gt;Placeholder Avatars&lt;/a&gt; by Morgan Carter (&lt;a href=&quot;http://codepen.io/morgoe&quot;&gt;@morgoe&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Next, learn how to &lt;a href=&quot;/design-solutions/encouraging-upload/&quot;&gt;encourage users to upload an avatar&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 15 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://yourdomain.com/design-solutions/placeholder-avatars</link>
-        <guid isPermaLink="true">http://yourdomain.com/design-solutions/placeholder-avatars</guid>
-        
-        
-        <category>design-solutions</category>
-        
-      </item>
     
       <item>
         <title>Affordance for Overflowing Content</title>
@@ -198,12 +56,161 @@ This approach may give some issues in non-English languages*. &lt;/p&gt;
 
 &lt;p&gt;My next post will detail how to encourage people to upload an avatar.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 Jun 2015 00:00:00 +0300</pubDate>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0300</pubDate>
         <link>http://yourdomain.com/coming-soon/affordance-for-overflowing-content</link>
         <guid isPermaLink="true">http://yourdomain.com/coming-soon/affordance-for-overflowing-content</guid>
         
         
         <category>coming-soon</category>
+        
+      </item>
+    
+      <item>
+        <title>Encouraging Display Photo Uploads</title>
+        <description>&lt;p&gt;So now that you’ve got beautiful placeholder avatars, let’s focus on encouraging our users to upload a display photo.&lt;/p&gt;
+
+&lt;h3 id=&quot;reasons-and-rewards&quot;&gt;Reasons and rewards&lt;/h3&gt;
+
+&lt;p&gt;Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user). &lt;/p&gt;
+
+&lt;p&gt;On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother having nice &lt;a href=&quot;/design-solutions/placeholder-avatars&quot;&gt;placeholder avatars&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.&lt;/p&gt;
+
+&lt;div style=&quot;background: #d1eefc;&quot;&gt;
+	&lt;img src=&quot;/assets/images/blog/encouraging-upload/isabelfoo-socialmedia.png&quot; width=&quot;400&quot; /&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;&lt;a href=&quot;https://dribbble.com/shots/1683533-Social-Media&quot; target=&quot;_blank&quot;&gt;Social Media&lt;/a&gt; by Isabel Foo.&lt;/figcaption&gt;
+
+&lt;p&gt;A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with likes, but more importantly, exposure to potential business relationships.&lt;/p&gt;
+
+&lt;p&gt;Reasons and rewards don’t need to be so complex. Even a bit of supporting text (ie. &lt;em&gt;“adding a photo helps your friends identify you.”&lt;/em&gt;) goes a long way.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-their-existing-social-display-photos&quot;&gt;Use their existing social display photos&lt;/h3&gt;
+
+&lt;p&gt;You can take advantage of the work the social media giants have done by simply grabbing the display photo from one of the user’s social networks. Many products now offer social logins, or allow you to connect your social networks after creating an account. If this suits your product, it’s a really simple way to practically guarantee getting a display photo for every user.&lt;/p&gt;
+
+&lt;h3 id=&quot;make-it-part-of-onboarding&quot;&gt;Make it part of onboarding&lt;/h3&gt;
+
+&lt;p&gt;A number of products include this as a step in the onboarding process, often making it difficult to skip or hard to ignore.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/encouraging-upload/okcupid.png&quot; alt=&quot;OKCupid Onboarding&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;OKCupid makes adding a display photo hard to ignore. It would probably help to also add some supporting copy, like &quot;profiles with photos get XX% more views&quot;.&lt;/figcaption&gt;
+
+&lt;p&gt;However, this can be a tradeoff. Make it too easy to skip, and some users will. Make it too hard, and users might get irritated and abandon the product before completing the onboarding.&lt;/p&gt;
+
+&lt;h3 id=&quot;entice-them&quot;&gt;Entice them&lt;/h3&gt;
+
+&lt;p&gt;If there is no display photo uploaded, both Dropbox and Gmail show on placeholder to the user, and another to other the user’s connections. You can use this to your benefit.&lt;/p&gt;
+
+&lt;div style=&quot;background: #f6f9fc;&quot;&gt;
+	&lt;img src=&quot;/assets/images/blog/placeholder-avatars/dropbox.png&quot; width=&quot;320&quot; /&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;Dropbox shows these placeholder avatars to the user&#39;s connections.&lt;/figcaption&gt;
+
+&lt;div style=&quot;background: #f6f8f8;&quot;&gt;
+	&lt;img src=&quot;/assets/images/blog/encouraging-upload/faceholder.gif&quot; width=&quot;298&quot; /&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;Dropbox shows this placeholder avatar, or &#39;Faceholder&#39;, to the user. &lt;a href=&quot;https://dribbble.com/shots/1972358-Faceholder&quot; target=&quot;_blank&quot;&gt;Sourced from Dribbble&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;Daniel Eden of Dropbox said:&lt;/p&gt;
+
+&lt;div class=&quot;m-post-quote margin--none&quot;&gt;
+	&lt;p&gt;We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the faceholder character significantly outperformed the initials.&lt;/p&gt;
+
+	&lt;p class=&quot;margin--sm&quot;&gt;The character lends itself a few things:&lt;/p&gt;
+
+	&lt;ul&gt;
+		&lt;li&gt;It’s super cute, so people want to interact with it&lt;/li&gt;
+		&lt;li&gt;Unlike the initials, it’s clearly not a representation of the user’s true identity&lt;/li&gt;
+		&lt;li&gt;It looks like a placeholder. The dotted border just screams “change me!”&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;gravatar&quot;&gt;Gravatar&lt;/h3&gt;
+
+&lt;p&gt;Gravatar is interesting - and according to &lt;a href=&quot;http://useronboard.com/&quot;&gt;UserOnboard&lt;/a&gt;’s Samuel Hulick, &lt;em&gt;“painfully underused”&lt;/em&gt;. Gravatar is a Globally Recognised Avatar - if a user has an account on Gravatar, and you have their email address, then you also have access to a display photo without the user needing to do anything within your product.&lt;/p&gt;
+
+&lt;p&gt;Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.&lt;/p&gt;
+
+&lt;p&gt;Design is never a one-size-fits-all deal, so the best solution for your product is likely some combination of the above. &lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 14 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://yourdomain.com/coming-soon/encouraging-upload</link>
+        <guid isPermaLink="true">http://yourdomain.com/coming-soon/encouraging-upload</guid>
+        
+        
+        <category>coming-soon</category>
+        
+      </item>
+    
+      <item>
+        <title>Placeholder Avatars</title>
+        <description>&lt;p&gt;One problem that pops up in almost any product that has user login is that of avatars. Your design mocks look great with smiling photos of Robert Downey Jr. and Scarlett Johansson, but the reality is that not only will most display photos be of poorer quality, but the majority of your users probably won’t upload one at all. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/before-after.png&quot; alt=&quot;Before and After&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;With and without user-uploaded display photos. &lt;a href=&quot;https://dribbble.com/shots/1818748-Appon-Chat-Widget&quot; target=&quot;_blank&quot;&gt;Original by Olia Gozha&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I’ll cover in my next post. &lt;/p&gt;
+
+&lt;h3 id=&quot;generic-faces&quot;&gt;Generic Faces&lt;/h3&gt;
+&lt;p&gt;Facebook solves this problem by using a generic silhouette as a placeholder avatar, displaying either a male or female version depending on how you’ve set your gender.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/silhouettes.png&quot; alt=&quot;Generic Silhouettes&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Facebook&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;I don’t think this is a great solution for a number of reasons. &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If you have two users of the same sex, their placeholder avatars look identical. Again, if we assume that only a minority of your users actually upload a photo, your design now becomes a lot more homogenous and confusing. &lt;/li&gt;
+  &lt;li&gt;If you weren’t already asking the user to set the gender, now that’s another option you need them to set. And if you make this setting optional, then what is the default gender? Male? Female? Androgynous alien?&lt;/li&gt;
+  &lt;li&gt;Many products (eg. OKCupid), have a less binary approach to gender that makes this solution even more complicated. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, Facebook gets away with it because &lt;strong&gt;everyone&lt;/strong&gt; uploads a display photo, so this placeholder rarely shows.&lt;/p&gt;
+
+&lt;h3 id=&quot;fun-artwork&quot;&gt;Fun Artwork&lt;/h3&gt;
+&lt;p&gt;This approach is used by Twitter, Slack, Tumblr and I’m sure many more. It has a great benefit of reinforcing branding. Slack, for example, uses variations of their logo. Looking at a design in which no-one has uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/slack.png&quot; alt=&quot;Slack Before and After&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Slack without any user-uploaded display photos still looks pretty good. &lt;a href=&quot;https://slack.com/is/team-communication&quot; target=&quot;_blank&quot;&gt;Original by Slack&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;This approach can be great if each placeholder were unique. However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. It’s difficult to recognise someone by their placeholder, although it does provide some recognition when placed alongside a few user-uploaded display photos.&lt;/p&gt;
+
+&lt;h3 id=&quot;initials&quot;&gt;Initials&lt;/h3&gt;
+&lt;p&gt;Gmail, Dropbox and Apple take a third (and my personal favourite) approach - using the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/placeholder-avatars/apple.jpg&quot; width=&quot;320&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;iOS&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;Gmail and Dropbox go further, adding a unique colour to each user. Jerry Primrose is a red JP, and Jeremiah Philip is a green JP. This provides a recognisable avatar in isolation, as well as in context. Note that this solution may present problems in non-English countries where people don’t always have exactly 2 initials.&lt;/p&gt;
+
+&lt;div style=&quot;background: #f6f9fc;&quot;&gt;
+	&lt;img src=&quot;/assets/images/blog/placeholder-avatars/dropbox.png&quot; width=&quot;320&quot; /&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;Dropbox&#39;s placeholder avatars.&lt;/figcaption&gt;
+
+&lt;p&gt;So how do we do it? You don’t want to pick any random colour out of the 16,777,216 possible variations because they’ll probably look terrible. So we just pick a few that fit the design, no more than 10.&lt;/p&gt;
+
+&lt;p&gt;Next, we need to assign each user a colour. This can’t be randomly done upon render, because Jerry Primrose must always be a red JP. The solution is no good if you refresh the page and he’s turned green. &lt;/p&gt;
+
+&lt;p&gt;We can solve this problem using hash codes. This lets us avoid creating another database entry for each user, by calculating it on render, but having the same colour each time. Simply hash the full name, do a modulus by x (where x is the number of colours you picked), and then assign that person the colour at the resulting index. &lt;/p&gt;
+
+&lt;p&gt;Try playing around with the example below, then check out the code to see how it’s done. &lt;/p&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;QbdQwY&quot; data-default-tab=&quot;result&quot; data-user=&quot;morgoe&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/morgoe/pen/QbdQwY/&quot;&gt;Placeholder Avatars&lt;/a&gt; by Morgan Carter (&lt;a href=&quot;http://codepen.io/morgoe&quot;&gt;@morgoe&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Next, learn how to &lt;a href=&quot;/design-solutions/encouraging-upload/&quot;&gt;encourage users to upload an avatar&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Jul 2015 00:00:00 +0300</pubDate>
+        <link>http://yourdomain.com/design-solutions/placeholder-avatars</link>
+        <guid isPermaLink="true">http://yourdomain.com/design-solutions/placeholder-avatars</guid>
+        
+        
+        <category>design-solutions</category>
         
       </item>
     

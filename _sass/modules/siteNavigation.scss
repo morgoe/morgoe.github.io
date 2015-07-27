@@ -93,6 +93,7 @@
 	}
 	.m-siteNavigation-list {
 		margin-top: 0;
+		float: none;
 		> li {
 			margin-left: $rhythm;
 			&:first-child {
