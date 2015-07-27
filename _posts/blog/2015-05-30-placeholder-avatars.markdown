@@ -65,8 +65,9 @@ Try playing around with the example below, then check out the code to see how it
 <p data-height="268" data-theme-id="0" data-slug-hash="QbdQwY" data-default-tab="result" data-user="morgoe" class='codepen'>See the Pen <a href='http://codepen.io/morgoe/pen/QbdQwY/'>Placeholder Avatars</a> by Morgan Carter (<a href='http://codepen.io/morgoe'>@morgoe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Next, learn how to [encourage users to upload an avatar](/design-solutions/encouraging-upload/).
+My next post will detail how to encourage people to upload an avatar.
 
+<!-- Next, learn how to [encourage users to upload an avatar](/design-solutions/encouraging-upload/). -->
 
 [before-after]: /assets/images/blog/placeholder-avatars/before-after.png
 [silhouettes]: /assets/images/blog/placeholder-avatars/silhouettes.png
