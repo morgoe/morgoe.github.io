@@ -3,7 +3,7 @@ title: Morgan Carter - Product Designer
 email: hello@morgancarter.com.au
 description: I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://morgancarter.com.au" # the base hostname & protocol for your site
 twitter_username: morgoe876
 github_username:  morgoe
 permalink: /:categories/:title

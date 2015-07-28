@@ -7,7 +7,8 @@ siteNav: blog
 
 title:             "Encouraging Display Photo Uploads"
 
-thumbnail:         encouraging-upload/thumbnail.png
+thumbnail:         blog/encouraging-upload/thumbnail.png
+image:             blog/encouraging-upload/thumbnail.png
 
 description:       "Lessen the problem of placeholder avatars by encouraging your users to upload a photo in the first place."
 ---

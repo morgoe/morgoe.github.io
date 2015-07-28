@@ -7,7 +7,8 @@ siteNav: blog
 
 title:             "Placeholder Avatars"
 
-thumbnail:         placeholder-avatars/thumbnail.jpg
+thumbnail:         blog/placeholder-avatars/thumbnail.jpg
+image:             blog/placeholder-avatars/thumbnail.jpg
 
 description:       "Make your design look good and function well when none of your users have uploaded avatars."
 ---

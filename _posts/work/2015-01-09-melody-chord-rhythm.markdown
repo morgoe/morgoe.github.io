@@ -7,8 +7,8 @@ categories:
 title:         "Melody Chord and Rhythm"
 subtitle:      "Multi-touch App for Exhibition"
 
-thumbnail:     melody-chord-rhythm.png
-image:         melody-chord-rhythm.jpg
+thumbnail:     work/melody-chord-rhythm.png
+image:         work/melody-chord-rhythm.jpg
 
 link:          https://www.youtube.com/watch?v=WtJQ62azPO4
 link_text:     Watch Video

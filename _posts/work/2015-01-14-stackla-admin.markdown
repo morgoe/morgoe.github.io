@@ -8,8 +8,8 @@ siteNav: work
 title:             "Stackla Admin"
 subtitle:          "Long-term iterative UX/UI"
 
-thumbnail:         stackla.png
-image:             stackla-admin.jpg
+thumbnail:         work/stackla.png
+image:             work/stackla-admin.jpg
 
 is_caseStudy:      false
 

@@ -8,8 +8,8 @@ siteNav: work
 
 title:         "Stackla Event Screens"
 
-thumbnail:     stackla.png
-image:         stackla-event-screens.jpg
+thumbnail:     work/stackla.png
+image:         work/stackla-event-screens.jpg
 
 is_caseStudy:  true
 role:          "UX/UI Design, Design Direction & Front-end Dev"

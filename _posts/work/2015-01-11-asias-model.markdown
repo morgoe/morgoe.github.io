@@ -7,8 +7,8 @@ categories:
 title:         "Asia's Next Top Model"
 subtitle:      "Social Microsite"
 
-thumbnail:     asntm.png
-image:         asntm.jpg
+thumbnail:     work/asntm.png
+image:         work/asntm.jpg
 
 link:          http://asntm2.starworldasia.tv/
 link_text:     "Visit Site"

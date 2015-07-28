@@ -7,8 +7,8 @@ categories:
 title:         "Manchester United"
 subtitle:      "Social Microsite"
 
-thumbnail:     manchester.png
-image:         manchester.jpg
+thumbnail:     work/manchester.png
+image:         work/manchester.jpg
 
 link:          http://social.manutd.com/
 link_text:     "Visit Site"

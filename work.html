@@ -14,7 +14,7 @@ permalink: /work/
 	{% for post in site.categories['work'] %}
 		<li class="m-work-item row m-animation-{{forloop.index}}">
 			<div class="col-sm-8 col-sm-push-4">
-				<div class="m-work-image" style="background-image: url(/assets/images/work/{{post.image}})"></div>
+				<div class="m-work-image" style="background-image: url(/assets/images/{{post.image}})"></div>
 			</div>
 			<div class="col-sm-4 col-sm-pull-8">
 				<div class="hidden--sm">
