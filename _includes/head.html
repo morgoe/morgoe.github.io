@@ -3,27 +3,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 
-	<title>{{ site.title }}</title>
 
 	<!-- Social Sharing -->
-	<meta name="twitter:title"       content="{{ site.title }}">
-	<meta property="og:title"        content="{{ site.title }}">
-
-	<meta name="twitter:card"        content="summary">
-	<meta property="og:type"         content="website"> 
-
-	<meta property="og:site_name"    content="Morgan Carter's Portfolio">
-	<meta name="twitter:site"        content="{{ site.twitter_username }}">
-	<meta name="twitter:description" content="Morgan Carter is a freelance product designer. I turn complex ideas into intuitive, beautiful products.">
-	{% if page.image %}
-	  <meta name="twitter:image"     content="{{ site.url }}/assets/images/{{ page.image }}">
-	  <meta property="og:image"      content="{{ site.url }}/assets/images/{{ page.image }}">
+	{% if page.description %}
+		<title>{{ page.title }} [{{ site.title }}]</title>
+		<meta name="twitter:title"       content="{{ page.title }} [{{ site.title }}]">
+		<meta property="og:title"        content="{{ page.title }} [{{ site.title }}]">
+		<meta name="description"         content="{{ page.description }}">
+		<meta name="twitter:description" content="{{ page.description }}">
+		<meta property="og:description"  content="{{ page.description }}">
 	{% else %}
-	  <meta name="twitter:image"     content="{{ site.url }}/assets/images/home/me.png">
-	  <meta property="og:image"      content="{{ site.url }}/assets/images/home/me.png">
+		<title>{{ site.title }}</title>
+		<meta name="twitter:title"       content="{{ site.title }}">
+		<meta property="og:title"        content="{{ site.title }}">
+		<meta name="description"         content="{{ site.description }}">
+		<meta name="twitter:description" content="{{ site.description }}">
+		<meta property="og:description"  content="{{ site.description }}">
+	{% endif %}
+		<meta name="twitter:card"            content="summary">
+		<meta property="og:type"             content="website">
+		<meta name="twitter:site"            content="{{ site.twitter_username }}">
+		<meta property="og:site_name"        content="Morgan Carter's Portfolio">
+	{% if page.image %}
+		<meta name="twitter:image"         content="{{ site.url }}/assets/images/{{ page.image }}">
+		<meta property="og:image"          content="{{ site.url }}/assets/images/{{ page.image }}">
+	{% else %}
+		<meta name="twitter:image"         content="{{ site.url }}/assets/images/home/me_social.png">
+		<meta property="og:image"          content="{{ site.url }}/assets/images/home/me_social.png">
 	{% endif %}
 
 	<link rel="stylesheet" href="{{ "/assets/css/my.css" | prepend: site.baseurl }}">
