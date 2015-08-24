@@ -1,6 +1,6 @@
 ---
 layout:        post
-date:          2015-07-27
+date:          2015-08-24
 categories:    
 - design-solutions
 siteNav: blog
