@@ -17,12 +17,4 @@
 			<a id="contactMe-openModal" class="m-siteNavigation-highlight">Contact Me</a>
 		</li>
 	</ul>
-
-	<div class="trigger hidden">
-		{% for page in site.pages %}
-			{% if page.title %}
-			<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-			{% endif %}
-		{% endfor %}
-	</div>
 </nav>

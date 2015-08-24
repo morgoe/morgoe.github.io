@@ -19,6 +19,7 @@ ga('create', 'UA-63372069-1', 'auto');
 InstantClick.on('change', function() {
 	ga('send', 'pageview', location.pathname + location.search);
 	initVisited();
+	initExternalLinks();
 });
 
 
@@ -56,6 +57,14 @@ function initVisited() {
 			link.dataset.visited = true;
 		}
 	}
+}
+
+
+/* Make all external links open in new tabs */
+function initExternalLinks() {
+	$(document.links).filter(function() {
+	    return this.hostname != window.location.hostname;
+	}).attr('target', '_blank');
 }
 
 

@@ -45,7 +45,7 @@ Once we had some direction, I started work on all three aspects of the project -
 
 ### Challenges
 
-The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be researching and testing how best to provide affordance for a particular button.
+The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be [researching](https://viget.com/inspire/testing-accordion-menu-designs-iconography) and testing how best to provide affordance for a particular button.
 
 ![Macro Design][information-architecture]
 <figcaption>Macro design - card sorting helped us place each feature in its ideal place within the navigational structure.</figcaption>

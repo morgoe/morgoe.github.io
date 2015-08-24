@@ -36,13 +36,20 @@ h3,
 }
 h4,
 .h4 {
+	font-size: 1.5rem;
+	line-height: $line_height--header;
+	font-weight: bold;
+	color: $black;
+}
+h5,
+.h5 {
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: normal;
 	color: $black;
 }
-h5,
-.h5 {
+h6,
+.h6 {
 	font-size: $rhythm / 2;
 	font-weight: normal;
 	color: $gray;
@@ -56,7 +63,9 @@ h3,
 h4,
 .h4,
 h5,
-.h5 {
+.h5,
+h6,
+.h6 {
 	+ p {
 		margin-top: $line_height * 1em / 12;
 	}
@@ -65,11 +74,10 @@ blockquote {
 	font-family: $font_serif;
 	font-style: italic;
 	font-size: 1.25rem;
-	margin-left: -1.5rem;
-	padding: 0.75rem 1.5rem;
-	background: rgba($blue_light, 0.1);
-	color: $blue_dark;
-	border-left: 4px solid $blue_dark;
+	margin-left: -$rhythm;
+	padding: $rhythm/2 $rhythm;
+	color: $blue;
+	border: 3px solid $blue;
 	@include clearfix();
 }
 
@@ -97,8 +105,11 @@ blockquote {
 		font-size: 1.25rem;
 	}
 	blockquote {
-		margin-left: -0.75rem;
-		margin-right: -0.75rem;
+		margin-left: -$rhythm/2;
+		margin-right: -$rhythm/2;
+		padding: $rhythm/2;
+		border-left-width: 0;
+		border-right-width: 0;
 	}
 }
 

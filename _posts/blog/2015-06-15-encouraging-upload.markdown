@@ -5,7 +5,7 @@ categories:
 - coming-soon
 siteNav: blog
 
-title:             "Encouraging Display Photo Uploads"
+title:             "Encouraging Users to Upload Photos"
 
 thumbnail:         blog/encouraging-upload/thumbnail.png
 image:             blog/encouraging-upload/thumbnail.png
@@ -26,7 +26,7 @@ A display photo on Facebook is a way for users to express themselves, and users 
 <div style="background: #d1eefc;">
 	<img src="/assets/images/blog/encouraging-upload/isabelfoo-socialmedia.png" width="400">
 </div>
-<figcaption><a href="https://dribbble.com/shots/1683533-Social-Media" target="_blank">Social Media</a> by Isabel Foo.</figcaption>
+<figcaption><a href="https://dribbble.com/shots/1683533-Social-Media">Social Media</a> by Isabel Foo.</figcaption>
 
 A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with likes, but more importantly, exposure to potential business relationships.
 
@@ -35,6 +35,8 @@ Reasons and rewards don't need to be so complex. Even a bit of supporting text (
 ### Use their existing social display photos
 
 You can take advantage of the work the social media giants have done by simply grabbing the display photo from one of the user’s social networks. Many products now offer social logins, or allow you to connect your social networks after creating an account. If this suits your product, it’s a really simple way to practically guarantee getting a display photo for every user.
+
+Learn how to do this for [Facebook](https://developers.facebook.com/docs/graph-api/reference/v2.4/user/picture) and [Twitter](https://dev.twitter.com/overview/general/user-profile-images-and-banners).
 
 ### Make it part of onboarding
 

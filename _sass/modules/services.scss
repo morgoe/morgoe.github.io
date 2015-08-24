@@ -1,0 +1,33 @@
+.m-services {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.m-services-item {
+	position: relative;
+	text-align: center;
+}
+.m-services-iconImage {
+	width: 120px;
+}
+.m-services-description {
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+@media (max-width: 767px) {
+	.m-services {
+		max-width: 480px;
+	}
+	.m-services-item {
+		text-align: left;
+		margin-bottom: 3em;
+	}
+	.m-services-icon {
+		padding-right: 0;
+	}
+	.m-services-description {
+		margin-left: 0;
+	}
+}

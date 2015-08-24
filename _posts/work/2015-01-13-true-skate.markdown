@@ -7,8 +7,8 @@ categories:
 title:         "True Skate"
 subtitle:      "Social Microsite"
 
-thumbnail:     true-skate.png
-image:         true-skate.jpg
+thumbnail:     work/true-skate.png
+image:         work/true-skate.jpg
 
 link:          http://social.trueskate.com/
 link_text:     "Visit Site"

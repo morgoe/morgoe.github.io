@@ -10,7 +10,7 @@ body-id: home
 	<div class="m-latestWork-wrapper">
 		<div class="m-latestWork padding m-animation-5">
 			<div class="m-latestWork-header">
-				<h4 class="m-latestWork-title">Latest Blog Post</h4>
+				<h5 class="m-latestWork-title">Latest Blog Post</h5>
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/design-solutions/">View more →</a>
 			</div>
 			{% for post in site.categories['design-solutions'] limit:1 %}
@@ -27,7 +27,7 @@ body-id: home
 		</div>
 		<div class="m-latestWork padding m-animation-6">
 			<div class="m-latestWork-header">
-				<h4 class="m-latestWork-title">Featured Work</h4>
+				<h5 class="m-latestWork-title">Featured Work</h5>
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/work/">View more →</a>
 			</div>
 			{% for post in site.categories['work'] limit:1 %}

@@ -67,13 +67,7 @@ figcaption {
 }
 ol,
 ul {
-	margin-top: 0;
-	&:not(.u-listUnstyled):not(.u-listInline) {
-		padding-left: $rhythm;	
-	}
-	> li {
-		margin-top: $line_height / 4 * 1em;
-	}
+	list-style: none;
 }
 
 // When selecting a text, it does this:

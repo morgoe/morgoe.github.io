@@ -1,10 +1,23 @@
+.m-post-content {
+	ol,
+	ul {
+		margin-top: 0;
+		padding-left: $rhythm;
+		list-style: initial;
+		> li {
+			margin-top: $line_height / 4 * 1em;
+		}
+	}
+}
 .m-post-title {
 	font-size: 3rem;
 }
 .m-post-quote {
-	padding-left: $rhythm;
+	padding-left: $rhythm/3;
 	font-style: italic;
-	color: $black_lightest;
+	color: $gray;
+	border-left: 2px solid $gray_lightest;
+	margin-left: 2px;
 	p {
 		color: inherit;
 	}

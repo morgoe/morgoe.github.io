@@ -10,7 +10,7 @@ permalink: /work/
 	<h1 class="m-page-title">{{ page.title }}</h1>
 </div>
 
-<ul class="u-listUnstyled m-work-list m-page-content padding">
+<ul class="m-work-list m-page-content padding">
 	{% for post in site.categories['work'] %}
 		<li class="m-work-item row m-animation-{{forloop.index}}">
 			<div class="col-sm-8 col-sm-push-4">
@@ -18,7 +18,7 @@ permalink: /work/
 			</div>
 			<div class="col-sm-4 col-sm-pull-8">
 				<div class="hidden--sm">
-					<p class="u-text--small u-color--gray">{{ post.role }}</p>
+					<h6>{{ post.role }}</h6>
 					<h2 class="m-work-title">{{ post.title }}</h2>
 					<p>{{ post.description }}</p>
 				</div>
@@ -26,10 +26,10 @@ permalink: /work/
 				<h2 class="m-work-title hidden--md-up margin--none">{{ post.title }}</h2>
 
 				{% if post.is_caseStudy %}
-					<a class="btn m-work-link" href="{{ post.url | prepend: site.baseurl }}" data-text="View Case Study"></a>
+					<a class="btn m-work-link" href="{{ post.url | prepend: site.baseurl }}/" data-text="View Case Study"></a>
 				{% endif %}
 				{% if post.link %}
-					<a class="btn m-work-link" href="{{post.link}}" target="_blank" data-text="{{post.link_text}}"></a>
+					<a class="btn m-work-link" href="{{ post.link }}" target="_blank" data-text="{{post.link_text}}"></a>
 				{% endif %}
 			</div>
 		</li>

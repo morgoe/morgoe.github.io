@@ -6,13 +6,13 @@ body-id: work
 <div class="padding--lg margin--none">
 	<div class="m-animation-1">
 		<h1 class="m-post-title">{{ page.title }}</h1>
-		<h5 class="u-text--center margin--none">
+		<h6 class="u-text--center margin--none">
 			{% if page.role %}
 				{{ page.role }}
 			{% else %}
 				{{ page.date | date: "%-d %b, %Y" }}
 			{% endif %}
-		</h5>
+		</h6>
 	</div>
 
 	<div class="m-post-content">
