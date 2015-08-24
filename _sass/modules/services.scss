@@ -4,16 +4,17 @@
 }
 .m-services-item {
 	position: relative;
-	text-align: center;
 }
 .m-services-iconImage {
-	width: 120px;
+	width: 170px;
 }
 .m-services-description {
 	max-width: 360px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+}
+.m-services-title {
+	text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -21,13 +22,16 @@
 		max-width: 480px;
 	}
 	.m-services-item {
-		text-align: left;
 		margin-bottom: 3em;
 	}
 	.m-services-icon {
 		padding-right: 0;
 	}
 	.m-services-description {
+		margin-top: 0;
 		margin-left: 0;
+	}
+	.m-services-title {
+		text-align: left;
 	}
 }
