@@ -15,9 +15,19 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-63372069-1', 'auto');
+var numPagesVisited = 0;
+
+// Send an event on page exit, so that time is tracked properly for bounce pages.
+window.onbeforeunload = function(){
+	ga('send', 'event', 'time-tracking', 'page-exit');
+	if (numPagesVisited === 1)
+		ga('send', 'event', 'engagement', 'page-bounce');
+}
+
 
 InstantClick.on('change', function() {
 	ga('send', 'pageview', location.pathname + location.search);
+	numPagesVisited++;
 	initVisited();
 	initExternalLinks();
 });
