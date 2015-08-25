@@ -15,9 +15,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-63372069-1', 'auto');
-var numPagesVisited = 0;
+
 
 // Send an event on page exit, so that time is tracked properly for bounce pages.
+var numPagesVisited = 0;
 window.onbeforeunload = function(){
 	ga('send', 'event', 'time-tracking', 'page-exit');
 	if (numPagesVisited === 1)
@@ -30,6 +31,8 @@ InstantClick.on('change', function() {
 	numPagesVisited++;
 	initVisited();
 	initExternalLinks();
+	animateIn();
+	$(window).resize();
 });
 
 
@@ -43,12 +46,6 @@ function animateIn() {
 	$('body')[0].offsetHeight; // force reflow
 	$('body').addClass('animateBody--in');
 }
-
-
-InstantClick.on('change', function() {
-	animateIn();
-	$(window).resize();
-});
 
 
 /* Initial Animation */
