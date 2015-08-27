@@ -98,15 +98,6 @@ function toggleContactModal(doState, stateMessage) {
 	var btn = $('#contactMe-openModal');
 	var modal = $('#contactMe-modal');
 
-	// Set URL
-	var inputURL = $("#contactForm-url");
-	if (modal.hasClass('is-open')) {
-		window.history.replaceState({}, '', inputURL.val()); /* Set URL back to what it was */
-	} else {
-		inputURL.val(window.location.pathname); /* Set hidden input as URL */
-		window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
-	}
-
 	// Offset
 	var left = btn[0].offsetLeft + btn.width()/2;
 	var top = btn[0].offsetTop + btn.height()/2;
@@ -145,6 +136,9 @@ $(document).on('click', '#contactForm-submit', function(e){
 	inputURL = $("#contactForm-url"),
 	sendButton = $("#contactForm-submit");
 
+	inputURL.val(window.location.pathname); /* Set hidden input as URL */
+	window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
+
 	sendButton.attr("data-text", "Sending...");
 
 	var xhr = new XMLHttpRequest();
@@ -158,6 +152,8 @@ $(document).on('click', '#contactForm-submit', function(e){
 		"&message=" + inputMessage.val() +
 		"&url=" + inputURL.val());
 
+	window.history.replaceState({}, '', inputURL.val()); /* Set URL back to what it was */
+
 	xhr.onloadend = function (res) {
 		if (res.target.status === 200){
 			toggleContactModal('success', 'Thanks for contacting me!<br> I\'ll be in touch within a couple of days.');
@@ -166,7 +162,7 @@ $(document).on('click', '#contactForm-submit', function(e){
 			inputName.val('').removeClass('is-notEmpty');
 			inputEmail.val('').removeClass('is-notEmpty');
 			inputMessage.val('').removeClass('is-notEmpty');
-			// inputURL.val('');
+			inputURL.val('');
 		}
 		else {
 			// toggleContactModal('error', 'Something went wrong. Please double check your details.');
