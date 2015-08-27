@@ -1,0 +1,107 @@
+.m-social-wrapper {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: $rhythm;
+}
+.m-social-icon {
+	display: inline-block;
+	vertical-align: top;
+	background: none;
+	opacity: 0.75;
+	.no-touch &:focus,
+	.no-touch &:hover,
+	.touch &:active {
+		opacity: 1;
+	}
+	&:first-child {
+		margin-right: $rhythm / 2;
+	}
+}
+.m-social-image {
+	display: inline;
+	width: 24px;
+}
+.m-social-email {
+	.m-social-image {
+		width: 16px;
+		position: relative;
+		top: 2px;
+	}
+}
+.m-social-or {
+	position: relative;
+	font-family: $font_serif;
+	line-height: 1.2;
+	vertical-align: top;
+	margin: $rhythm * 2;
+	opacity: 0.75;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 60%;
+		width: $rhythm;
+		height: 1px;
+		background: white;
+		opacity: 0.5;
+	}
+	&:before {
+		left: 130%;
+	}
+	&:after {
+		right: 130%;
+	}
+
+}
+.m-social-link {
+	background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, rgba(white, 0.5) 4%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, rgba(white, 0.5) 4%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, rgba(white, 0.5) 4%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, rgba(white, 0.5) 4%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* IE10+ */
+	background: linear-gradient(to top,          transparent 0%, transparent 4%, rgba(white, 0.5) 4%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* W3C */
+	.no-touch .m-social-icon:focus &,
+	.no-touch .m-social-icon:hover &,
+	.touch .m-social-icon:active & {
+		color: white;
+		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, white 4%, white 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, white 4%, white 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, white 4%, white 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, white 4%, white 12%, transparent 12%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, transparent 4%, white 4%, white 12%, transparent 12%, transparent 100%); /* W3C */
+	}
+}
+
+
+@media (max-width: 1023px) {
+	.m-social-or {
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: 767px) {
+	.m-social-wrapper {
+		position: static;
+	}
+	.m-social-icon {
+		padding: 8px;
+		&:first-child {
+			margin-right: 0;
+		}
+		* + & {
+			margin-left: $rhythm;
+		}
+	}
+	.m-social-image {
+		width: 16px;
+	}
+	.m-social-email {
+		.m-social-image {
+			position: static;
+		}
+	}
+	.m-social-link {
+		display: none;
+	}
+}
