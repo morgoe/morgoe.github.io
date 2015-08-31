@@ -49,7 +49,9 @@ However, this can be a tradeoff. Make it too easy to skip, and some users will. 
 
 ### Entice them
 
-If there is no display photo uploaded, both Dropbox and Gmail show on placeholder to the user, and another to other the user's connections. You can use this to your benefit.
+Someone commented on the previous blog post: if you put all this work into making the placeholder avatars not only beautiful, but uniquely identifying, then won't users be discouraged from uploading a photo? Yes, but that's assuming the user sees their beautiful, uniquely identifying avatar.
+
+Both Dropbox and Gmail cleverly show a non-identifying placeholder to the user, and another to other the user's connections. 
 
 <div style="background: #f6f9fc;">
 	<img src="/assets/images/blog/placeholder-avatars/dropbox.png" width="320">
