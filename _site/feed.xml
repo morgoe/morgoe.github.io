@@ -5,13 +5,13 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 31 Aug 2015 13:29:25 +0300</pubDate>
-    <lastBuildDate>Mon, 31 Aug 2015 13:29:25 +0300</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2015 16:51:58 +0300</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2015 16:51:58 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Affordance (for Overflowing Content)</title>
-        <description>&lt;p&gt;When we observe how users interact with our designs, we’re often surprised by their behaviour. They don’t seem to understand aspects of the design are obvious to us, and react in ways that we could never predict.&lt;/p&gt;
+        <description>&lt;p&gt;When we observe how users interact with our designs, we’re often surprised by their behaviour. They don’t seem to understand aspects of the design that are obvious to us, and react in ways that we could never predict.&lt;/p&gt;
 
 &lt;p&gt;When we design, we have a clear mental model of the layout in our minds. We see not just the 2D pixels that are visible on-screen, but where each element is positioned in virtual 3D space. However, when our designs don’t convey this virtual layout well, our users get confused and act in ways we don’t expect - because they’re acting on less information than we are.&lt;/p&gt;
 
@@ -97,13 +97,13 @@
     
       <item>
         <title>Encouraging Users to Upload Photos</title>
-        <description>&lt;p&gt;So now that you’ve got beautiful placeholder avatars, let’s focus on encouraging our users to upload a display photo.&lt;/p&gt;
+        <description>&lt;p&gt;In the last post, we covered how to create beautiful &lt;a href=&quot;/design-solutions/placeholder-avatars&quot;&gt;placeholder avatars&lt;/a&gt;. Now let’s focus on the other half of the problem - encouraging our users to actually upload a display photo.&lt;/p&gt;
 
 &lt;h3 id=&quot;reasons-and-rewards&quot;&gt;Reasons and rewards&lt;/h3&gt;
 
 &lt;p&gt;Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user).&lt;/p&gt;
 
-&lt;p&gt;On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother having nice &lt;a href=&quot;/design-solutions/placeholder-avatars&quot;&gt;placeholder avatars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother having nice placeholder avatars.&lt;/p&gt;
 
 &lt;p&gt;A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.&lt;/p&gt;
 
@@ -167,15 +167,17 @@
 
 &lt;p&gt;Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.&lt;/p&gt;
 
-&lt;p&gt;Design is never a one-size-fits-all deal, so the best solution for your product is likely some combination of the above.&lt;/p&gt;
+&lt;h3 id=&quot;all-of-the-above&quot;&gt;All of the above&lt;/h3&gt;
+
+&lt;p&gt;None of these solutions are necessarily standalone - you could potentially implement all of them. Which ones work best for your design is ultimately your decision. The aim of this blog is not to tell you how to solve your design problems, but to give you a few tried-and-tested options to start with, and for you to take it from there.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 07 Sep 2015 00:00:00 +0300</pubDate>
-        <link>http://morgancarter.com.au/coming-soon/encouraging-users</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/encouraging-users</guid>
+        <link>http://morgancarter.com.au/design-solutions/encouraging-users</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/encouraging-users</guid>
         
         
-        <category>coming-soon</category>
+        <category>design-solutions</category>
         
       </item>
     

@@ -2,7 +2,7 @@
 layout:        post
 date:          2015-09-07
 categories:    
-- coming-soon
+- design-solutions
 siteNav: blog
 
 title:             "Encouraging Users to Upload Photos"
@@ -13,13 +13,13 @@ image:             blog/encouraging-upload/thumbnail.png
 description:       "Lessen the problem of placeholder avatars by encouraging your users to upload a photo in the first place."
 ---
 
-So now that you’ve got beautiful placeholder avatars, let’s focus on encouraging our users to upload a display photo.
+In the last post, we covered how to create beautiful [placeholder avatars](/design-solutions/placeholder-avatars). Now let's focus on the other half of the problem - encouraging our users to actually upload a display photo.
 
 ### Reasons and rewards
 
 Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user). 
 
-On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother having nice [placeholder avatars](/design-solutions/placeholder-avatars).
+On social networks like Facebook or LinkedIn, almost everyone uploads a display photo. It’s no wonder they don’t bother having nice placeholder avatars.
 
 A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.
 
@@ -83,7 +83,9 @@ Gravatar is interesting - and according to [UserOnboard](http://useronboard.com/
 
 Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.
 
-Design is never a one-size-fits-all deal, so the best solution for your product is likely some combination of the above. 
+### All of the above
+
+None of these solutions are necessarily standalone - you could potentially implement all of them. Which ones work best for your design is ultimately your decision. The aim of this blog is not to tell you how to solve your design problems, but to give you a few tried-and-tested options to start with, and for you to take it from there.
 
 [like]: /assets/images/blog/encouraging-upload/like.png
 [okcupid]: /assets/images/blog/encouraging-upload/okcupid.png
