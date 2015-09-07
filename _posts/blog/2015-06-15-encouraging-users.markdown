@@ -30,7 +30,7 @@ A display photo on Facebook is a way for users to express themselves, and users 
 
 A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with likes, but more importantly, exposure to potential business relationships.
 
-Reasons and rewards don't need to be so complex. Even a bit of supporting text (ie. *"adding a photo helps your friends identify you."*) goes a long way.
+Reasons and rewards don't need to be so complex. Even a bit of supporting text (eg. *"Adding a photo helps your friends identify you."*) goes a long way.
 
 ### Use their existing social display photos
 
