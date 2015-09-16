@@ -13,7 +13,7 @@ image:             blog/encouraging-upload/thumbnail.png
 description:       "Lessen the problem of placeholder avatars by encouraging your users to upload a photo in the first place."
 ---
 
-In the last post, we covered how to create beautiful [placeholder avatars](/design-solutions/placeholder-avatars). Now let's focus on the other half of the problem - encouraging our users to actually upload a display photo.
+In the last post, we covered how to create beautiful [placeholder avatars](/design-solutions/placeholder-avatars/). Now let's focus on the other half of the problem - encouraging our users to actually upload a display photo.
 
 ### Reasons and rewards
 

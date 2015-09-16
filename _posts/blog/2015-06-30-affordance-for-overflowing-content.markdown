@@ -1,6 +1,6 @@
 ---
 layout:        post
-date:          2015-09-30
+date:          2015-09-23
 categories:    
 - coming-soon
 siteNav: blog
@@ -13,7 +13,7 @@ image:             blog/scrolling-affordance/thumbnail.jpg
 description:       "Our designs become intuitive by providing affordance to encourage particular behaviours."
 ---
 
-When we observe how users interact with our designs, we’re often surprised by their behaviour. They don't seem to understand aspects of the design are obvious to us, and react in ways that we could never predict. 
+When we observe how users interact with our designs, we’re often surprised by their behaviour. They don't seem to understand aspects of the design that are obvious to us, and react in ways that we could never predict. 
 
 When we design, we have a clear mental model of the layout in our minds. We see not just the 2D pixels that are visible on-screen, but where each element is positioned in virtual 3D space. However, when our designs don’t convey this virtual layout well, our users get confused and act in ways we don’t expect - because they’re acting on less information than we are.
 
@@ -71,8 +71,8 @@ Let’s go back to the problem I was working on for Deputy 3. The first thing I 
 
 Remember at the beginning, when I said that we can show that a button is *above* the surrounding content by using shadows and gradients? Here our header and footer are *above* the form, so we can use the same solution. And to make it even clearer, let’s make it so that when you reach the top or end of the form, and there’s no more content sitting ‘underneath’, the shadow disappears.
 
-![image from Google Inbox or something similar][google-inbox]
-<figcaption><a href="http://www.google.com/inbox/">Google Inbox</a>'s header at the top of the list, and midway through.</figcaption>
+![image from Google Inbox or something similar][material-design]
+<figcaption><a href="https://dribbble.com/shots/2238573-Google-I-O-App-Layer-Visualization">Google I/O App Layer Visualization</a> by Roman Nurik.</figcaption>
 
 There’s lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.
 
@@ -90,3 +90,4 @@ Affordance is a concept you can apply to all of your designs. A design becomes i
 [minimal-indicator]: /assets/images/blog/scrolling-affordance/minimal-indicator.png
 [deputy-forms]: /assets/images/blog/scrolling-affordance/deputy-forms.png
 [google-inbox]: /assets/images/blog/scrolling-affordance/google-inbox.png
+[material-design]: /assets/images/blog/scrolling-affordance/material-design.gif

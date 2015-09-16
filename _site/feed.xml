@@ -5,9 +5,83 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Sep 2015 17:20:21 +0300</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 17:20:21 +0300</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 00:36:20 +0300</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 00:36:20 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Which Input When?</title>
+        <description>&lt;h3 id=&quot;input-fields&quot;&gt;Input Fields&lt;/h3&gt;
+
+&lt;p&gt;The input field is the bread and butter of forms. They’re used for anything that requires custom input from a user, not a selection of predefined options. Usernames, emails, addresses, passwords, websites, phone numbers.&lt;/p&gt;
+
+&lt;p&gt;Make sure you use the correct [HTML5 input] when using input fields. They fall back gracefully on old browsers, and on new browsers (particularly mobile), they’re great for helping users to enter in the correct type of information.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/keyboards-2.png&quot; alt=&quot;input-fields&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;input-fields&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;radio-buttons&quot;&gt;Radio Buttons&lt;/h3&gt;
+&lt;p&gt;Radio buttons are used when a user must select one option out of  a few. Once selected, they can’t be unselected - so never use a radio button for an optional input.&lt;/p&gt;
+
+&lt;p&gt;Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.&lt;/p&gt;
+
+&lt;p&gt;Radio buttons traditionally look like circles, as opposed to checkboxes looking like squares. Feel free to implement your own styling, but keep the shapes roughly the same or you’ll confuse your users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/radio-buttons.png&quot; alt=&quot;radio-buttons&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;radio-buttons&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;button-groups&quot;&gt;Button Groups&lt;/h3&gt;
+
+&lt;p&gt;These are essentially radio buttons, but they’re a little more intuitive, as they afford* the buttons we use on a radio in real life better than traditional web radio buttons. They’re great for when you only have 2 or 3 options to choose from, all with short one-word labels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/button-groups.png&quot; alt=&quot;button-groups&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;button-groups&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;checkboxes&quot;&gt;Checkboxes&lt;/h3&gt;
+
+&lt;p&gt;Checkboxes are similar to radio buttons, but with more flexibility. They can be used to answer a single question with ‘yes’ or ‘no’. They can also be used to answer a single question with many answers, or one answer, or no answer at all.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/checkboxes.png&quot; alt=&quot;checkboxes&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;checkboxes&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;toggles&quot;&gt;Toggles&lt;/h3&gt;
+
+&lt;p&gt;Toggles are to checkboxes what button groups are to radio buttons. They’re essentially the same input, but they mimic what we use in real life better. They’re also a bit easier at a glance to understand, as they’re coloured, and always positive. 
+A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always means ‘enabled’.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/toggles.png&quot; alt=&quot;toggles&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;toggles&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;range-sliders&quot;&gt;Range sliders&lt;/h3&gt;
+
+&lt;p&gt;Range sliders are good when you need the user to enter a number within a minimum or maximum limit. They’re also good when you want the user to &lt;em&gt;set&lt;/em&gt; the minimum or maximum limit. Range sliders are not precise - you should only use them when “close enough is good enough”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/range-sliders.png&quot; alt=&quot;range-sliders&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;range-sliders&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;updown-toggles&quot;&gt;Up/down toggles&lt;/h3&gt;
+
+&lt;p&gt;These are a quick and easy way to let users manipulate a number. They’re only useful if the user will be deviating from the default setting by 2 or 3 digits. Any more than that, and this will be much more cumbersome than a simple input field, or even select dropdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/up-downs.png&quot; alt=&quot;up-downs&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;up-downs&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;buttons-and-links&quot;&gt;Buttons and Links&lt;/h3&gt;
+
+&lt;p&gt;Buttons do actions, whereas links navigate you somewhere. Due to flat design, and the rising complexity of software, where navigation and action-doing often converge, buttons and links are often used interchangeably.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/buttons-links.png&quot; alt=&quot;buttons-links&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;buttons-links&lt;/figcaption&gt;
+
+</description>
+        <pubDate>Mon, 05 Oct 2015 00:00:00 +0300</pubDate>
+        <link>http://morgancarter.com.au/coming-soon/which-input-when</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/which-input-when</guid>
+        
+        
+        <category>coming-soon</category>
+        
+      </item>
     
       <item>
         <title>Affordance (for Overflowing Content)</title>
@@ -71,8 +145,8 @@
 
 &lt;p&gt;Remember at the beginning, when I said that we can show that a button is &lt;em&gt;above&lt;/em&gt; the surrounding content by using shadows and gradients? Here our header and footer are &lt;em&gt;above&lt;/em&gt; the form, so we can use the same solution. And to make it even clearer, let’s make it so that when you reach the top or end of the form, and there’s no more content sitting ‘underneath’, the shadow disappears.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/scrolling-affordance/google-inbox.png&quot; alt=&quot;image from Google Inbox or something similar&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;&lt;a href=&quot;http://www.google.com/inbox/&quot;&gt;Google Inbox&lt;/a&gt;'s header at the top of the list, and midway through.&lt;/figcaption&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/scrolling-affordance/material-design.gif&quot; alt=&quot;image from Google Inbox or something similar&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;&lt;a href=&quot;https://dribbble.com/shots/2238573-Google-I-O-App-Layer-Visualization&quot;&gt;Google I/O App Layer Visualization&lt;/a&gt; by Roman Nurik.&lt;/figcaption&gt;
 
 &lt;p&gt;There’s lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.&lt;/p&gt;
 
@@ -86,7 +160,7 @@
 &lt;p&gt;Affordance is a concept you can apply to all of your designs. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don’t need to put labels everywhere explaining how to use your design. Which is good, because they wouldn’t read it anyway.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 30 Sep 2015 00:00:00 +0300</pubDate>
+        <pubDate>Wed, 23 Sep 2015 00:00:00 +0300</pubDate>
         <link>http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</link>
         <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</guid>
         
@@ -97,7 +171,7 @@
     
       <item>
         <title>Encouraging Users to Upload Photos</title>
-        <description>&lt;p&gt;In the last post, we covered how to create beautiful &lt;a href=&quot;/design-solutions/placeholder-avatars&quot;&gt;placeholder avatars&lt;/a&gt;. Now let’s focus on the other half of the problem - encouraging our users to actually upload a display photo.&lt;/p&gt;
+        <description>&lt;p&gt;In the last post, we covered how to create beautiful &lt;a href=&quot;/design-solutions/placeholder-avatars/&quot;&gt;placeholder avatars&lt;/a&gt;. Now let’s focus on the other half of the problem - encouraging our users to actually upload a display photo.&lt;/p&gt;
 
 &lt;h3 id=&quot;reasons-and-rewards&quot;&gt;Reasons and rewards&lt;/h3&gt;
 
@@ -433,19 +507,6 @@
         <pubDate>Sun, 11 Jan 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/work/asias-model</link>
         <guid isPermaLink="true">http://morgancarter.com.au/work/asias-model</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Myer</title>
-        <description>
-</description>
-        <pubDate>Sat, 10 Jan 2015 00:00:00 +0200</pubDate>
-        <link>http://morgancarter.com.au/work/myer</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/myer</guid>
         
         
         <category>work</category>
