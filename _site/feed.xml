@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 00:36:20 +0300</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 00:36:20 +0300</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 10:43:00 +0300</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 10:43:00 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -21,7 +21,7 @@
 &lt;figcaption&gt;input-fields&lt;/figcaption&gt;
 
 &lt;h3 id=&quot;radio-buttons&quot;&gt;Radio Buttons&lt;/h3&gt;
-&lt;p&gt;Radio buttons are used when a user must select one option out of  a few. Once selected, they can’t be unselected - so never use a radio button for an optional input.&lt;/p&gt;
+&lt;p&gt;Radio buttons are used when a user must select one option out of a few. Once selected, they can’t be unselected - so never use a radio button for an optional input.&lt;/p&gt;
 
 &lt;p&gt;Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.&lt;/p&gt;
 
@@ -161,11 +161,11 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
 
 </description>
         <pubDate>Wed, 23 Sep 2015 00:00:00 +0300</pubDate>
-        <link>http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</guid>
+        <link>http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</guid>
         
         
-        <category>coming-soon</category>
+        <category>design-solutions</category>
         
       </item>
     

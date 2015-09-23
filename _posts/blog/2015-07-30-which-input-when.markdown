@@ -10,7 +10,7 @@ title:             "Which Input When?"
 thumbnail:         blog/scrolling-affordance/thumbnail.jpg
 image:             blog/scrolling-affordance/thumbnail.jpg
 
-description:       "Our designs become intuitive by providing affordance to encourage particular behaviours."
+description:       "Each input type has a very specific use-case, and using the wrong input can be confusing for your users."
 ---
 
 ### Input Fields
@@ -23,7 +23,7 @@ Make sure you use the correct [HTML5 input] when using input fields. They fall b
 <figcaption>input-fields</figcaption>
 
 ### Radio Buttons
-Radio buttons are used when a user must select one option out of  a few. Once selected, they can’t be unselected - so never use a radio button for an optional input.
+Radio buttons are used when a user must select one option out of a few. Once selected, they can’t be unselected - so never use a radio button for an optional input.
 
 Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.
 
