@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Sep 2015 11:14:31 +0300</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 11:14:31 +0300</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 16:56:06 +0300</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 16:56:06 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -161,11 +161,11 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
 
 </description>
         <pubDate>Wed, 23 Sep 2015 00:00:00 +0300</pubDate>
-        <link>http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/affordance-for-overflowing-content</guid>
+        <link>http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</guid>
         
         
-        <category>coming-soon</category>
+        <category>design-solutions</category>
         
       </item>
     
