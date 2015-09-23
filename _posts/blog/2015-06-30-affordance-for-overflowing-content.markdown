@@ -13,7 +13,7 @@ image:             blog/scrolling-affordance/thumbnail.jpg
 description:       "Our designs become intuitive by providing affordance to encourage particular behaviours."
 ---
 
-When we observe how users interact with our designs, we’re often surprised by their behaviour. They don't seem to understand aspects of the design that are obvious to us, and react in ways that we could never predict. 
+When we observe how users interact with our designs, we’re often surprised by their behaviour. They don't seem to understand aspects of the design that are obvious to us, and react in ways that we struggle to predict. 
 
 When we design, we have a clear mental model of the layout in our minds. We see not just the 2D pixels that are visible on-screen, but where each element is positioned in virtual 3D space. However, when our designs don’t convey this virtual layout well, our users get confused and act in ways we don’t expect - because they’re acting on less information than we are.
 
@@ -46,13 +46,13 @@ This is, in my opinion, the best way to indicate scrolling. It’s very intuitiv
 
 The example on the left is completely contained within the screen, with nothing that encourages you to scroll. But the example on the right clearly has more content below the fold. And it was intentionally designed this way - resizing your browser always keeps just the top half of the sentence visible - <a href="http://www.apple.com/ipad-air-2/">check it out</a>.
 
-If you're wondering how to do this, the simplest way is to use `vh` units - an area with `90vh` will always take up 90% of the browser's height, so you'll always have that bottom 10% visible.
+If you're wondering how to do this in CSS, the simplest way is to use `vh` units - an area with `90vh` will always take up 90% of the browser's height, so you'll always have that bottom 10% visible.
 
 ### A 'scroll me' icon or button
 You might have noticed a trend lately with websites telling you, quite literally, to scroll your mouse. A page that’s fully contained within the screen looks great, and lets us achieve a more editorial design, but needs to have this alternative scrolling affordance.
 
 ![image with scroll mouse][mouse-scroll]
-<figcaption>It still shows a mouse icon when you visit on a tablet unfortunately. <a href="http://www.heartkids.co.nz/">Sourced from Heart Kids New Zealand</a>.</figcaption>
+<figcaption>Unfortunately, it still shows a mouse icon when you visit on a tablet. <a href="http://www.heartkids.co.nz/">Sourced from Heart Kids New Zealand</a>.</figcaption>
 
 This is a perfectly fine solution, but it has a very limited use. They’re not much use in tight user interfaces with little space to spare. And even on full-page sites, they don't work well if they're not the primary action, like the website below.
 
@@ -74,7 +74,7 @@ Remember at the beginning, when I said that we can show that a button is *above*
 ![image from Google Inbox or something similar][material-design]
 <figcaption><a href="https://dribbble.com/shots/2238573-Google-I-O-App-Layer-Visualization">Google I/O App Layer Visualization</a> by Roman Nurik.</figcaption>
 
-There’s lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.
+There are lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.
 
 <p data-height="450" data-theme-id="0" data-slug-hash="rVepxe" data-default-tab="result" data-user="morgoe" class='codepen'>See the Pen <a href='http://codepen.io/morgoe/pen/rVepxe/'>Affordance for Overflowing Content</a> by Morgan Carter (<a href='http://codepen.io/morgoe'>@morgoe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -82,7 +82,7 @@ There’s lots of implementations of this solution on the web, but they all use 
 
 The way this works is by having two gradients for each shadow. The dark gradient is always visible just below the header, and above the footer. And at the top and bottom of the list, there’s two white gradients, positioned higher than the dark gradients in z-space. So as these overlap, the white gradient slowly covers the dark gradient. Also, unlike the binary on/off JavaScript solutions, it's a gradual change - try scrolling slowly to see what I mean.
 
-Affordance is a concept you can apply to all of your designs. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don't need to put labels everywhere explaining how to use your design. Which is good, because they wouldn't read it anyway.
+Affordance is a principle you can apply to any interactive design. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don't need to put labels everywhere explaining how to use your design. Which is good, because they wouldn't read it anyway.
 
 [door-affordance]: /assets/images/blog/scrolling-affordance/door-affordance.jpg
 [mouse-scroll]: /assets/images/blog/scrolling-affordance/mouse-scroll.jpg

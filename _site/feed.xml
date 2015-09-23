@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Sep 2015 16:56:06 +0300</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 16:56:06 +0300</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 17:59:02 +0300</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 17:59:02 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -85,7 +85,7 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
     
       <item>
         <title>Affordance (for Overflowing Content)</title>
-        <description>&lt;p&gt;When we observe how users interact with our designs, we’re often surprised by their behaviour. They don’t seem to understand aspects of the design that are obvious to us, and react in ways that we could never predict.&lt;/p&gt;
+        <description>&lt;p&gt;When we observe how users interact with our designs, we’re often surprised by their behaviour. They don’t seem to understand aspects of the design that are obvious to us, and react in ways that we struggle to predict.&lt;/p&gt;
 
 &lt;p&gt;When we design, we have a clear mental model of the layout in our minds. We see not just the 2D pixels that are visible on-screen, but where each element is positioned in virtual 3D space. However, when our designs don’t convey this virtual layout well, our users get confused and act in ways we don’t expect - because they’re acting on less information than we are.&lt;/p&gt;
 
@@ -120,13 +120,13 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
 
 &lt;p&gt;The example on the left is completely contained within the screen, with nothing that encourages you to scroll. But the example on the right clearly has more content below the fold. And it was intentionally designed this way - resizing your browser always keeps just the top half of the sentence visible - &lt;a href=&quot;http://www.apple.com/ipad-air-2/&quot;&gt;check it out&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you’re wondering how to do this, the simplest way is to use &lt;code&gt;vh&lt;/code&gt; units - an area with &lt;code&gt;90vh&lt;/code&gt; will always take up 90% of the browser’s height, so you’ll always have that bottom 10% visible.&lt;/p&gt;
+&lt;p&gt;If you’re wondering how to do this in CSS, the simplest way is to use &lt;code&gt;vh&lt;/code&gt; units - an area with &lt;code&gt;90vh&lt;/code&gt; will always take up 90% of the browser’s height, so you’ll always have that bottom 10% visible.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-scroll-me-icon-or-button&quot;&gt;A ‘scroll me’ icon or button&lt;/h3&gt;
 &lt;p&gt;You might have noticed a trend lately with websites telling you, quite literally, to scroll your mouse. A page that’s fully contained within the screen looks great, and lets us achieve a more editorial design, but needs to have this alternative scrolling affordance.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/scrolling-affordance/mouse-scroll.jpg&quot; alt=&quot;image with scroll mouse&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;It still shows a mouse icon when you visit on a tablet unfortunately. &lt;a href=&quot;http://www.heartkids.co.nz/&quot;&gt;Sourced from Heart Kids New Zealand&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;figcaption&gt;Unfortunately, it still shows a mouse icon when you visit on a tablet. &lt;a href=&quot;http://www.heartkids.co.nz/&quot;&gt;Sourced from Heart Kids New Zealand&lt;/a&gt;.&lt;/figcaption&gt;
 
 &lt;p&gt;This is a perfectly fine solution, but it has a very limited use. They’re not much use in tight user interfaces with little space to spare. And even on full-page sites, they don’t work well if they’re not the primary action, like the website below.&lt;/p&gt;
 
@@ -148,7 +148,7 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/scrolling-affordance/material-design.gif&quot; alt=&quot;image from Google Inbox or something similar&quot; /&gt;&lt;/p&gt;
 &lt;figcaption&gt;&lt;a href=&quot;https://dribbble.com/shots/2238573-Google-I-O-App-Layer-Visualization&quot;&gt;Google I/O App Layer Visualization&lt;/a&gt; by Roman Nurik.&lt;/figcaption&gt;
 
-&lt;p&gt;There’s lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.&lt;/p&gt;
+&lt;p&gt;There are lots of implementations of this solution on the web, but they all use JavaScript. This means that for each scroll event, the browser needs to do a bunch of maths to calculate whether you’re at the top of the list or not, which is very expensive. So let’s do it with CSS.&lt;/p&gt;
 
 &lt;p data-height=&quot;450&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;rVepxe&quot; data-default-tab=&quot;result&quot; data-user=&quot;morgoe&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/morgoe/pen/rVepxe/&quot;&gt;Affordance for Overflowing Content&lt;/a&gt; by Morgan Carter (&lt;a href=&quot;http://codepen.io/morgoe&quot;&gt;@morgoe&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
@@ -157,7 +157,7 @@ A ticked checkbox may sometimes mean ‘disabled’, but a green toggle always m
 
 &lt;p&gt;The way this works is by having two gradients for each shadow. The dark gradient is always visible just below the header, and above the footer. And at the top and bottom of the list, there’s two white gradients, positioned higher than the dark gradients in z-space. So as these overlap, the white gradient slowly covers the dark gradient. Also, unlike the binary on/off JavaScript solutions, it’s a gradual change - try scrolling slowly to see what I mean.&lt;/p&gt;
 
-&lt;p&gt;Affordance is a concept you can apply to all of your designs. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don’t need to put labels everywhere explaining how to use your design. Which is good, because they wouldn’t read it anyway.&lt;/p&gt;
+&lt;p&gt;Affordance is a principle you can apply to any interactive design. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don’t need to put labels everywhere explaining how to use your design. Which is good, because they wouldn’t read it anyway.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 23 Sep 2015 00:00:00 +0300</pubDate>
