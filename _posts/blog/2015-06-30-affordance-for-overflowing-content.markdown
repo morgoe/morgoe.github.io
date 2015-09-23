@@ -2,7 +2,7 @@
 layout:        post
 date:          2015-09-23
 categories:    
-- design-solutions
+- coming-soon
 siteNav: blog
 
 title:             "Affordance (for Overflowing Content)"
