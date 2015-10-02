@@ -42,7 +42,10 @@
 	}
 }
 .m-heroText-br {
-	display: none;
+	// display: none;
+}
+.m-heroText-enabled {
+	color: $green_text;
 }
 
 @media (max-width: 1280px) {
