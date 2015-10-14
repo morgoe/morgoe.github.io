@@ -1,6 +1,6 @@
 ---
 layout:        post
-date:          2015-10-12
+date:          2015-10-14
 categories:    
 - design-solutions
 siteNav: blog
@@ -13,7 +13,7 @@ image:             blog/which-input-when/thumbnail.png
 description:       "Each input type has a very specific use-case, and using the wrong input can be confusing for your users."
 ---
 
-The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.
+The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, for instance, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.
 
 ![real-life][real-life]
 

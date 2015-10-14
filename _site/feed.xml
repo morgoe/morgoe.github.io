@@ -5,13 +5,13 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Oct 2015 18:29:14 +0300</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2015 18:29:14 +0300</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2015 19:35:10 +0300</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2015 19:35:10 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Which Input When?</title>
-        <description>&lt;p&gt;The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.&lt;/p&gt;
+        <description>&lt;p&gt;The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, for instance, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/real-life.png&quot; alt=&quot;real-life&quot; /&gt;&lt;/p&gt;
 
