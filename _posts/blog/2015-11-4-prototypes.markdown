@@ -37,7 +37,7 @@ How much of each feature is prototyped? A low-fidelity prototype will take you f
 
 How much interactivity does the prototype have? A low-fidelity prototype might be very simple, providing no feedback when a user interacts with it. A high-fidelity prototype will take into account animations, hover states, form validation, and all the little back-and-forths between user and product.
 
-#### Richness of data model
+##### Richness of data model
 
 How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide [placeholder avatars](/design-solutions/placeholder-avatars/), first-time use (like empty state pages), or extreme amounts of data (you might use pagination or filtering).
 

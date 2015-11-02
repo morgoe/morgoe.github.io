@@ -5,8 +5,8 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Nov 2015 15:50:10 +0100</pubDate>
-    <lastBuildDate>Mon, 02 Nov 2015 15:50:10 +0100</lastBuildDate>
+    <pubDate>Mon, 02 Nov 2015 15:53:20 +0100</pubDate>
+    <lastBuildDate>Mon, 02 Nov 2015 15:53:20 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -35,7 +35,7 @@
 
 &lt;p&gt;How much interactivity does the prototype have? A low-fidelity prototype might be very simple, providing no feedback when a user interacts with it. A high-fidelity prototype will take into account animations, hover states, form validation, and all the little back-and-forths between user and product.&lt;/p&gt;
 
-&lt;h4 id=&quot;richness-of-data-model&quot;&gt;Richness of data model&lt;/h4&gt;
+&lt;h5 id=&quot;richness-of-data-model&quot;&gt;Richness of data model&lt;/h5&gt;
 
 &lt;p&gt;How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide &lt;a href=&quot;/design-solutions/placeholder-avatars/&quot;&gt;placeholder avatars&lt;/a&gt;, first-time use (like empty state pages), or extreme amounts of data (you might use pagination or filtering).&lt;/p&gt;
 
