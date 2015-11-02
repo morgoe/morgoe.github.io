@@ -3,10 +3,19 @@
 	ul {
 		margin-top: 0;
 		padding-left: $rhythm;
-		list-style: initial;
 		> li {
 			margin-top: $line_height / 4 * 1em;
 		}
+	}
+	ul {
+		list-style: initial;
+	}
+	ol {
+		list-style: decimal;
+	}
+	h5 {
+		font-weight: 700;
+		line-height: 1.1;
 	}
 }
 .m-post-title {

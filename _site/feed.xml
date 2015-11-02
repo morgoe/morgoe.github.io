@@ -5,9 +5,223 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2015 12:33:39 +0300</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2015 12:33:39 +0300</lastBuildDate>
+    <pubDate>Mon, 02 Nov 2015 15:50:10 +0100</pubDate>
+    <lastBuildDate>Mon, 02 Nov 2015 15:50:10 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Prototypes: From Low to High Fidelity</title>
+        <description>&lt;p&gt;Prototyping is one of the most important aspects of design. It allows us a chance to test out our ideas quickly and easily, without going through the entire development process each time. It allows us to test wild ideas early on, and be confident that the ideas that make it to production are tried and true.&lt;/p&gt;
+
+&lt;p&gt;The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to again see the forest, not the trees.&lt;/p&gt;
+
+&lt;h3 id=&quot;dimensions-of-fidelity&quot;&gt;5 Dimensions of Fidelity&lt;/h3&gt;
+
+&lt;p&gt;There are five ways to measure the fidelity of a prototype. As fidelity increases, these five dimensions might not progress equally (a medium-fidelity prototype is not necessarily at a medium-level for each dimension, but may be at a high-level for some and a low-level for others).&lt;/p&gt;
+
+&lt;h5 id=&quot;level-of-visual-refinement&quot;&gt;Level of visual refinement&lt;/h5&gt;
+
+&lt;p&gt;How similar does the prototype look to the final product? A low-fidelity prototype might just be hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.&lt;/p&gt;
+
+&lt;h5 id=&quot;breadth-of-functionality&quot;&gt;Breadth of functionality&lt;/h5&gt;
+
+&lt;p&gt;How much functionality does the prototype support? A low-fidelity prototype will focus on just the most important tasks, while a high-fidelity prototype will support more minor tasks (eg. resetting your password).&lt;/p&gt;
+
+&lt;h5 id=&quot;depth-of-functionality&quot;&gt;Depth of functionality&lt;/h5&gt;
+
+&lt;p&gt;How much of each feature is prototyped? A low-fidelity prototype will take you from page to page, showing you the general user flow with typical data pre-filled. A high-fidelity prototype will allow you to input your own data, and see how varying the input affects the output.&lt;/p&gt;
+
+&lt;h5 id=&quot;richness-of-interactivity&quot;&gt;Richness of interactivity&lt;/h5&gt;
+
+&lt;p&gt;How much interactivity does the prototype have? A low-fidelity prototype might be very simple, providing no feedback when a user interacts with it. A high-fidelity prototype will take into account animations, hover states, form validation, and all the little back-and-forths between user and product.&lt;/p&gt;
+
+&lt;h4 id=&quot;richness-of-data-model&quot;&gt;Richness of data model&lt;/h4&gt;
+
+&lt;p&gt;How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide &lt;a href=&quot;/design-solutions/placeholder-avatars/&quot;&gt;placeholder avatars&lt;/a&gt;, first-time use (like empty state pages), or extreme amounts of data (you might use pagination or filtering).&lt;/p&gt;
+
+&lt;h3 id=&quot;low-fidelity&quot;&gt;Low Fidelity&lt;/h3&gt;
+
+&lt;p&gt;A low-fidelity prototype looks at your product on a macro scale. Here, you focus on the most important tasks, and then only in a summarised format. You’re not worried about feedback, interactivity or edge-cases.&lt;/p&gt;
+
+&lt;p&gt;The reason we start with low-fidelity prototypes (and the reason we keep them looking like sketches) is because we want to direct our focus on navigation, user flow, and which features will be included. If we start including micro things like fonts or colours at this stage, three problems arise:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Your client or boss might think this is what the final product will look like. Keeping everything looking sketchy makes it clear that this is &lt;strong&gt;not&lt;/strong&gt; a pixel-perfect representation.&lt;/li&gt;
+  &lt;li&gt;Your client or boss (or you) will start to focus on these micro aspects, which aren’t important at this stage. It’s completely irrelevant to the user flow what font you’re using, so including it will only distract.&lt;/li&gt;
+  &lt;li&gt;Once you spend hours perfecting the visual aspect of a design, you become attached to it, and it can be difficult to let go of a bad decision. It’s much easier to let go if the entire prototype only took a few minutes to sketch.&lt;/li&gt;
+  &lt;li&gt;A bad decision can seem like a good decision. In the past, I composed and mixed my own music. Whenever I composed, I would always make the instruments sound bad. If I made the instruments sound incredible, then even if I wrote shitty music, it would sound good. If the music still sounded good when the mix was bad, it meant it’d sound great when the mix was good. Similarly, investing a lot early on into the visual side of a design can skew your perspective. If the design looks good and is easy to understand as a sketch, then it’ll look really good and be really easy to understand once you reach the end of the design process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Many people only use a product like &lt;a href=&quot;http://invisionapp.com/&quot;&gt;InVision&lt;/a&gt; as they move to more high-fidelity prototypes, but I find it most useful at this stage. It’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/prototypes/low-fidelity.jpg&quot; alt=&quot;Low Fidelity Prototype&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Sourced from &lt;a href=&quot;https://www.youtube.com/watch?v=yafaGNFu8Eg&quot;&gt;Low fidelity prototype testing of the EE app&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;Questions you should be asking at this stage:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Which elements must be included on this screen, and which might I be able to remove?&lt;/li&gt;
+  &lt;li&gt;Is it clear how to navigate to each screen?&lt;/li&gt;
+  &lt;li&gt;How can I best navigate through the information architecture?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;medium-fidelity&quot;&gt;Medium Fidelity&lt;/h3&gt;
+
+&lt;p&gt;It can be hard to define a medium-fidelity prototype. It might be mid-level on each of the five dimensions, or it might be low on some dimensions and high on others. It might go deep into the functionality of the most important features, but still ignore the minor features. Which dimensions you focus on first ultimately depends on the project’s needs.&lt;/p&gt;
+
+&lt;p&gt;At this stage, you’re primarily focused on the layout of each individual page. You know how this page fits into the overall navigation, and you’re discussing where to place each element on the page (even though you don’t know what each element will ultimately look like).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/prototypes/medium-fidelity.png&quot; alt=&quot;Medium Fidelity Prototype&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Sourced from &lt;a href=&quot;https://support.mybalsamiq.com/projects/examples/grid&quot;&gt;Balsamiq&lt;/a&gt;.&lt;/figcaption&gt;
+
+&lt;p&gt;Animations generally come into play at this stage. Once you start to lay out each page, you can then think about how to transition from one page to another. It can be confusing to instantly jump from one state to another, so animations can help communicate how the user moves through the app. The &lt;a href=&quot;https://www.google.com/design/spec/animation/meaningful-transitions.html&quot;&gt;Material Design Guidelines&lt;/a&gt; provide some great information on meaningful transitions.&lt;/p&gt;
+
+&lt;p&gt;Questions you should be asking at this stage:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What is the most important element on this page, and how can I give it priority in the hierarchy?&lt;/li&gt;
+  &lt;li&gt;How can I convey the transition from this page to another?&lt;/li&gt;
+  &lt;li&gt;What colour should this button be?&lt;/li&gt;
+  &lt;li&gt;Should I use a select dropdown or radio buttons for this input?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;high-fidelity&quot;&gt;High Fidelity&lt;/h3&gt;
+
+&lt;p&gt;The high-fidelity prototype focuses on the product at a micro scale. The big decisions have been made, and the high-fidelity prototype is about ensuring that your design visually conveys the product’s functionality. You’ll start to think about how to give your design affordance, focusing on colours and contrast, and looking into all the tiny interactions. If you’re using animations, you’ll start to nail them down at this stage.&lt;/p&gt;
+
+&lt;p&gt;At this stage, a screenshot of the high-fidelity prototype will look identical to a screenshot of the final thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/prototypes/high-fidelity.gif&quot; alt=&quot;High Fidelity Prototype&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Questions you should be asking at this stage:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;People aren’t realising this button is clickable, should we try it with a gradient?&lt;/li&gt;
+  &lt;li&gt;Can we increase the contrast between these colours to make it easier to read?&lt;/li&gt;
+  &lt;li&gt;What does this element look like on hover?&lt;/li&gt;
+  &lt;li&gt;What does this look like with incomplete data?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prototyping-in-practice&quot;&gt;Prototyping in Practice&lt;/h3&gt;
+
+&lt;p&gt;In the real-world (and especially in the startup-world), you might not get to follow this process so clearly, and the lines between low-, medium- and high-fidelity can become blurred. That’s ok. Even spending 10 minutes sketching out your design and discussing it with someone else before diving into Photoshop can be really beneficial.&lt;/p&gt;
+
+&lt;p&gt;Finally, at some stage you need to move from prototype to real code. Once you reach a certain height in fidelity, it can become much faster to change things in code rather than in Photoshop or Sketch. By no means does reaching this stage mean that the design process is over. If you know how to code, then designing in the browser at this stage is great, and prevents a lot of back-and-forth between designers and developers. If you don’t, prototyping becomes even more important - a few minutes of your time spent prototyping could save days of work for your developer.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 28 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://morgancarter.com.au/coming-soon/prototypes</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/prototypes</guid>
+        
+        
+        <category>coming-soon</category>
+        
+      </item>
+    
+      <item>
+        <title>Crafting the Perfect Sign Up Form</title>
+        <description>&lt;p&gt;The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, for instance, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/real-life.png&quot; alt=&quot;real-life&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, what can seem obvious in real life can get confusing when we move to software. Software is more abstract, and can deal with really complex sets of data that simply don’t appear in your kitchen. Here are some simple rules which can help guide which type of input you should use when, to make your design as intuitive to use as possible.&lt;/p&gt;
+
+&lt;h3 id=&quot;input-field&quot;&gt;Input Field&lt;/h3&gt;
+&lt;p&gt;The input field is the bread and butter of forms. They’re used for anything that requires custom input from a user, not a selection of predefined options. Usernames, emails, addresses, passwords, websites, phone numbers.&lt;/p&gt;
+
+&lt;p&gt;Make sure you use the correct &lt;a href=&quot;http://robertnyman.com/html5/forms/input-types.html&quot;&gt;HTML5 input&lt;/a&gt; when using input fields. They fall back gracefully on old browsers, and on new browsers (particularly mobile) they’re great for helping users to enter in the correct type of information.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/keyboards.png&quot; alt=&quot;keyboards&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;auto-completing-input-field&quot;&gt;Auto-completing Input Field&lt;/h3&gt;
+&lt;p&gt;An auto-completing input field looks pretty much like a standard text input field, but once you start typing, it suggests some relevant options. When you have potentially hundreds of options (too many to display on-screen at once), an auto-completing input field is a good choice. A good use-case for this would be asking a user’s home country. Once the user starts to type, the input filters down the hundreds of options down to a few relevant ones, allowing the user to easily select the one they’re after.&lt;/p&gt;
+
+&lt;p&gt;This is not a standard HTML input type, so you’ll need to use a plugin like &lt;a href=&quot;https://harvesthq.github.io/chosen/&quot;&gt;Chosen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/input-fields.png&quot; alt=&quot;input-fields&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: a person's name can be literally anything, so trying to suggest options is probably not helpful, especially once you start including non-English languages in your product. It also might imply to a user that they have to select one of your pre-defined names, instead of choosing their own. A simple text input field would do fine.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;tag-input-field&quot;&gt;Tag Input Field&lt;/h3&gt;
+&lt;p&gt;This input is similar to the above, but allows the user to select more than one option. This input may limit the user to some predefined options. Alternatively, it could behave like an email address field - suggesting potential options, but allowing any input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/tag-fields.png&quot; alt=&quot;tag-fields&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: as above, a simple text field is best for inputting a name.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;checkboxes&quot;&gt;Checkboxes&lt;/h3&gt;
+&lt;p&gt;Checkboxes are used when you want the user to select any number (including zero) of predefined options. You can also use one to agree or disagree to a single option.&lt;/p&gt;
+
+&lt;p&gt;Checkboxes traditionally are shaped as squares, while radio buttons are circular. Feel free to implement your own styling, but keep the shapes roughly the same or you’ll confuse your users. Also make sure that clicking on the text label will toggle the checkbox or radio button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/checkboxes.png&quot; alt=&quot;checkboxes&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: you probably want the user to pick a single gender, so radio buttons or a button group would be better choices.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;toggles&quot;&gt;Toggles&lt;/h3&gt;
+&lt;p&gt;These are essentially the same as checkboxes, but they resemble a real-life switch, which can be a bit more intuitive. They generally mean “On/Off”, not “Agree/Disagree”.&lt;/p&gt;
+
+&lt;p&gt;Toggles are also a bit easier at a glance to understand, as they’re brightly coloured, and always positive. A ticked checkbox may be negative (eg. “don’t send me promotional emails”), but a green toggle always means “enabled”.&lt;/p&gt;
+
+&lt;p&gt;Toggles are very easy to implement using pure CSS. &lt;a href=&quot;http://codepen.io/morgoe/pen/VvzWQg&quot;&gt;Learn how&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/toggles.png&quot; alt=&quot;toggles&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: a toggle means &quot;on/off&quot;, not &quot;agree/disagree&quot;. You're better off using a checkbox here..&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;radio-buttons&quot;&gt;Radio Buttons&lt;/h3&gt;
+&lt;p&gt;Radio buttons and checkboxes are often erroneously interchanged. While checkboxes allow the user to select any number of predefined options, radio buttons are used to force the user to select exactly one predefined option. Once selected, they can’t be unselected. If you need the user to select exactly 1 or 0 options, you may use a set of radio buttons and include an option “None”.&lt;/p&gt;
+
+&lt;p&gt;Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re probably better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/radio-buttons.png&quot; alt=&quot;radio-buttons&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: this one isn't broken, but since you have a single option that asks the user to agree or disagree, a better option would be a checkbox with the label &quot;receive weekly emails&quot;.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;button-groups&quot;&gt;Button Groups&lt;/h3&gt;
+&lt;p&gt;Button groups are to radio buttons what toggles are to checkboxes. They’re essentially radio buttons, but they’re a little more intuitive, as they borrow the affordance of real-life buttons better than traditional digital radio buttons do. They’re great for when you only have 2 or 3 options to choose from, all with short one-word labels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/button-groups.png&quot; alt=&quot;button-groups&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: this one is fairly obvious - the label names are simply too long to fit inside buttons. Radio buttons are a better choice.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;select-dropdowns&quot;&gt;Select Dropdowns&lt;/h3&gt;
+&lt;p&gt;If you need the user to select exactly one of many options (too many for a set of radio buttons), then a select dropdown is the ideal choice. However, if you have lots and lots of options (eg. “Select your country”), avoid a select dropdown and use an auto-completing input field instead.&lt;/p&gt;
+
+&lt;p&gt;Select dropdowns hide all of the options from the user until opened, and even when opened, only show some of the options until scrolled. This means that they’re good when the user doesn’t need to know all the options available. If they must know the options they’re &lt;strong&gt;not&lt;/strong&gt; selecting, a set of radio buttons is better.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/select-dropdowns.png&quot; alt=&quot;select-dropdowns&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: the difference between the good and bad here is in regards to the number of potential options. Here there are 5 or so currency options, but over a hundred country options. It's unwieldy to scroll through so many, especially on mobile. An auto-completing input field is a much better choice here.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;multi-select-dropdowns&quot;&gt;Multi-select Dropdowns&lt;/h3&gt;
+&lt;p&gt;Where select dropdowns are similar to radio buttons in forcing the user to select exactly one option, multi-select dropdowns are similar to checkboxes in allowing the user to select any number of options. You would use a multi-select dropdown when you have too many possible options to use inline checkboxes. However, as with select dropdowns, if you have lots and lots of options, it’s better to use a tag input field.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, the stock HTML multi-select is awful - it doesn’t save any space, and is very unintuitive (you need to shift-click to select multiple elements). A plugin like &lt;a href=&quot;http://davidstutz.github.io/bootstrap-multiselect/&quot;&gt;Bootstrap Multiselect&lt;/a&gt; is a much better implementation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/multiselect-dropdowns.png&quot; alt=&quot;multiselect-dropdowns&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: again, there's simply too many options in the example on the right. A better choice would be a tag input field.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;range-sliders&quot;&gt;Range sliders&lt;/h3&gt;
+&lt;p&gt;Range sliders are good when you need the user to enter a number within a minimum or maximum limit. They’re also good when you want the user to &lt;em&gt;set&lt;/em&gt; the minimum or maximum limit. Range sliders are not precise - you should only use them when “close enough is good enough”. They also enforce limits, so they’re not good for open-ended numbers inputs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/range-sliders.png&quot; alt=&quot;range-sliders&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: a range slider is too imprecise to select the year of birth, which needs to be an exact number. A number input field would be better there. And while a range slider &lt;em&gt;might&lt;/em&gt; be ok for setting a price, it enforces a maximum limit, which might not be appropriate. Additionally, if your maximum limit is high, it becomes difficult to set low prices, since the slider is linear. For example, if the maximum limit was set to $10,000, selecting $10 rather than $15 might be less than a pixel difference. I find this to be a constant frustration when using &lt;a href=&quot;http://airbnb.com/&quot;&gt;AirBNB&lt;/a&gt; because of this.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;steppers&quot;&gt;Steppers&lt;/h3&gt;
+&lt;p&gt;These are a quick and easy way to let users manipulate a number. They’re only useful if the user will be deviating from the default setting by 2 or 3 whole numbers. Any more than that, and this will be much more cumbersome than a simple input field, or even select dropdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/steppers.png&quot; alt=&quot;steppers&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;The bad: it's not a good idea to use steppers for non-integer numbers, like $23.70. And when the user could be deviating from the default by a lot, steppers require a lot of additional effort. If the user was born in &quot;1940&quot;, for example, they would need to tap &quot;+&quot; 30 times. A simple number input field would be much more user-friendly.&lt;/figcaption&gt;
+
+&lt;h3 id=&quot;in-summary&quot;&gt;In Summary&lt;/h3&gt;
+
+&lt;p&gt;While we already know many of these rules intuitively, it’s easy to forget them in the rush of designing in a startup. These rules aren’t prescriptive, they’re guidelines to get you started. They’ll work in most cases, and when they don’t, that’s when you prove your worth as a designer.&lt;/p&gt;
+
+&lt;p&gt;One of the best ways to design a great product is to increase the design knowledge of the entire organisation. Rules like these are share with your developers, so that they can use best practices when developing forms without needing to bother you every time.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 28 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://morgancarter.com.au/unpublished/crafting-perfect-form</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/unpublished/crafting-perfect-form</guid>
+        
+        
+        <category>unpublished</category>
+        
+      </item>
     
       <item>
         <title>Which Input When?</title>
@@ -105,7 +319,7 @@
 &lt;p&gt;One of the best ways to design a great product is to increase the design knowledge of the entire organisation. Rules like these are share with your developers, so that they can use best practices when developing forms without needing to bother you every time.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 14 Oct 2015 00:00:00 +0300</pubDate>
+        <pubDate>Wed, 14 Oct 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/which-input-when</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/which-input-when</guid>
         
@@ -191,7 +405,7 @@
 &lt;p&gt;Affordance is a principle you can apply to any interactive design. A design becomes intuitive because of affordance, because the user already knows how to interact with it. You don’t need to put labels everywhere explaining how to use your design. Which is good, because they wouldn’t read it anyway.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 23 Sep 2015 00:00:00 +0300</pubDate>
+        <pubDate>Wed, 23 Sep 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</guid>
         
@@ -277,7 +491,7 @@
 &lt;p&gt;None of these solutions are necessarily standalone - you could potentially implement all of them. Which ones work best for your design is ultimately your decision. The aim of this blog is not to tell you how to solve your design problems, but to give you a few tried-and-tested options to start with, and for you to take it from there.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 07 Sep 2015 00:00:00 +0300</pubDate>
+        <pubDate>Mon, 07 Sep 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/encouraging-users</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/encouraging-users</guid>
         
@@ -348,7 +562,7 @@
 &lt;!-- Next, learn how to [encourage users to upload an avatar](/design-solutions/encouraging-upload/). --&gt;
 
 </description>
-        <pubDate>Mon, 24 Aug 2015 00:00:00 +0300</pubDate>
+        <pubDate>Mon, 24 Aug 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/placeholder-avatars</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/placeholder-avatars</guid>
         
@@ -420,7 +634,7 @@
 &lt;p&gt;Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 17 Jan 2015 00:00:00 +0200</pubDate>
+        <pubDate>Sat, 17 Jan 2015 00:00:00 +0100</pubDate>
         <link>http://morgancarter.com.au/work/deputy-3</link>
         <guid isPermaLink="true">http://morgancarter.com.au/work/deputy-3</guid>
         
@@ -460,7 +674,7 @@
 &lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;--&gt;
 
 </description>
-        <pubDate>Fri, 16 Jan 2015 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 16 Jan 2015 00:00:00 +0100</pubDate>
         <link>http://morgancarter.com.au/work/stackla-widgets</link>
         <guid isPermaLink="true">http://morgancarter.com.au/work/stackla-widgets</guid>
         
@@ -496,7 +710,7 @@
 &lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;
 
 </description>
-        <pubDate>Wed, 14 Jan 2015 00:00:00 +0200</pubDate>
+        <pubDate>Wed, 14 Jan 2015 00:00:00 +0100</pubDate>
         <link>http://morgancarter.com.au/work/stackla-admin</link>
         <guid isPermaLink="true">http://morgancarter.com.au/work/stackla-admin</guid>
         
@@ -509,35 +723,9 @@
         <title>True Skate</title>
         <description>
 </description>
-        <pubDate>Tue, 13 Jan 2015 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 13 Jan 2015 00:00:00 +0100</pubDate>
         <link>http://morgancarter.com.au/work/true-skate</link>
         <guid isPermaLink="true">http://morgancarter.com.au/work/true-skate</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Manchester United</title>
-        <description>
-</description>
-        <pubDate>Mon, 12 Jan 2015 00:00:00 +0200</pubDate>
-        <link>http://morgancarter.com.au/work/manchester-united</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/manchester-united</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Asia's Next Top Model</title>
-        <description>
-</description>
-        <pubDate>Sun, 11 Jan 2015 00:00:00 +0200</pubDate>
-        <link>http://morgancarter.com.au/work/asias-model</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/asias-model</guid>
         
         
         <category>work</category>
