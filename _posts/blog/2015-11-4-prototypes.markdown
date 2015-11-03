@@ -1,8 +1,8 @@
 ---
 layout:        post
-date:          2015-10-28
+date:          2015-11-3
 categories:    
-- coming-soon
+- design-solutions
 siteNav: blog
 
 title:             "Prototypes: From Low to High Fidelity"
@@ -13,9 +13,9 @@ image:             blog/prototypes/thumbnail.png
 description:       "Prototyping allows us to test out our ideas quickly and easily, without going through the entire development process each time."
 ---
 
-Prototyping is one of the most important aspects of design. It allows us a chance to test out our ideas quickly and easily, without going through the entire development process each time. It allows us to test wild ideas early on, and be confident that the ideas that make it to production are tried and true.
+Prototyping is one of the most important aspects of design. It allows us a chance to test out concepts quickly and easily, without going through the entire development process each time. We can experiment with wild ideas early on, and be confident that the ideas that eventually make it to production are tried and true.
 
-The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to again see the forest, not the trees.
+The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to see the forest again, instead of just the trees.
 
 ### 5 Dimensions of Fidelity
 
@@ -23,7 +23,7 @@ There are five ways to measure the fidelity of a prototype. As fidelity increase
 
 ##### Level of visual refinement
 
-How similar does the prototype look to the final product? A low-fidelity prototype might just be hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.
+How similar does the prototype look to the final product? A low-fidelity prototype might just be a hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.
 
 ##### Breadth of functionality
 
@@ -39,7 +39,7 @@ How much interactivity does the prototype have? A low-fidelity prototype might b
 
 ##### Richness of data model
 
-How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide [placeholder avatars](/design-solutions/placeholder-avatars/), first-time use (like empty state pages), or extreme amounts of data (you might use pagination or filtering).
+How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide [placeholder avatars](/design-solutions/placeholder-avatars/)), first-time use (you might use empty state pages), or extreme amounts of data (you might use pagination or filtering).
 
 ### Low Fidelity
 
@@ -48,11 +48,11 @@ A low-fidelity prototype looks at your product on a macro scale. Here, you focus
 The reason we start with low-fidelity prototypes (and the reason we keep them looking like sketches) is because we want to direct our focus on navigation, user flow, and which features will be included. If we start including micro things like fonts or colours at this stage, three problems arise:
 
 1. Your client or boss might think this is what the final product will look like. Keeping everything looking sketchy makes it clear that this is **not** a pixel-perfect representation.
-2. Your client or boss (or you) will start to focus on these micro aspects, which aren’t important at this stage. It’s completely irrelevant to the user flow what font you’re using, so including it will only distract.
+2. Your client or boss (or you) will start to focus on these micro aspects, which aren’t important at this stage. It’s completely irrelevant to the user flow what font you’re using, so choosing one will only serve to distract.
 3. Once you spend hours perfecting the visual aspect of a design, you become attached to it, and it can be difficult to let go of a bad decision. It’s much easier to let go if the entire prototype only took a few minutes to sketch.
-4. A bad decision can seem like a good decision. In the past, I composed and mixed my own music. Whenever I composed, I would always make the instruments sound bad. If I made the instruments sound incredible, then even if I wrote shitty music, it would sound good. If the music still sounded good when the mix was bad, it meant it’d sound great when the mix was good. Similarly, investing a lot early on into the visual side of a design can skew your perspective. If the design looks good and is easy to understand as a sketch, then it’ll look really good and be really easy to understand once you reach the end of the design process.
+4. A bad decision can seem like a good decision. In the past, I composed and mixed my own music. Whenever I composed, I would always make the instruments sound bad. If I made the instruments sound incredible, then even if I wrote shitty music, it would sound good. If the music still sounded good when the mix was bad, it meant it’d sound great when the mix was good. Similarly, investing a lot early on into the visual side of a design can skew your perspective. If the design looks good and is easy to understand as a sketch, then it’ll probably look really good and be really easy to understand once you reach the end of the design process.
 
-Many people only use a product like [InVision](http://invisionapp.com/) as they move to more high-fidelity prototypes, but I find it most useful at this stage. It’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.
+Many people only use a product like [InVision](http://invisionapp.com/) as they move to more high-fidelity prototypes, but I find it most useful at this stage, when it’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.
 
 ![Low Fidelity Prototype][low-fidelity]
 <figcaption>Sourced from <a href="https://www.youtube.com/watch?v=yafaGNFu8Eg">Low fidelity prototype testing of the EE app</a>.</figcaption>
@@ -60,8 +60,8 @@ Many people only use a product like [InVision](http://invisionapp.com/) as they 
 Questions you should be asking at this stage:
 
 - Which elements must be included on this screen, and which might I be able to remove?
-- Is it clear how to navigate to each screen?
 - How can I best navigate through the information architecture?
+- Is it clear where I'm 'located' within the navigation?
 
 ### Medium Fidelity
 
@@ -77,7 +77,7 @@ Animations generally come into play at this stage. Once you start to lay out eac
 Questions you should be asking at this stage:
 
 - What is the most important element on this page, and how can I give it priority in the hierarchy?
-- How can I convey the transition from this page to another?
+- How can I convey the movement from this page to the next?
 - What colour should this button be?
 - Should I use a select dropdown or radio buttons for this input?
 

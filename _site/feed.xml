@@ -5,15 +5,15 @@
     <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Nov 2015 15:53:20 +0100</pubDate>
-    <lastBuildDate>Mon, 02 Nov 2015 15:53:20 +0100</lastBuildDate>
+    <pubDate>Tue, 03 Nov 2015 17:36:31 +0100</pubDate>
+    <lastBuildDate>Tue, 03 Nov 2015 17:36:31 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Prototypes: From Low to High Fidelity</title>
-        <description>&lt;p&gt;Prototyping is one of the most important aspects of design. It allows us a chance to test out our ideas quickly and easily, without going through the entire development process each time. It allows us to test wild ideas early on, and be confident that the ideas that make it to production are tried and true.&lt;/p&gt;
+        <description>&lt;p&gt;Prototyping is one of the most important aspects of design. It allows us a chance to test out concepts quickly and easily, without going through the entire development process each time. We can experiment with wild ideas early on, and be confident that the ideas that eventually make it to production are tried and true.&lt;/p&gt;
 
-&lt;p&gt;The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to again see the forest, not the trees.&lt;/p&gt;
+&lt;p&gt;The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to see the forest again, instead of just the trees.&lt;/p&gt;
 
 &lt;h3 id=&quot;dimensions-of-fidelity&quot;&gt;5 Dimensions of Fidelity&lt;/h3&gt;
 
@@ -21,7 +21,7 @@
 
 &lt;h5 id=&quot;level-of-visual-refinement&quot;&gt;Level of visual refinement&lt;/h5&gt;
 
-&lt;p&gt;How similar does the prototype look to the final product? A low-fidelity prototype might just be hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.&lt;/p&gt;
+&lt;p&gt;How similar does the prototype look to the final product? A low-fidelity prototype might just be a hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.&lt;/p&gt;
 
 &lt;h5 id=&quot;breadth-of-functionality&quot;&gt;Breadth of functionality&lt;/h5&gt;
 
@@ -37,7 +37,7 @@
 
 &lt;h5 id=&quot;richness-of-data-model&quot;&gt;Richness of data model&lt;/h5&gt;
 
-&lt;p&gt;How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide &lt;a href=&quot;/design-solutions/placeholder-avatars/&quot;&gt;placeholder avatars&lt;/a&gt;, first-time use (like empty state pages), or extreme amounts of data (you might use pagination or filtering).&lt;/p&gt;
+&lt;p&gt;How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide &lt;a href=&quot;/design-solutions/placeholder-avatars/&quot;&gt;placeholder avatars&lt;/a&gt;), first-time use (you might use empty state pages), or extreme amounts of data (you might use pagination or filtering).&lt;/p&gt;
 
 &lt;h3 id=&quot;low-fidelity&quot;&gt;Low Fidelity&lt;/h3&gt;
 
@@ -47,12 +47,12 @@
 
 &lt;ol&gt;
   &lt;li&gt;Your client or boss might think this is what the final product will look like. Keeping everything looking sketchy makes it clear that this is &lt;strong&gt;not&lt;/strong&gt; a pixel-perfect representation.&lt;/li&gt;
-  &lt;li&gt;Your client or boss (or you) will start to focus on these micro aspects, which aren’t important at this stage. It’s completely irrelevant to the user flow what font you’re using, so including it will only distract.&lt;/li&gt;
+  &lt;li&gt;Your client or boss (or you) will start to focus on these micro aspects, which aren’t important at this stage. It’s completely irrelevant to the user flow what font you’re using, so choosing one will only serve to distract.&lt;/li&gt;
   &lt;li&gt;Once you spend hours perfecting the visual aspect of a design, you become attached to it, and it can be difficult to let go of a bad decision. It’s much easier to let go if the entire prototype only took a few minutes to sketch.&lt;/li&gt;
-  &lt;li&gt;A bad decision can seem like a good decision. In the past, I composed and mixed my own music. Whenever I composed, I would always make the instruments sound bad. If I made the instruments sound incredible, then even if I wrote shitty music, it would sound good. If the music still sounded good when the mix was bad, it meant it’d sound great when the mix was good. Similarly, investing a lot early on into the visual side of a design can skew your perspective. If the design looks good and is easy to understand as a sketch, then it’ll look really good and be really easy to understand once you reach the end of the design process.&lt;/li&gt;
+  &lt;li&gt;A bad decision can seem like a good decision. In the past, I composed and mixed my own music. Whenever I composed, I would always make the instruments sound bad. If I made the instruments sound incredible, then even if I wrote shitty music, it would sound good. If the music still sounded good when the mix was bad, it meant it’d sound great when the mix was good. Similarly, investing a lot early on into the visual side of a design can skew your perspective. If the design looks good and is easy to understand as a sketch, then it’ll probably look really good and be really easy to understand once you reach the end of the design process.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Many people only use a product like &lt;a href=&quot;http://invisionapp.com/&quot;&gt;InVision&lt;/a&gt; as they move to more high-fidelity prototypes, but I find it most useful at this stage. It’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.&lt;/p&gt;
+&lt;p&gt;Many people only use a product like &lt;a href=&quot;http://invisionapp.com/&quot;&gt;InVision&lt;/a&gt; as they move to more high-fidelity prototypes, but I find it most useful at this stage, when it’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/prototypes/low-fidelity.jpg&quot; alt=&quot;Low Fidelity Prototype&quot; /&gt;&lt;/p&gt;
 &lt;figcaption&gt;Sourced from &lt;a href=&quot;https://www.youtube.com/watch?v=yafaGNFu8Eg&quot;&gt;Low fidelity prototype testing of the EE app&lt;/a&gt;.&lt;/figcaption&gt;
@@ -61,8 +61,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;Which elements must be included on this screen, and which might I be able to remove?&lt;/li&gt;
-  &lt;li&gt;Is it clear how to navigate to each screen?&lt;/li&gt;
   &lt;li&gt;How can I best navigate through the information architecture?&lt;/li&gt;
+  &lt;li&gt;Is it clear where I’m ‘located’ within the navigation?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;medium-fidelity&quot;&gt;Medium Fidelity&lt;/h3&gt;
@@ -80,7 +80,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;What is the most important element on this page, and how can I give it priority in the hierarchy?&lt;/li&gt;
-  &lt;li&gt;How can I convey the transition from this page to another?&lt;/li&gt;
+  &lt;li&gt;How can I convey the movement from this page to the next?&lt;/li&gt;
   &lt;li&gt;What colour should this button be?&lt;/li&gt;
   &lt;li&gt;Should I use a select dropdown or radio buttons for this input?&lt;/li&gt;
 &lt;/ul&gt;
@@ -109,12 +109,12 @@
 &lt;p&gt;Finally, at some stage you need to move from prototype to real code. Once you reach a certain height in fidelity, it can become much faster to change things in code rather than in Photoshop or Sketch. By no means does reaching this stage mean that the design process is over. If you know how to code, then designing in the browser at this stage is great, and prevents a lot of back-and-forth between designers and developers. If you don’t, prototyping becomes even more important - a few minutes of your time spent prototyping could save days of work for your developer.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 28 Oct 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/coming-soon/prototypes</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/coming-soon/prototypes</guid>
+        <pubDate>Tue, 03 Nov 2015 00:00:00 +0100</pubDate>
+        <link>http://morgancarter.com.au/design-solutions/prototypes</link>
+        <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/prototypes</guid>
         
         
-        <category>coming-soon</category>
+        <category>design-solutions</category>
         
       </item>
     
