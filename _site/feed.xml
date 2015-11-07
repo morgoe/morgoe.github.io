@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Morgan Carter — Product Designer</title>
-    <description>I’m a product designer based in Sydney. I turn complex ideas into intuitive, beautiful products.</description>
+    <title>Design Solutions</title>
+    <description>Common design problems and how to solve them.</description>
     <link>http://morgancarter.com.au/</link>
     <atom:link href="http://morgancarter.com.au/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Nov 2015 17:01:12 +0100</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2015 17:01:12 +0100</lastBuildDate>
+    <pubDate>Sat, 07 Nov 2015 17:25:48 +0100</pubDate>
+    <lastBuildDate>Sat, 07 Nov 2015 17:25:48 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -113,114 +113,6 @@
         <link>http://morgancarter.com.au/design-solutions/prototypes</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/prototypes</guid>
         
-        
-        <category>design-solutions</category>
-        
-      </item>
-    
-      <item>
-        <title>Crafting the Perfect Sign Up Form</title>
-        <description>&lt;p&gt;The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, for instance, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/real-life.png&quot; alt=&quot;real-life&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, what can seem obvious in real life can get confusing when we move to software. Software is more abstract, and can deal with really complex sets of data that simply don’t appear in your kitchen. Here are some simple rules which can help guide which type of input you should use when, to make your design as intuitive to use as possible.&lt;/p&gt;
-
-&lt;h3 id=&quot;input-field&quot;&gt;Input Field&lt;/h3&gt;
-&lt;p&gt;The input field is the bread and butter of forms. They’re used for anything that requires custom input from a user, not a selection of predefined options. Usernames, emails, addresses, passwords, websites, phone numbers.&lt;/p&gt;
-
-&lt;p&gt;Make sure you use the correct &lt;a href=&quot;http://robertnyman.com/html5/forms/input-types.html&quot;&gt;HTML5 input&lt;/a&gt; when using input fields. They fall back gracefully on old browsers, and on new browsers (particularly mobile) they’re great for helping users to enter in the correct type of information.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/keyboards.png&quot; alt=&quot;keyboards&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;auto-completing-input-field&quot;&gt;Auto-completing Input Field&lt;/h3&gt;
-&lt;p&gt;An auto-completing input field looks pretty much like a standard text input field, but once you start typing, it suggests some relevant options. When you have potentially hundreds of options (too many to display on-screen at once), an auto-completing input field is a good choice. A good use-case for this would be asking a user’s home country. Once the user starts to type, the input filters down the hundreds of options down to a few relevant ones, allowing the user to easily select the one they’re after.&lt;/p&gt;
-
-&lt;p&gt;This is not a standard HTML input type, so you’ll need to use a plugin like &lt;a href=&quot;https://harvesthq.github.io/chosen/&quot;&gt;Chosen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/input-fields.png&quot; alt=&quot;input-fields&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: a person's name can be literally anything, so trying to suggest options is probably not helpful, especially once you start including non-English languages in your product. It also might imply to a user that they have to select one of your pre-defined names, instead of choosing their own. A simple text input field would do fine.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;tag-input-field&quot;&gt;Tag Input Field&lt;/h3&gt;
-&lt;p&gt;This input is similar to the above, but allows the user to select more than one option. This input may limit the user to some predefined options. Alternatively, it could behave like an email address field - suggesting potential options, but allowing any input.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/tag-fields.png&quot; alt=&quot;tag-fields&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: as above, a simple text field is best for inputting a name.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;checkboxes&quot;&gt;Checkboxes&lt;/h3&gt;
-&lt;p&gt;Checkboxes are used when you want the user to select any number (including zero) of predefined options. You can also use one to agree or disagree to a single option.&lt;/p&gt;
-
-&lt;p&gt;Checkboxes traditionally are shaped as squares, while radio buttons are circular. Feel free to implement your own styling, but keep the shapes roughly the same or you’ll confuse your users. Also make sure that clicking on the text label will toggle the checkbox or radio button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/checkboxes.png&quot; alt=&quot;checkboxes&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: you probably want the user to pick a single gender, so radio buttons or a button group would be better choices.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;toggles&quot;&gt;Toggles&lt;/h3&gt;
-&lt;p&gt;These are essentially the same as checkboxes, but they resemble a real-life switch, which can be a bit more intuitive. They generally mean “On/Off”, not “Agree/Disagree”.&lt;/p&gt;
-
-&lt;p&gt;Toggles are also a bit easier at a glance to understand, as they’re brightly coloured, and always positive. A ticked checkbox may be negative (eg. “don’t send me promotional emails”), but a green toggle always means “enabled”.&lt;/p&gt;
-
-&lt;p&gt;Toggles are very easy to implement using pure CSS. &lt;a href=&quot;http://codepen.io/morgoe/pen/VvzWQg&quot;&gt;Learn how&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/toggles.png&quot; alt=&quot;toggles&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: a toggle means &quot;on/off&quot;, not &quot;agree/disagree&quot;. You're better off using a checkbox here..&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;radio-buttons&quot;&gt;Radio Buttons&lt;/h3&gt;
-&lt;p&gt;Radio buttons and checkboxes are often erroneously interchanged. While checkboxes allow the user to select any number of predefined options, radio buttons are used to force the user to select exactly one predefined option. Once selected, they can’t be unselected. If you need the user to select exactly 1 or 0 options, you may use a set of radio buttons and include an option “None”.&lt;/p&gt;
-
-&lt;p&gt;Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re probably better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/radio-buttons.png&quot; alt=&quot;radio-buttons&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: this one isn't broken, but since you have a single option that asks the user to agree or disagree, a better option would be a checkbox with the label &quot;receive weekly emails&quot;.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;button-groups&quot;&gt;Button Groups&lt;/h3&gt;
-&lt;p&gt;Button groups are to radio buttons what toggles are to checkboxes. They’re essentially radio buttons, but they’re a little more intuitive, as they borrow the affordance of real-life buttons better than traditional digital radio buttons do. They’re great for when you only have 2 or 3 options to choose from, all with short one-word labels.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/button-groups.png&quot; alt=&quot;button-groups&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: this one is fairly obvious - the label names are simply too long to fit inside buttons. Radio buttons are a better choice.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;select-dropdowns&quot;&gt;Select Dropdowns&lt;/h3&gt;
-&lt;p&gt;If you need the user to select exactly one of many options (too many for a set of radio buttons), then a select dropdown is the ideal choice. However, if you have lots and lots of options (eg. “Select your country”), avoid a select dropdown and use an auto-completing input field instead.&lt;/p&gt;
-
-&lt;p&gt;Select dropdowns hide all of the options from the user until opened, and even when opened, only show some of the options until scrolled. This means that they’re good when the user doesn’t need to know all the options available. If they must know the options they’re &lt;strong&gt;not&lt;/strong&gt; selecting, a set of radio buttons is better.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/select-dropdowns.png&quot; alt=&quot;select-dropdowns&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: the difference between the good and bad here is in regards to the number of potential options. Here there are 5 or so currency options, but over a hundred country options. It's unwieldy to scroll through so many, especially on mobile. An auto-completing input field is a much better choice here.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;multi-select-dropdowns&quot;&gt;Multi-select Dropdowns&lt;/h3&gt;
-&lt;p&gt;Where select dropdowns are similar to radio buttons in forcing the user to select exactly one option, multi-select dropdowns are similar to checkboxes in allowing the user to select any number of options. You would use a multi-select dropdown when you have too many possible options to use inline checkboxes. However, as with select dropdowns, if you have lots and lots of options, it’s better to use a tag input field.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, the stock HTML multi-select is awful - it doesn’t save any space, and is very unintuitive (you need to shift-click to select multiple elements). A plugin like &lt;a href=&quot;http://davidstutz.github.io/bootstrap-multiselect/&quot;&gt;Bootstrap Multiselect&lt;/a&gt; is a much better implementation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/multiselect-dropdowns.png&quot; alt=&quot;multiselect-dropdowns&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: again, there's simply too many options in the example on the right. A better choice would be a tag input field.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;range-sliders&quot;&gt;Range sliders&lt;/h3&gt;
-&lt;p&gt;Range sliders are good when you need the user to enter a number within a minimum or maximum limit. They’re also good when you want the user to &lt;em&gt;set&lt;/em&gt; the minimum or maximum limit. Range sliders are not precise - you should only use them when “close enough is good enough”. They also enforce limits, so they’re not good for open-ended numbers inputs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/range-sliders.png&quot; alt=&quot;range-sliders&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: a range slider is too imprecise to select the year of birth, which needs to be an exact number. A number input field would be better there. And while a range slider &lt;em&gt;might&lt;/em&gt; be ok for setting a price, it enforces a maximum limit, which might not be appropriate. Additionally, if your maximum limit is high, it becomes difficult to set low prices, since the slider is linear. For example, if the maximum limit was set to $10,000, selecting $10 rather than $15 might be less than a pixel difference. I find this to be a constant frustration when using &lt;a href=&quot;http://airbnb.com/&quot;&gt;AirBNB&lt;/a&gt; because of this.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;steppers&quot;&gt;Steppers&lt;/h3&gt;
-&lt;p&gt;These are a quick and easy way to let users manipulate a number. They’re only useful if the user will be deviating from the default setting by 2 or 3 whole numbers. Any more than that, and this will be much more cumbersome than a simple input field, or even select dropdown.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/which-input-when/steppers.png&quot; alt=&quot;steppers&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The bad: it's not a good idea to use steppers for non-integer numbers, like $23.70. And when the user could be deviating from the default by a lot, steppers require a lot of additional effort. If the user was born in &quot;1940&quot;, for example, they would need to tap &quot;+&quot; 30 times. A simple number input field would be much more user-friendly.&lt;/figcaption&gt;
-
-&lt;h3 id=&quot;in-summary&quot;&gt;In Summary&lt;/h3&gt;
-
-&lt;p&gt;While we already know many of these rules intuitively, it’s easy to forget them in the rush of designing in a startup. These rules aren’t prescriptive, they’re guidelines to get you started. They’ll work in most cases, and when they don’t, that’s when you prove your worth as a designer.&lt;/p&gt;
-
-&lt;p&gt;One of the best ways to design a great product is to increase the design knowledge of the entire organisation. Rules like these are share with your developers, so that they can use best practices when developing forms without needing to bother you every time.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 28 Oct 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/unpublished/crafting-perfect-form</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/unpublished/crafting-perfect-form</guid>
-        
-        
-        <category>unpublished</category>
-        
       </item>
     
       <item>
@@ -323,9 +215,6 @@
         <link>http://morgancarter.com.au/design-solutions/which-input-when</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/which-input-when</guid>
         
-        
-        <category>design-solutions</category>
-        
       </item>
     
       <item>
@@ -408,9 +297,6 @@
         <pubDate>Wed, 23 Sep 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/affordance-for-overflowing-content</guid>
-        
-        
-        <category>design-solutions</category>
         
       </item>
     
@@ -495,9 +381,6 @@
         <link>http://morgancarter.com.au/design-solutions/encouraging-users</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/encouraging-users</guid>
         
-        
-        <category>design-solutions</category>
-        
       </item>
     
       <item>
@@ -565,170 +448,6 @@
         <pubDate>Mon, 24 Aug 2015 00:00:00 +0200</pubDate>
         <link>http://morgancarter.com.au/design-solutions/placeholder-avatars</link>
         <guid isPermaLink="true">http://morgancarter.com.au/design-solutions/placeholder-avatars</guid>
-        
-        
-        <category>design-solutions</category>
-        
-      </item>
-    
-      <item>
-        <title>Deputy 3</title>
-        <description>&lt;p&gt;Deputy is a workhorse application for any company that needs scheduled shifts for its employees. It supports scheduling, timesheets, workplace communication, and integrates with supporting software like Xero, Vend and Shopify. Deputy works with a desktop web application, an iPad app, an iPhone app and an Android app, all handling the same data in various ways, for various use cases (the mobile apps are primarily for employees, whereas the desktop app is primarily for employers).&lt;/p&gt;
-
-&lt;p&gt;When I joined Deputy, the product had been in development for just over 6 years. They’d gone through two major iterations of the software. The first version was fairly well-designed, but was overly complex and used dated design patterns. The second version simplified the UI significantly, but it had no conventions or consistency. This led to a lot of cognitive effort trying to understand each screen, as it had no relationship to the others.&lt;/p&gt;
-
-&lt;h3 id=&quot;project-goals&quot;&gt;Project goals&lt;/h3&gt;
-
-&lt;p&gt;My task was to lead the third iteration of the software - Deputy 3. This iteration had a few major goals:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It needed to support all features of both Deputy 1 and 2, while at the same time simplifying the UI&lt;/li&gt;
-  &lt;li&gt;It had to unify the design and product development of the desktop, tablet and mobile apps that had drifted apart over the years&lt;/li&gt;
-  &lt;li&gt;It had to work on any device (previous iterations were fixed-width, desktop-only apps)&lt;/li&gt;
-  &lt;li&gt;We needed to update from Bootstrap 2 to 3, which meant rewriting the CSS codebase from scratch&lt;/li&gt;
-  &lt;li&gt;It had to be more fun, inviting, and intuitive.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;On top of all of this, we were also implementing new features. We planned to expand the functionality of the News Feed, adding comments and attachments; this would be rolled out simultaneously with updates to the mobile and tablet apps. We also added an easy way for employees to view past timesheets, upcoming shifts, see who they’d be working with, and claim open shifts.&lt;/p&gt;
-
-&lt;p&gt;And we only had 6 months.&lt;/p&gt;
-
-&lt;h3 id=&quot;getting-to-work&quot;&gt;Getting to work&lt;/h3&gt;
-
-&lt;p&gt;One of the benefits of working with start-ups is that there’s always someone new joining. I like to take these new employees and test the product with them while they’re still fresh-faced.&lt;/p&gt;
-
-&lt;p&gt;This user testing allowed me to focus my efforts on the aspects of the product most people found confusing. With tens of thousands of people using Deputy, I didn’t want to fix what wasn’t broken. The response we’ve received from the majority of users indicates we were successful here.&lt;/p&gt;
-
-&lt;p&gt;Once we had some direction, I started work on all three aspects of the project - code, user interface, and visual style. I like to alternate my focus. It’s useful to remove the restrictions of a developer mindset and focus purely on the design. I don’t usually bother with prototyping applications, as I can code up a functional prototype quickly, and once it’s in the browser it’s much quicker to edit data and design details.&lt;/p&gt;
-
-&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
-
-&lt;p&gt;The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be &lt;a href=&quot;https://viget.com/inspire/testing-accordion-menu-designs-iconography&quot;&gt;researching&lt;/a&gt; and testing how best to provide affordance for a particular button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/information-architecture.jpg&quot; alt=&quot;Macro Design&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Macro design - card sorting helped us place each feature in its ideal place within the navigational structure.&lt;/figcaption&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/buttons.png&quot; alt=&quot;Micro Design&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Micro design - the iteration of accordion buttons.&lt;/figcaption&gt;
-
-&lt;p&gt;One problem we ran into again and again was the lack of time. A few really interesting ideas ended up being pushed out, but might get revisited later on. One idea that got cut was an ‘inline modal’. We needed a way to place a modal over a modal over a page, so I came up with the solution of making the first modal inline, not overlaid. Below is a messy prototype, but it demonstrates the solution pretty well.&lt;/p&gt;
-
-&lt;video width=&quot;768&quot; height=&quot;384&quot; autoplay=&quot;&quot; loop=&quot;&quot; poster=&quot;/assets/images/work/deputy/inline-modal.jpg&quot;&gt;
-	&lt;source src=&quot;/assets/images/work/deputy/inline-modal.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-&lt;figcaption&gt;Inline modal inspired by Material Design's use of animation.&lt;/figcaption&gt;
-
-&lt;p&gt;Another major issue was that we were trying to bring the desktop visually in line with the mobile apps, but many design decisions simply didn’t translate from mobile to desktop. We started by questioning some of the assumptions that had been made previously, and we ended up overhauling some key aspects of the mobile apps and meeting the designs in the middle.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/deputy/transition.png&quot; alt=&quot;Transition from Deputy2 to Deputy3&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;Unifying the desktop and mobile apps.&lt;/figcaption&gt;
-
-&lt;!-- One issue with the previous versions is that some forms were really long (Shift scheduling is a really complex beast to tackle, especially once you take into account differences between countries). The 2nd most popular device for Deputy users was the 1366x768px Dell laptops. This meant that for many users, the **Save** and **Cancel** buttons were out of sight (and out of mind). We solved this with an elegant solution I’ve written about in my blog - check it out. --&gt;
-
-&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
-
-&lt;p&gt;In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I’ve seen how Reddit &lt;a href=&quot;https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/&quot;&gt;reacted&lt;/a&gt; when the design team increased the font size by 1px), but the response to the new version has been really positive. Deputy has already doubled its users (from 40,000 to 80,000) in the first half of this year. With this new release, and a few other key strategies, they’re estimating to end the year at 400,000 users.&lt;/p&gt;
-
-&lt;blockquote&gt;“I just wanted to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” &lt;strong class=&quot;u-pullRight&quot;&gt;–Jason Tait, a Deputy customer&lt;/strong&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 17 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/work/deputy-3</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/deputy-3</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Stackla Widgets</title>
-        <description>&lt;p&gt;When I joined Stackla, they already had a Widget system in place that would allow clients to embed the product into their websites. The Widgets had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. They were also used for any live event displays we did at that time. However, the Widgets had a number of issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;They were simple, static iFrames with fixed width and height. Responsive websites were becoming more and more popular around that time, and the widgets were totally unusable for those clients.&lt;/li&gt;
-  &lt;li&gt;They were pretty unattractive. Stackla didn’t have an internal designer until I joined, and a lot of the visuals had been rushed to get the MVP out.&lt;/li&gt;
-  &lt;li&gt;They were extremely difficult to customise. Stackla sold itself as a white label product, but the Widgets were so rigid, that they ended up looking almost identical for each client.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” &lt;strong class=&quot;u-pullRight&quot;&gt;–Peter Cassidy, Co-founder of &lt;a href=&quot;https://stackla.com/&quot; target=&quot;_blank&quot;&gt;Stackla&lt;/a&gt;&lt;/strong&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of &lt;a href=&quot;http://asntm2.starworldasia.tv/&quot; target=&quot;_blank&quot;&gt;Asia’s Next Top Model&lt;/a&gt;, and the client had almost no content of their own - the show hadn’t even started. However, there was a lot of hype on social media, so we decided to use a Widget to embed fan content into the site. Since the site was to be responsive, I pitched the idea of a Fluid Widget, one that would adapt to any screen size. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static Widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was extremely happy - a barebones site was turned into a really content-heavy site, and social engagement was massively increased. The Fluid Widget became Stackla’s best selling feature for the rest of my time working there.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-widgets/asntm.jpg&quot; alt=&quot;Asia's Next Top Model Fluid Widgets&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The first iteration of the Fluid Widget.&lt;/figcaption&gt;
-
-&lt;p&gt;As demand for the Fluid Widget grew, we further expanded its functionality. We made it more and more customisable, and refactored the code to be nearly identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-widgets/wanted.png&quot; alt=&quot;Wanted Shoes Fluid Widget&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/wanted-shoes/&quot; target=&quot;_blank&quot;&gt;Wanted Shoes&lt;/a&gt; used the Fluid Widget as a Social eCommerce platform.&lt;/figcaption&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-widgets/myer.jpg&quot; alt=&quot;Myer Fluid Widgets&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/myer-spring-summer-launch/&quot; target=&quot;_blank&quot;&gt;Myer&lt;/a&gt; used the Fluid Widgets to accompany a live streaming fashion show.&lt;/figcaption&gt;
-
-&lt;!--&lt;div class=&quot;u-responsiveMedia&quot;&gt;
-	&lt;iframe src=&quot;https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;--&gt;
-
-</description>
-        <pubDate>Fri, 16 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/work/stackla-widgets</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/stackla-widgets</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Stackla Admin</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/work/stackla-admin/manage.png&quot; alt=&quot;Stackla Admin Manage Content Screen&quot; /&gt;&lt;/p&gt;
-&lt;figcaption&gt;The first iteration of the Fluid Widget.&lt;/figcaption&gt;
-
-&lt;p&gt;When I joined Stackla, they already had a Widget system in place that would allow clients to embed the product into their websites. The Widgets had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. They were also used for any live event displays we did at that time. However, the Widgets had a number of issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;They were simple, static iFrames with fixed width and height. Responsive websites were becoming more and more popular around that time, and the widgets were totally unusable for those clients.&lt;/li&gt;
-  &lt;li&gt;They were pretty unattractive. Stackla didn’t have an internal designer until I joined, and a lot of the visuals had been rushed to get the MVP out.&lt;/li&gt;
-  &lt;li&gt;They were extremely difficult to customise. Stackla sold itself as a white label product, but the Widgets were so rigid, that they ended up looking almost identical for each client.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;“Morgan is not afraid to voice his opinion and constructively challenge ideas, and is more than willing to jump in and master new technologies when the job calls for it.” &lt;strong class=&quot;u-pullRight&quot;&gt;-Peter Cassidy, Co-founder of &lt;a href=&quot;https://stackla.com/&quot; target=&quot;_blank&quot;&gt;Stackla&lt;/a&gt;&lt;/strong&gt;&lt;/blockquote&gt;
-&lt;p&gt;I did a bit of work to improve the existing product, but it wasn’t until late 2013 that we made a true leap in quality. I was building the site of &lt;a href=&quot;http://asntm2.starworldasia.tv/&quot; target=&quot;_blank&quot;&gt;Asia’s Next Top Model&lt;/a&gt;, and the client had almost no content of their own - the show hadn’t even started. However, there was a lot of hype on social media, so we decided to use a Widget to embed fan content into the site. Since the site was to be responsive, I pitched the idea of a Fluid Widget, one that would adapt to any screen size. There was a bit of hesitancy about how much work this might be, and some discussions over alternatives (such as using a number of static Widgets in an adaptive design scheme). I created a prototype over a couple of days that ended up serving as the basis for the Fluid Widget as we developed it. The client was extremely happy - a barebones site was turned into a really content-heavy site, and social engagement was massively increased. The Fluid Widget became Stackla’s best selling feature for the rest of my time working there.&lt;/p&gt;
-
-&lt;p&gt;As demand for the Fluid Widget grew, we further expanded its functionality. We made it more and more customisable, and refactored the code to be nearly identical across Stackla’s offerings, so that one could literally copy and paste customisations from one display to another. By the end of my time there, we’d made the Fluid Widget so customisable that some client designs were unrecognisably different from the original iteration.&lt;/p&gt;
-
-&lt;p&gt;![Myer Fluid Widgets][wanted]&lt;/p&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/wanted-shoes/&quot; target=&quot;_blank&quot;&gt;Wanted Shoes&lt;/a&gt; used the Fluid Widget as a Social eCommerce platform.&lt;/figcaption&gt;
-
-&lt;div class=&quot;u-responsiveMedia&quot;&gt;
-	&lt;iframe src=&quot;https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://stackla.com/case-studies/sportsbet-tweet-powered-horse/&quot; target=&quot;_blank&quot;&gt;Sportsbet&lt;/a&gt; used the Fluid Widget to create a data visualisation of a Tweet Powered Horse&lt;/figcaption&gt;
-
-</description>
-        <pubDate>Wed, 14 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/work/stackla-admin</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/stackla-admin</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>True Skate</title>
-        <description>
-</description>
-        <pubDate>Tue, 13 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://morgancarter.com.au/work/true-skate</link>
-        <guid isPermaLink="true">http://morgancarter.com.au/work/true-skate</guid>
-        
-        
-        <category>work</category>
         
       </item>
     
