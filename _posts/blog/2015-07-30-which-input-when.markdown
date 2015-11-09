@@ -72,6 +72,11 @@ Button groups are to radio buttons what toggles are to checkboxes. They’re ess
 ![button-groups][button-groups]
 <figcaption>The bad: this one is fairly obvious - the label names are simply too long to fit inside buttons. Radio buttons are a better choice.</figcaption>
 
+**Update:** a few people pointed out that having just 2 buttons in a group can be confusing, as it can be difficult to infer which button is pressed and which is unpressed. If you have 3+ buttons, this is no problem. Or if you're using a more skeumorphic visual style, this also alleviates this issue.
+
+![button-groups][button-groups-2]
+<figcaption>It's easy to see which button is pressed on the left-hand examples, but it's pretty confusing on the right-hand example.</figcaption>
+
 ### Select Dropdowns
 If you need the user to select exactly one of many options (too many for a set of radio buttons), then a select dropdown is the ideal choice. However, if you have lots and lots of options (eg. “Select your country”), avoid a select dropdown and use an auto-completing input field instead. 
 
@@ -114,6 +119,7 @@ One of the best ways to design a great product is to increase the design knowled
 [toggles]: /assets/images/blog/which-input-when/toggles.png
 [radio-buttons]: /assets/images/blog/which-input-when/radio-buttons.png
 [button-groups]: /assets/images/blog/which-input-when/button-groups.png
+[button-groups-2]: /assets/images/blog/which-input-when/button-groups-2.png
 [select-dropdowns]: /assets/images/blog/which-input-when/select-dropdowns.png
 [multiselect-dropdowns]: /assets/images/blog/which-input-when/multiselect-dropdowns.png
 [range-sliders]: /assets/images/blog/which-input-when/range-sliders.png
