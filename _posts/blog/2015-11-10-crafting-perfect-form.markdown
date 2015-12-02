@@ -2,15 +2,16 @@
 layout:        post
 date:          2015-10-28
 categories:    
-- unpublished
+- coming-soon
 siteNav: blog
 
-title:             "Crafting the Perfect Sign Up Form"
+published:			false
+title:				"Crafting the Perfect Sign Up Form"
 
-thumbnail:         blog/which-input-when/thumbnail.png
-image:             blog/which-input-when/thumbnail.png
+thumbnail:			blog/which-input-when/thumbnail.png
+image:				blog/which-input-when/thumbnail.png
 
-description:       "Each input type has a very specific use-case, and using the wrong input can be confusing for your users."
+description:		"Each input type has a very specific use-case, and using the wrong input can be confusing for your users."
 ---
 
 The inputs we interact with in real life follow some pretty basic rules, and we can get really confused if they don’t. If you’re trying to manipulate the temperature of a tap, for instance, only the range slider input makes sense. But if you were trying to manipulate the temperature of your kettle, it’d be best to use the steppers on the right.
