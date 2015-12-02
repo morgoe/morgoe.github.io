@@ -2,7 +2,7 @@
 layout:        post
 date:          2015-12-2
 categories:    
-- coming-soon
+- design-solutions
 siteNav: blog
 
 title:             "Goldilocks and Form Validation"
@@ -17,15 +17,15 @@ Once upon a time, there was a little girl named Goldilocks. She went for a surf 
 
 ### Too Slow
 
-Goldilocks visited the first website and filled out a form. She reached the end of the form, with no errors, and proudly pressed Submit. The page completely reloaded, and a few seconds later the form spoke.
+Goldilocks visited the first website and filled out a form. She reached the end of the form, with no errors, and proudly pressed Submit. The page completely reloaded, and a few seconds later the form spoke to her.
 
 <img src="/assets/images/blog/goldilocks/serious.png" class="u-pullLeft" width="160">
 
-“You mis-spelled your email,” the form said.
+“This is not a valid email address,” the form said.
 
-Goldilocks grumbled and fixed the typo. She scrolled down to the end of the form again, with no more errors, and pressed Submit a second time. 
+Goldilocks grumbled and fixed the typo. She scrolled down to the end of the form again, with no other errors showing, and pressed Submit a second time. 
 
-“You need to have a number in your password,” the form belatedly whined after the page had reloaded.
+“You need to have a number in your password,” the form belatedly whined, after the page had reloaded again.
 
 By now, Goldilocks was getting frustrated. The form was only validating one field at a time, and seemed to only show the requirements for each field once she’d already got it wrong.
 
@@ -35,7 +35,7 @@ Success! The form went through. But what should have taken 3 minutes ended up ta
 
 ### Too Fast
 
-Goldilocks visited the second website and filled out another form. This time, the website had the opposite problem. Instead of only validating when she submitted the form, it validated after every keypress.
+Goldilocks visited the second website and filled out another form. This time, the website had the opposite problem. Instead of only validating when she submitted the form, it validated after every single keypress.
 
 She started typing her name: “G”.
 
@@ -45,7 +45,7 @@ Goldilocks flinched, but kept typing. “o”.
 
 **“Perfect!”**, congratulated the form, still yelling. 
 
-Goldilocks was confused - she wasn’t even done yet! She ignored the message and typed the next letter. “l”. Nothing happened. “d”. Nothing happened. “blocks”. Nothing happened. Goldilocks shrugged and moved on to the next field.
+Goldilocks was confused - she wasn’t even done yet! She ignored the message and typed the next letter. “l”. Nothing happened. “d”. Nothing happened. “i-l-o-c-k-s”, . Nothing happened. Goldilocks shrugged and moved on to the next field.
 
 The next field asked for her email address. Again, she started typing: “g”.
 
@@ -55,7 +55,7 @@ The next field asked for her email address. Again, she started typing: “g”.
 
 By now Goldilocks was getting irritated. The form validation was meant to help her fill out this form, but it kept telling her she was doing it wrong, when she wasn’t even finished typing. She filled in the rest of the form, but ignored the form validation as it wasn’t helpful at all. She reached the end of the form, hovered over the Submit button. She winced as she clicked, expecting more criticism. 
 
-But the form went through without troubles. Although it was a much faster process than on the first website, she found herself stressed and anxious, and she was relieved to be done with the website.
+But the form went through without any trouble. Although it was a much faster process than on the first website, she found herself stressed and anxious, and she was relieved to be done with the website.
 
 ### Just Right
 
@@ -71,9 +71,9 @@ But when she moved on to the next field, a little green tick appeared next to he
 
 Goldilocks felt welcomed and encouraged to keep going. The next field asked for her last name. Goldilocks is very secretive about her last name, so she skipped this field.
 
-“We need a last name,” said the form as she did.
+“We need a last name, please,” said the form as she did.
 
-Goldilocks was still reluctant to give her surname out, but the website had made her feel welcome already, so she typed it in.
+Goldilocks was still reluctant to give her surname out, but the website had made her feel welcome already, so she consented and typed it in.
 
 The next form field asked for her email address. She started typing it in “goldilocks@gmai.com”.
 
