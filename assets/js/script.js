@@ -95,7 +95,7 @@ $(document)
 
 
 /* Contact Me Modal */
-function toggleContactModal(doState, stateMessage) {
+function toggleContactModal(action, doState, stateMessage) {
 	var btn = $('#contactMe-openModal');
 	var modal = $('#contactMe-modal');
 
@@ -103,6 +103,16 @@ function toggleContactModal(doState, stateMessage) {
 	var left = btn[0].offsetLeft + btn.width()/2;
 	var top = btn[0].offsetTop + btn.height()/2;
 	modal.find('.m-modal-animation').css('margin-left', left).css('margin-top', top);
+
+	if (action === 'open') {
+		$("#contactForm-url").val(window.location.pathname); /* Set hidden input as URL */
+		window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
+		ga('send', 'pageview', location.pathname + location.search); /* Send GA pageview */
+	} else if (action === 'close') {
+		window.history.replaceState({}, '', $("#contactForm-url").val()); /* Set URL back to what it was */
+		 /* Don't send GA pageview on closing, that would be counting it twice */
+		$("#contactForm-url").val(''); /* Set URL input to blank */
+	}
 
 	if (doState === 'success') {
 		// If success state, then show the success message
@@ -122,9 +132,13 @@ function toggleContactModal(doState, stateMessage) {
 		autosize($('#contactForm-message')); // Initialise autosize plugin
 	}
 }
-$(document).on('click', '#contactMe-openModal, #contactMe-closeModal', function() {
-	toggleContactModal();
+$(document).on('click', '#contactMe-openModal', function() {
+	toggleContactModal('open');
 });
+$(document).on('click', '#contactMe-closeModal', function() {
+	toggleContactModal('close');
+});
+
 
 /* Formspree Contact Form */
 $(document).on('click', '#contactForm-submit', function(e){
@@ -136,9 +150,6 @@ $(document).on('click', '#contactForm-submit', function(e){
 	inputMessage = $("#contactForm-message"),
 	inputURL = $("#contactForm-url"),
 	sendButton = $("#contactForm-submit");
-
-	inputURL.val(window.location.pathname); /* Set hidden input as URL */
-	window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
 
 	sendButton.attr("data-text", "Sending...");
 
@@ -153,17 +164,14 @@ $(document).on('click', '#contactForm-submit', function(e){
 		"&message=" + inputMessage.val() +
 		"&url=" + inputURL.val());
 
-	window.history.replaceState({}, '', inputURL.val()); /* Set URL back to what it was */
-
 	xhr.onloadend = function (res) {
 		if (res.target.status === 200){
-			toggleContactModal('success', 'Thanks for contacting me!<br> I\'ll be in touch within a couple of days.');
+			toggleContactModal('close', 'success', 'Thanks for contacting me!<br> I\'ll be in touch within a couple of days.');
 
 			// Clear form values
 			inputName.val('').removeClass('is-notEmpty');
 			inputEmail.val('').removeClass('is-notEmpty');
 			inputMessage.val('').removeClass('is-notEmpty');
-			inputURL.val('');
 		}
 		else {
 			// toggleContactModal('error', 'Something went wrong. Please double check your details.');
@@ -173,3 +181,23 @@ $(document).on('click', '#contactForm-submit', function(e){
 		}, 1000);
 	}
 });
+
+
+
+/* Redirect from /contact/ to /?contact and open the modal */
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+if (getUrlParameter('contact') === true)
+	toggleContactModal('open');
