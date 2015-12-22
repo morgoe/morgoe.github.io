@@ -132,7 +132,7 @@ function toggleContactModal(action, doState, stateMessage) {
 		autosize($('#contactForm-message')); // Initialise autosize plugin
 	}
 }
-$(document).on('click', '#contactMe-openModal', function() {
+$(document).on('click', '#contactMe-openModal, .js-contactMe-openModal', function() {
 	toggleContactModal('open');
 });
 $(document).on('click', '#contactMe-closeModal', function() {
