@@ -105,13 +105,19 @@ function toggleContactModal(action, doState, stateMessage) {
 	modal.find('.m-modal-animation').css('margin-left', left).css('margin-top', top);
 
 	if (action === 'open') {
-		$("#contactForm-url").val(window.location.pathname); /* Set hidden input as URL */
-		window.history.replaceState({}, '', '/contact/'); /* Set URL to /contact to simplify Formsprees */
-		ga('send', 'pageview', location.pathname + location.search); /* Send GA pageview */
+		$("#contactForm-url").val(window.location.pathname); // Set hidden input as URL
+		window.history.replaceState({}, '', '/contact/'); // Set URL to /contact to simplify Formsprees
+		ga('send', 'pageview', location.pathname + location.search); // Send GA pageview
 	} else if (action === 'close') {
-		window.history.replaceState({}, '', $("#contactForm-url").val()); /* Set URL back to what it was */
-		 /* Don't send GA pageview on closing, that would be counting it twice */
-		$("#contactForm-url").val(''); /* Set URL input to blank */
+		window.history.replaceState({}, '', $("#contactForm-url").val()); // Set URL back to what it was
+		 // Don't send GA pageview on closing, that would be counting it twice
+		$("#contactForm-url").val(''); // Set URL input to blank
+	} else if (action === 'page') {
+		modal.addClass('is-page');
+		setTimeout(function() {
+			window.history.replaceState({}, '', '/contact/');
+			modal.removeClass('is-page');
+		}, 100);
 	}
 
 	if (doState === 'success') {
@@ -199,5 +205,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
+
 if (getUrlParameter('contact') === true)
-	toggleContactModal('open');
+	toggleContactModal('page');

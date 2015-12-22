@@ -17,6 +17,12 @@
 		margin-top: 0;
 	}
 	transition: z-index 0s 1s;
+	&.is-page {
+		&,
+		* {
+			transition: none !important;
+		}
+	}
 }
 .m-modal-animation {
 	position: absolute;
