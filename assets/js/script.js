@@ -106,7 +106,7 @@ function toggleContactModal(action, doState, stateMessage) {
 
 	if (action === 'open') {
 		$("#contactForm-url").val(window.location.pathname); /* Set hidden input as URL */
-		window.history.replaceState({}, '', '/contact'); /* Set URL to /contact to simplify Formsprees */
+		window.history.replaceState({}, '', '/contact/'); /* Set URL to /contact to simplify Formsprees */
 		ga('send', 'pageview', location.pathname + location.search); /* Send GA pageview */
 	} else if (action === 'close') {
 		window.history.replaceState({}, '', $("#contactForm-url").val()); /* Set URL back to what it was */
