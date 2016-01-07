@@ -12,7 +12,7 @@ image:                 work/deputy-3.png
 
 is_caseStudy:          true
 
-role:                  "UX/UI Design, Design Direction & Front-end Dev"
+role:                  "Lead Design & Front-end Development"
 description:           "My first project at Deputy was a 6 month long overhaul of their desktop app. This included unifying the previous 6 years of product development, working with the iOS and Android teams to provide a consistent design, and developing a number of new features."
 description_short:     "In 6 months we overhauled 6 years of product design. The end result is an estimated 1000% growth in users."
 ---

@@ -13,6 +13,6 @@ image:         work/melody-chord-rhythm.jpg
 link:          https://www.youtube.com/watch?v=WtJQ62azPO4
 link_text:     Watch Video
 
-role:          "Design and coding"
+role:          "Design & Development"
 description:   "A multi-touch application created as part of my Information Visualisation course at university"
 ---
