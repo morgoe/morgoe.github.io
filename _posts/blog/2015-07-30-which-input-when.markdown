@@ -27,7 +27,7 @@ Make sure you use the correct [HTML5 input](http://robertnyman.com/html5/forms/i
 ![keyboards][keyboards]
 
 ### Auto-completing Input Field
-An auto-completing input field looks pretty much like a standard text input field, but once you start typing, it suggests some relevant options. When you have potentially hundreds of options (too many to display on-screen at once), an auto-completing input field is a good choice. A good use-case for this would be asking a user’s home country. Once the user starts to type, the input filters down the hundreds of options down to a few relevant ones, allowing the user to easily select the one they’re after. 
+An auto-completing input field looks pretty much like a standard text input field, but once you start typing, it suggests some relevant options. When you have potentially hundreds of options (too many to display on-screen at once), an auto-completing input field is a good choice. A good use-case for this would be asking a user’s home country. Once the user starts to type, the input filters the hundreds of options down to a few relevant ones, allowing the user to easily select the one they’re after. 
 
 This is not a standard HTML input type, so you’ll need to use a plugin like [Chosen](https://harvesthq.github.io/chosen/).
 

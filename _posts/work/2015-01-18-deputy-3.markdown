@@ -7,7 +7,7 @@ siteNav: work
 
 title:                 "Deputy 3"
 
-thumbnail:             work/deputy/thumbnail.jpg
+thumbnail:             home/laptop.png
 image:                 work/deputy-3.png
 
 is_caseStudy:          true

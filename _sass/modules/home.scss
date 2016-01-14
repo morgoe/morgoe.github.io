@@ -20,6 +20,17 @@
 	right: 0;
 	bottom: 0;
 }
+.m-home-laptop {
+	width: 9rem;
+	img {
+		border-radius: 0;
+		max-width: none;
+		max-height: none;
+		margin: 6px -5% 0;
+		width: 110%;
+		height: auto;
+	}
+}
 
 @media (min-width: 1920px) {
 	.m-home-wrapper {
@@ -62,5 +73,8 @@
 		@include prefix(transform, none);
 		margin-top: $rhythm * 2;
 		padding: $rhythm $rhythm/2;
+	}
+	.m-home-laptop img {
+		margin-left: -2%;
 	}
 }
