@@ -109,7 +109,10 @@ function toggleContactModal(action, doState, stateMessage) {
 		window.history.replaceState({}, '', '/contact/'); // Set URL to /contact to simplify Formsprees
 		ga('send', 'pageview', location.pathname + location.search); // Send GA pageview
 	} else if (action === 'close') {
-		window.history.replaceState({}, '', $("#contactForm-url").val()); // Set URL back to what it was
+		if ($("#contactForm-url").val() === '')
+			window.history.replaceState({}, '', '/'); // If URL is home, use /
+		else
+			window.history.replaceState({}, '', $("#contactForm-url").val()); // Set URL back to what it was
 		 // Don't send GA pageview on closing, that would be counting it twice
 		$("#contactForm-url").val(''); // Set URL input to blank
 	} else if (action === 'page') {
