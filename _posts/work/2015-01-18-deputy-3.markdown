@@ -14,7 +14,7 @@ is_caseStudy:          true
 
 role:                  "Lead Design & Front-end Development"
 description:           "My first project at Deputy was a 6 month long overhaul of their desktop app. This included unifying the previous 6 years of product development, working with the iOS and Android teams to provide a consistent design, and developing a number of new features."
-description_short:     "In 6 months we overhauled 6 years of product design. The end result is an estimated 1000% growth in users."
+description_short:     "In 6 months we overhauled 6 years of product design. Deputy grew its userbase 7x over the following year."
 ---
 
 Deputy is a workhorse application for any company that needs scheduled shifts for its employees. It supports scheduling, timesheets, workplace communication, and integrates with supporting software like Xero, Vend and Shopify. Deputy works with a desktop web application, an iPad app, an iPhone app and an Android app, all handling the same data in various ways, for various use cases (the mobile apps are primarily for employees, whereas the desktop app is primarily for employers).
@@ -69,7 +69,7 @@ Another major issue was that we were trying to bring the desktop visually in lin
 
 ### Results
 
-In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. Deputy has already doubled its users (from 40,000 to 80,000) in the first half of this year. With this new release, and a few other key strategies, they're estimating to end the year at 400,000 users.
+In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
 
 <blockquote>“I just wanted to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” <strong class="u-pullRight">–Jason Tait, a Deputy customer</strong></blockquote>
 
