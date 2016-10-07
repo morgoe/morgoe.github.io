@@ -4,6 +4,8 @@ button {
 }
 .btn {
 	position: relative;
+	font-family: $font_header;
+	font-weight: 500;
 	font-size: 1.5rem;
 	line-height: 1.1;
 	display: inline-block;
@@ -16,11 +18,11 @@ button {
 		background: none;
 		color: $blue;
 		&:after {
-			background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-			background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* IE10+ */
-			background: linear-gradient(to top,          transparent 0%, transparent 6%, $blue 6%, $blue 12%, transparent 12%, transparent 100%); /* W3C */
+			background: -moz-linear-gradient(bottom,     transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+			background: -webkit-linear-gradient(bottom,  transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(bottom,       transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(bottom,      transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* IE10+ */
+			background: linear-gradient(to top,          transparent 0%, $blue 0%, $blue 10%, transparent 10%, transparent 100%); /* W3C */
 		}
 	}
 	&:before,
@@ -38,22 +40,22 @@ button {
 		position: relative;
 		display: inline;
 		color: transparent;
-		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, rgba($blue, 0.5) 6%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, rgba($blue, 0.5) 6%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, rgba($blue, 0.5) 6%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, rgba($blue, 0.5) 6%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* IE10+ */
-		background: linear-gradient(to top,          transparent 0%, transparent 6%, rgba($blue, 0.5) 6%, rgba($blue, 0.5) 12%, transparent 12%, transparent 100%); /* W3C */
-		-webkit-text-stroke: 5px white;
+		background: -moz-linear-gradient(bottom,     transparent 0%, rgba($blue, 0.5) 0%, rgba($blue, 0.5) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($blue, 0.5) 0%, rgba($blue, 0.5) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, rgba($blue, 0.5) 0%, rgba($blue, 0.5) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, rgba($blue, 0.5) 0%, rgba($blue, 0.5) 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, rgba($blue, 0.5) 0%, rgba($blue, 0.5) 10%, transparent 10%, transparent 100%); /* W3C */
+		-webkit-text-stroke: 4px white;
 	}
 	&[data-visited] {
 		background: none;
 		color: inherit;
 		&:after {
-			background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-			background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* IE10+ */
-			background: linear-gradient(to top,          transparent 0%, transparent 6%, rgba($black_light, 0.33) 6%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* W3C */
+			background: -moz-linear-gradient(bottom,     transparent 0%, rgba($black_light, 0.33) 0%, rgba($black_light, 0.33) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+			background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($black_light, 0.33) 0%, rgba($black_light, 0.33) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(bottom,       transparent 0%, rgba($black_light, 0.33) 0%, rgba($black_light, 0.33) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(bottom,      transparent 0%, rgba($black_light, 0.33) 0%, rgba($black_light, 0.33) 10%, transparent 10%, transparent 100%); /* IE10+ */
+			background: linear-gradient(to top,          transparent 0%, rgba($black_light, 0.33) 0%, rgba($black_light, 0.33) 10%, transparent 10%, transparent 100%); /* W3C */
 		}
 	}
 	&[disabled],
@@ -61,11 +63,11 @@ button {
 		cursor: default;
 		color: $gray !important;
 		&:after {
-			background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, rgba($gray, 0.5) 6%, rgba($gray, 0.5) 12%, transparent 12%, transparent 100%) !important; /* FF3.6+ */
-			background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, rgba($gray, 0.5) 6%, rgba($gray, 0.5) 12%, transparent 12%, transparent 100%) !important; /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, rgba($gray, 0.5) 6%, rgba($gray, 0.5) 12%, transparent 12%, transparent 100%) !important; /* Opera 11.10+ */
-			background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, rgba($gray, 0.5) 6%, rgba($gray, 0.5) 12%, transparent 12%, transparent 100%) !important; /* IE10+ */
-			background: linear-gradient(to top,          transparent 0%, transparent 6%, rgba($gray, 0.5) 6%, rgba($gray, 0.5) 12%, transparent 12%, transparent 100%) !important; /* W3C */
+			background: -moz-linear-gradient(bottom,     transparent 0%, rgba($gray, 0.5) 0%, rgba($gray, 0.5) 10%, transparent 10%, transparent 100%) !important; /* FF3.6+ */
+			background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($gray, 0.5) 0%, rgba($gray, 0.5) 10%, transparent 10%, transparent 100%) !important; /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(bottom,       transparent 0%, rgba($gray, 0.5) 0%, rgba($gray, 0.5) 10%, transparent 10%, transparent 100%) !important; /* Opera 11.10+ */
+			background: -ms-linear-gradient(bottom,      transparent 0%, rgba($gray, 0.5) 0%, rgba($gray, 0.5) 10%, transparent 10%, transparent 100%) !important; /* IE10+ */
+			background: linear-gradient(to top,          transparent 0%, rgba($gray, 0.5) 0%, rgba($gray, 0.5) 10%, transparent 10%, transparent 100%) !important; /* W3C */
 		}
 		&:active {
 			top: 0;
@@ -82,26 +84,26 @@ button {
 .btn--modal {
 	color: white;
 	&:after {
-		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, rgba(white, 0.5) 6%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, rgba(white, 0.5) 6%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, rgba(white, 0.5) 6%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, rgba(white, 0.5) 6%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* IE10+ */
-		background: linear-gradient(to top,          transparent 0%, transparent 6%, rgba(white, 0.5) 6%, rgba(white, 0.5) 12%, transparent 12%, transparent 100%); /* W3C */
+		background: -moz-linear-gradient(bottom,     transparent 0%, rgba(white, 0.5) 0%, rgba(white, 0.5) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, rgba(white, 0.5) 0%, rgba(white, 0.5) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, rgba(white, 0.5) 0%, rgba(white, 0.5) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, rgba(white, 0.5) 0%, rgba(white, 0.5) 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, rgba(white, 0.5) 0%, rgba(white, 0.5) 10%, transparent 10%, transparent 100%); /* W3C */
 	}
 	.no-touch &:focus,
 	.no-touch &:hover,
 	.touch &:active {
 		color: white;
 		&:after {
-			background: -moz-linear-gradient(bottom,     transparent 0%, transparent 6%, white 6%, white 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-			background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 6%, white 6%, white 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(bottom,       transparent 0%, transparent 6%, white 6%, white 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(bottom,      transparent 0%, transparent 6%, white 6%, white 12%, transparent 12%, transparent 100%); /* IE10+ */
-			background: linear-gradient(to top,          transparent 0%, transparent 6%, white 6%, white 12%, transparent 12%, transparent 100%); /* W3C */
+			background: -moz-linear-gradient(bottom,     transparent 0%, white 0%, white 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+			background: -webkit-linear-gradient(bottom,  transparent 0%, white 0%, white 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(bottom,       transparent 0%, white 0%, white 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(bottom,      transparent 0%, white 0%, white 10%, transparent 10%, transparent 100%); /* IE10+ */
+			background: linear-gradient(to top,          transparent 0%, white 0%, white 10%, transparent 10%, transparent 100%); /* W3C */
 		}
 	}
 	&:after {
-		-webkit-text-stroke: 5px $blue;
+		-webkit-text-stroke: 4px $blue;
 	}
 }
 .btn-footer {

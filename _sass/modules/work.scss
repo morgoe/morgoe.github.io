@@ -16,7 +16,8 @@
 	height: 50vh;
 }
 .m-work-title {
-	margin-top: 0;
+	margin-top: 4px;
+	margin-bottom: -4px;
 }
 .m-work-link {
 	margin-top: $line_height / 2 * 1em;

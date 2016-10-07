@@ -5,7 +5,7 @@ categories:
 - design-solutions
 siteNav: blog
 
-title:             "Prototypes: From Low to High Fidelity"
+title:             "Prototypes: Low to High Fidelity"
 
 thumbnail:         blog/prototypes/thumbnail.png
 image:             blog/prototypes/thumbnail.png

@@ -3,7 +3,6 @@ html {
 	font-size: $font_size;
 	line-height: $line_height;
 	color: $black_light;
-	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -12,9 +11,12 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+h4,
+.h4 {
 	font-family: $font_header;
 	font-weight: bold;
+	text-rendering: optimizeLegibility;
 }
 h1,
 .h1 {
@@ -32,6 +34,7 @@ h2,
 h3,
 .h3 {
 	font-size: 2rem;
+	font-weight: 500;
 	line-height: $line_height--header;
 	color: $black;
 }
@@ -132,4 +135,17 @@ blockquote {
          url('/assets/fonts/charter_bold_italic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'gordita';
+    src: url('/assets/fonts/gordita-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gordita';
+    src: url('/assets/fonts/gordita-bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
 }
