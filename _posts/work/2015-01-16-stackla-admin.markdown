@@ -14,7 +14,7 @@ image:             work/stackla-admin.jpg
 is_caseStudy:      false
 
 role:              "Lead Design & Front-end Development"
-description:       "Continual user testing combined with a minimal design led to massive improvements of usability in the Stackla Admin, even as the product's features grew rapidly."
+description:       "Continual user testing combined with a minimal design led to massive improvements of usability in the Stackla Admin, even as the product’s features grew rapidly."
 
 nextOne_link:      stackla-widgets
 nextOne_img:       stackla-widgets.png

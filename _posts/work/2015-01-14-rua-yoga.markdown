@@ -4,15 +4,15 @@ date:          2015-01-14
 categories:    
 - work
 
-title:         "Rua Yoga"
+title:         "YogaRuka"
 subtitle:      "Social Microsite"
 
 thumbnail:     work/rua-yoga.png
 image:         work/rua-yoga.jpg
 
-link:          http://ruayoga.com/
+link:          http://yogaruka.com/
 link_text:     "Visit Site"
 
 role:          "Design & Front-end Development"
-description:   "A personal project to support my girlfriend's yoga practice. This one gave me a chance to get really creative with the design, while still delivering a light-weight, high-performance site."
+description:   "A personal project to support my girlfriend’s yoga studio. This one gave me a chance to get really creative with the design, while still delivering a light-weight, high-performance site."
 ---
