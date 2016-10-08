@@ -83,16 +83,6 @@
 	margin-top: 0;
 }
 
-@media (min-width: 1024px) {
-	.m-post-content {
-		* + h2,
-		* + h3,
-		* + h4 {
-			margin-top: $line_height * 1em / 2;
-		}
-	}
-}
-
 @media (max-width: 767px) {
 	.m-post-title {
 		font-size: 2rem;
