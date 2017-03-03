@@ -21,13 +21,13 @@
 	bottom: 0;
 }
 .m-home-laptop {
-	width: 9rem;
+	width: 150px;
 	img {
 		border-radius: 0;
 		max-width: none;
 		max-height: none;
-		margin: 6px -5% 0;
-		width: 110%;
+		margin: 6px -10px 0;
+		width: 180px;
 		height: auto;
 	}
 }
@@ -75,6 +75,18 @@
 		padding: $rhythm $rhythm/2;
 	}
 	.m-home-laptop img {
-		margin-left: -2%;
+		// margin-left: -2%;
+	}
+}
+
+@media (max-width: 400px) {
+	.m-home-wrapper {
+		right: 0;
+	}
+	.m-home-laptop {
+		width: 130px;
+		img {
+			width: 150px;
+		}
 	}
 }
