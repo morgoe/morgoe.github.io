@@ -3,6 +3,7 @@ layout:        post
 date:          2015-10-14
 categories:    
 - design-solutions
+- featured-blog
 siteNav: blog
 
 title:             "Which Input When?"

@@ -13,7 +13,7 @@ body-id: home
 				<h5 class="m-latestWork-title">Latest Blog Post</h5>
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/design-solutions/">View more →</a>
 			</div>
-			{% for post in site.categories['design-solutions'] limit:1 %}
+			{% for post in site.categories['featured-blog'] limit:1 %}
 				<a class="m-post-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
 					<div class="m-post-image">
 						<img src="/assets/images/{{ post.thumbnail }}">
@@ -30,7 +30,7 @@ body-id: home
 				<h5 class="m-latestWork-title">Featured Work</h5>
 				<a class="m-latestWork-more u-text--small" href="{{ site.baseurl }}/work/">View more →</a>
 			</div>
-			{% for post in site.categories['work'] limit:1 %}
+			{% for post in site.categories['featured-work'] limit:1 %}
 				<a class="m-post-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
 					<div class="m-post-image m-home-laptop">
 						<img src="/assets/images/{{ post.thumbnail }}">

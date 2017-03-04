@@ -3,6 +3,7 @@ layout:                post
 date:                  2015-01-17
 categories:    
 - work
+- featured-work
 siteNav: work
 
 title:                 "Surgemaker GPS"
