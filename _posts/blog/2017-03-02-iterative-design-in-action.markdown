@@ -7,7 +7,7 @@ siteNav: blog
 
 title:                 "Iterative Design in Action"
 
-thumbnail:             work/surgemaker/thumbnail.gif
+thumbnail:             blog/design-process/thumbnail.gif
 image:                 work/surgemaker/cover.png
 
 is_caseStudy:          true
