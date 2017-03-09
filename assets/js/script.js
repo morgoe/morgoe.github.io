@@ -211,3 +211,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 if (getUrlParameter('contact') === true)
 	toggleContactModal('page');
+
+
+
+// Hide 'hover to reveal' when secret is shown.
+
+$(document).on('mouseover', '.js-showSecret', function() {
+	$(this).parent().addClass('show');
+});

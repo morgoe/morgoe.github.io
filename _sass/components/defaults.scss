@@ -73,13 +73,11 @@ ul {
 // When selecting a text, it does this:
 ::selection {
     color: $blue_dark;
-    background: $yellow;
-    background: rgba($yellow, 0.25); /* WebKit/Blink Browsers */
+    background: rgba($blue, 0.1); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
     color: $blue_dark;
-    background: $yellow;
-    background: rgba($yellow, 0.25); /* Gecko Browsers */
+    background: rgba($blue, 0.1); /* Gecko Browsers */
 }
 
 

@@ -2,6 +2,11 @@
 	h2,
 	h3,
 	h4 {
+		font-family: $font_serif;
+		font-style: italic;
+		border-bottom: 1px solid $gray_lightest;
+		padding: 2px 6px;
+		margin-bottom: 0.5rem;
 		clear: both;
 	}
 	ol,
@@ -21,6 +26,22 @@
 	h5 {
 		font-weight: 700;
 		line-height: 1.1;
+	}
+	h2,
+	h3,
+	h4,
+	h5,
+	p,
+	ol,
+	ul,
+	figcaption,
+	blockquote,
+	.iframe-wrapper,
+	.cp_embed_wrapper,
+	.m-post-secretWrapper {
+		max-width: 768px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .m-post-title {
@@ -82,6 +103,67 @@
 .m-post-btn {
 	margin-top: 0;
 }
+.m-post-secretWrapper {
+	position: relative;
+	margin-bottom: 4rem;
+	&:before,
+	&:after {
+		margin: auto;
+		animation: secret-bounce 2s infinite alternate ease-in-out;
+	}
+	&:before {
+		content: "Hover to reveal";
+		display: table;
+		color: white;
+		background: $blue;
+		padding: 1px 10px 3px;
+		border-radius: 6px;
+		margin-bottom: 15px;
+	}
+	&:after {
+		content: "";
+		width: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid $blue;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+	}
+	&:hover,
+	&.show {
+		&:before,
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+.m-post-secret {
+	display: inline-block;
+	padding: 0 6px;
+	border-radius: 6px;
+	color: $black;
+	filter: blur(10px);
+	transition: 0.25s;
+	cursor: default;
+	&:hover,
+	.show > & {
+		filter: blur(0px);
+		background: rgba($blue, 0.1);
+	}
+}
+.m-post-largeImg {
+	+ p {
+		max-width: 1020px;
+	}
+}
+
+@-webkit-keyframes secret-bounce { 
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(5px); }
+  100%  { transform: translateY(0px); }
+}
 
 @media (max-width: 767px) {
 	.m-post-title {
@@ -90,5 +172,14 @@
 	.m-post-image {
 		width: 3 * $rhythm;
 		height: 3 * $rhythm;
+	}
+	.m-post-secretWrapper {
+		&:before {
+			content: "Tap to reveal";
+			padding: 3px 10px 3px;
+		}
+		&:after {
+			top: 27px;
+		}
 	}
 }

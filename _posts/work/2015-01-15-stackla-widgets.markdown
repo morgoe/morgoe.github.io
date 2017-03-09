@@ -40,10 +40,12 @@ As demand for the Fluid Widget grew, we further expanded its functionality. We m
 ![Myer Fluid Widgets][myer]
 <figcaption>Myer used the Fluid Widgets to accompany a live streaming fashion show.</figcaption>
 
-<div class="u-responsiveMedia">
-	<iframe src="https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+	<div class="u-responsiveMedia">
+		<iframe src="https://fast.wistia.net/embed/iframe/tcxgctbuu4?videoFoam=true" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<figcaption><a href="https://stackla.com/case-studies/sportsbet-tweet-powered-horse/">Sportsbet</a> used the Fluid Widget to create a data visualisation of a Tweet Powered Horse</figcaption>
 </div>
-<figcaption><a href="https://stackla.com/case-studies/sportsbet-tweet-powered-horse/">Sportsbet</a> used the Fluid Widget to create a data visualisation of a Tweet Powered Horse</figcaption>
 
 [asntm]: /assets/images/work/stackla-widgets/asntm.jpg
 [wanted]: /assets/images/work/stackla-widgets/wanted.png
