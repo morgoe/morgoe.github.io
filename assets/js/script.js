@@ -215,7 +215,11 @@ if (getUrlParameter('contact') === true)
 
 
 // Hide 'hover to reveal' when secret is shown.
-
 $(document).on('mouseover', '.js-showSecret', function() {
 	$(this).parent().addClass('show');
+});
+
+// Hide 'hover to reveal' when After is shown.
+$(document).on('mouseover', '.js-toggleBeforeAfter', function() {
+	$(this).addClass('show');
 });

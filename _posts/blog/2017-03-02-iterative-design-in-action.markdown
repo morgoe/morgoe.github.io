@@ -12,16 +12,15 @@ image:                 work/surgemaker/cover.png
 
 is_caseStudy:          true
 
-role:                  "Lead Design & Front-end Development"
 description:           "We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there."
 description_short:     "I want to take some time to shed some light on what my iterative process is. Because if you work with me, I’m not going to give you the exact same end result as I’ve given another company. But we’ll be using a similar iterative process to approach your unique problems."
 
 body-id: design-process
 ---
 
-We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there. Often the end result looks simple and obvious, like it could have been designed in minutes. But simple and obvious is usually very hard to get to. A bottom tab bar is hardly a revolutionary concept, but Facebook took 6 years to get there, and [Spotify](https://uxdesign.cc/why-spotify-s-navigation-is-broken-ce6b4783539d#.mpl3sgipd) only got there last year.
+We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there. Often the end result looks simple and obvious, like it could have been designed in minutes. But simple and obvious is usually very hard to get to. A bottom tab bar is hardly a revolutionary concept, but Facebook took 6 years to get there, and Spotify only got there last year.
 
-![facebook-before-after][facebook-before-after]
+![spotify-before-after][spotify-before-after]
 
 So instead of just showing you the end results here, I want to take some time to shed some light on what my iterative process is. Because if you work with me, I’m not going to give you the exact same end result as I’ve given another company. But we’ll be using a similar iterative process to approach your unique problems.
 
@@ -118,9 +117,9 @@ Using this language, we iterated a few times and eventually settled on the follo
 
 This design, despite being quite contained, communicates a number of important things:
 
-1. It explains to the user how to use the widget: by looking at the three graphs together, not in isolation
+1. It explains to the user how to use the widget (by looking at the three graphs together, not in isolation)
 2. It explains to the user what benefits they can gain (they can identify which teams are struggling)
-3. Helps clarify confusion surrounding that 3rd impediments line graph
+3. It helps clarify confusion surrounding that 3rd impediments line graph
 
 ### After
 
@@ -134,9 +133,12 @@ At the beginning of this adventure we were concerned about 4 different problems 
 4/4. Not bad 🙂 
 
 <div class="m-post-largeImg"></div>
-![trending-health-before-after][trending-health-before-after]
+<p class="m-post-toggleImage js-toggleBeforeAfter">
+	<img src="/assets/images/blog/design-process/trending-health-before-after-1.png">
+	<img src="/assets/images/blog/design-process/trending-health-before-after-2.png">
+</p>
 
-[facebook-before-after]: /assets/images/blog/design-process/facebook-before-after.png
+[spotify-before-after]: /assets/images/blog/design-process/spotify-before-after.png
 [trending-health-before]: /assets/images/blog/design-process/trending-health-before.png
 [trending-health-highlight]: /assets/images/blog/design-process/trending-health-highlight.gif
 [trending-health-tunnel-vision-highlight]: /assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif
@@ -144,5 +146,6 @@ At the beginning of this adventure we were concerned about 4 different problems 
 [trending-health-overlay-axes]: /assets/images/blog/design-process/trending-health-overlay-axes.png
 [trending-health-a-b-test]: /assets/images/blog/design-process/trending-health-a-b-test.png
 [trending-health-onboarding]: /assets/images/blog/design-process/trending-health-onboarding.png
-[trending-health-before-after]: /assets/images/blog/design-process/trending-health-before-after.gif
+[trending-health-before-after-1]: /assets/images/blog/design-process/trending-health-before-after-1.png
+[trending-health-before-after-2]: /assets/images/blog/design-process/trending-health-before-after-2.png
 [subway-signs]: /assets/images/blog/design-process/subway-signs.jpg

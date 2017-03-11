@@ -154,8 +154,57 @@
 	}
 }
 .m-post-largeImg {
+	max-width: 1020px;
 	+ p {
 		max-width: 1020px;
+	}
+}
+
+.m-post-toggleImage {
+	position: relative;
+	img:last-child {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		transition: 0.25s;
+	}
+	&:hover {
+		img:last-child {
+			opacity: 1;
+		}
+	}
+	&:before,
+	&:after {
+		margin: auto;
+		animation: secret-bounce 2s infinite alternate ease-in-out;
+	}
+	&:before {
+		content: "Hover to show After";
+		display: table;
+		color: white;
+		background: $blue;
+		padding: 1px 10px 3px;
+		border-radius: 6px;
+		margin-bottom: 15px;
+	}
+	&:after {
+		content: "";
+		width: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid $blue;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+	}
+	&.show,
+	&:hover {
+		&:before,
+		&:after {
+			opacity: 0;
+		}
 	}
 }
 
@@ -176,6 +225,15 @@
 	.m-post-secretWrapper {
 		&:before {
 			content: "Tap to reveal";
+			padding: 3px 10px 3px;
+		}
+		&:after {
+			top: 27px;
+		}
+	}
+	.m-post-toggleImage {
+		&:before {
+			content: "Tap to show After";
 			padding: 3px 10px 3px;
 		}
 		&:after {
