@@ -8,6 +8,10 @@
 * + * {
 	margin-top: $line_height * 1em;
 }
+body script ~ *,
+body script ~ * * {
+	margin-top: 0;
+}
 .margin--xl {
 	margin-top: $line_height * 3em;
 }

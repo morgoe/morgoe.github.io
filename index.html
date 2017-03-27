@@ -4,7 +4,7 @@ siteNav: home
 body-id: home
 ---
 
-<div class="m-home-wrapper margin--none">
+<div class="Home-wrapper margin--none">
 	{% include me.html %}
 
 	<div class="m-latestWork-wrapper">
@@ -32,7 +32,7 @@ body-id: home
 			</div>
 			{% for post in site.categories['featured-work'] limit:1 %}
 				<a class="m-post-link margin--sm" href="{{ post.url | prepend: site.baseurl }}">
-					<div class="m-post-image m-home-laptop">
+					<div class="m-post-image Home-laptop">
 						<img src="/assets/images/{{ post.thumbnail }}">
 					</div>
 					<div class="m-post-description">
@@ -44,4 +44,4 @@ body-id: home
 		</div>
 	</div>
 </div>
-<div class="m-home-me m-animation-8"></div>
+<div class="Home-me m-animation-8"></div>
