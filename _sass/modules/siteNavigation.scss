@@ -1,38 +1,19 @@
-.m-siteNavigation {
+.SiteNavigation {
 	position: relative;
 	margin-top: 0;
 	z-index: 2;
 	@include clearfix();
 }
-.m-siteNavigation-logo {
-	display: block;
-	float: left;
-	width: 24px;
-	height: 24px;
-	background: none !important;
-	border: 2px solid $black;
-	&:visited {
-		border-color: $black;
-	}
-	.no-touch &:focus,
-	.no-touch &:hover,
-	.touch &:active {
-		border-color: $gray;
-	}
-}
-.m-siteNavigation-list {
+.SiteNavigation-list {
 	display: block;
 	float: left;
 	vertical-align: top;
 	margin-top: 2px;
-	> li + li {
-		margin-left: $rhythm / 2;
-	}
-	.touch & > li {
+	> li {
 		margin-left: 1rem;
 	}
 }
-.m-siteNavigation-link {
+.SiteNavigation-link {
 	color: $gray_light;
 	&,
 	&[data-visited] {
@@ -49,21 +30,22 @@
 		background: linear-gradient(to top,          transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* W3C */
 	}
 	&.active {
-		color: $black_lightest;
-		background: -moz-linear-gradient(bottom,     transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* FF3.6+ */
-		background: -webkit-linear-gradient(bottom,  transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(bottom,       transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(bottom,      transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* IE10+ */
-		background: linear-gradient(to top,          transparent 0%, rgba($black_lightest, 0.33) 0%, rgba($black_lightest, 0.33) 10%, transparent 10%, transparent 100%); /* W3C */
+		font-weight: bold;
+		color: $black;
+		background: -moz-linear-gradient(bottom,     transparent 0%, $black 0%, $black 10%, transparent 10%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, $black 0%, $black 10%, transparent 10%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, $black 0%, $black 10%, transparent 10%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, $black 0%, $black 10%, transparent 10%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, $black 0%, $black 10%, transparent 10%, transparent 100%); /* W3C */
 		.no-touch &:focus,
 		.no-touch &:hover,
 		.touch &:active {
-			color: $black_lightest;
+			color: $black;
 			cursor: default;
 		}
 	}
 }
-.m-siteNavigation-highlight {
+.SiteNavigation-highlight {
 	color: $blue;
 	font-weight: bold;
 	background: none;
@@ -79,20 +61,17 @@
 }
 
 @media (max-width: 1023px) {
-	.m-siteNavigation-list {
+	.SiteNavigation-list {
 		margin-top: 6px;
 	}
 }
 
 @media (max-width: 767px) {
-	.m-siteNavigation {
+	.SiteNavigation {
 		text-align: center;
 		float: none;
 	}
-	.m-siteNavigation-logo {
-		display: none;
-	}
-	.m-siteNavigation-list {
+	.SiteNavigation-list {
 		margin-top: 0;
 		float: none;
 		> li {

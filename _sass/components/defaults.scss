@@ -2,7 +2,7 @@ body {
 	overflow-x: hidden;
 }
 p {
-	color: $black_light;
+	color: $black;
 }
 a {
 	position: relative;
@@ -30,11 +30,11 @@ a {
 		background: linear-gradient(to top,          transparent 0%, transparent 4%, $blue 4%, $blue 12%, transparent 12%, transparent 100%); /* W3C */
 	}
 	&[data-visited] {
-		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
-		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* IE10+ */
-		background: linear-gradient(to top,          transparent 0%, transparent 4%, rgba($black_light, 0.33) 4%, rgba($black_light, 0.33) 12%, transparent 12%, transparent 100%); /* W3C */
+		background: -moz-linear-gradient(bottom,     transparent 0%, transparent 4%, rgba($black, 0.33) 4%, rgba($black, 0.33) 12%, transparent 12%, transparent 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(bottom,  transparent 0%, transparent 4%, rgba($black, 0.33) 4%, rgba($black, 0.33) 12%, transparent 12%, transparent 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,       transparent 0%, transparent 4%, rgba($black, 0.33) 4%, rgba($black, 0.33) 12%, transparent 12%, transparent 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,      transparent 0%, transparent 4%, rgba($black, 0.33) 4%, rgba($black, 0.33) 12%, transparent 12%, transparent 100%); /* IE10+ */
+		background: linear-gradient(to top,          transparent 0%, transparent 4%, rgba($black, 0.33) 4%, rgba($black, 0.33) 12%, transparent 12%, transparent 100%); /* W3C */
 	}
 }
 a,

@@ -1,10 +1,6 @@
 .m-home-wrapper {
-	position: absolute;
-	top: 50%;
-	@include prefix(transform, translateY(-50%));
-	left: 0;
-	right: 30%;
-	padding: 0 $rhythm;
+	width: 65%;
+	padding: 1rem $rhythm;
 }
 .m-home-wrapper--invert {
 	display: none;
@@ -15,7 +11,7 @@
 	background-size: cover;
 	background-position: 40% 50%;
 	margin-top: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -32,57 +28,31 @@
 	}
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1600px) {
 	.m-home-wrapper {
-		right: 15%;
+		width: 70%;
 	}
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1280px) {
 	.m-home-wrapper {
-		right: 20%;
-	}
-}
-
-@media (max-width: 1200px) {
-	.m-home-wrapper {
-		right: 35%;
+		width: 75%;
 	}
 	.m-home-me {
-		width: 35%;
+		width: 25%;
 	}
 }
 
 @media (max-width: 1080px) {
 	.m-home-wrapper {
-		right: 0;
+		width: 100%;
 	}
 	.m-home-me {
 		display: none;
-	}
-}
-
-
-@media (max-width: 767px), (max-height: 568px) {
-	.m-home-me {
-		display: none;
-	}
-
-	.m-home-wrapper {
-		position: relative;
-		@include prefix(transform, none);
-		margin-top: $rhythm * 2;
-		padding: $rhythm $rhythm/2;
-	}
-	.m-home-laptop img {
-		// margin-left: -2%;
 	}
 }
 
 @media (max-width: 400px) {
-	.m-home-wrapper {
-		right: 0;
-	}
 	.m-home-laptop {
 		width: 130px;
 		img {
