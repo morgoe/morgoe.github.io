@@ -1,0 +1,115 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import 'old/0_bourbon/bourbon';
+
+// Base Settings
+@import 'old/base/variables';
+@import 'old/base/reset';
+@import 'old/base/grid';
+@import 'old/base/mixins';
+@import 'old/base/typography';
+
+// Components
+@import 'old/components/layout';
+@import 'old/components/defaults';
+@import 'old/components/buttons';
+@import 'old/components/code';
+
+// Plugins
+@import 'old/plugins/instantClick';
+
+// Modules
+@import 'old/modules/about';
+@import 'old/modules/blogPost';
+@import 'old/modules/form';
+@import 'old/modules/heroText';
+@import 'old/modules/home';
+@import 'old/modules/input';
+@import 'old/modules/latestWork';
+@import 'old/modules/modal';
+@import 'old/modules/services';
+@import 'old/modules/siteNavigation';
+@import 'old/modules/social';
+@import 'old/modules/work';
+@import 'old/modules/animation';
+
+// Utilities
+@import 'old/utilities/color';
+@import 'old/utilities/display';
+@import 'old/utilities/layout';
+@import 'old/utilities/typography';
+
+
+
+// .tabs {
+// 	list-style: none;
+// 	@include clearfix();
+// 	border-bottom: 1px solid $gray_light;
+// 	> li {
+// 		position: relative;
+// 		float: left;
+// 		+ li {
+// 			margin-top: 0;
+// 			margin-left: 0.75em;
+// 		}
+// 		&:after {
+// 			display: none;
+// 			content: "";
+// 			position: absolute;
+// 			bottom: -1px;
+// 			left: 0;
+// 			right: 0;
+// 			height: 1px;
+// 			background: $black;
+// 		}
+// 		&.active {
+// 			font-weight: bold;
+// 		}
+// 		&:hover:after,
+// 		&.active:after {
+// 			display: block;
+// 		}
+// 		> a {
+// 			display: block;
+// 			padding: 6px 12px;
+// 			color: inherit;
+// 			&:hover {
+// 				border: none;
+// 			}
+// 		}
+// 	}
+// }
+// .tabs-content {
+// 	margin-top: 0;
+// }
+
+
+
+
+
+// .modal {
+// 	// display: none;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	width: 100%;
+// 	max-width: 768px;
+// 	margin: 30px auto;
+// 	background: white;
+// 	box-shadow: 0 50px 100px rgba(black, 0.3), 0 0 50px rgba(black, 0.15), 0 0 0 10000px rgba(black, 0.1);
+// 	border-radius: $borderRadius;
+// 	overflow: hidden;
+// }
+// .modal-header {
+// 	background: $black;
+// 	color: white;
+// 	padding: 0.75em 1.5em;
+// }
+// .modal-body {
+// 	margin-top: 0;
+// 	padding: 1.5em;
+// }

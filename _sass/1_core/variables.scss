@@ -1,0 +1,107 @@
+// Colours
+// $mono-1:					#0A0F1A;
+// $mono-2:					#1A2233;
+// $mono-3:					#2E384D;
+// $mono-4:					#475266;
+// $mono-5:					#717a8e;
+// $mono-6:					#818999;
+// $mono-7:					#9DA4B3;
+// $mono-8:					#BCC1CC;
+// $mono-9:					#DCDFE6;
+$mono-95:					#EDEFF2;
+// $mono-98:					#F7F8FA;
+
+$blue:						#135ECE;
+
+$text-dark:					#182235;
+$text-muted:				#818CA2;
+
+// $info:						$blue;
+// $success:					$green;
+// $warning:					$orange;
+// $danger:					$red;
+// $status-names:				"success", "info", "warning", "danger";
+// $button-names:				"success", "primary", "warning", "danger";
+// $status-colors:				$success, $info, $warning, $danger;
+
+// $color-names:				"blue", "green", "orange", "red", "yellow", "purple";
+// $colors:					$blue, $green, $orange, $red, $yellow, $purple;
+
+// Typography
+$font-header:				"Domaine-Display-Web";
+$font-sans:					"Marat-Sans-Web";
+$font-serif:				"Marat-Web";
+$font-mono:					"Vulf Mono";
+$font-system:               -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+
+$fontSize-sm:				14px;
+$fontSize-md:				18px;
+// $fontSize-lg:				18px;
+// $fontSize-xl:				21px;
+
+$font-lineHeight:           1.5;
+$font-lineHeight-tight:    	1.2;
+$font-lineHeight-header:    1;
+
+$letterSpacing-wide:        0.01em;
+$letterSpacing-condensed:   -0.01em;
+
+// Layout
+$spacing-xxl:               6rem;
+$spacing-xl:                4rem;
+$spacing-lg:                2rem;
+$spacing-md:                1.5rem;
+$spacing-sm:                1rem;
+$spacing-xs:                0.5rem;
+$spacing-xxs:               0.25rem;
+$spacing-names:             "0", "xxs", "xs", "sm", "md", "lg", "xl";
+$spacing-directions:        "", "-top", "-left", "-right", "-bottom";
+$spacing-amounts:           0, $spacing-xxs, $spacing-xs, $spacing-sm, $spacing-md, $spacing-lg, $spacing-xl;
+$spacing-amounts--lg:       0, $spacing-xxs, $spacing-xs, $spacing-sm, $spacing-md, $spacing-xl, $spacing-xxl;
+
+$container-xl:              1600px;
+$container-lg:              1280px;
+$container-md:              960px;
+$container-sm:              768px;
+$container-xs:              568px;
+$container-xxs:             400px;
+
+$modal-md:                  568px;
+$modal-lg:                  768px;
+$modal-sm:                  400px;
+
+$media-xl:                  1280px;
+$media-lg:                  1024px;
+$media-md:                  768px;
+$media-sm:                  568px;
+$media-xs:                  400px;
+$media-xxs:                 370px;
+$media-names:               'xs', 'sm', 'md', 'lg', 'xl';
+$media-amounts:             $media-xs, $media-sm, $media-md, $media-lg, $media-xl;
+
+// Border Radius
+// $borderRadius-lg:           1rem;
+// $borderRadius-md:           0.5rem;
+// $borderRadius-sm:           0.25rem;
+// $borderRadius-xs:           0.125rem;
+
+// // Shadows
+// $shadow-sm:					0 1px 2px rgba($mono-1, 0.1), 0 2px 4px rgba($mono-1, 0.05);
+// $shadow-pressed:			inset 0 1px 2px rgba($mono-1, 0.2), inset 0 4px 8px rgba($mono-1, 0.2);
+// $shadow-lg:					0 2px 4px rgba($mono-1, 0.1), 0 4px 16px rgba($mono-1, 0.1);
+
+// // Forms
+// $input-fontSize:            $fontSize-lg;
+// $input-height:              3.5rem;
+// $input-borderRadius:        6px;
+// $button-height:				36px;
+// $icon-height:				36px;
+// $icon-borderRadius:			0.75rem;
+// $row-borderRadius: 			0.75rem;
+
+// Z Index
+$zIndex-modalBackdrop:      1020;
+$zIndex-modal:              1030;
+$zIndex-dropdown: 	        1040;
+$zIndex-tooltip:            1050;
+$zIndex-alertOverlay:       1060;

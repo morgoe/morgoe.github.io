@@ -8,9 +8,11 @@ siteNav: blog
 title:                 "Iterative Design in Action"
 
 thumbnail:             blog/design-process/thumbnail.gif
-image:                 work/surgemaker/cover.png
+image:                 /assets/images/work/surgemaker/cover.png
 
 is_caseStudy:          true
+index:                 Blog
+index_url:             /design-solutions
 
 description:           "We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there."
 description_short:     "I want to take some time to shed some light on what my iterative process is. Because if you work with me, I’m not going to give you the exact same end result as I’ve given another company. But we’ll be using a similar iterative process to approach your unique problems."
@@ -20,29 +22,31 @@ body-id: design-process
 
 We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there. Often the end result looks simple and obvious, like it could have been designed in minutes. But simple and obvious is usually very hard to get to. A bottom tab bar is hardly a revolutionary concept, but Facebook took 6 years to get there, and Spotify only got there last year.
 
-![spotify-before-after][spotify-before-after]
+{% include image.html url="/assets/images/blog/design-process/spotify-before-after.png" description="Spotify only got rid of their hamburger menu in 2016." %}
 
 So instead of just showing you the end results here, I want to take some time to shed some light on what my iterative process is. Because if you work with me, I’m not going to give you the exact same end result as I’ve given another company. But we’ll be using a similar iterative process to approach your unique problems.
 
-### The Project
+## The Project
 
 SurgeMaker GPS is a complex web application that is equal parts data visualisation and data collection. The data visualisation starts as broadly as possible, and has signposts every step of the way to say “Hey, check out this weird thing!” and prompt the user to dive down deeper. And eventually, after diving deep enough, the user will hopefully gain some actionable insight.
 
 We didn’t approach data visualisation as just “turn this data into a pie chart” because you don’t need a designer for that, and it’s usually not enough to generate insight. Instead, for each set of data we created a widget – this might be a graph, a collection or graphs, or graphs alongside other material. Here I’m going to go through a single iteration in the design of one of our widgets, the Trending Health widget.
 
-### Before
+## Before
 
-<div class="m-post-largeImg"></div>
-![trending-health-before][trending-health-before]
+<!-- <div class="m-post-largeImg"></div>
+![trending-health-before][trending-health-before] -->
+
+{% include image.html url="/assets/images/blog/design-process/trending-health-before.png" description="This was already the work of several iterations, but for the purposes of this case study, let’s call this the “before”." %}
 
 So here we have one of our widgets. Each column represents a team, with the team’s identity up top and the team’s performance data below. At a glance, I can tell that the “Transformers” team needs looking at - it’s trending down on Indexes, and struggling on Objectives. 
 
 We did some user testing on this widget and came back with a few discoveries:
 
-1. Every single user realised that you could navigate to the team by clicking on the card at the top of the column
-2. Some users were unsure of the timescale of the graphs - how far back in time was this showing?
-3. **Not a single user noticed the legend**
-4. and because of this, every user was confused by the Objective Performance graph. “What does the dashed line mean?” was a common question.
+- Every single user realised that you could navigate to the team by clicking on the card at the top of the column
+- Some users were unsure of the timescale of the graphs - how far back in time was this showing?
+- **Not a single user noticed the legend**
+- and because of this, every user was confused by the Objective Performance graph. “What does the dashed line mean?” was a common question.
 
 The first discovery was a great affirmation/relief. We had created the visual design with the idea that “things that are 3d are navigable items” and “things that are flat are generally just visual”. And our users confirmed that this decision was a success.
 
@@ -52,28 +56,25 @@ The 3rd and 4th discoveries were worrying. We were aware that the Objective Perf
 
 The first thing we tried, as a quick fix, was to highlight the legend on hover.
 
-<div class="m-post-largeImg"></div>
-![trending-health-highlight][trending-health-highlight]
+{% include image.html url="/assets/images/blog/design-process/trending-health-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
 
 We tested this solution. Guess how many people noticed the legend now, with just this easy fix?
 
-{{ highlight this text to reveal the answer }}
+No-one. Not a single person even **saw** the legend, let alone correlated it with the graph.
 
-<div class="m-post-secretWrapper">
+<!-- <div class="m-post-secretWrapper">
 	<div class="m-post-secret js-showSecret">
 		No-one. Not a single person even <strong>saw</strong> the legend, let alone correlated it with the graph.
 	</div>
-</div>
+</div> -->
 
-Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, _“Huh, that keeps highlighting yellow. Weird.”_
+{% include image.html url="/assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
 
-<div class="m-post-largeImg"></div>
-![trending-health-tunnel-vision-highlight][trending-health-tunnel-vision-highlight]
+In light of this new knowledge, we took advantage of our users’ tunnel vision, and displayed the legend **exactly** where they were looking. As an added bonus, this now gave us a way to display our axes. 
 
-In light of this new knowledge, we took advantage of our users’ tunnel vision, and displayed the legend **exactly** where they were looking. As an added bonus, this now gave us a way to display our axes. We tested this design, and now every single user noticed the legend.
+We tested this design, and now every single user noticed the legend.
 
-<div class="m-post-largeImg"></div>
-![trending-health-overlay][trending-health-overlay]
+{% include image.html url="/assets/images/blog/design-process/trending-health-overlay.gif" description="We went from not a single person understanding the graph to everyone understanding it with this redesign." %}
 
 And yes – by looking at a flat image, it’s not obvious that you should hover over the graph to see a legend or axes. But in normal interactions with the app, such as swiping to see more teams, users inevitably stumble across this feature.
 
@@ -121,7 +122,7 @@ This design, despite being quite contained, communicates a number of important t
 2. It explains to the user what benefits they can gain (they can identify which teams are struggling)
 3. It helps clarify confusion surrounding that 3rd impediments line graph
 
-### After
+## After
 
 At the beginning of this adventure we were concerned about 4 different problems with this widget’s design. One of those we had already solved (and confirmed with user testing), but three still needed to be solved in this iteration. Let’s see how we did:
 

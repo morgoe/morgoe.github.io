@@ -9,7 +9,7 @@ siteNav: work
 title:                 "Surgemaker GPS"
 
 thumbnail:             work/surgemaker/thumbnail.gif
-image:                 work/surgemaker/cover.png
+image:                 /assets/images/work/surgemaker/cover.png
 
 is_caseStudy:          true
 
@@ -20,8 +20,10 @@ description_short:     "We designed this complex B2B web application for just $5
 
 SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.
 
-![Division Page][division]
-<figcaption>Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown.</figcaption>
+{% include image.html url="/assets/images/work/surgemaker/division.png" description="Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown." %}
+
+<!-- ![Division Page][division]
+<figcaption>Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown.</figcaption> -->
 
 Given the large amount of data available, and its very deep hierarchical structure, our first step was to create an information architecture that was intuitive to navigate. We removed as many layers as we could to make the hierarchy as shallow and flexible as possible. 
 

@@ -1,0 +1,57 @@
+.video-figure {
+	@include flexbox();
+	@include align-items(center);
+	margin-left: calc(-100% - 2*#{$spacing-md});
+	figcaption {
+		width: 25%;
+		padding-left: $spacing-md;
+	}
+}
+
+.video-wrapper {
+	width: 50%;
+	// padding-right: $spacing-md;
+	&.now-loading {
+		// background: red;
+	}
+	video {
+		width: 640px;
+		height: 400px;
+
+	}
+}
+
+.video-scrubber {
+	background: rgba($text-dark, 0.25);
+	width: 100%;
+	height: 2rem;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	&:before,
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: $mono-95;
+		z-index: 1;
+		pointer-events: none;
+	}
+	&:before {
+		top: 0;
+		height: 1rem;
+	}
+	&:after {
+		bottom: 0;
+		height: calc(1rem - 1px);
+	}
+}
+.video-scrubbed {
+	background: $text-dark;
+	width: 100%;
+	height: 2rem;
+	transform: translateX(-100%);
+}

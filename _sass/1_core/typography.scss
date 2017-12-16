@@ -1,0 +1,105 @@
+html {
+	font-size: 16px;
+}
+body {
+	font-size: $fontSize-md;
+	font-family: $font-sans;
+	line-height: $font-lineHeight;
+	color: $text-dark;
+	@include antialiased();
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+	line-height: $font-lineHeight-header;
+	p,
+	ul,
+	ol {
+		font-size: $fontSize-md;
+		&:first-child {
+			margin-top: 0;
+			font-size: inherit;
+		}
+	}
+	+ p {
+		margin-top: $spacing-xs;
+	}
+}
+h1,
+.h1 {
+	font-family: $font-header;
+	font-size: 40px;
+	font-weight: 600;
+}
+h2,
+.h2 {
+	font-family: $font-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+h3,
+.h3 {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+h4,
+.h4 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-top: $spacing-lg;
+	margin-bottom: $spacing-xs;
+	padding-left: $spacing-sm;
+}
+h5,
+.h5 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+// .text-lg {
+// 	font-size: $fontSize-lg;
+// }
+// .text-xl {
+// 	font-size: $fontSize-xl;
+// }
+p {
+	margin-top: 1em;
+	max-width: $container-sm;
+	&:first-child {
+		margin-top: 0;
+	}
+	&:first-child:first-letter {
+		font-family: $font-mono;
+		float: left;
+		font-size: 3em;
+		font-weight: 100;
+		line-height: 1;
+		margin: 5px 4px -5px 0;
+	}
+}
+
+blockquote {
+	font-family: "Pitch-Web";
+	font-family: "Pitch-Sans-Web";
+	font-family: "Domaine-Text-Web";
+	font-family: "Domaine-Sans-Text-Web";
+	margin-top: 1em;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	margin-left: -60%;
+	margin-right: 40%;
+	padding: 0.5em 0;
+	font-size: 1.25rem;
+	strong {
+		display: block;
+		text-align: right;
+	}
+}
+
+
+@media (min-width: $media-lg) {
+	h1 {
+		font-size: 8rem;
+		font-weight: 600;
+	}
+}

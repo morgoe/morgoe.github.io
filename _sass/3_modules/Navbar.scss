@@ -1,0 +1,47 @@
+.Navbar {
+	padding: $spacing-sm;
+	font-size: $fontSize-sm;
+	font-family: $font-system;
+}
+.Navbar-container {
+	@include flexbox();
+	@include justify-content(space-between);
+	> div {
+		width: 0;
+	}
+	> * {
+		@include flex-grow(1);
+	}
+}
+.Navbar-back {
+	color: $text-dark;
+	font-weight: bold;
+	text-decoration: none;
+
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		right: 100%;
+		width: 20rem;
+		height: 1px;
+		background: $text-dark;
+	}
+}
+.Navbar-title {
+	font-weight: bold;
+}
+.Navbar-list {
+	@include flexbox();
+	@include justify-content(space-between);
+	text-align: center;
+	max-width: $container-xxs;
+}
+.Navbar-link {
+	color: $text-dark;
+	text-decoration: none;
+	&.now-active {
+		font-weight: bold;
+	}
+}

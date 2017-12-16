@@ -1,0 +1,24 @@
+body {
+	background: $mono-95;
+}
+figure {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+figcaption {
+	font-size: $fontSize-sm;
+	font-style: italic;
+}
+img,
+video {
+	display: block;
+	max-width: 100%;
+}
+ol,
+ul {
+	list-style: none;
+}
+ul.list-styled {
+	
+
+}

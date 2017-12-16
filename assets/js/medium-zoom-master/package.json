@@ -1,0 +1,80 @@
+{
+  "name": "medium-zoom",
+  "version": "0.3.0",
+  "description": "Medium zoom on your images in vanilla JavaScript",
+  "license": "MIT",
+  "repository": "francoischalifour/medium-zoom",
+  "author": {
+    "name": "Francois Chalifour",
+    "email": "francois.chalifour@gmail.com",
+    "url": "https://francoischalifour.com"
+  },
+  "main": "dist/medium-zoom.min.js",
+  "module": "dist/medium-zoom.es.js",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clear": "rimraf ./dist",
+    "prebuild": "npm run lint && npm run test && npm run clear",
+    "build": "cross-env NODE_ENV=build rollup --config",
+    "dev": "cross-env NODE_ENV=build rollup --config --watch",
+    "preview": "npm run build && cp ./dist/* ./examples/demo/preview/",
+    "prepublishOnly": "npm run build"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "standard": {
+    "ignore": [
+      "/dist/",
+      "/examples/"
+    ],
+    "globals": [
+      "NodeList",
+      "HTMLCollection",
+      "requestAnimationFrame",
+      "Event"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "medium",
+    "image",
+    "zoom",
+    "picture",
+    "lightbox",
+    "click",
+    "scroll",
+    "pure",
+    "plain",
+    "vanilla",
+    "javascript",
+    "ux",
+    "performance",
+    "event",
+    "medium-zoom",
+    "zoomable"
+  ],
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "cssnano": "^3.10.0",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.52.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-babel-minify": "^3.1.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-postcss": "^0.5.5",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.3.1",
+    "standard": "^10.0.3"
+  }
+}

@@ -8,8 +8,10 @@ siteNav: work
 title:                 "Deputy 3"
 
 thumbnail:             home/laptop.png
-image:                 work/deputy-3.png
+image:                 /assets/images/work/deputy-3.png
 
+index:                 Projects
+index_url:             /work
 is_caseStudy:          true
 
 role:                  "Lead Design & Front-end Development"
@@ -21,7 +23,7 @@ Deputy is a workhorse application for any company that needs scheduled shifts fo
 
 When I joined Deputy, the product had been in development for just over 6 years. They’d gone through two major iterations of the software. The first version was fairly well-designed, but was overly complex and used dated design patterns. The second version simplified the UI significantly, but it had no conventions or consistency. This led to a lot of cognitive effort trying to understand each screen, as it had no relationship to the others.
 
-### Project goals
+## Project goals
 
 My task was to lead the third iteration of the software - Deputy 3. This iteration had a few major goals:
 
@@ -35,7 +37,7 @@ On top of all of this, we were also implementing new features. We planned to exp
 
 And we only had 6 months.
 
-### Getting to work
+## Getting to work
 
 One of the benefits of working with start-ups is that there’s always someone new joining. I like to take these new employees and test the product with them while they’re still fresh-faced.
 
@@ -43,7 +45,7 @@ This user testing allowed me to focus my efforts on the aspects of the product m
 
 Once we had some direction, I started work on all three aspects of the project - code, user interface, and visual style. I like to alternate my focus. It’s useful to remove the restrictions of a developer mindset and focus purely on the design. I don’t usually bother with prototyping applications, as I can code up a functional prototype quickly, and once it’s in the browser it's much quicker to edit data and design details.
 
-### Challenges
+## Challenges
 
 The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be [researching](https://viget.com/inspire/testing-accordion-menu-designs-iconography) and testing how best to provide affordance for a particular button.
 
@@ -69,7 +71,7 @@ Another major issue was that we were trying to bring the desktop visually in lin
 
 <!-- One issue with the previous versions is that some forms were really long (Shift scheduling is a really complex beast to tackle, especially once you take into account differences between countries). The 2nd most popular device for Deputy users was the 1366x768px Dell laptops. This meant that for many users, the **Save** and **Cancel** buttons were out of sight (and out of mind). We solved this with an elegant solution I’ve written about in my blog - check it out. -->
 
-### Results
+## Results
 
 In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
 

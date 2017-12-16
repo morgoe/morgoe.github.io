@@ -26,7 +26,7 @@ permalink: /work/
 				<h2 class="m-work-title hidden--md-up margin--none">{{ post.title }}</h2>
 
 				{% if post.is_caseStudy %}
-					<a class="btn m-work-link" href="{{ post.url | prepend: site.baseurl }}" data-text="View Case Study"></a>
+					<a class="btn m-work-link" href="{{ post.url | prepend: site.baseurl }}" data-text="">View Case Study</a>
 				{% endif %}
 				{% if post.link %}
 					<a class="btn m-work-link" href="{{ post.link }}" target="_blank" data-text="{{post.link_text}}"></a>

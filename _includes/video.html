@@ -1,0 +1,15 @@
+<figure class="video-figure">
+	<div class="video-wrapper now-loading">	
+		<video loop muted>
+			<source data-src="{{ include.url }}" type="video/mp4">
+		</video>
+		<div class="video-controls">
+			<div class="video-scrubber">
+				<div class="video-scrubbed"></div>
+			</div>
+		</div>
+	</div>
+	{% if include.description %}
+		<figcaption>{{ include.description }}</figcaption>
+	{% endif %}
+</figure>
