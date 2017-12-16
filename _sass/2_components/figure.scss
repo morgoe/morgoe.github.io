@@ -1,0 +1,66 @@
+figure {
+	margin-top: -2rem;
+	margin-bottom: -2rem;
+	+ p {
+		margin-top: 4rem;
+	}
+}
+
+figure {
+	@include flexbox();
+	@include align-items(center);
+	margin-left: calc(-100% - 2*#{$spacing-lg});
+	.figure-content {
+		width: 50%;
+		padding-right: $spacing-lg;
+	}
+	figcaption {
+		position: relative;
+		width: 25%;
+		padding-left: $spacing-lg;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			right: 100%;
+			margin-right: -$spacing-lg;
+			width: #{2 * $spacing-lg};
+			height: 1px;
+			background: $text-dark;
+		}
+	}
+}
+
+.figure--right {
+	figcaption {
+		@include order(-1);
+		margin-left: 25%;
+		padding-left: 0;
+		padding-right: $spacing-lg;
+		&:before {
+			left: 100%;
+			margin-left: -$spacing-lg;
+		}
+	}
+	.figure-content {
+		padding-left: $spacing-lg;
+		padding-right: 0;
+	}
+}
+
+figcaption {
+	font-size: $fontSize-sm;
+	font-style: italic;
+}
+
+.figure-content {
+	// padding-right: $spacing-lg;
+	&.now-loading {
+		// background: red;
+	}
+	video {
+		width: 640px;
+		height: 400px;
+
+	}
+}

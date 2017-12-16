@@ -27,62 +27,34 @@
 		@include flex-direction(column);
 	}
 	.Page-hero {
+		@include flexbox();
+		@include align-items(flex-end);
 		margin-bottom: $spacing-xl;
 		> div {
 			width: 50%;
 			&:first-child {
-				padding-right: $spacing-md;
+				padding-right: $spacing-lg;
 			}
 			&:last-child {
-				padding-left: $spacing-md;
+				padding-left: $spacing-lg;
 			}
 		}
 	}
 	.Page-content {
 		width: 50%;
 		margin-left: auto;
-		padding-left: $spacing-md;
-		p + figure {
-			margin-top: 4em;
-		}
-		figure {
-			margin-bottom: 4em;
-		}
-		.image {
-			position: relative;
-			img,
-			video {
-				position: absolute;
-				margin-left: calc(-100% - 2*#{$spacing-md});
-			}
-		}
-		.image--withDescription {
-			img,
-			video {
-				transform: translateY(-50%);
-			}
-			figcaption {
-				position: relative;
-				width: 50%;
-				// margin-left: $spacing-md;
-				&:before {
-					content: "";
-					position: absolute;
-					top: 10px;
-					right: 100%;
-					width: 3rem;
-					height: 1px;
-					background: $text-dark;
-				}
-			}
-
-		}
+		padding-left: $spacing-lg;
 	}
 }
 
-.video-controls {
-
+@media (min-width: $media-md) {
+	.Page {
+		padding: $spacing-md;
+	}
 }
-.video-scrubber {
-	
+
+@media (min-width: $media-lg) {
+	.Page {
+		padding: $spacing-lg;
+	}
 }
