@@ -1,0 +1,62 @@
+.carousel {
+	position: relative;
+}
+
+.carousel-listItem {
+	float: left;
+	width: 640px;
+
+}
+.carousel-scrollbar {
+	margin-top: $spacing-xs;
+	height: 2rem;
+	background: rgba($text-dark, 0.25);
+	position: relative;
+	cursor: pointer;
+	z-index: 0;
+	&:before,
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: $mono-95;
+		z-index: 1;
+		pointer-events: none;
+	}
+	&:before {
+		top: 0;
+		height: 1rem;
+	}
+	&:after {
+		bottom: 0;
+		height: calc(1rem - 1px);
+	}
+}
+.carousel-scrollbarHandle {
+	height: 2rem;
+	background: $text-dark;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	touch-action: manipulation;
+	cursor: pointer;
+	@include noSelect();
+	border: none;
+	border-radius: 0;
+	background: none;
+}
+.carousel-button--prev {
+	left: 0;
+	width: 20%;
+	cursor: w-resize;
+}
+.carousel-button--next {
+	right: 0;
+	width: 80%;
+	cursor: e-resize;
+}

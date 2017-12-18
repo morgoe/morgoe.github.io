@@ -32,6 +32,8 @@ figure {
 }
 
 .figure--right {
+	margin-top: 0;
+	margin-bottom: 0;
 	figcaption {
 		@include order(-1);
 		margin-left: 25%;

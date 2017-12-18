@@ -30,18 +30,19 @@ h1,
 .h1 {
 	font-family: $font-header;
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 400;
 }
 h2,
 .h2 {
-	font-family: $font-serif;
-	font-size: 1.5rem;
-	font-weight: 400;
+	font-family: $font-sans;
+	font-size: 3rem;
+	font-weight: 600;
 }
 h3,
 .h3 {
+	font-family: $font-serif;
+	font-size: 1.5rem;
 	font-weight: 400;
-	font-size: 1.25rem;
 }
 h4,
 .h4 {
@@ -100,6 +101,5 @@ blockquote {
 @media (min-width: $media-lg) {
 	h1 {
 		font-size: 8rem;
-		font-weight: 600;
 	}
 }

@@ -20,10 +20,12 @@ description:           "SurgeMaker GPS is a B2B SaaS web application that visual
 description_short:     "We designed this complex B2B web application for just $50,000."
 ---
 
-SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.
+## From Concept to Product Launch in 8 Weeks
 
-Given the large amount of data available, and its very deep hierarchical structure, our first step was to create an information architecture that was intuitive to navigate. We removed as many layers as we could to make the hierarchy as shallow and flexible as possible. 
+{% include carousel.html pull="right" image1="/assets/images/work/medify/carousel/carousel-1.png" image2="/assets/images/work/medify/carousel/carousel-2.png" image3="/assets/images/work/medify/carousel/carousel-3.png" image4="/assets/images/work/medify/carousel/carousel-4.png" image5="/assets/images/work/medify/carousel/carousel-5.png" description="A timelapse of the designs for the BMAT product. The second-to-last frame shows what we launched with. The last frame shows what we launched with the following year, after completing the product suite unification project." %}
 
+
+It can be hard sometimes to convey the value of hiring a freelancer over an in-house, permanent designer. I’ve decided the best way to do this is to be as transparent as possible with the design process of working with a freelancer. So here’s how I helped Medify launch a product in 8 weeks.
 
 We structured both the data visualizations and the visual design in a way that communicated this hierarchy. Data visualizations began at a “zoomed out” level, and as users dived down into areas of interest, the app would animate in and out in 3D space.
 

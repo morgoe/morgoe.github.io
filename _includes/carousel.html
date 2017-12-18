@@ -1,0 +1,45 @@
+<figure class="carousel-figure {% if include.pull %}figure--{{include.pull}}{% endif %}">
+	<div class="figure-content">
+		<div class="carousel">
+			<div class="carousel-frame">
+				<ul class="carousel-list">
+					{% if include.image1 %}
+						<li class="carousel-listItem">
+							<img src="{{ include.image1 }}">
+						</li>
+					{% endif %}
+					{% if include.image2 %}
+						<li class="carousel-listItem">
+							<img src="{{ include.image2 }}">
+						</li>
+					{% endif %}
+					{% if include.image3 %}
+						<li class="carousel-listItem">
+							<img src="{{ include.image3 }}">
+						</li>
+					{% endif %}
+					{% if include.image4 %}
+						<li class="carousel-listItem">
+							<img src="{{ include.image4 }}">
+						</li>
+					{% endif %}
+					{% if include.image5 %}
+						<li class="carousel-listItem">
+							<img src="{{ include.image5 }}">
+						</li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="carousel-scrollbar">
+				<div class="carousel-scrollbarHandle"></div>
+			</div>
+			<!-- <div class="carousel-buttons">
+				<button class="carousel-button carousel-button--prev"></button>
+				<button class="carousel-button carousel-button--next"></button>
+			</div> -->
+		</div>
+	</div>
+	{% if include.description %}
+		<figcaption>{{ include.description }}</figcaption>
+	{% endif %}
+</figure>

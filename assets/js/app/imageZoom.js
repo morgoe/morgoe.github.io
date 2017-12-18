@@ -6,10 +6,10 @@ $(document).ready(function() {
 		scrollOffset: 0,
 	}
 
-	$('img').each(function(i) {
-		$(this).attr('data-zoom-index', i)
-		zooms[i] = mediumZoom(this, zoomOptions)
-	});
+	// $('img').each(function(i) {
+	// 	$(this).attr('data-zoom-index', i)
+	// 	zooms[i] = mediumZoom(this, zoomOptions)
+	// });
 
 	function navigateZoomedImage(direction) {
 		var zoomIndex = $('.medium-zoom-image--open').data('zoom-index');
