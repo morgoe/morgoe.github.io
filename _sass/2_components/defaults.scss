@@ -1,5 +1,7 @@
 body {
+	color: $text-dark;
 	background: $mono-95;
+	background: $background;
 }
 img,
 video {
@@ -13,4 +15,12 @@ ul {
 ul.list-styled {
 	
 
+}
+a {
+	color: $blue;
+	text-decoration: underline;
+	text-decoration-color: rgba($blue, 0.25);
+	&:hover {
+		text-decoration-color: $blue;
+	}
 }

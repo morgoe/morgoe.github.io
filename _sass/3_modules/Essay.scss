@@ -1,0 +1,30 @@
+.Essay {
+	h2 {
+		margin-top: 2em;
+	}
+	li {
+		margin-top: $spacing-sm;
+		margin-left: $spacing-md;
+	}
+	ul:not(.carousel-list) {
+		li {
+			&:before {
+				content: "→";
+				display: inline-block;
+				font-family: $font-mono;
+				width: $spacing-md;
+				margin-left: -$spacing-md;
+			}
+		}
+	}
+	ol {
+		list-style: decimal;
+	}
+	a {
+		color: $blue;
+		text-decoration-color: rgba($blue, 0.25);
+		&:hover {
+			text-decoration-color: $blue;
+		}
+	}
+}

@@ -1,3 +1,17 @@
+// Marat Sans Regular, Italic, Bold: $80/yr for 10k/mo or $180 once for 50k/mo
+// Marat Medium: $25/yr for 10k/mo or $60 once for 50k/mo
+// Ogg: $50 once for 10k/mo
+
+// 365 over 3 years
+// or
+// 290 over 3 years for 10k/mo
+// 340 over 3 years for 50k/mo
+
+// Ivar: $60 per weight: at least 3-4 weights. $240
+// Ogg $50 once
+// GT America: $65 per weight, at least 2-3 weights: $150
+// Total: AU$315—440
+
 @font-face{
     font-family: "Marat-Sans-Web";
     font-style: normal;
@@ -17,10 +31,10 @@
     src: url('/assets/fonts/Marat-Medium.woff') format('woff');
 }
 @font-face{
-    font-family: "Eksell-Display-Web";
+    font-family: "Ogg-Web";
     font-style: normal;
     font-weight: 600;
-    src: url('/assets/fonts/EksellDisplay-Medium.woff2') format('woff2');
+    src: url('/assets/fonts/Ogg.woff') format('woff');
 }
 @font-face{
     font-family: "Domaine-Display-Web";
@@ -65,8 +79,50 @@
     src: url('/assets/fonts/Pitch_Sans_Semibold.woff2') format('woff2');
 }
 @font-face{
-    font-family: "Pitch-Sans-Web";
-    font-style: italic;
+    font-family: "Ivar-Text-Web";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/IvarText-Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Text-Web";
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/IvarText-Medium.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Text-Web";
+    font-style: normal;
     font-weight: 600;
-    src: url('/assets/fonts/Pitch_Sans_Semibold_Italic.woff2') format('woff2');
+    src: url('/assets/fonts/IvarText-SemiBold.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Text-Web";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/IvarText-Bold.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Headline-Web";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/IvarHeadline-Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Headline-Web";
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/IvarHeadline-Medium.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Headline-Web";
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/IvarHeadline-SemiBold.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Ivar-Headline-Web";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/IvarHeadline-Bold.woff2') format('woff2');
 }

@@ -1,11 +1,21 @@
+.carousel-figure {
+	.figure-content {
+		// margin-left: auto;
+	}
+}
+
 .carousel {
 	position: relative;
 }
 
 .carousel-listItem {
+	position: relative;
 	float: left;
-	width: 640px;
-
+	// width: 640px;
+	width: calc(100vw - 2rem);
+	figcaption {
+		display: none;
+	}
 }
 .carousel-scrollbar {
 	margin-top: $spacing-xs;
@@ -21,7 +31,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		background: $mono-95;
+		background: $background;
 		z-index: 1;
 		pointer-events: none;
 	}
@@ -59,4 +69,15 @@
 	right: 0;
 	width: 80%;
 	cursor: e-resize;
+}
+
+@media (min-width: $media-md) {
+	.carousel-listItem {
+		width: calc(100vw - 3rem);
+	}
+}
+@media (min-width: $media-lg) {
+	.carousel-listItem {
+		width: 640px;
+	}
 }

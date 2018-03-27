@@ -15,6 +15,7 @@
 
 @import '1_core/grid';
 @import '1_core/flexGrid';
+@import '1_core/icons';
 @import '1_core/typography';
 
 // Components
@@ -32,6 +33,7 @@
 // // Modules
 @import '3_modules/Page';
 @import '3_modules/Navbar';
+@import '3_modules/Essay';
 // @import 'modules/blogPost';
 // @import 'modules/form';
 // @import 'modules/heroText';
@@ -46,9 +48,10 @@
 // @import 'modules/animation';
 
 // // Utilities
-// @import 'utilities/color';
-// @import 'utilities/display';
-// @import 'utilities/layout';
+@import '4_utilities/color';
+@import '4_utilities/font';
+@import '4_utilities/display';
+@import '4_utilities/layout';
 // @import 'utilities/typography';
 
 

@@ -1,8 +1,10 @@
-<figure class="image-figure {% if include.pull %}figure--{{include.pull}}{% endif %}">
+<figure class="image-figure {% if include.style %}figure--{{include.style}}{% endif %}">
 	<div class="figure-content">
 		<img src="{{ include.url }}" alt="{{ include.description }}">
 	</div>
 	{% if include.description %}
-		<figcaption>{{ include.description }}</figcaption>
+		<figcaption>
+			<p>{{ include.description }}</p>
+		</figcaption>
 	{% endif %}
 </figure>

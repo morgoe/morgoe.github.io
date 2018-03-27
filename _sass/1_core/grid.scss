@@ -10,6 +10,8 @@
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 .grid {
+	@include flexbox();
+	@include flex-wrap(wrap);
 	margin-left: -$spacing-sm;
 	margin-right: -$spacing-sm;
 	clear: both;
@@ -19,6 +21,7 @@
 	min-height: 1px;
 	padding-left: $spacing-sm;
 	padding-right: $spacing-sm;
+	width: 100%;
 }
 .when-xs-1, .when-xs-2, .when-xs-3, .when-xs-4, .when-xs-5, .when-xs-6, .when-xs-7, .when-xs-8, .when-xs-9, .when-xs-10, .when-xs-11, .when-xs-12 {
 	float: left;
@@ -493,6 +496,14 @@
 	}
 }
 @media (min-width: $media-lg) {
+	.grid {
+		margin-left: -$spacing-lg;
+		margin-right: -$spacing-lg;
+	}
+	.grid-item {
+		padding-left: $spacing-lg;
+		padding-right: $spacing-lg;
+	}
 	.when-lg-1, .when-lg-2, .when-lg-3, .when-lg-4, .when-lg-5, .when-lg-6, .when-lg-7, .when-lg-8, .when-lg-9, .when-lg-10, .when-lg-11, .when-lg-12 {
 		float: left;
 	}

@@ -1,0 +1,9 @@
+.font-serif {
+	font-family: $font-serif;
+	h2 & { 
+		font-family: $font-serif-header;
+	}
+}
+.font-regular {
+	font-weight: 400;
+}
