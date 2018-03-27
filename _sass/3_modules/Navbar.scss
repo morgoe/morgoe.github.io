@@ -41,6 +41,7 @@
 .Navbar-link {
 	color: $text-dark;
 	text-decoration: none;
+	font-weight: 500;
 	&.now-active {
 		font-weight: bold;
 	}
