@@ -54,6 +54,9 @@
 	}
 }
 .Page-jumpLinks {
+	font-size: $fontSize-md;
+	font-family: $font-system;
+	font-weight: 500;
 	li + li {
 		margin-top: $spacing-md;
 	}

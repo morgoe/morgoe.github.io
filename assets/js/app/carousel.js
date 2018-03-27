@@ -37,7 +37,12 @@ $(document).ready(function() {
 				$figure.find('.js-carouselCaption').text($figure.find('.carousel-listItem').eq(itemIndex).find('.js-carouselItemCaption').text());
 			});
 		}
+
+		$(window).resize(function() {
+			sly.reload();	
+		});
 	});
+
 
 	// $('.carousel-button--next').click(function() {
 	// 	moveSlider('right');

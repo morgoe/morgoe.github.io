@@ -3,7 +3,6 @@ html {
 }
 body {
 	font-size: $fontSize-md;
-	font-size: 16px;
 	font-family: $font-sans;
 	line-height: $font-lineHeight;
 	color: $text-dark;
@@ -14,12 +13,17 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
 	line-height: $font-lineHeight-header;
+	p {
+		margin-top: $spacing-xxs;
+		max-width: none;
+	}
 	+ p {
 		margin-top: $spacing-xs;
 	}
 }
 h1,
 .h1 {
+	position: relative;
 	font-family: $font-header;
 	font-size: 48px;
 	font-weight: 400;
@@ -32,9 +36,6 @@ h2,
 	font-family: $font-sans;
 	font-size: 2rem;
 	font-weight: 500;
-	p {
-		margin-top: $spacing-xxs;
-	}
 }
 h3,
 .h3 {
@@ -46,9 +47,6 @@ h4,
 .h4 {
 	font-size: 1.5rem;
 	font-weight: 500;
-	p {
-		margin-top: $spacing-xxs;
-	}
 }
 h5,
 .h5 {
@@ -66,6 +64,11 @@ p {
 	max-width: $container-sm;
 	&:first-child {
 		margin-top: 0;
+	}
+	em {
+		font-style: italic;
+		font-family: $font-serif;
+		letter-spacing: $letterSpacing-condensed;
 	}
 }
 
@@ -90,7 +93,7 @@ blockquote {
 
 @media (min-width: $media-lg) {
 	body {
-		font-size: 18px;
+		font-size: $fontSize-lg;
 	}
 	h1 {
 		font-size: 6rem;

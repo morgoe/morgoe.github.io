@@ -37,6 +37,9 @@ figcaption {
 	&.now-loading {
 		// background: red;
 	}
+	img {
+		margin: auto;
+	}
 	video {
 		width: 640px;
 		height: 400px;
