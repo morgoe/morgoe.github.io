@@ -1,4 +1,5 @@
 ---
+published: false
 layout:        post
 date:          2015-12-2
 categories:    
@@ -15,7 +16,7 @@ description:       "We have a great amount of power in influencing the emotion o
 
 Once upon a time, there was a little girl named Goldilocks. She went for a surf on the web - visiting three websites in succession, and filling out a form on each website.
 
-### Too Slow
+## Too Slow
 
 Goldilocks visited the first website and filled out a form. She reached the end of the form, with no errors, and proudly pressed Submit. The page completely reloaded, and a few seconds later the form spoke to her.
 
@@ -33,7 +34,7 @@ Goldilocks changed her password to fit the site’s requirements, and scrolled t
 
 Success! The form went through. But what should have taken 3 minutes ended up taking 10, and Goldilocks left the website feeling annoyed.
 
-### Too Fast
+## Too Fast
 
 Goldilocks visited the second website and filled out another form. This time, the website had the opposite problem. Instead of only validating when she submitted the form, it validated after every single keypress.
 
@@ -57,7 +58,7 @@ By now Goldilocks was getting irritated. The form validation was meant to help h
 
 But the form went through without any trouble. Although it was a much faster process than on the first website, she found herself stressed and anxious, and she was relieved to be done with the website.
 
-### Just Right
+## Just Right
 
 Finally, Goldilocks visited the third website and filled out yet another form. She started typing in her name in the first field, and nothing happened. 
 
@@ -85,7 +86,7 @@ As she moved to the next field, the form spoke again.
 
 By now Goldilocks was really impressed. It felt like she had a real human on the other side, actually helping her fill in the form. She quickly and painlessly filled in the rest of the form and hit Submit. She checked her watch - the whole thing had only taken a minute. Goldilocks left feeling happy and welcome.
 
-### The Moral of the Story
+## The Moral of the Story
 
 All good fairytales have a moral, and this one is no different. This 2015 version of “Goldilocks” highlights the importance of empathy when we design. When we nail down the basic elements of design - colour, typography, layout, etc. - emotion is what takes our design to the next level. We have a great amount of power in influencing the emotion of our users, making them feel welcome, safe, proud and happy.
 

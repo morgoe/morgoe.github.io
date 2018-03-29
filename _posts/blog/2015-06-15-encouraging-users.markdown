@@ -15,7 +15,7 @@ description:       "Lessen the problem of placeholder avatars by encouraging you
 
 In the last post, we covered how to create beautiful [placeholder avatars](/design-solutions/placeholder-avatars/). Now let's focus on the other half of the problem - encouraging our users to actually upload a display photo.
 
-### Reasons and rewards
+## Reasons and rewards
 
 Whenever you’re asking something of a user, it’s always helpful to give them a reason (why the user should give the data) and a reward (what benefits it will bring the user). 
 
@@ -32,13 +32,13 @@ A display photo on LinkedIn is important for users to identify themselves to pot
 
 Reasons and rewards don't need to be so complex. Even a bit of supporting text (eg. *"Adding a photo helps your friends identify you."*) goes a long way.
 
-### Use their existing social display photos
+## Use their existing social display photos
 
 You can take advantage of the work the social media giants have done by simply grabbing the display photo from one of the user’s social networks. Many products now offer social logins, or allow you to connect your social networks after creating an account. If this suits your product, it’s a really simple way to practically guarantee getting a display photo for every user.
 
 Learn how to do this for [Facebook](https://developers.facebook.com/docs/graph-api/reference/v2.4/user/picture) and [Twitter](https://dev.twitter.com/overview/general/user-profile-images-and-banners).
 
-### Make it part of onboarding
+## Make it part of onboarding
 
 A number of products include this as a step in the onboarding process, often making it difficult to skip or hard to ignore.
 
@@ -47,7 +47,7 @@ A number of products include this as a step in the onboarding process, often mak
 
 However, this can be a tradeoff. Make it too easy to skip, and some users will. Make it too hard, and users might get irritated and abandon the product before completing the onboarding.
 
-### Entice them
+## Entice them
 
 Someone commented on the previous blog post: if you put all this work into making the placeholder avatars not only beautiful, but uniquely identifying, then won't users be discouraged from uploading a photo? Yes, but that's assuming the user sees their beautiful, uniquely identifying avatar.
 
@@ -77,13 +77,13 @@ Daniel Eden of Dropbox said:
 	</ul>
 </div>
 
-### Gravatar
+## Gravatar
 
 Gravatar is interesting - and according to [UserOnboard](http://useronboard.com/)’s Samuel Hulick, *“painfully underused”*. Gravatar is a Globally Recognised Avatar - if a user has an account on Gravatar, and you have their email address, then you also have access to a display photo without the user needing to do anything within your product.
 
 Many blog platforms use Gravatar to import a display photo with no effort from the user. However, this requires the user to have a Gravatar account already, and depending on who your product is aimed at, this could be only a fraction of your user base.
 
-### All of the above
+## All of the above
 
 None of these solutions are necessarily standalone - you could potentially implement all of them. Which ones work best for your design is ultimately your decision. The aim of this blog is not to tell you how to solve your design problems, but to give you a few tried-and-tested options to start with, and for you to take it from there.
 

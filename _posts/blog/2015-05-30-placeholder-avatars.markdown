@@ -20,7 +20,7 @@ One problem that pops up in almost any product that has user login is that of av
 
 So we have two problems here, the first is that of placeholder avatars - what does your design look like if no-one has uploaded any display photos? The second is that of encouraging users to upload a display photo, which I'll cover in my next post. 
 
-### Generic Faces
+## Generic Faces
 Facebook solves this problem by using a generic silhouette as a placeholder avatar, displaying either a male or female version depending on how you've set your gender.
 
 ![Generic Silhouettes][silhouettes]
@@ -34,7 +34,7 @@ I don't think this is a great solution for a number of reasons.
 
 However, Facebook gets away with it because **everyone** uploads a display photo, so this placeholder rarely shows.
 
-### Fun Artwork
+## Fun Artwork
 This approach is used by Twitter, Slack, Tumblr and I'm sure many more. It has a great benefit of reinforcing branding. Slack, for example, uses variations of their logo. Looking at a design in which no-one has uploaded a display photo, instead of looking like homogeneous and confusing like in Facebook’s solution, it now looks finished, inviting, and on-brand.
 
 ![Slack Before and After][slack]
@@ -42,7 +42,7 @@ This approach is used by Twitter, Slack, Tumblr and I'm sure many more. It has a
 
 This approach can be great if each placeholder were unique. However, in Slack’s approach, each placeholder avatar looks like a subtle variation of the last. It's difficult to recognise someone by their placeholder, although it does provide some recognition when placed alongside a few user-uploaded display photos.
 
-### Initials
+## Initials
 Gmail, Dropbox and Apple take a third (and my personal favourite) approach - using the user’s initials for the avatar. Some use both first and last name (Apple), others use just the first (Gmail). 
 
 <img src="/assets/images/blog/placeholder-avatars/apple.jpg" width="320">

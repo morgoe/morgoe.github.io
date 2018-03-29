@@ -28,7 +28,7 @@ When I was designing [Deputy 3](/work/deputy-3/), our previous interface had som
 
 We at Deputy knew the form was long, and where the buttons were placed, and so we never had any issues internally. But we got constant customer support calls from users not seeing the “Save” button, and getting frustrated at not being able to save their forms. Our design wasn’t intuitive because the form had no affordance that encouraged the user to scroll. Let’s run through a few ways to provide that affordance.
 
-### The scrollbar
+## The scrollbar
 The scrollbar was a fantastic design concept. It let you:
 
 - know when you could or couldn’t scroll
@@ -38,7 +38,7 @@ The scrollbar was a fantastic design concept. It let you:
 
 I say was, because in the relentless pursuit of minimalism, it’s been reduced to a shell of its former self. Now, on many devices, it’s completely hidden until you scroll. So if someone views your website on a Mac, or any mobile device, you can’t rely on this affordance to encourage them to scroll.
 
-### Cut-off content
+## Cut-off content
 This is, in my opinion, the best way to indicate scrolling. It’s very intuitive, and doesn’t take up any space, so it’s great for user interfaces. Take a look at the following two examples:
 
 ![image of iPad / iPhone][ipad-vs-iphone]
@@ -48,7 +48,7 @@ The example on the left is completely contained within the screen, with nothing 
 
 If you're wondering how to do this in CSS, the simplest way is to use `vh` units - an area with `90vh` will always take up 90% of the browser's height, so you'll always have that bottom 10% visible.
 
-### A 'scroll me' icon or button
+## A 'scroll me' icon or button
 You might have noticed a trend lately with websites telling you, quite literally, to scroll your mouse. A page that’s fully contained within the screen looks great, and lets us achieve a more editorial design, but needs to have this alternative scrolling affordance.
 
 ![image with scroll mouse][mouse-scroll]
@@ -59,7 +59,7 @@ This is a perfectly fine solution, but it has a very limited use. They’re not 
 ![image of NOD][minimal-indicator]
 <figcaption>Did you notice the sideways text on the left telling you to scroll? <a href="http://yougotthenod.com/">Sourced from NOD</a>.</figcaption>
 
-### Shadows and gradients
+## Shadows and gradients
 What if we have a user interface for a web application that’s accessible on anything from desktops to mobile phones? We can’t rely on the scrollbar, there’s no space for an icon saying “scroll!”, and our design is necessarily responsive. It’s easy to ensure that your content gets cut off mid-way when you’re designing for a set screen size, but responsive design means you have no control over screen size.
 
 Let’s go back to the problem I was working on for Deputy 3. The first thing I did was separate the buttons, and place them in a footer that always sat on top of the form. No more were users confused as to how to save their form, at some screen sizes the form fields would be cut off mid-way, providing a clear affordance for users to scroll to see the rest of the form. But not always. And there was nothing I could do about this - fixing it on one screen size would break it on another.
