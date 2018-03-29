@@ -1,0 +1,19 @@
+.Work-masonryGrid {
+
+}
+.Work-listItem {
+	display: block;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.Work-thumbnail {
+	background-size: cover;
+}
+.Work-link {
+	&:hover {
+		background: none;
+		.button:before {
+			width: 100%;
+		}
+	}
+}

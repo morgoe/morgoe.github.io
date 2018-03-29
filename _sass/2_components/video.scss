@@ -1,5 +1,5 @@
 .video-scrubber {
-	background: rgba($text-dark, 0.25);
+	background: rgba($text-dark, 0.1);
 	width: 100%;
 	margin-top: $spacing-xs;
 	height: 2rem;
@@ -14,7 +14,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		background: $mono-95;
+		background: $background;
 		z-index: 1;
 		pointer-events: none;
 	}

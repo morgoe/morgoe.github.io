@@ -1,0 +1,38 @@
+.button {
+	@include inline-flex();
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+	touch-action: manipulation;
+	cursor: pointer;
+	white-space: nowrap;
+	background: none;
+	@include noSelect();
+	border: none;
+
+	position: relative;
+	height: 40px;
+	color: $text-dark;
+	text-decoration: none;
+	font-weight: 600;
+	font-style: italic;
+	font-family: $font-system;
+	padding: 9px $spacing-md;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 40px;
+		height: 40px;
+		background: rgba($text-dark, 0.1);
+		transition: 0.25s ease-in-out;
+	}
+	&:hover {
+		background: none;
+		&:before {
+			width: 100%;
+		}
+	}
+}

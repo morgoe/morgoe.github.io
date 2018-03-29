@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#0E4EAD" stroke-width="1.5" d="M2.5,11.75 L21,11.75" transform="rotate(90 11.75 11.75)"/>
+    <g stroke="#0E4EAD" stroke-width="1.5" transform="translate(15 7.75)">
+      <path d="M4.25,-0.25 L4.25,8.75" transform="rotate(90 4.5 4.25)"/>
+      <polyline points="-2 2 2 6 6 2" transform="rotate(90 2 4)"/>
+    </g>
+    <g stroke="#0E4EAD" stroke-width="1.5" transform="translate(.5 7.75)">
+      <path d="M4,8 L4,0" transform="rotate(90 4 4)"/>
+      <polyline points="10 6 6 2 2 6" transform="rotate(90 6 4)"/>
+    </g>
+  </g>
+</svg>

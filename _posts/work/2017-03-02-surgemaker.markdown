@@ -1,24 +1,36 @@
 ---
-layout:                post
-date:                  2015-01-17
+layout:                work
+date:                  2015-02-11
 categories:    
 - work
-- featured-work
 siteNav: work
 
-title:                 "Surgemaker GPS"
+jumpLinks:
+  - url: goals
+    text: "Project goals"
+    icon: pair
+  - url: work
+    text: "Getting to work"
+    icon: paint
+  - url: challenges
+    text: "Challenges"
+    icon: iphone
+  - url: results
+    text: "Results"
+    icon: illustrations
 
-thumbnail:             work/surgemaker/thumbnail.gif
-image:                 /assets/images/work/surgemaker/cover.png
-
-is_caseStudy:          true
-
-role:                  "Lead Design & Front-end Development"
+title:                 "SurgeMaker GPS — Helping large companies move as nimbly as startups"
 description:           "SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data."
-description_short:     "We designed this complex B2B web application for just $50,000."
----
+hero_title:            "Teaching large companies to move like startups"
+hero_image:            /assets/images/work/aeroster/hero.png
 
-SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.
+subhero_title:         "Placeholder"
+subhero_subtitle:      "Placeholder"
+subhero_description:   "<p>SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.</p>"
+
+thumbnail:             /assets/images/work/surgemaker/thumbnail.jpg
+thumbnail_ratio:       59.375
+---
 
 {% include image.html url="/assets/images/work/surgemaker/division.png" description="Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown." %}
 

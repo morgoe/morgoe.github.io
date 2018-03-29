@@ -1,10 +1,8 @@
 .Essay {
-	h2 {
-		margin-top: 2em;
-	}
 	li {
 		margin-top: $spacing-sm;
 		margin-left: $spacing-md;
+		max-width: $container-sm;
 	}
 	ul:not(.carousel-list) {
 		li {
@@ -19,12 +17,5 @@
 	}
 	ol {
 		list-style: decimal;
-	}
-	a {
-		color: $blue;
-		text-decoration-color: rgba($blue, 0.25);
-		&:hover {
-			text-decoration-color: $blue;
-		}
 	}
 }

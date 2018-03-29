@@ -2,58 +2,10 @@
 	padding: $spacing-sm;
 }
 .Page-hero {
-	// @include flexbox();
-	// @include align-items(flex-end);
 	margin-top: $spacing-lg;
 	margin-bottom: $spacing-lg;
-	text-align: center;
-	> div {
-		width: 50%;
-		&:first-child {
-			padding-right: $spacing-lg;
-		}
-		&:last-child {
-			padding-left: $spacing-lg;
-		}
-	}
 }
 .Page-subhero {
-	.button {
-		@include inline-flex();
-		text-align: center;
-		vertical-align: middle;
-		line-height: normal;
-		touch-action: manipulation;
-		cursor: pointer;
-		white-space: nowrap;
-		background: none;
-		@include noSelect();
-		border: none;
-
-		position: relative;
-		height: 40px;
-		font-weight: 600;
-		font-style: italic;
-		font-family: $font-system;
-		padding: 0 $spacing-md;
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			width: 40px;
-			height: 40px;
-			background: rgba($text-dark, 0.1);
-			transition: 0.25s ease-in-out;
-		}
-		&:hover {
-			&:before {
-				width: 100%;
-
-			}
-		}
-	}
 }
 .Page-jumpLinks {
 	font-size: $fontSize-md;
@@ -68,14 +20,25 @@
 	a {
 		@include flexbox();
 		@include align-items(center);
+		padding: 0;
+		margin: 0;
+		span {
+			padding: 0 4px;
+		}
+		&:hover {
+			background: none;
+			span {
+				background: rgba($blue, 0.1);
+			}
+		}
 	}
 	.icon {
-		margin-right: $spacing-sm;
+		margin-right: 0.75rem;
 	}
 }
 .Page-section {
-	margin-top: 8rem;
-	padding-top: 8rem;
+	margin-top: 4rem;
+	padding-top: 4rem;
 	border-top: 1px solid rgba($text-dark, 0.1);
 }
 
@@ -90,19 +53,9 @@
 		margin-top: $spacing-xl;
 		margin-bottom: $spacing-xl;
 	}
-	.Page--split {
-		.Page-container {
-			@include flexbox();
-			@include flex-direction(column);
-		}
-		.Page-content {
-			// width: 50%;
-			// margin-left: auto;
-			// padding-right: $spacing-lg;
-			h2 {
-				// margin-right: -704px;
-			}
-		}
+	.Page-section {
+		margin-top: 6rem;
+		padding-top: 6rem;
 	}
 }
 
@@ -110,8 +63,8 @@
 	.Page {
 		padding: $spacing-lg;
 	}
-	.Page-hero {
-		// margin-top: 2*$spacing-xl;
-		// margin-bottom: 2*$spacing-xl;
+	.Page-section {
+		margin-top: 8rem;
+		padding-top: 8rem;
 	}
 }

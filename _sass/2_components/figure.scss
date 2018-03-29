@@ -1,4 +1,5 @@
 figure {
+	position: relative;
 	+ p {
 		margin-top: 4rem;
 	}
@@ -42,8 +43,21 @@ figcaption {
 	}
 	video {
 		width: 640px;
-		height: 400px;
-
+		// height: 400px;
+		height: auto;
+	}
+}
+.figure-iframeWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -53,7 +67,7 @@ figcaption {
 		figcaption {
 			position: absolute;
 			top: 40%;
-			width: 50%;
+			width: 75%;
 			p {
 				display: inline;
 				background: $background;
@@ -77,6 +91,7 @@ figcaption {
 	.figure--left {
 		figcaption {
 			left: 100%;
+			padding-left: 2*$spacing-lg;
 			p {
 				float: right;
 				padding-left: $spacing-xs;
@@ -90,6 +105,7 @@ figcaption {
 	.figure--right {
 		figcaption {
 			right: 100%;
+			padding-right: 2*$spacing-lg;
 			p {
 				padding-right: $spacing-xs;
 			}

@@ -1,29 +1,22 @@
 <nav class="Navbar">
 	<div class="container Navbar-container">
-		{% if include.index %}
-			<div>
-				<a class="Navbar-back" href="{{ include.index_url }}">{{ include.index }}</a>
-			</div>
-		{% else %}
-			<div class="Navbar-title">Morgan Carter’s Portfolio</div>
+		<a class="Navbar-link Navbar-link--title" href="{{ site.baseurl }}/">
+			Morgan Carter<span class="below-sm-hidden">’s Portfolio</span>
+		</a>
 		<ul class="Navbar-list">
 			<li>
-				<a class="Navbar-link {% if page.siteNav == 'home' %}now-active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+				<a class="Navbar-link {% if page.siteNav == 'home' %}now-active{% endif %} below-md-hidden" href="{{ site.baseurl }}/">About</a>
 			</li>
 			<li>
 				<a class="Navbar-link {% if page.siteNav == 'work' %}now-active{% endif %}" href="{{ site.baseurl }}/work/">Work</a>
 			</li>
 			<li>
-				<a class="Navbar-link {% if page.siteNav == 'services' %}now-active{% endif %}" href="{{ site.baseurl }}/services/">Services</a>
+				<a class="Navbar-link {% if page.siteNav == 'blog' %}now-active{% endif %}" href="{{ site.baseurl }}/design-solutions/">Writing</a>
 			</li>
 			<li>
-				<a class="Navbar-link {% if page.siteNav == 'blog' %}now-active{% endif %}" href="{{ site.baseurl }}/design-solutions/">Blog</a>
-			</li>
-			<li>
-				<a id="contactMe-openModal" class="Navbar-highlight">Contact Me</a>
+				<a class="Navbar-link Navbar-link--contact" id="contactMe-openModal">Contact Me</a>
 			</li>
 		</ul>
-		<div></div>
-		{% endif %}
+		<div class="below-lg-hidden"></div>
 	</div>
 </nav>

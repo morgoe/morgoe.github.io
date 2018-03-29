@@ -6,7 +6,7 @@
 .Navbar-container {
 	@include flexbox();
 	@include justify-content(space-between);
-	> div {
+	> * {
 		width: 0;
 	}
 	> * {
@@ -29,9 +29,6 @@
 		background: $text-dark;
 	}
 }
-.Navbar-title {
-	font-weight: bold;
-}
 .Navbar-list {
 	@include flexbox();
 	@include justify-content(space-between);
@@ -43,6 +40,19 @@
 	text-decoration: none;
 	font-weight: 500;
 	&.now-active {
-		font-weight: bold;
+		opacity: 0.6;
+	}
+	&:hover {
+		background: rgba($text-dark, 0.1);
+	}
+}
+.Navbar-link--title {
+	font-weight: bold;
+}
+.Navbar-link--contact {
+	color: $blue;
+	font-weight: 700;
+	&:hover {
+		background: rgba($blue, 0.1);
 	}
 }

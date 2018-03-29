@@ -1,41 +1,18 @@
 ---
-layout: default
+layout: page
 siteNav: work
 title:  "Work"
 categories: jekyll update
 permalink: /work/
 ---
 
-<div class="container padding--lg margin--none m-animation-1">
-	<h1 class="m-page-title">{{ page.title }}</h1>
-</div>
-
-<ul class="m-work-list m-page-content padding">
+<ul class="grid js-masonry Work-masonryGrid">
 	{% for post in site.categories['work'] %}
-		<li class="m-work-item row m-animation-{{forloop.index}}">
-			<div class="col-sm-8 col-sm-push-4">
-				<div class="m-work-image" style="background-image: url(/assets/images/{{post.image}})"></div>
-			</div>
-			<div class="col-sm-4 col-sm-pull-8">
-				<div class="hidden--sm">
-					<h6>{{ post.role }}</h6>
-					<h2 class="m-work-title">{{ post.title }}</h2>
-					<p>{{ post.description }}</p>
-				</div>
-				
-				<h2 class="m-work-title hidden--md-up margin--none">{{ post.title }}</h2>
-
-				{% if post.is_caseStudy %}
-					<a class="btn m-work-link" href="{{ post.url | prepend: site.baseurl }}" data-text="">View Case Study</a>
-				{% endif %}
-				{% if post.link %}
-					<a class="btn m-work-link" href="{{ post.link }}" target="_blank" data-text="{{post.link_text}}"></a>
-				{% endif %}
-			</div>
+		<li class="grid-item when-lg-6 Work-listItem">
+			<a class="Work-link" href="{{ post.url | prepend: site.baseurl }}">
+				<div class="Work-thumbnail" style="padding-bottom: {{post.thumbnail_ratio}}%; background-image: url({{post.thumbnail}});"></div>
+				<div class="button m-top--sm">{{post.hero_title}}</div>
+			</a>
 		</li>
 	{% endfor %}
 </ul>
-
-<!-- <a class="btn-footer" href="mailto:{{ site.email }}">
-	<span class="btn" data-text="Contact Me"></span>
-</a> -->

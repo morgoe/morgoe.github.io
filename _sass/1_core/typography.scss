@@ -73,20 +73,21 @@ p {
 }
 
 blockquote {
-	font-family: "Pitch-Web";
-	font-family: "Pitch-Sans-Web";
-	font-family: "Domaine-Text-Web";
-	font-family: "Domaine-Sans-Text-Web";
-	margin-top: 1em;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-	margin-left: -60%;
-	margin-right: 40%;
-	padding: 0.5em 0;
+	margin: $spacing-lg auto 0;
+	color: $background;
+	background: $text-dark;
+	max-width: $container-sm;
+	padding: $spacing-lg;
 	font-size: 1.25rem;
+	font-style: italic;
 	strong {
 		display: block;
+		font-style: normal;
 		text-align: right;
+	}
+	a {
+		color: inherit;
+		text-decoration: underline;
 	}
 }
 

@@ -1,28 +1,126 @@
 ---
-layout:                post
+layout:                work
 date:                  2015-01-17
 categories:    
 - work
 siteNav: work
 
-title:                 "Deputy 3"
+jumpLinks:
+  - url: goals
+    text: "Project goals"
+    icon: goal
+  - url: work
+    text: "Getting to work"
+    icon: work
+  - url: challenges
+    text: "Challenges"
+    icon: challenges
+  - url: results
+    text: "Results"
+    icon: results
 
-thumbnail:             home/laptop.png
-image:                 /assets/images/work/deputy-3.png
+title:                 "Deputy — Love your business again"
+description:           "In 6 months we overhauled 6 years of product design. Deputy grew its userbase 7x over the following year."
+hero_title:            "Helping SME owners love their business again"
+hero_image:            /assets/images/work/deputy/hero.png
 
-index:                 Projects
-index_url:             /work
-is_caseStudy:          true
+subhero_title:         "Manage your team, roster in minutes."
+subhero_subtitle:      "Anywhere. Anytime."
+subhero_description:   "<p>Deputy is a workhorse application for any company that needs scheduled shifts for its employees. It supports scheduling, timesheets, workplace communication, and integrates with supporting software like Xero, Vend and Shopify. Deputy works with a desktop web application, an iPad app, an iPhone app and an Android app, all handling the same data in various ways, for various use cases (the mobile apps are primarily for employees, whereas the desktop app is primarily for employers).</p><p>When I joined Deputy, the product had been in development for just over 6 years. They’d gone through two major iterations of the software. The first version was fairly well-designed, but was overly complex and used dated design patterns. The second version simplified the UI significantly, but it had no conventions or consistency. This led to a lot of cognitive effort trying to understand each screen, as it had no relationship to the others.</p>"
+subhero_button_link:   https://www.deputy.com/
 
-role:                  "Lead Design & Front-end Development"
-description:           "My first project at Deputy was a 6 month long overhaul of their desktop app. This included unifying the previous 6 years of product development, working with the iOS and Android teams to provide a consistent design, and developing a number of new features."
-description_short:     "In 6 months we overhauled 6 years of product design. Deputy grew its userbase 7x over the following year."
+thumbnail:             /assets/images/work/deputy/thumbnail.jpg
+thumbnail_ratio:       50
 ---
 
-Deputy is a workhorse application for any company that needs scheduled shifts for its employees. It supports scheduling, timesheets, workplace communication, and integrates with supporting software like Xero, Vend and Shopify. Deputy works with a desktop web application, an iPad app, an iPhone app and an Android app, all handling the same data in various ways, for various use cases (the mobile apps are primarily for employees, whereas the desktop app is primarily for employers).
+<section class="Page-section" id="goals">
+	<h2 class="m-bottom--lg">
+		<p>Project goals</p>
+		<p class="font-serif color-muted">Placeholder</p>
+	</h2>
 
-When I joined Deputy, the product had been in development for just over 6 years. They’d gone through two major iterations of the software. The first version was fairly well-designed, but was overly complex and used dated design patterns. The second version simplified the UI significantly, but it had no conventions or consistency. This led to a lot of cognitive effort trying to understand each screen, as it had no relationship to the others.
+<div class="m-top--lg when-lg-m-top--0" markdown="1">
+My task was to lead the third iteration of the software - Deputy 3. This iteration had a few major goals:
 
+- It needed to support all features of both Deputy 1 and 2, while at the same time simplifying the UI
+- It had to unify the design and product development of the desktop, tablet and mobile apps that had drifted apart over the years
+- It had to work on any device (previous iterations were fixed-width, desktop-only apps)
+- We needed to update from Bootstrap 2 to 3, which meant rewriting the CSS codebase from scratch
+- It had to be more fun, inviting, and intuitive.
+
+On top of all of this, we were also implementing new features. We planned to expand the functionality of the News Feed, adding comments and attachments; this would be rolled out simultaneously with updates to the mobile and tablet apps. We also added an easy way for employees to view past timesheets, upcoming shifts, see who they’d be working with, and claim open shifts.
+
+And we only had 6 months.
+</div>
+</section>
+
+<section class="Page-section" id="work">
+	<h2 class="m-bottom--lg">
+		<p>Getting to work</p>
+		<p class="font-serif color-muted">Placeholder</p>
+	</h2>
+<div class="m-top--lg when-lg-m-top--0" markdown="1">
+One of the benefits of working with start-ups is that there’s always someone new joining. I like to take these new employees and test the product with them while they’re still fresh-faced.
+
+This user testing allowed me to focus my efforts on the aspects of the product most people found confusing. With tens of thousands of people using Deputy, I didn’t want to fix what wasn’t broken. The response we’ve received from the majority of users indicates we were successful here.
+
+Once we had some direction, I started work on all three aspects of the project - code, user interface, and visual style. I like to alternate my focus. It’s useful to remove the restrictions of a developer mindset and focus purely on the design. I don’t usually bother with prototyping applications, as I can code up a functional prototype quickly, and once it’s in the browser it's much quicker to edit data and design details.
+</div>
+</section>
+
+<section class="Page-section" id="challenges">
+	<h2 class="m-bottom--lg">
+		<p>Challenges</p>
+		<p class="font-serif color-muted">Placeholder</p>
+	</h2>
+<div class="m-top--lg when-lg-m-top--0" markdown="1">
+The project really challenged my ability to design on a micro and macro level simultaneously. One moment I would be organising the information architecture, fitting each of the features where it made the most sense, and the next I would be [researching](https://viget.com/inspire/testing-accordion-menu-designs-iconography) and testing how best to provide affordance for a particular button.
+
+<div class="grid m-top--lg">
+	<div class="grid-item when-lg-6">
+		{% include image.html style="left" url="/assets/images/work/deputy/information-architecture.jpg" description="Macro design - card sorting helped us place each feature in its ideal place within the navigational structure." %}
+	</div>
+</div>
+
+<div class="grid m-top--lg m-bottom--lg">
+	<div class="grid-item when-lg-6 when-lg-push-6">
+		{% include image.html style="right" url="/assets/images/work/deputy/buttons.png" description="Micro design - the iteration of accordion buttons." %}
+	</div>
+</div>
+
+One problem we ran into again and again was the lack of time. A few really interesting ideas ended up being pushed out, but might get revisited later on. One idea that got cut was an ‘inline modal’. We needed a way to place a modal over a modal over a page, so I came up with the solution of making the first modal inline, not overlaid. Below is a messy prototype, but it demonstrates the solution pretty well.
+
+<div class="grid m-top--lg m-bottom--lg">
+	<div class="grid-item when-lg-6">
+		{% include video.html style="left" url="/assets/images/work/deputy/inline-modal.mp4" description="Inline modal inspired by Material Design's use of animation." width="768" height="384" %}
+	</div>
+</div>
+
+Another major issue was that we were trying to bring the desktop visually in line with the mobile apps, but many design decisions simply didn’t translate from mobile to desktop. We started by questioning some of the assumptions that had been made previously, and we ended up overhauling some key aspects of the mobile apps and meeting the designs in the middle.
+
+<div class="m-top--lg when-lg-m-top--xl">
+	{% include image.html style="full" url="/assets/images/work/deputy/transition.png" width="768" %}
+</div>
+
+</div>
+</section>
+
+<section class="Page-section" id="results">
+	<h2 class="m-bottom--lg">
+		<p>Results</p>
+		<p class="font-serif color-muted">Placeholder</p>
+	</h2>
+<div class="m-top--lg when-lg-m-top--0" markdown="1">
+In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
+
+<blockquote>“I just wanted to say how much I love the new-look Deputy web client. You guys have obviously spent a lot of time thinking about the design of the app and it shows. Well done!” <strong class="u-pullRight">–Jason Tait, a Deputy customer</strong></blockquote>
+
+Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.
+</div>
+</section>
+
+
+<!-- 
 ## Project goals
 
 My task was to lead the third iteration of the software - Deputy 3. This iteration had a few major goals:
@@ -38,12 +136,6 @@ On top of all of this, we were also implementing new features. We planned to exp
 And we only had 6 months.
 
 ## Getting to work
-
-One of the benefits of working with start-ups is that there’s always someone new joining. I like to take these new employees and test the product with them while they’re still fresh-faced.
-
-This user testing allowed me to focus my efforts on the aspects of the product most people found confusing. With tens of thousands of people using Deputy, I didn’t want to fix what wasn’t broken. The response we’ve received from the majority of users indicates we were successful here.
-
-Once we had some direction, I started work on all three aspects of the project - code, user interface, and visual style. I like to alternate my focus. It’s useful to remove the restrictions of a developer mindset and focus purely on the design. I don’t usually bother with prototyping applications, as I can code up a functional prototype quickly, and once it’s in the browser it's much quicker to edit data and design details.
 
 ## Challenges
 
@@ -69,8 +161,6 @@ Another major issue was that we were trying to bring the desktop visually in lin
 ![Transition from Deputy2 to Deputy3][transition]
 <figcaption>Unifying the desktop and mobile apps.</figcaption>
 
-<!-- One issue with the previous versions is that some forms were really long (Shift scheduling is a really complex beast to tackle, especially once you take into account differences between countries). The 2nd most popular device for Deputy users was the 1366x768px Dell laptops. This meant that for many users, the **Save** and **Cancel** buttons were out of sight (and out of mind). We solved this with an elegant solution I’ve written about in my blog - check it out. -->
-
 ## Results
 
 In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
@@ -82,4 +172,4 @@ Of course, this is just the beginning. Shipping a new version or feature will al
 [information-architecture]: /assets/images/work/deputy/information-architecture.jpg
 [buttons]: /assets/images/work/deputy/buttons.png
 [inline-modal]: /assets/images/work/deputy/inline-modal2.gif
-[transition]: /assets/images/work/deputy/transition.png
+[transition]: /assets/images/work/deputy/transition.png -->
