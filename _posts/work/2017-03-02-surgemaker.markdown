@@ -28,7 +28,7 @@ subhero_title:         "Placeholder"
 subhero_subtitle:      "Placeholder"
 subhero_description:   "<p>SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.</p>"
 
-thumbnail:             /assets/images/work/surgemaker/thumbnail.jpg
+thumbnail:             /assets/images/work/surgemaker/thumbnail2.jpg
 thumbnail_ratio:       59.375
 ---
 

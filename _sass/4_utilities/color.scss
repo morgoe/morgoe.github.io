@@ -2,3 +2,21 @@
 	// color: $text-muted;
 	opacity: 0.6;
 }
+.color-bg {
+	color: $background !important;
+}
+.color-white {
+	color: white !important;
+}
+.bg-black {
+	background: $text-dark !important;
+}
+.bg-green {
+	background: $green !important;
+}
+.bg-red {
+	background: $red !important;
+}
+.border-light {
+	box-shadow: inset 0 0 0 1px rgba($text-dark, 0.2);
+}

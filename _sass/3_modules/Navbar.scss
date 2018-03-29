@@ -33,17 +33,22 @@
 	@include flexbox();
 	@include justify-content(space-between);
 	text-align: center;
-	max-width: $container-xxs;
 }
 .Navbar-link {
+	display: block;
 	color: $text-dark;
 	text-decoration: none;
 	font-weight: 500;
+	padding-left: 6px;
+	padding-right: 6px;
 	&.now-active {
 		opacity: 0.6;
 	}
 	&:hover {
 		background: rgba($text-dark, 0.1);
+	}
+	&:active {
+		transform: scale(0.9);
 	}
 }
 .Navbar-link--title {

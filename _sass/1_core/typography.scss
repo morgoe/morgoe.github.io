@@ -39,7 +39,8 @@ h2,
 }
 h3,
 .h3 {
-	font-family: $font-serif;
+	font-family: $font-serif-header;
+	font-style: italic;
 	font-size: 1.5rem;
 	font-weight: 400;
 }
@@ -53,9 +54,9 @@ h5,
 	font-size: 1rem;
 	font-weight: 600;
 }
-// .text-lg {
-// 	font-size: $fontSize-lg;
-// }
+.text-lg {
+	font-size: $fontSize-xl;
+}
 // .text-xl {
 // 	font-size: $fontSize-xl;
 // }
@@ -105,7 +106,7 @@ blockquote {
 	}
 	h3,
 	.h3 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	h4,
 	.h4 {

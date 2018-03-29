@@ -1,0 +1,121 @@
+.input-wrapper {
+	display: block;
+	position: relative;
+	text-align: left;
+	z-index: 1;
+	+ .input-wrapper {
+		margin-top: $spacing-lg;
+	}
+	+ .button {
+		margin-top: $spacing-xl;
+	}
+	&.now-notEmpty {
+		.input-interaction {
+			&:after {
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+.input-label {
+	display: block;
+	font-size: 14px;
+	line-height: 24px;
+	opacity: 0.6;
+}
+.input {
+	display: block;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	line-height: normal;
+	touch-action: manipulation;
+	cursor: text;
+	background: none;
+	@include noSelect();
+	border: none;
+
+	height: 40px;
+	color: $text-dark;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: $font-system;
+	padding: 9px $spacing-md;
+	transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	&:focus {
+		color: $background;
+		+ .input-interaction {
+			&:before,
+			&:after {
+				background: $text-dark;
+			}
+			&:after {
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+.input-interaction {
+	.input-label ~ & {
+		&:before,
+		&:after {
+			top: 24px;
+		}
+	}
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		// height: 40px;
+		background: rgba($text-dark, 0.1);
+		transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		z-index: -1;
+	}
+	&:before {
+		left: 0;
+		width: 40px;
+	}
+	&:after {
+		left: 40px;
+		width: calc(100% - 40px);
+		transform: scaleX(0);
+		transform-origin: 0 0;
+	}
+}
+.input-wrapper--inverted {
+	color: $background;
+	.input {
+		color: $background;
+		&:focus {
+			color: $text-dark;
+			+ .input-interaction {
+				&:before,
+				&:after {
+					background: $background	;
+				}
+				&:after {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+	.input-interaction {
+		&:before,
+		&:after {
+			background: rgba($background, 0.1);
+		}
+	}
+}
+
+.form-horizontal {
+	@include flexbox();
+	@include align-items(flex-end);
+	.input-wrapper {
+		@include flex-grow(1);
+	}
+	> * + * {
+		margin-left: $spacing-sm;
+	}
+}

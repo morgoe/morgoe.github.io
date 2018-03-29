@@ -1,48 +1,23 @@
 ---
-layout: default
+layout: page
 siteNav: blog
 title:  "Design Solutions"
 categories: jekyll update
 permalink: /design-solutions/
 ---
 
-<div class="padding--lg margin--none">
-	<div class="m-animation-1">
-		<h1 class="m-page-title">{{ page.title }}</h1>
-		<p class="u-text--center margin--none">Common design problems and how to solve them.</p>
-	</div>
-	
-	<div class="m-animation-2">
-		{% include newsletter.html %}
-	</div>
+{% include newsletter.html %}
 
-	<section class="container--xs">
-		<ul class="m-post-content">
-			{% for post in site.categories['coming-soon'] %}
-				<li class="margin-bottom">
-					<p class="u-text--small u-color--gray margin--none">Coming soon...</p>
-					<div class="btn btn--sm m-post-btn disabled" data-text="{{ post.title }}"></div>
-					<p class="margin--none u-color--gray">{{ post.description }}</p>
-				</li>
-			{% endfor %}
-			{% for post in site.categories['design-solutions'] %}
-				<li class="margin-bottom">
-					<a class="m-post-link" href="{{ post.url | prepend: site.baseurl }}">
-						<div class="m-post-image">
-							<img src="/assets/images/{{ post.thumbnail }}">
-						</div>
-						<div class="m-post-description">
-							<p class="u-text--small u-color--gray margin--none">{{ post.date | date: "%-d %b, %Y" }}</p>
-							<span class="btn btn--sm m-post-btn" data-text="{{ post.title }}"></span>
-							<p class="margin--none">{{ post.description }}</p>
-						</div>
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-	</section>
-</div>
-
-<!-- <a class="btn-footer" href="mailto:{{ site.email }}">
-	<span class="btn" data-text="Contact Me"></span>
-</a> -->
+<ul class="container container--md">
+	{% for post in site.categories['design-solutions'] %}
+		<li class="Blog-listItem m-top--xl">
+			<a class="Blog-link" href="{{ post.url | prepend: site.baseurl }}">
+				<div class="Blog-thumbnail" style="background-image: url(/assets/images/{{post.thumbnail}});"></div>
+				<div class="m-left--sm">
+					<div class="button">{{post.title}}</div>
+					<p class="color-muted m-top--xs">{{post.description}}</p>
+				</div>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

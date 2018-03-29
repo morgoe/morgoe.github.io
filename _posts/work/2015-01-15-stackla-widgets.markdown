@@ -27,7 +27,7 @@ subhero_subtitle:      "Placeholder"
 subhero_description:   "<p>Stackla allows users to discover, manage and display the most engaging visual content from social media across every marketing touchpoints.</p><blockquote>“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” <strong class='u-pullRight'>–Peter Cassidy, Co-founder of <a href='https://stackla.com/'>Stackla</a></strong></blockquote>"
 subhero_button_link:   https://stackla.com
 
-thumbnail:             /assets/images/work/surgemaker/thumbnail.jpg
+thumbnail:             /assets/images/work/stackla-widgets/thumbnail.jpg
 thumbnail_ratio:       59.375
 ---
 

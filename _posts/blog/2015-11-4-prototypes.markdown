@@ -17,31 +17,31 @@ Prototyping is one of the most important aspects of design. It allows us a chanc
 
 The movement from low- to high-fidelity prototypes is like moving from a macro (zoomed out) to a micro (zoomed in) level. We start off testing and iterating on the overarching design decisions first, before diving deeper and deeper into the details. While it can be tempting to jump into Photoshop or Sketch at the beginning of any new design project, it’s important to sketch out your ideas first. After getting too immersed in a product, the prototyping progression is a great way to see the forest again, instead of just the trees.
 
-### 5 Dimensions of Fidelity
+## 5 Dimensions of Fidelity
 
 There are five ways to measure the fidelity of a prototype. As fidelity increases, these five dimensions might not progress equally (a medium-fidelity prototype is not necessarily at a medium-level for each dimension, but may be at a high-level for some and a low-level for others). 
 
-##### Level of visual refinement
+#### Level of visual refinement
 
 How similar does the prototype look to the final product? A low-fidelity prototype might just be a hand-drawn sketch, while a high-fidelity prototype will be pixel-perfect, looking almost indistinguishable from the real thing.
 
-##### Breadth of functionality
+#### Breadth of functionality
 
 How much functionality does the prototype support? A low-fidelity prototype will focus on just the most important tasks, while a high-fidelity prototype will support more minor tasks (eg. resetting your password).
 
-##### Depth of functionality
+#### Depth of functionality
 
 How much of each feature is prototyped? A low-fidelity prototype will take you from page to page, showing you the general user flow with typical data pre-filled. A high-fidelity prototype will allow you to input your own data, and see how varying the input affects the output.
 
-##### Richness of interactivity
+#### Richness of interactivity
 
 How much interactivity does the prototype have? A low-fidelity prototype might be very simple, providing no feedback when a user interacts with it. A high-fidelity prototype will take into account animations, hover states, form validation, and all the little back-and-forths between user and product.
 
-##### Richness of data model
+#### Richness of data model
 
 How rich is the data your prototype uses? A low-fidelity prototype will use a limited, typical data set, showcasing the most common use cases. A high-fidelity prototype will showcase edge-cases such as extra-long usernames (you might truncate them with an ellipsis), missing data (you might provide [placeholder avatars](/design-solutions/placeholder-avatars/)), first-time use (you might use empty state pages), or extreme amounts of data (you might use pagination or filtering).
 
-### Low Fidelity
+## Low Fidelity
 
 A low-fidelity prototype looks at your product on a macro scale. Here, you focus on the most important tasks, and then only in a summarised format. You’re not worried about feedback, interactivity or edge-cases.
 
@@ -63,7 +63,7 @@ Questions you should be asking at this stage:
 - How can I best navigate through the information architecture?
 - Is it clear where I'm 'located' within the navigation?
 
-### Medium Fidelity
+## Medium Fidelity
 
 It can be hard to define a medium-fidelity prototype. It might be mid-level on each of the five dimensions, or it might be low on some dimensions and high on others. It might go deep into the functionality of the most important features, but still ignore the minor features. Which dimensions you focus on first ultimately depends on the project’s needs.
 
@@ -81,7 +81,7 @@ Questions you should be asking at this stage:
 - What colour should this button be?
 - Should I use a select dropdown or radio buttons for this input?
 
-### High Fidelity
+## High Fidelity
 
 The high-fidelity prototype focuses on the product at a micro scale. The big decisions have been made, and the high-fidelity prototype is about ensuring that your design visually conveys the product’s functionality. You’ll start to think about how to give your design affordance, focusing on colours and contrast, and looking into all the tiny interactions. If you’re using animations, you’ll start to nail them down at this stage.
 
@@ -96,7 +96,7 @@ Questions you should be asking at this stage:
 - What does this element look like on hover?
 - What does this look like with incomplete data?
 
-### Prototyping in Practice
+## Prototyping in Practice
 
 In the real-world (and especially in the startup-world), you might not get to follow this process so clearly, and the lines between low-, medium- and high-fidelity can become blurred. That’s ok. Even spending 10 minutes sketching out your design and discussing it with someone else before diving into Photoshop can be really beneficial.
 

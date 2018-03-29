@@ -1,15 +1,6 @@
-.Work-listItem {
-	display: block;
-	text-align: center;
-	margin-bottom: 4rem;
-}
-.Work-thumbnail {
-	padding-bottom: 100%;
-	background-size: cover;
-}
-.Work-link {
+.Blog-link {
 	color: inherit;
-	display: block;
+	@include flexbox();
 	.button:after {
 		transition-speed: 0.4s;
 	}
@@ -31,4 +22,9 @@
 	&:active {
 		transform: scale(0.99);
 	}
+}
+.Blog-thumbnail {
+	height: 100px;
+	width: 100px;
+	background-size: cover;
 }
