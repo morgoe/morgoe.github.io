@@ -6,31 +6,52 @@ categories:
 siteNav: work
 
 jumpLinks:
-  - url: goals
-    text: "Project goals"
-    icon: pair
-  - url: work
-    text: "Getting to work"
+  - url: data-viz
+    text: "Data, data everywhere"
+    icon: results
+  - url: animation
+    text: "Animation as communication"
+    icon: design
+  - url: branding
+    text: "Unique look-and-feel"
     icon: paint
-  - url: challenges
-    text: "Challenges"
-    icon: iphone
-  - url: results
-    text: "Results"
-    icon: illustrations
+  - url: permissions
+    text: "Perspective and permissions"
+    icon: permissions
+  - url: iterative
+    text: "Iterative design"
+    icon: iterative
+
+
 
 title:                 "SurgeMaker GPS — Helping large companies move as nimbly as startups"
 description:           "SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data."
 hero_title:            "Teaching large companies to move like startups"
 hero_image:            /assets/images/work/aeroster/hero.png
 
-subhero_title:         "Placeholder"
-subhero_subtitle:      "Placeholder"
-subhero_description:   "<p>SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data.</p>"
+subhero_title:         "Tracking the results of agile coaching"
+subhero_subtitle:      "MFMVP: Massively-Featured Minimum Viable Product"
+subhero_description:   "<p>SurgeMaker GPS is the first in a suite of apps by agile coaching company <a href='http://www.gearstream.com/'>GearStream</a>. They approached me to help redesign their web app that visualised the improvements made by teams under coaching and informed executives' decisions by drawing insights from data.</p><p>What started as a 2 month job turned into over 2 years. Designing an enterprise application is very different to designing a B2C app. The feature set expected from an MVP is basically “everything”. This is why so many massive companies are still using software from 10 years ago, because it’s got “everything”.</p><p>So it took us over 2 years to launch an MVP, and it’s the most extensive product I’ve ever worked on. </p>"
 
 thumbnail:             /assets/images/work/surgemaker/thumbnail2.jpg
 thumbnail_ratio:       59.375
 ---
+
+<section class="Page-section" id="launch">
+  <h2 class="m-bottom--lg">
+    <p>From concept to product launch in 8 weeks</p>
+    <p class="font-serif color-muted">Something something subtitle</p>
+  </h2>
+  <div class="grid">
+    <div class="grid-item when-lg-6">
+      {% include carousel.html style="left" image1="/assets/images/work/medify/carousel/carousel-1.png" image2="/assets/images/work/medify/carousel/carousel-2.png" image3="/assets/images/work/medify/carousel/carousel-3.png" image4="/assets/images/work/medify/carousel/carousel-4.png" image5="/assets/images/work/medify/carousel/carousel-5.png" description="A timelapse of the designs for the BMAT product. The second-to-last frame shows what we launched with. The last frame shows what we launched with the following year, after completing the product suite unification project." %}
+    </div>
+
+    <div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis.</p>
+    </div>
+  </div>
+</section>
 
 {% include image.html url="/assets/images/work/surgemaker/division.png" description="Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown." %}
 
