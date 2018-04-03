@@ -4,6 +4,9 @@ $(document).ready(function() {
 		// numPagesVisited++;
 		// initVisited();
 		initExternalLinks();
+		initCarousels();
+		expandSVGs();
+		initMasonry();
 		// animateIn();
 		$(window).resize();
 	});

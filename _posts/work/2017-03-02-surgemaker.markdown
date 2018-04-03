@@ -5,6 +5,8 @@ categories:
 - work
 siteNav: work
 
+hero_css: "background: #589963; color: white;"
+
 jumpLinks:
   - url: data-viz
     text: "Data, data everywhere"
@@ -26,8 +28,8 @@ jumpLinks:
 
 title:                 "SurgeMaker GPS — Helping large companies move as nimbly as startups"
 description:           "SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data."
-hero_title:            "Teaching large companies to move like startups"
-hero_image:            /assets/images/work/aeroster/hero.png
+hero_title:            "Teaching large companies to move as nimbly as startups"
+hero_image:            /assets/images/work/surgemaker/hero.png
 
 subhero_title:         "Tracking the results of agile coaching"
 subhero_subtitle:      "MFMVP: Massively-Featured Minimum Viable Product"

@@ -5,6 +5,8 @@ categories:
 - work
 siteNav: work
 
+hero_css: "background: #4191ce; color: white;"
+
 jumpLinks:
   - url: goals
     text: "Project goals"
@@ -22,7 +24,7 @@ jumpLinks:
 title:                 "Deputy — Love your business again"
 description:           "In 6 months we overhauled 6 years of product design. Deputy grew its userbase 7x over the following year."
 hero_title:            "Helping SME owners love their business again"
-hero_image:            /assets/images/work/deputy/hero.png
+hero_image:            /assets/images/work/deputy/hero2.png
 
 subhero_title:         "Manage your team, roster in minutes."
 subhero_subtitle:      "Anywhere. Anytime."

@@ -5,6 +5,7 @@ categories:
 - work
 siteNav: work
 
+hero_css: "background: rgb(252, 194, 0);"
 
 jumpLinks:
   - url: widgets
@@ -20,7 +21,7 @@ jumpLinks:
 title:                 "Stackla — Letting customers tell the story"
 description:           "Placeholder"
 hero_title:            "Letting customers tell the story"
-hero_image:            /assets/images/work/stackla/hero.png
+hero_image:            /assets/images/work/stackla-widgets/hero.png
 
 subhero_title:         "The world’s smartest visual content engine"
 subhero_subtitle:      "Placeholder"

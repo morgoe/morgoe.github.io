@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g fill="none" fill-rule="evenodd" stroke="#0E4EAD" stroke-width="1.5" transform="translate(0 3)">
+  <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(0 3)">
     <polygon points=".75 18 23.25 18 23.25 0 .75 0"/>
     <path d="M.0001 5.75L23 5.75M7.25 6.0038L7.25 18"/>
   </g>

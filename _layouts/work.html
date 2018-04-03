@@ -3,14 +3,17 @@ layout: default
 body-id: work
 ---
 
-<div class="Page">
+<div class="Page" style="{{page.hero_css}}">
 	<div class="container">
 		<section class="Page-hero">
 			<h1>{{ page.hero_title }}</h1>
 
 			<img src="{{ page.hero_image }}" class="Page-heroImage">
 		</section>
-
+	</div>
+</div>
+<div class="Page whitespace-top--md">
+	<div class="container">
 		<section class="Page-subhero">
 			<div class="grid">
 				<div class="grid-item when-lg-6">

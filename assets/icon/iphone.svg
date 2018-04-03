@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <g fill="none" fill-rule="evenodd">
-    <rect width="14.5" height="22.5" x="4.75" y=".75" stroke="#0e4ead" stroke-width="1.5" rx="3"/>
-    <rect width="8" height="3" x="8" fill="#0e4ead" rx="1.5"/>
+    <rect width="14.5" height="22.5" x="4.75" y=".75" stroke="currentColor" stroke-width="1.5" rx="3"/>
+    <rect width="8" height="3" x="8" fill="currentColor" rx="1.5"/>
   </g>
 </svg>
