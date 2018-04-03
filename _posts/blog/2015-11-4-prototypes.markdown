@@ -54,8 +54,9 @@ The reason we start with low-fidelity prototypes (and the reason we keep them lo
 
 Many people only use a product like [InVision](http://invisionapp.com/) as they move to more high-fidelity prototypes, but I find it most useful at this stage, when it’s really important to be able to visualise how the user moves from one screen to the next, and not so important what each screen looks like in isolation.
 
-![Low Fidelity Prototype][low-fidelity]
-<figcaption>Sourced from <a href="https://www.youtube.com/watch?v=yafaGNFu8Eg">Low fidelity prototype testing of the EE app</a>.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/prototypes/low-fidelity.jpg" description="Sourced from <a href='https://www.youtube.com/watch?v=yafaGNFu8Eg'>Low fidelity prototype testing of the EE app</a>." %}
+</div>
 
 Questions you should be asking at this stage:
 
@@ -69,8 +70,9 @@ It can be hard to define a medium-fidelity prototype. It might be mid-level on e
 
 At this stage, you’re primarily focused on the layout of each individual page. You know how this page fits into the overall navigation, and you’re discussing where to place each element on the page (even though you don’t know what each element will ultimately look like).
 
-![Medium Fidelity Prototype][medium-fidelity]
-<figcaption>Sourced from <a href="https://support.mybalsamiq.com/projects/examples/grid">Balsamiq</a>.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/prototypes/medium-fidelity.png" description="Sourced from <a href='https://support.mybalsamiq.com/projects/examples/grid'>Balsamiq</a>." %}
+</div>
 
 Animations generally come into play at this stage. Once you start to lay out each page, you can then think about how to transition from one page to another. It can be confusing to instantly jump from one state to another, so animations can help communicate how the user moves through the app. The [Material Design Guidelines](https://www.google.com/design/spec/animation/meaningful-transitions.html) provide some great information on meaningful transitions.
 
@@ -87,7 +89,9 @@ The high-fidelity prototype focuses on the product at a micro scale. The big dec
 
 At this stage, a screenshot of the high-fidelity prototype will look identical to a screenshot of the final thing.
 
-![High Fidelity Prototype][high-fidelity]
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/prototypes/high-fidelity.gif" description="An old iteration of my portfolio." %}
+</div>
 
 Questions you should be asking at this stage:
 

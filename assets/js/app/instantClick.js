@@ -1,14 +1,13 @@
 $(document).ready(function() {
 	InstantClick.on('change', function() {
+		$(window).off('resize', initMasonry);
 		// ga('send', 'pageview', location.pathname + location.search);
 		// numPagesVisited++;
 		// initVisited();
 		initExternalLinks();
 		initCarousels();
 		expandSVGs();
-		initMasonry();
-		// animateIn();
-		$(window).resize();
+		$(window).on('resize', initMasonry).resize();
 	});
 
 	InstantClick.init();

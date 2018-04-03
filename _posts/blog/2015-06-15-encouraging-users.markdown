@@ -23,14 +23,13 @@ On social networks like Facebook or LinkedIn, almost everyone uploads a display 
 
 A display photo on Facebook is a way for users to express themselves, and users are rewarded for uploading a display photo with likes and comments from other users - social validation.
 
-<div style="background: #d1eefc;">
-	<img src="/assets/images/blog/encouraging-upload/isabelfoo-socialmedia.png" width="400">
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/encouraging-upload/isabelfoo-socialmedia.png" width="400" description="<a href='https://dribbble.com/shots/1683533-Social-Media'>Social Media</a> by Isabel Foo." %}
 </div>
-<figcaption><a href="https://dribbble.com/shots/1683533-Social-Media">Social Media</a> by Isabel Foo.</figcaption>
 
 A display photo on LinkedIn is important for users to identify themselves to potential connections, and to project a certain image. Users are rewarded when uploading a display photo, again with likes, but more importantly, exposure to potential business relationships.
 
-Reasons and rewards don't need to be so complex. Even a bit of supporting text (eg. *"Adding a photo helps your friends identify you."*) goes a long way.
+Reasons and rewards don't need to be so complex. Even a bit of supporting text (eg. *“Adding a photo helps your friends identify you.”*) goes a long way.
 
 ## Use their existing social display photos
 
@@ -42,8 +41,9 @@ Learn how to do this for [Facebook](https://developers.facebook.com/docs/graph-a
 
 A number of products include this as a step in the onboarding process, often making it difficult to skip or hard to ignore.
 
-![OKCupid Onboarding][okcupid]
-<figcaption>OKCupid makes adding a display photo hard to ignore. It would probably help to also add some supporting copy, like "profiles with photos get XX% more views".</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/encouraging-upload/okcupid.png" description="OKCupid makes adding a display photo hard to ignore. It would probably help to also add some supporting copy, like “profiles with photos get XX% more views”." %}
+</div>
 
 However, this can be a tradeoff. Make it too easy to skip, and some users will. Make it too hard, and users might get irritated and abandon the product before completing the onboarding.
 
@@ -53,19 +53,16 @@ Someone commented on the previous blog post: if you put all this work into makin
 
 Both Dropbox and Gmail cleverly show a non-identifying placeholder to the user, and another to other the user's connections. 
 
-<div style="background: #f6f9fc;">
-	<img src="/assets/images/blog/placeholder-avatars/dropbox.png" width="320">
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/placeholder-avatars/dropbox.png" width="320" description="Dropbox shows these placeholder avatars to the user's connections." %}
 </div>
-<figcaption>Dropbox shows these placeholder avatars to the user's connections.</figcaption>
-
-<div style="background: #f6f8f8;">
-	<img src="/assets/images/blog/encouraging-upload/faceholder.gif" width="298">
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/encouraging-upload/faceholder.gif" width="298" description="Dropbox shows this placeholder avatar, or 'Faceholder', to the user. <a href='https://dribbble.com/shots/1972358-Faceholder'>Sourced from Dribbble</a>." %}
 </div>
-<figcaption>Dropbox shows this placeholder avatar, or 'Faceholder', to the user. <a href="https://dribbble.com/shots/1972358-Faceholder" target="_blank">Sourced from Dribbble</a>.</figcaption>
 
 Daniel Eden of Dropbox said:
 
-<div class="m-post-quote margin--none">
+<blockquote class="blockquote m-top--sm">
 	<p>We ran an experiment to see what would encourage the most profile picture uploads - this character, or the user’s initials in a circle…the faceholder character significantly outperformed the initials.</p>
 
 	<p class="margin--sm">The character lends itself a few things:</p>
@@ -75,7 +72,7 @@ Daniel Eden of Dropbox said:
 		<li>Unlike the initials, it’s clearly not a representation of the user’s true identity</li>
 		<li>It looks like a placeholder. The dotted border just screams “change me!”</li>
 	</ul>
-</div>
+</blockquote>
 
 ## Gravatar
 

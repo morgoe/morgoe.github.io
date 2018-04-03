@@ -31,22 +31,25 @@ An auto-completing input field looks pretty much like a standard text input fiel
 
 This is not a standard HTML input type, so you’ll need to use a plugin like [Chosen](https://harvesthq.github.io/chosen/).
 
-![input-fields][input-fields]
-<figcaption>The bad: a person's name can be literally anything, so trying to suggest options is probably not helpful, especially once you start including non-English languages in your product. It also might imply to a user that they have to select one of your pre-defined names, instead of choosing their own. A simple text input field would do fine.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/input-fields.png" description="The bad: a person's name can be literally anything, so trying to suggest options is probably not helpful, especially once you start including non-English languages in your product. It also might imply to a user that they have to select one of your pre-defined names, instead of choosing their own. A simple text input field would do fine." %}
+</div>
 
 ## Tag Input Field
 This input is similar to the above, but allows the user to select more than one option. This input may limit the user to some predefined options. Alternatively, it could behave like an email address field - suggesting potential options, but allowing any input.
 
-![tag-fields][tag-fields]
-<figcaption>The bad: as above, a simple text field is best for inputting a name.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/tag-fields.png" description="The bad: as above, a simple text field is best for inputting a name." %}
+</div>
 
 ## Checkboxes
 Checkboxes are used when you want the user to select any number (including zero) of predefined options. You can also use one to agree or disagree to a single option.
 
 Checkboxes traditionally are shaped as squares, while radio buttons are circular. Feel free to implement your own styling, but keep the shapes roughly the same or you’ll confuse your users. Also make sure that clicking on the text label will toggle the checkbox or radio button.
 
-![checkboxes][checkboxes]
-<figcaption>The bad: you probably want the user to pick a single gender, so radio buttons or a button group would be better choices.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/checkboxes.png" description="The bad: you probably want the user to pick a single gender, so radio buttons or a button group would be better choices." %}
+</div>
 
 ## Toggles
 These are essentially the same as checkboxes, but they resemble a real-life switch, which can be a bit more intuitive. They generally mean "On/Off", not "Agree/Disagree".
@@ -55,27 +58,31 @@ Toggles are also a bit easier at a glance to understand, as they’re brightly c
 
 Toggles are very easy to implement using pure CSS. [Learn how](http://codepen.io/morgoe/pen/VvzWQg).
 
-![toggles][toggles]
-<figcaption>The bad: a toggle means "on/off", not "agree/disagree". You're better off using a checkbox here..</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/toggles.png" description="The bad: a toggle means “on/off”, not “agree/disagree”. You're better off using a checkbox here." %}
+</div>
 
 ## Radio Buttons
 Radio buttons and checkboxes are often erroneously interchanged. While checkboxes allow the user to select any number of predefined options, radio buttons are used to force the user to select exactly one predefined option. Once selected, they can’t be unselected. If you need the user to select exactly 1 or 0 options, you may use a set of radio buttons and include an option “None”.
 
 Radio buttons are ideal when you have a small amount of options, about 4 or 5. Smaller than that, you’re probably better off with button groups. Larger, and you’re better off with a select dropdown. You may also use a radio button when you’ve only got a few options when you need long labels that won’t fit in button groups.
 
-![radio-buttons][radio-buttons]
-<figcaption>The bad: this one isn't broken, but since you have a single option that asks the user to agree or disagree, a better option would be a checkbox with the label "receive weekly emails".</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/radio-buttons.png" description="The bad: this one isn't broken, but since you have a single option that asks the user to agree or disagree, a better option would be a checkbox with the label “receive weekly emails”." %}
+</div>
 
 ## Button Groups
 Button groups are to radio buttons what toggles are to checkboxes. They’re essentially radio buttons, but they’re a little more intuitive, as they borrow the affordance of real-life buttons better than traditional digital radio buttons do. They’re great for when you only have 2 or 3 options to choose from, all with short one-word labels. 
 
-![button-groups][button-groups]
-<figcaption>The bad: this one is fairly obvious - the label names are simply too long to fit inside buttons. Radio buttons are a better choice.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/button-groups.png" description="The bad: this one is fairly obvious - the label names are simply too long to fit inside buttons. Radio buttons are a better choice." %}
+</div>
 
 **Update:** a few people pointed out that having just 2 buttons in a group can be confusing, as it can be difficult to infer which button is pressed and which is unpressed. If you have 3+ buttons, this is no problem. Or if you're using a more skeumorphic visual style, this also alleviates this issue.
 
-![button-groups][button-groups-2]
-<figcaption>It's easy to see which button is pressed on the left-hand examples, but it's pretty confusing on the right-hand example.</figcaption>
+<div class="m-top--sm">
+	{% include image.html style="full" url="/assets/images/blog/which-input-when/button-groups-2.png" description="It's easy to see which button is pressed on the left-hand examples, but it's pretty confusing on the right-hand example." %}
+</div>
 
 ## Select Dropdowns
 If you need the user to select exactly one of many options (too many for a set of radio buttons), then a select dropdown is the ideal choice. However, if you have lots and lots of options (eg. “Select your country”), avoid a select dropdown and use an auto-completing input field instead. 

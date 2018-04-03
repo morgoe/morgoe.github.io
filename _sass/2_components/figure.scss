@@ -1,8 +1,5 @@
 figure {
 	position: relative;
-	+ p {
-		margin-top: 4rem;
-	}
 }
 
 figure {
@@ -14,9 +11,6 @@ figure {
 		p {
 			display: table;
 			margin: auto;
-			&:before {
-				content: "—";
-			}
 		}
 	}
 }
@@ -63,7 +57,8 @@ figcaption {
 
 
 @media (min-width: $media-lg) {
-	figure {
+	.figure--left,
+	.figure--right {
 		figcaption {
 			position: absolute;
 			top: 40%;

@@ -22,7 +22,9 @@ body-id: design-process
 
 We always talk about design being iterative, but so often we only see the end result and not the many steps it took to get there. Often the end result looks simple and obvious, like it could have been designed in minutes. But simple and obvious is usually very hard to get to. A bottom tab bar is hardly a revolutionary concept, but Facebook took 6 years to get there, and Spotify only got there last year.
 
-{% include image.html url="/assets/images/blog/design-process/spotify-before-after.png" description="Spotify only got rid of their hamburger menu in 2016." %}
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/spotify-before-after.png" description="Spotify only got rid of their hamburger menu in 2016." %}
+</div>
 
 So instead of just showing you the end results here, I want to take some time to shed some light on what my iterative process is. Because if you work with me, I’m not going to give you the exact same end result as I’ve given another company. But we’ll be using a similar iterative process to approach your unique problems.
 
@@ -37,7 +39,9 @@ We didn’t approach data visualisation as just “turn this data into a pie cha
 <!-- <div class="m-post-largeImg"></div>
 ![trending-health-before][trending-health-before] -->
 
-{% include image.html url="/assets/images/blog/design-process/trending-health-before.png" description="This was already the work of several iterations, but for the purposes of this case study, let’s call this the “before”." %}
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/trending-health-before.png" description="This was already the work of several iterations, but for the purposes of this case study, let’s call this the “before”." %}
+</div>
 
 So here we have one of our widgets. Each column represents a team, with the team’s identity up top and the team’s performance data below. At a glance, I can tell that the “Transformers” team needs looking at - it’s trending down on Indexes, and struggling on Objectives. 
 
@@ -56,7 +60,9 @@ The 3rd and 4th discoveries were worrying. We were aware that the Objective Perf
 
 The first thing we tried, as a quick fix, was to highlight the legend on hover.
 
-{% include image.html url="/assets/images/blog/design-process/trending-health-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/trending-health-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+</div>
 
 We tested this solution. Guess how many people noticed the legend now, with just this easy fix?
 
@@ -68,13 +74,17 @@ No-one. Not a single person even **saw** the legend, let alone correlated it wit
 	</div>
 </div> -->
 
-{% include image.html url="/assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+</div>
 
 In light of this new knowledge, we took advantage of our users’ tunnel vision, and displayed the legend **exactly** where they were looking. As an added bonus, this now gave us a way to display our axes. 
 
 We tested this design, and now every single user noticed the legend.
 
-{% include image.html url="/assets/images/blog/design-process/trending-health-overlay.gif" description="We went from not a single person understanding the graph to everyone understanding it with this redesign." %}
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/trending-health-overlay.gif" description="We went from not a single person understanding the graph to everyone understanding it with this redesign." %}
+</div>
 
 And yes – by looking at a flat image, it’s not obvious that you should hover over the graph to see a legend or axes. But in normal interactions with the app, such as swiping to see more teams, users inevitably stumble across this feature.
 

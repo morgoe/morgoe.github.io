@@ -1,11 +1,11 @@
 ---
+published:     false
 layout:        post
 date:          2017-12-12
 categories:    
 - design-solutions
 siteNav: blog
 
-published:			true
 title:				"Most of us are physically addicted to shoes"
 
 thumbnail:			blog/which-input-when/thumbnail.png
