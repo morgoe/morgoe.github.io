@@ -30,9 +30,9 @@ So instead of just showing you the end results here, I want to take some time to
 
 ## The Project
 
-SurgeMaker GPS is a complex web application that is equal parts data visualisation and data collection. The data visualisation starts as broadly as possible, and has signposts every step of the way to say “Hey, check out this weird thing!” and prompt the user to dive down deeper. And eventually, after diving deep enough, the user will hopefully gain some actionable insight.
+SurgeMaker GPS is a complex web application that is equal parts data visualisation and data collection. The data visualisation starts as broadly as possible, and has signposts every step of the way to say *“Hey, check out this weird thing!”* and prompt the user to dive down deeper. And eventually, after diving deep enough, the user will hopefully gain some actionable insight.
 
-We didn’t approach data visualisation as just “turn this data into a pie chart” because you don’t need a designer for that, and it’s usually not enough to generate insight. Instead, for each set of data we created a widget – this might be a graph, a collection or graphs, or graphs alongside other material. Here I’m going to go through a single iteration in the design of one of our widgets, the Trending Health widget.
+We didn’t approach data visualisation as just *“turn this data into a pie chart”* because you don’t need a designer for that, and it’s usually not enough to generate insight. Instead, for each set of data we created a widget – this might be a graph, a collection or graphs, or graphs alongside other material. Here I’m going to go through a single iteration in the design of one of our widgets, the Trending Health widget.
 
 ## Before
 
@@ -43,16 +43,16 @@ We didn’t approach data visualisation as just “turn this data into a pie cha
 	{% include image.html url="/assets/images/blog/design-process/trending-health-before.png" description="This was already the work of several iterations, but for the purposes of this case study, let’s call this the “before”." %}
 </div>
 
-So here we have one of our widgets. Each column represents a team, with the team’s identity up top and the team’s performance data below. At a glance, I can tell that the “Transformers” team needs looking at - it’s trending down on Indexes, and struggling on Objectives. 
+So here we have one of our widgets. Each column represents a team, with the team’s identity up top and the team’s performance data below. At a glance, I can tell that the *“Transformers”* team needs looking at - it’s trending down on Indexes, and struggling on Objectives. 
 
 We did some user testing on this widget and came back with a few discoveries:
 
 - Every single user realised that you could navigate to the team by clicking on the card at the top of the column
 - Some users were unsure of the timescale of the graphs - how far back in time was this showing?
 - **Not a single user noticed the legend**
-- and because of this, every user was confused by the Objective Performance graph. “What does the dashed line mean?” was a common question.
+- and because of this, every user was confused by the Objective Performance graph. *“What does the dashed line mean?”* was a common question.
 
-The first discovery was a great affirmation/relief. We had created the visual design with the idea that “things that are 3d are navigable items” and “things that are flat are generally just visual”. And our users confirmed that this decision was a success.
+The first discovery was a great affirmation/relief. We had created the visual design with the idea that *“things that are 3D are navigable items”* and *“things that are flat are generally just visual”*. And our users confirmed that this decision was a success.
 
 The second discovery was a problem we were already aware of. We had tried putting axes on each of the graphs, but the widget soon became very overwhelming.
 
@@ -61,21 +61,15 @@ The 3rd and 4th discoveries were worrying. We were aware that the Objective Perf
 The first thing we tried, as a quick fix, was to highlight the legend on hover.
 
 <div class="m-top--sm">
-	{% include image.html url="/assets/images/blog/design-process/trending-health-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+	{% include image.html style="large" url="/assets/images/blog/design-process/trending-health-highlight.gif" %}
 </div>
 
 We tested this solution. Guess how many people noticed the legend now, with just this easy fix?
 
 No-one. Not a single person even **saw** the legend, let alone correlated it with the graph.
 
-<!-- <div class="m-post-secretWrapper">
-	<div class="m-post-secret js-showSecret">
-		No-one. Not a single person even <strong>saw</strong> the legend, let alone correlated it with the graph.
-	</div>
-</div> -->
-
 <div class="m-top--sm">
-	{% include image.html url="/assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif" description="Our users were probably suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
+	{% include image.html style="large" url="/assets/images/blog/design-process/trending-health-tunnel-vision-highlight.gif" description="Our users were possibly suffering from tunnel vision, and were essentially seeing this. They might have been saying to themselves, “Huh, that keeps highlighting yellow. Weird.”" %}
 </div>
 
 In light of this new knowledge, we took advantage of our users’ tunnel vision, and displayed the legend **exactly** where they were looking. As an added bonus, this now gave us a way to display our axes. 
@@ -83,7 +77,7 @@ In light of this new knowledge, we took advantage of our users’ tunnel vision,
 We tested this design, and now every single user noticed the legend.
 
 <div class="m-top--sm">
-	{% include image.html url="/assets/images/blog/design-process/trending-health-overlay.gif" description="We went from not a single person understanding the graph to everyone understanding it with this redesign." %}
+	{% include image.html style="large" url="/assets/images/blog/design-process/trending-health-overlay.gif" description="We went from not a single person understanding the graph to everyone understanding it with this redesign." %}
 </div>
 
 And yes – by looking at a flat image, it’s not obvious that you should hover over the graph to see a legend or axes. But in normal interactions with the app, such as swiping to see more teams, users inevitably stumble across this feature.
@@ -94,22 +88,23 @@ But they didn’t. Which was fair enough, it was pretty confusing. Especially be
 
 So we set out to redesign that. We came up with a few solutions, picked the two best, and tested them against each other. 
 
-<div class="m-post-largeImg"></div>
-![trending-health-a-b-test][trending-health-a-b-test]
+<div class="m-top--sm">
+	{% include image.html style="large" url="/assets/images/blog/design-process/trending-health-a-b-test.png" %}
+</div>
 
 There were pros and cons to each of these designs.
 
 In the A solution, users could see the inverse relationship between Objectives and Impediments easily, but the graph is a little overwhelming and possibly confusing.
 
-In the B solution, our main concern was that in the first two line graphs, “up” means “good”, while in the 3rd graph, “up” means “bad”. We were worried that users would see a rise in the 3rd graph as good.
+In the B solution, our main concern was that in the first two line graphs, _“up”_ means _“good”_, while in the 3rd graph, _“up”_ means _“bad”_. We were worried that users would see a rise in the 3rd graph as good.
 
 After testing these two solutions against each other, we decided on the line graph solution, for a number of reasons. 
 
-1. Although “Objectives” and “Impediments” are linked, they aren’t intertwined. By placing them in the same graph, we were forcing a connection that sometimes might not be there, leading to false insights
+1. Although _“Objectives”_ and _“Impediments”_ are linked, they aren’t intertwined. By placing them in the same graph, we were forcing a connection that sometimes might not be there, leading to false insights
 2. In the bar graph solution, the user needed to learn 2 different types of graphs to read this widget. In the line graph solution, the user learns 1 type of graph, and applies that knowledge 3 times.
 3. The line graph solution was significantly easier to develop – we had already done the work with the first line graph.
 
-One thing that was confusing our users was that in our new solution, in the first two line graphs, “up” meant “good”. But in the 3rd graph, “up” meant “bad”. This was something we chose to solve with onboarding.
+One thing that was confusing our users was that in our new solution, in the first two line graphs, _“up”_ meant _“good”_. But in the 3rd graph, _“up”_ meant _“bad”_. This was something we chose to solve with onboarding.
 
 Thanks to our user testing, we knew that a few things about this widget were pretty intuitive or at least easily discoverable, and so didn’t need explanation. Every single user intuited that you could click on a card to navigate to a particular team. And every single user stumbled across the legend/axes overlay when hovering over a graph. So we didn’t need to worry about these in our onboarding.
 
@@ -117,14 +112,17 @@ Our onboarding solution itself went through several revisions, but I’ll fast-f
 
 We took inspiration from subway signs that many people see everyday, and are used to taking directions from. Notice that they don’t say _“Don’t put items in the doors”_, but give people a reason to do it by explaining the benefits or consequences of that action - _“Items trapped in the doors cause delays”_. 
 
-![subway-signs][subway-signs]
+<div class="m-top--sm">
+	{% include image.html url="/assets/images/blog/design-process/subway-signs.jpg" %}
+</div>
 
 This language is really useful when trying to encourage users to behave in a certain way. Samuel Hulick of [UserOnboard](http://useronboard.com/) loves little microcopy that explains why users should give up their email addresses or personal information.
 
 Using this language, we iterated a few times and eventually settled on the following design.
 
-<div class="m-post-largeImg"></div>
-![trending-health-onboarding][trending-health-onboarding]
+<div class="m-top--sm">
+	{% include image.html style="large" url="/assets/images/blog/design-process/trending-health-onboarding.png" %}
+</div>
 
 This design, despite being quite contained, communicates a number of important things:
 
@@ -139,15 +137,16 @@ At the beginning of this adventure we were concerned about 4 different problems 
 1. <del>Every single user realised that you could navigate to the team by clicking on the card at the top of the column</del>
 2. <del>Some users were unsure of the timescale of the graphs - how far back in time was this showing?</del>
 3. <del>Not a single user noticed the legend</del>
-4. <del>and because of this, every user weas confused by the Objective Performance graph. “What does the dashed line mean?” was a common question.</del>
+4. <del>and because of this, every user weas confused by the Objective Performance graph. _“What does the dashed line mean?”_ was a common question.</del>
 
-4/4. Not bad 🙂 
+4/4. Not bad 🙂
 
-<div class="m-post-largeImg"></div>
-<p class="m-post-toggleImage js-toggleBeforeAfter">
-	<img src="/assets/images/blog/design-process/trending-health-before-after-1.png">
-	<img src="/assets/images/blog/design-process/trending-health-before-after-2.png">
-</p>
+<div class="image-figure figure--large figure--swap" tabindex="5">
+	<div class="figure-content">
+		<img src="/assets/images/blog/design-process/trending-health-before-after-1.png" alt="Before">
+		<img src="/assets/images/blog/design-process/trending-health-before-after-2.png" alt="After">
+	</div>
+</div>
 
 [spotify-before-after]: /assets/images/blog/design-process/spotify-before-after.png
 [trending-health-before]: /assets/images/blog/design-process/trending-health-before.png

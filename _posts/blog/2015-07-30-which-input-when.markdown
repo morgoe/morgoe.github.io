@@ -7,7 +7,7 @@ siteNav: blog
 
 title:             "Which Input When?"
 
-thumbnail:         blog/which-input-when/thumbnail.png
+thumbnail:         blog/which-input-when/thumbnail2.jpg
 image:             blog/which-input-when/thumbnail.png
 
 description:       "Each input type has a very specific use-case, and using the wrong input can be confusing for your users."
