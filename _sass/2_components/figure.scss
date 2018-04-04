@@ -17,8 +17,31 @@ figure {
 
 .figure--full {
 	.figure-content {
-		width: 100%;
 		padding: 0;
+	}
+}
+
+.figure--large {
+	margin-left: -128px;
+	margin-right: -128px;
+	.figure-content {
+		max-width: $container-md;
+		margin: auto;
+		padding: 0;
+	}
+}
+.figure--swap {
+	img:last-child {
+		display: none;
+	}
+	&:focus,
+	&:hover {
+		img:first-child {
+			display: none;
+		}
+		img:last-child {
+			display: block;
+		}
 	}
 }
 

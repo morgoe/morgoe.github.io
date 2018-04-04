@@ -1,7 +1,13 @@
-$(document).ready(function() {
+function initVideoScrubbers() {
+	$('video').each(function() {
+		initVideoScrubber(this);
+	});
+}
+
+function initVideoScrubber(_video) {
 	// Video
-	var video = $('video')[0],
-		scrubber = $('.video-scrubber'),
+	var video = $(_video)[0],
+		scrubber = $(_video).siblings('.video-controls').find('.video-scrubber'),
 		prevMouseX = 0,
 		nowMouseX = 0,
 		curPos = 0,
@@ -123,5 +129,4 @@ $(document).ready(function() {
 	}
 
 	req.send();
-
-});
+}

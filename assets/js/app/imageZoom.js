@@ -1,15 +1,15 @@
-$(document).ready(function() {
+function imageZoom() {
 	var zooms = [],
 	zoomOptions = {
-		background: '#EDEFF2',
+		background: '#e1ddd4',
 		margin: 16,
 		scrollOffset: 0,
 	}
 
-	// $('img').each(function(i) {
-	// 	$(this).attr('data-zoom-index', i)
-	// 	zooms[i] = mediumZoom(this, zoomOptions)
-	// });
+	$('.js-imageZoom').each(function(i) {
+		$(this).attr('data-zoom-index', i)
+		zooms[i] = mediumZoom(this, zoomOptions)
+	});
 
 	function navigateZoomedImage(direction) {
 		var zoomIndex = $('.medium-zoom-image--open').data('zoom-index');
@@ -43,4 +43,4 @@ $(document).ready(function() {
 		}
 		e.preventDefault(); // prevent the default action (scroll / move caret)
 	});
-});
+}

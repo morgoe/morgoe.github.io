@@ -7,6 +7,8 @@ $(document).ready(function() {
 		initExternalLinks();
 		initCarousels();
 		expandSVGs();
+		imageZoom();
+		initVideoScrubbers();
 		$(window).on('resize', initMasonry).resize();
 	});
 
