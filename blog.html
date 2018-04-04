@@ -12,12 +12,13 @@ container_size: md
 
 <ul class="container container--md">
 	{% for post in site.categories['design-solutions'] %}
-		<li class="Blog-listItem m-top--xl">
-			<a class="Blog-link" href="{{ post.url | prepend: site.baseurl }}">
-				<div class="Blog-thumbnail" style="background-image: url(/assets/images/{{post.thumbnail}});"></div>
+		<li class="Post-listItem m-top--xl">
+			<a class="Post-link Post-link--blog" href="{{ post.url | prepend: site.baseurl }}">
+				<div class="Post-thumbnail" style="background-image: url(/assets/images/{{post.thumbnail}});"></div>
 				<div class="m-left--sm">
-					<div class="button">{{post.title}}</div>
-					<p class="color-muted m-top--xs">{{post.description}}</p>
+					<div class="button--mobile when-laptop-hidden">{{post.title}}</div>
+					<div class="button below-laptop-hidden">{{post.title}}</div>
+					<p class="color-muted m-top--0 when-laptop-m-top--xs">{{post.description}}</p>
 				</div>
 			</a>
 		</li>

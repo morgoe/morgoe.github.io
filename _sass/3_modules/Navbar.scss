@@ -1,17 +1,11 @@
 .Navbar {
 	padding: $spacing-sm;
-	font-size: $fontSize-sm;
+	font-size: $fontSize-xs;
 	font-family: $font-system;
 }
 .Navbar-container {
 	@include flexbox();
 	@include justify-content(space-between);
-	> * {
-		width: 0;
-	}
-	> * {
-		@include flex-grow(1);
-	}
 }
 .Navbar-back {
 	color: $text-dark;
@@ -57,11 +51,19 @@
 		transform: scale(0.9);
 	}
 }
-.Navbar-link--title {
-	font-weight: bold;
+
+@media (min-width: $media-sm) {
+	.Navbar {
+		font-size: $fontSize-sm;
+	}
 }
-.Navbar-link--contact {
-	font-weight: 700;
-	&:hover > span {
+@media (min-width: $media-lg) {
+	.Navbar-container {
+		> * {
+			width: 0;
+		}
+		> * {
+			@include flex-grow(1);
+		}
 	}
 }

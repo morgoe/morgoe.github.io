@@ -11,7 +11,9 @@
 				display: inline-block;
 				font-family: $font-mono;
 				width: $spacing-md;
+				margin-top: 1px;
 				margin-left: -$spacing-md;
+				vertical-align: top;
 			}
 		}
 	}
@@ -21,8 +23,11 @@
 }
 .Essay--blog {
 	h2,
-	h3,
-	h4 {
+	h3 {
 		margin-top: 1em;
+	}
+	h4,
+	h5 {
+		margin-top: 1.5em;
 	}
 }

@@ -8,11 +8,8 @@ permalink: /work/
 
 <ul class="grid js-masonry">
 	{% for post in site.categories['work'] %}
-		<li class="grid-item when-lg-6 Work-listItem">
-			<a class="Work-link" href="{{ post.url | prepend: site.baseurl }}">
-				<div class="Work-thumbnail" style="padding-bottom: {{post.thumbnail_ratio}}%; background-image: url({{post.thumbnail}});"></div>
-				<div class="button m-top--sm">{{post.hero_title}}</div>
-			</a>
+		<li class="grid-item when-md-6 Post-listItem">
+			{% include work_block.html post=post %}
 		</li>
 	{% endfor %}
 </ul>
