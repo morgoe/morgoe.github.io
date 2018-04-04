@@ -39,6 +39,12 @@
 @font-face{
     font-family: "Domaine-Display-Web";
     font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Domaine_Display_Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Domaine-Display-Web";
+    font-style: normal;
     font-weight: 500;
     src: url('/assets/fonts/Domaine_Display_Medium.woff2') format('woff2');
 }
@@ -51,8 +57,8 @@
 @font-face{
     font-family: "Domaine-Text-Web";
     font-style: italic;
-    font-weight: 500;
-    src: url('/assets/fonts/Domaine_Text_Medium_Italic.woff2') format('woff2');
+    font-weight: 400;
+    src: url('/assets/fonts/Domaine_Text_Regular_Italic.woff2') format('woff2');
 }
 @font-face{
     font-family: "Domaine-Sans-Text-Web";
@@ -79,28 +85,34 @@
     src: url('/assets/fonts/Pitch_Sans_Semibold.woff2') format('woff2');
 }
 @font-face{
-    font-family: "Ivar-Text-Web";
+    font-family: "GT-America-Web";
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/IvarText-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/GT-America-Standard-Regular.woff2') format('woff2');
 }
 @font-face{
-    font-family: "Ivar-Text-Web";
+    font-family: "GT-America-Web";
     font-style: normal;
     font-weight: 500;
-    src: url('/assets/fonts/IvarText-Medium.woff2') format('woff2');
+    src: url('/assets/fonts/GT-America-Standard-Medium.woff2') format('woff2');
 }
 @font-face{
-    font-family: "Ivar-Text-Web";
-    font-style: normal;
-    font-weight: 600;
-    src: url('/assets/fonts/IvarText-SemiBold.woff2') format('woff2');
-}
-@font-face{
-    font-family: "Ivar-Text-Web";
+    font-family: "GT-America-Web";
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/fonts/IvarText-Bold.woff2') format('woff2');
+    src: url('/assets/fonts/GT-America-Standard-Bold.woff2') format('woff2');
+}
+@font-face{
+    font-family: "GT-America-Mono-Web";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/GT-America-Mono-Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: "GT-America-Mono-Web";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/GT-America-Mono-Bold.woff2') format('woff2');
 }
 @font-face{
     font-family: "Ivar-Headline-Web";
