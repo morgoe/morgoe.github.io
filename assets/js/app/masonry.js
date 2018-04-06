@@ -3,7 +3,8 @@ function initMasonry() {
 		var colWidth = $('.js-masonry .grid-item').outerWidth();
 		$('.js-masonry').masonry({
 			itemSelector: '.grid-item',
-			columnWidth: colWidth
+			columnWidth: colWidth,
+			transitionDuration: 0
 		});
 	}
 }

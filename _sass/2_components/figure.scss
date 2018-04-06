@@ -21,15 +21,6 @@ figure {
 	}
 }
 
-.figure--large {
-	margin-left: -128px;
-	margin-right: -128px;
-	.figure-content {
-		max-width: $container-md;
-		margin: auto;
-		padding: 0;
-	}
-}
 .figure--swap {
 	img:last-child {
 		display: none;
@@ -131,6 +122,15 @@ figcaption {
 				left: 0;
 				right: -12rem;
 			}
+		}
+	}
+	.figure--large {
+		margin-left: -128px;
+		margin-right: -128px;
+		.figure-content {
+			max-width: $container-md;
+			margin: auto;
+			padding: 0;
 		}
 	}
 }

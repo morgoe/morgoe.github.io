@@ -1,5 +1,5 @@
 .Page {
-	min-height: calc(100vh - 392px);
+	min-height: calc(100vh - 224px);
 }
 .Page-hero {
 	margin-top: $spacing-lg;
@@ -46,11 +46,6 @@
 }
 
 @media (min-width: $media-md) {
-	.Page {
-		li {
-			margin-left: 0;
-		}
-	}
 	.Page-hero {
 		margin-top: $spacing-xl;
 		margin-bottom: $spacing-xl;

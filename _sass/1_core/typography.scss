@@ -23,7 +23,7 @@ h1,
 	position: relative;
 	font-family: $font-header;
 	font-size: 48px;
-	font-weight: 100;
+	font-weight: 200;
 	line-height: 1;
 	text-align: left;
 	max-width: 1024px;
@@ -92,13 +92,13 @@ blockquote {
 	}
 }
 
-
 @media (min-width: $media-lg) {
 	body {
 		font-size: $fontSize-lg;
 	}
 	h1 {
 		font-size: 6rem;
+		font-weight: 100;
 	}
 	h2,
 	.h2 {

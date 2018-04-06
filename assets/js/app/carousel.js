@@ -23,7 +23,7 @@ function initCarousels() {
 			dynamicHandle: 1,
 			clickBar: 1,
 			cycleBy: 'items',
-			cycleInterval: 2000,
+			cycleInterval: 3000,
 			pauseOnHover: 1,
 		}).init();
 

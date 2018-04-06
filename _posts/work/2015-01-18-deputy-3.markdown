@@ -120,5 +120,7 @@ Another major issue was that we were trying to bring the desktop visually in lin
 In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
 
 Of course, this is just the beginning. Shipping a new version or feature will always bring really valuable feedback, and constant iteration is the key. I’m looking really forward to seeing how Deputy continues to develop.
+
+**Update:** Deputy continues to do well and has recently secured their first investment, a cool $25 million. Their future looks bright.
 </div>
 </section>

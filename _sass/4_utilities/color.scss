@@ -11,6 +11,9 @@
 .bg-black {
 	background: $text-dark !important;
 }
+.bg-light {
+	background: rgba($text-dark, 0.1) !important;
+}
 .bg-green {
 	background: $green !important;
 }

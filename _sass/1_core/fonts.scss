@@ -37,6 +37,18 @@
     src: url('/assets/fonts/Ogg.woff') format('woff');
 }
 @font-face{
+    font-family: "Canela-Web";
+    font-style: normal;
+    font-weight: 100;
+    src: url('/assets/fonts/Canela-Thin-Reduced.woff') format('woff');
+}
+@font-face{
+    font-family: "Canela-Web";
+    font-style: normal;
+    font-weight: 200;
+    src: url('/assets/fonts/Canela-Light-Reduced.woff') format('woff');
+}
+@font-face{
     font-family: "Domaine-Display-Web";
     font-style: normal;
     font-weight: 400;

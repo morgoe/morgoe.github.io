@@ -17,9 +17,6 @@ jumpLinks:
   - url: branding
     text: "Unique look-and-feel"
     icon: paint
-  - url: permissions
-    text: "Perspective and permissions"
-    icon: permissions
   - url: iterative
     text: "Iterative design"
     icon: iterative
@@ -33,53 +30,112 @@ hero_image:            /assets/images/work/surgemaker/hero.png
 
 subhero_title:         "Tracking the results of agile coaching"
 subhero_subtitle:      "MFMVP: Massively-Featured Minimum Viable Product"
-subhero_description:   "<p>SurgeMaker GPS is the first in a suite of apps by agile coaching company <a href='http://www.gearstream.com/'>GearStream</a>. They approached me to help redesign their web app that visualised the improvements made by teams under coaching and informed executives' decisions by drawing insights from data.</p><p>What started as a 2 month job turned into over 2 years. Designing an enterprise application is very different to designing a B2C app. The feature set expected from an MVP is basically “everything”. This is why so many massive companies are still using software from 10 years ago, because it’s got “everything”.</p><p>So it took us over 2 years to launch an MVP, and it’s the most extensive product I’ve ever worked on. </p>"
+subhero_description:   "<p>SurgeMaker GPS is the first in a suite of apps by agile coaching company <a href='http://www.gearstream.com/'>GearStream</a>. They approached me to help redesign their web app that visualised the improvements made by teams under coaching and informed executives' decisions by drawing insights from data.</p><p>What started as a 2 month job turned into over 2 years. Designing an enterprise application is very different to designing a B2C app—the feature set expected from an MVP is basically <em>“everything”</em>. This is why so many massive companies are still using software from 10 years ago, because they’ve got <em>“everything”</em>.</p><p><p>So it took us over 2 years to launch an MVP, and it’s the most extensive product I’ve ever worked on.</p>"
 
 thumbnail:             /assets/images/work/surgemaker/thumbnail2.jpg
 thumbnail_ratio:       59.375
 
 relatedWork1:          "Aeroster"
-relatedWork2:          "Medify"
+relatedWork2:          "Deputy"
 ---
 
-<section class="Page-section" id="launch">
+<section class="Page-section" id="data-viz">
   <h2 class="m-bottom--lg">
-    <p>From concept to product launch in 8 weeks</p>
-    <p class="font-serif color-muted">Something something subtitle</p>
+    <p>Data, data everywhere</p>
+    <p class="font-serif color-muted">So let’s all have a think…</p>
+  </h2>
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+SurgeMaker GPS is basically split into two halves. The first is data-gathering. This is done by coaches, in-person, when they’re on-site.
+</div>
+  <div class="grid-item when-lg-6">
+    {% include image.html style="right" url="/assets/images/work/surgemaker/index.png" description="Coaches use Scrum or Agile models to track a team’s improvement over time, to see if the coaching they’re doing is having the intended effect." %}
+  </div>
+</div>
+
+<div class="grid m-top--xl">
+<div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
+The second half is visualisation. This is where the executives—generally removed from the ground-level operations of the company—can investigate the data gathered by the coaches and use it to make decisions.
+</div>
+</div>
+
+<div class="m-top--lg">
+  {% include image.html style="full" url="/assets/images/work/surgemaker/radial-tree.png" description="The singers and the drummers are causing all the trouble. Typical." %}
+</div>
+
+<div class="grid m-top--xl">
+<div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
+There’s a massive amount of data: Companies contain Lines of Businesses which contain groups of Teams which contain Indexes, Improvements and Impediments which contain Disciplines, Practices, Observations, Notes and Actions. And all of this is tracked over time and compared to previous scores.
+
+Our approach to guiding executives through this database was to start at the top-level, try and point out something interesting—_“Hey, this looks kinda weird, I wonder what’s going on there”_—and then guide them down a level. Rinse, repeat, until hopefully they get to the root cause of whatever weirdness they were seeing in the first place.
+
+Essentially, every page of the app is showing the same information, aggregated and displayed in different ways. It’s a similar approach to Google Maps: you’re always seeing _“the world”_, but as you zoom in you’ll see continents, then countries, cities, suburbs, streets, and places.
+</div>
+</div>
+</section>
+
+<section class="Page-section" id="animation">
+  <h2 class="m-bottom--lg">
+    <p>Animation as communication</p>
+    <p class="font-serif color-muted">Navigating through hierarchy</p>
   </h2>
   <div class="grid">
     <div class="grid-item when-lg-6">
-      {% include carousel.html style="left" image1="/assets/images/work/medify/carousel/carousel-1.png" image2="/assets/images/work/medify/carousel/carousel-2.png" image3="/assets/images/work/medify/carousel/carousel-3.png" image4="/assets/images/work/medify/carousel/carousel-4.png" image5="/assets/images/work/medify/carousel/carousel-5.png" description="A timelapse of the designs for the BMAT product. The second-to-last frame shows what we launched with. The last frame shows what we launched with the following year, after completing the product suite unification project." %}
+      {% include video.html style="left" url="/assets/images/work/surgemaker/animation.mp4" %}
     </div>
 
-    <div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis.</p>
-    </div>
-  </div>
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+The hierarchy I mentioned was both deep and wide, and it was easy to get lost and not know where you are or how you got there. Our first step was to create an information architecture that was intuitive to navigate. We removed as many layers as we could to make the hierarchy as shallow and flexible as possible.
+
+Next, we used animations to help communicate where you were navigating—as you dived down into areas of interest, the app would animate in and out in 3D space.
+</div>
+</div>
 </section>
 
-{% include image.html url="/assets/images/work/surgemaker/division.png" description="Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown." %}
+<section class="Page-section" id="branding">
+  <h2 class="m-bottom--lg">
+    <p>Unique look-and-feel</p>
+    <p class="font-serif color-muted">Standing out in a boring crowd</p>
+  </h2>
+  <div class="grid">
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+Enterprise software is typically pretty visually depressing. We wanted SurgeMaker GPS to be a breath of fresh air. The visual design progressed from something Microsoft would be (wrongly) proud of, to using quirky typeface, bold colours, and allowing teams to select fun, custom-built avatars to express their identities.
+</div>
 
-<!-- ![Division Page][division]
-<figcaption>Here we show an overview of all of the teams in the Line of Business, and how they're performing. Onboarding hints show users how to use the app and what insights might be gleaned from the data shown.</figcaption> -->
+    <div class="grid-item when-lg-6">
+      {% include image.html style="right" url="/assets/images/work/surgemaker/ui-kit.png" description="Our design system contains custom versions of every component in Bootstrap, and then our own modules based on various combinations of those components." %}
+    </div>
+</div>
 
-Given the large amount of data available, and its very deep hierarchical structure, our first step was to create an information architecture that was intuitive to navigate. We removed as many layers as we could to make the hierarchy as shallow and flexible as possible. 
+<div class="grid m-top--lg align-center">
 
-![Team Page][team]
-<figcaption>The Team page shows how the team is progressing over time, and anything the team has been working on recently.</figcaption>
+  <div class="grid-item when-lg-6">
+    {% include image.html url="/assets/images/work/surgemaker/colours.png" %}
+  </div>
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+Colour was very important, as it didn’t just have to make the app look pretty, but be differentiable within data visualisations. We picked a set of colours that not only came together in a stunning rainbow-gradient, but could be picked apart by people with various forms of colour-blindness.
+</div>
+</div>
 
-We structured both the data visualizations and the visual design in a way that communicated this hierarchy. Data visualizations began at a “zoomed out” level, and as users dived down into areas of interest, the app would animate in and out in 3D space.
+<div class="grid m-top--lg">
+  <div class="grid-item when-lg-6 when-lg-push-6">
+    {% include image.html style="right" url="/assets/images/work/surgemaker/avatars.png" description="Teams could pick from a variety of cartoony avatars to represent their team." %}
+  </div>
+</div>
+</section>
 
-![iPad][ipad-1]
-<figcaption>Here the data that tracks the team's performance at a point in time is collected. Users can make notes and mark "impediments" - areas that block progress.</figcaption>
+<section class="Page-section" id="iterative">
+  <h2 class="m-bottom--lg">
+    <p>Iterative Design</p>
+    <p class="font-serif color-muted">Design, Review, Rinse, Repeat</p>
+  </h2>
+  <div class="grid">
+    <div class="grid-item when-lg-6">
+      {% include image.html style="left" url="/assets/images/work/surgemaker/trending-health.gif" description="This design looks simple and obvious! If only it was simple and obvious to create." %}
+    </div>
 
-We then began on the complex task of creating the data visualization “widgets,” each with a unique insight. We began with sketching, wireframing, and prototyping, and then I built the widget templates using HTML, CSS, and JavaScript. The templates were then handed over to the development team to hook into the database.
-
-![iPad][ipad-2]
-
-We finally worked on the visual design together, using quirky typefaces and bold (yet colorblind-friendly) colors and allowing teams to select fun, custom-built avatars to express their identities.
-
-[division]: /assets/images/work/surgemaker/division.png
-[team]: /assets/images/work/surgemaker/team.gif
-[ipad-1]: /assets/images/work/surgemaker/ipad-1.png
-[ipad-2]: /assets/images/work/surgemaker/ipad-2.png
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+Such a long-term project gave us time to iterate on our ideas and produce really great interactions. I’ve written more about this in [_“Iterative Design in Action”_](/design-solutions/iterative-design-in-action).
+</div>
+</div>
+</section>

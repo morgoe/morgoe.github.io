@@ -16,6 +16,7 @@
 {% include_relative app/autosizeTextarea.js %}
 {% include_relative app/externalLinks.js %}
 {% include_relative app/expandSvgs.js %}
+{% include_relative app/scrollTo.js %}
 {% include_relative app/instantClick.js %}
 
 // setTimeout(function() {

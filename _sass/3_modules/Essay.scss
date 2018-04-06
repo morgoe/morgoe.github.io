@@ -4,7 +4,7 @@
 		margin-left: $spacing-md;
 		max-width: $container-sm;
 	}
-	ul:not(.carousel-list) {
+	ul {
 		li {
 			&:before {
 				content: "→";
@@ -19,6 +19,15 @@
 	}
 	ol {
 		list-style: decimal;
+	}
+	ul.carousel-list,
+	ul.Page-jumpLinks {
+		li {
+			margin-left: 0;
+			&:before {
+				display: none;
+			}
+		}
 	}
 }
 .Essay--blog {

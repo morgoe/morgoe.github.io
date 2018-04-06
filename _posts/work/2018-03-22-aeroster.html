@@ -16,10 +16,10 @@ jumpLinks:
     text: "A sudden re-brand"
     icon: paint
   - url: mobile
-    text: "Mobile-first, desktop-best"
+    text: "Mobile-first, desktop-next"
     icon: iphone
   - url: illustrations
-    text: "Quick-and-beautiful illustrations"
+    text: "Occasional illustrations"
     icon: illustrations
 
 client:                "Aeroster"
@@ -27,6 +27,7 @@ title:                 "Aeroster — Smarter rosters for pilots and cabin crew"
 hero_title:            "Fulfilling a childhood ambition and a gap in the market"
 hero_image:            /assets/images/work/aeroster/hero2.png
 
+hide_subhero:          true
 subhero_title:         "Smarter rosters for pilots and cabin crew"
 subhero_subtitle:      "A 10 week accelerated sprint"
 subhero_description:   "<p>Chris approached me to help design an app he’d been thinking about since he was a kid. His dad was a pilot, and was in and away from home non-stop. The golden rule was the roster, but they were incomprehensible, especially to a 6-year-old.</p><p>Chris had been accepted into the <em><a href='http://avroaccelerator.qantas.com/'>Qantas AVRO Accelerator Program</a></em>. He had 12 weeks in total, and he was already two weeks in. We needed to build him something to present to investors at the end of the program.</p>"
@@ -35,9 +36,49 @@ subhero_button_link:   https://www.aeroster.com/
 thumbnail:             /assets/images/work/aeroster/thumbnail.jpg
 thumbnail_ratio:       56.25
 
-relatedWork1:          "Medify"
+relatedWork1:          "SurgeMaker"
 relatedWork2:          "Deputy"
 ---
+
+<section class="Page-subhero">
+	<div class="grid">
+		<div class="grid-item when-lg-6">
+			<h4>
+				<p>{{ page.subhero_title }}</p>
+				<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
+			</h4>
+
+			<div class="Page-introduction m-top--lg">
+				<p>Chris approached me to help design an app he’d been thinking about since he was a kid. His dad was a pilot, and was in and away from home non-stop. The golden rule was the roster, but they were incomprehensible, especially to a 6-year-old.</p>
+
+				<div class="m-top--sm">
+					{% include carousel.html style="left" image1='/assets/images/work/aeroster/roster1.png' image2='/assets/images/work/aeroster/roster2.png' image3='/assets/images/work/aeroster/roster3.png' description="This is what pilots and cabin crew currently have to deal with." %}
+				</div>
+				<p>Chris had been accepted into the <em><a href='http://avroaccelerator.qantas.com/'>Qantas AVRO Accelerator Program</a></em>. He had 12 weeks in total, and he was already two weeks in. We needed to build him something to present to investors at the end of the program.</p>
+			</div>
+			
+			{% if page.subhero_button_link %}
+				<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
+			{% endif %}
+		</div>
+		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+			<ul class="Page-jumpLinks">
+				<li class="Page-jumpLinks-title">
+					Jump to
+				</li>
+				
+				{% for link in page.jumpLinks %}
+					<li>
+						<a href="#{{ link.url }}">
+							<img class="icon" src="/assets/icon/{{link.icon}}.svg">
+							<span>{{ link.text }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
 
 <section class="Page-section" id="pair">
 	<h2 class="m-bottom--lg">
@@ -50,7 +91,7 @@ relatedWork2:          "Deputy"
 		</div>
 
 		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-			<p>Unfortunately, I was tied up with other projects and wasn’t able to start working immediately. Chris’ schedule was tight, so I got some help from my friend and excellent designer Emila. She worked the first few weeks designing the wireframes and user flows, and then I took over. So I had a pretty good base to start with.</p>
+			<p>Unfortunately, I was tied up with other projects and wasn’t able to start working immediately. Chris’ schedule was tight, so I got some help from my friend and excellent designer <a href="https://twitter.com/emilayang">Emila</a>. She worked the first few weeks designing the wireframes and user flows, and then I took over. So I had a pretty good base to start with.</p>
 		</div>
 	</div>
 </section>
@@ -63,7 +104,7 @@ relatedWork2:          "Deputy"
 
 	<div class="grid">
 		<div class="grid-item when-lg-6">
-			<p>Chris had contracted out branding to an agency, so my first step was to start turning Emila’s wireframes into hi-fidelity designs using the branding as a basis. However, it quickly became apparent that the branding didn’t suit the product.</p>
+			<p>Chris had contracted out branding to an agency, so my first step was to start turning Emila’s wireframes into hi-fidelity designs using the branding as a base. However, it quickly became apparent that the branding didn’t suit the product.</p>
 		</div>
 		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
 			{% include carousel.html style="right" image1="/assets/images/work/aeroster/rebrand1.png" image1_description="This was my first iteration. There’s nothing wrong with it, but the cartoony style detracted rather than added to the function of the app." image2="/assets/images/work/aeroster/rebrand2.png" image2_description="Chris and I sat down for about 3 hours and turned that into this. Much better." image3="/assets/images/work/aeroster/rebrand3.png" image3_description="The final version looked like this." %}
@@ -72,7 +113,8 @@ relatedWork2:          "Deputy"
 
 	<div class="grid m-top--lg align-center">
 		<div class="grid-item when-lg-6 when-lg-push-6">
-			<p>After our radical redesign, Chris dumped his old agency, hired a new guy, and produced an incredible logo. We picked fonts, colours, icons, and produced a coherent, clean design system.</p>
+			<p>We picked fonts, colours and icons and created a clean, coherent design system. Then, Chris dumped the original branding agency and hired <a href="http://www.sashsingh.com/">Sash Singh</a> to produce a new logo.</p>
+			<p>The new branding stemmed organically from the function of the app, rather than preceding the app, which is always a better approach in my opinion.</p>
 		</div>
 		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0 when-lg-pull-6">
 			{% include image.html style="full" url="/assets/images/work/aeroster/optimised/ui-kit.png" %}
@@ -84,12 +126,12 @@ relatedWork2:          "Deputy"
 	<div class="grid align-center">
 		<div class="grid-item when-lg-6">
 			<h2>
-				<p>Mobile-first, desktop-best</p>
-				<p class="font-serif color-muted">Placeholder</p>
+				<p>Mobile-first, desktop-next</p>
+				<p class="font-serif color-muted">All features at all sizes</p>
 			</h2>
 		</div>
 		<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-			<p>With such a short time, and wanting to cover as much ground as possible, we went with a web application (Vue+Django), but focused on mobile users. The desktop version made proper use of the available real estate, but there’s nothing you can’t do on mobile.</p>
+			<p>With such a short time, and wanting to cover as much ground as possible, we went with a web application (Vue+Django), but focused on mobile users. Large screen sizes show more information, but there’s nothing you can’t do on mobile.</p>
 		</div>
 	</div>
 
@@ -102,11 +144,14 @@ relatedWork2:          "Deputy"
 	<div class="grid">
 		<div class="grid-item when-lg-6 when-lg-push-6">
 			<h2 class="m-bottom--sm when-lg-m-bottom--lg">
-				<p>Quick-n-beautiful illustrations</p>
-				<p class="font-serif color-muted">Placeholder</p>
+				<p>Occasional illustrations</p>
+				<p class="font-serif color-muted">
+					Quick-n-<del>dirty</del> beautiful illustrations
+				</p>
 			</h2>
 
-			<p>I’m no illustrator, but we needed illustrations. I used our chosen icon pack as a base to create some simple, beautiful illustrations that we could pepper throughout the app.</p>
+			<p>Illustrations can really help explain features (pictures saying a thousand words, and all), and add some visual spice to an app like <em>Aeroster</em> that’s mostly text-based.</p>
+			<p>I used our <a href="https://feathericons.com/">chosen icon pack</a> as a base to create some simple, beautiful illustrations that we could pepper throughout the app.</p>
 		</div>
 		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0 when-lg-pull-6">
 			{% include image.html style="left" url="/assets/images/work/aeroster/illustrations.png" %}
