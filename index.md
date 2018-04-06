@@ -4,7 +4,7 @@ siteNav: home
 body-id: home
 ---
 
-<div class="Page whitespace-bottom--md">
+<div class="whitespace--sm whitespace-bottom--md">
 	<div class="container">
 		<article class="Page-content">
 			<div class="grid">
@@ -38,7 +38,7 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 		</article>
 	</div>
 </div>
-<div class="Page bg-black color-bg">
+<div class="whitespace--sm bg-black color-bg">
 	<div class="container container--md">
 		<article class="Page-content">
 			<h3 class="text-center">Services</h3>
@@ -104,7 +104,7 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 	</div>
 </div>
 
-<div class="Page whitespace-top--md">
+<div class="whitespace--sm whitespace-top--md">
 	<div class="container">
 		<article class="Page-content">
 			<ul class="grid js-masonry">

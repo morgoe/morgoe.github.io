@@ -1,0 +1,24 @@
+
+
+.Footer-links {
+	order: 1;
+	a {
+		display: inline-block;
+		color: inherit;
+		padding: $spacing-xs;
+		height: 40px;
+		&:hover {
+			background: rgba($background, 0.1);
+		}
+	}
+}
+
+@media (min-width: $media-md) {
+	.Footer {
+		.container {
+			@include flexbox();
+			@include align-items(center);
+			@include justify-content(space-between);
+		}
+	}	
+}

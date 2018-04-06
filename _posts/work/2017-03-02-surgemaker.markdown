@@ -25,7 +25,7 @@ jumpLinks:
     icon: iterative
 
 
-
+client:                "SurgeMaker"
 title:                 "SurgeMaker GPS — Helping large companies move as nimbly as startups"
 description:           "SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data."
 hero_title:            "Teaching large companies to move as nimbly as startups"
@@ -37,6 +37,9 @@ subhero_description:   "<p>SurgeMaker GPS is the first in a suite of apps by agi
 
 thumbnail:             /assets/images/work/surgemaker/thumbnail2.jpg
 thumbnail_ratio:       59.375
+
+relatedWork1:          "Aeroster"
+relatedWork2:          "Medify"
 ---
 
 <section class="Page-section" id="launch">

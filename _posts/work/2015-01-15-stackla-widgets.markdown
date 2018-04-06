@@ -18,6 +18,7 @@ jumpLinks:
     text: "Demand, meet supply"
     icon: demand
 
+client:                "Stackla"
 title:                 "Stackla — Letting customers tell the story"
 description:           "Placeholder"
 hero_title:            "Letting customers tell the story"
@@ -30,6 +31,9 @@ subhero_button_link:   https://stackla.com
 
 thumbnail:             /assets/images/work/stackla-widgets/thumbnail.jpg
 thumbnail_ratio:       59.375
+
+relatedWork1:          "Deputy"
+relatedWork2:          "SurgeMaker"
 ---
 
 <section class="Page-section" id="widgets">

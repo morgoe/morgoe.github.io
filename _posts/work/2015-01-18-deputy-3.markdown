@@ -21,6 +21,7 @@ jumpLinks:
     text: "Results"
     icon: results
 
+client:                "Deputy"
 title:                 "Deputy — Love your business again"
 description:           "In 6 months we overhauled 6 years of product design. Deputy grew its userbase 7x over the following year."
 hero_title:            "Helping SME owners love their business again"
@@ -33,6 +34,9 @@ subhero_button_link:   https://www.deputy.com/
 
 thumbnail:             /assets/images/work/deputy/thumbnail.jpg
 thumbnail_ratio:       50
+
+relatedWork1:          "Aeroster"
+relatedWork2:          "SurgeMaker"
 ---
 
 <section class="Page-section" id="goals">

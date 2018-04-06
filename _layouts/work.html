@@ -3,80 +3,93 @@ layout: default
 body-id: work
 ---
 
-<div class="Page" style="{{page.hero_css}}">
-	<div class="container">
-		<section class="Page-hero">
-			<h1>{{ page.hero_title }}</h1>
+<div class="Page">
+	<section class="whitespace--sm" style="{{page.hero_css}}">
+		<div class="container">
+			<section class="Page-hero">
+				<h1>{{ page.hero_title }}</h1>
 
-			<img src="{{ page.hero_image }}" class="Page-heroImage">
-		</section>
-	</div>
-</div>
-<div class="Page whitespace-top--md">
-	<div class="container">
-		<section class="Page-subhero">
-			<div class="grid">
-				<div class="grid-item when-lg-6">
-					<h4>
-						<p>{{ page.subhero_title }}</p>
-						<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
-					</h4>
+				<img src="{{ page.hero_image }}" class="Page-heroImage">
+			</section>
+		</div>
+	</section>
+	<section class="whitespace--sm whitespace-top--md">
+		<div class="container">
+			<section class="Page-subhero">
+				<div class="grid">
+					<div class="grid-item when-lg-6">
+						<h4>
+							<p>{{ page.subhero_title }}</p>
+							<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
+						</h4>
 
-					<div class="Page-introduction m-top--lg">
-						{{ page.subhero_description }}
-					</div>
-					
-					{% if page.subhero_button_link %}
-						<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
-					{% endif %}
-				</div>
-				<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-					<ul class="Page-jumpLinks">
-						<li class="Page-jumpLinks-title">
-							Jump to
-						</li>
+						<div class="Page-introduction m-top--lg">
+							{{ page.subhero_description }}
+						</div>
 						
-						{% for link in page.jumpLinks %}
-							<li>
-								<a href="#{{ link.url }}">
-									<img class="icon" src="/assets/icon/{{link.icon}}.svg">
-									<span>{{ link.text }}</span>
-								</a>
+						{% if page.subhero_button_link %}
+							<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
+						{% endif %}
+					</div>
+					<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+						<ul class="Page-jumpLinks">
+							<li class="Page-jumpLinks-title">
+								Jump to
 							</li>
-						{% endfor %}
-					</ul>
+							
+							{% for link in page.jumpLinks %}
+								<li>
+									<a href="#{{ link.url }}">
+										<img class="icon" src="/assets/icon/{{link.icon}}.svg">
+										<span>{{ link.text }}</span>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<article class="Page-content Essay">
-			{{ content }}
-		</article>
-		
-		<!-- h2>Related Work</h2>
-		<ul class="grid js-masonry Work-masonryGrid">
-			{% for post in site.categories['work'] %}
-				<li class="grid-item when-lg-6 Work-listItem">
-					<a href="{{ post.url | prepend: site.baseurl }}">
-						<div class="Work-thumbnail" style="padding-bottom: {{post.thumbnail_ratio}}%; background-image: url({{post.thumbnail}});"></div>
-						<div class="button m-top--sm">{{post.hero_title}} {{post.title}}</div>
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-		{% if page.nextOne_link %}
-			<a class="btn-footer is-hasImage" href="/work/{{page.nextOne_link}}">
-				<div class="btn-footer-image" style="background-image: url(/assets/images/work/{{page.nextOne_img}})"></div>
-				<span class="btn" data-text="Next"></span>
-			</a>
-		{% elsif page.siteNav == 'work' %}
-			<a class="btn-footer" href="/work/">
-				<span class="btn is-noImage" data-text="See more work"></span>
-			</a>
-		{% elsif page.siteNav == 'blog' %}
-			<a class="btn-footer" href="/design-solutions/">
-				<span class="btn is-noImage" data-text="Read more posts"></span>
-			</a>
-		{% endif %} -->
-	</div>
+			<article class="Page-content Essay">
+				{{ content }}
+			</article>
+			
+			<section class="Page-section">
+				<header class="grid align-center">
+					<h2 class="grid-item when-sm-8">Browse more work</h2>
+					<div class="grid-item when-sm-4 text-right below-sm-hidden">
+						<a href="/work/">See all work</a>
+					</div>
+				</header>
+				<ul class="grid m-top--lg">
+					{% assign posts = site.categories['work'] | where:"client", page.relatedWork1 %}
+					{% for post in posts %}
+						<li class="grid-item when-md-6 Post-listItem">
+							{% include work_block.html post=post %}
+						</li>
+					{% endfor %}
+					{% assign posts = site.categories['work'] | where:"client", page.relatedWork2 %}
+					{% for post in posts %}
+						<li class="grid-item when-md-6 Post-listItem">
+							{% include work_block.html post=post %}
+						</li>
+					{% endfor %}
+				</ul>
+			</section>
+			<!-- {% if page.nextOne_link %}
+				<a class="btn-footer is-hasImage" href="/work/{{page.nextOne_link}}">
+					<div class="btn-footer-image" style="background-image: url(/assets/images/work/{{page.nextOne_img}})"></div>
+					<span class="btn" data-text="Next"></span>
+				</a>
+			{% elsif page.siteNav == 'work' %}
+				<a class="btn-footer" href="/work/">
+					<span class="btn is-noImage" data-text="See more work"></span>
+				</a>
+			{% elsif page.siteNav == 'blog' %}
+				<a class="btn-footer" href="/design-solutions/">
+					<span class="btn is-noImage" data-text="Read more posts"></span>
+				</a>
+			{% endif %} -->
+		</div>
+	</section>
 </div>
