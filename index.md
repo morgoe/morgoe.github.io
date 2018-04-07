@@ -18,7 +18,7 @@ body-id: home
 	<br class="below-lg-hidden">
 	Morgan Carter
 </h1>
-<h3 class="color-muted m-top--0 m-bottom--lg">Freelance Product Designer-Developer</h3>
+<h3 class="h3--alt color-muted m-top--0 m-bottom--lg">Freelance Product Designer-Developer</h3>
 I’m a freelance digital product designer currently living in **Sydney**. I help startups and small businesses turn complex ideas into intuitive, beautiful products.
 
 The products I’ve helped design have been used by **Amazon**, **McDonalds**, **Nike**, **Qantas**, **NVidia**, **Telstra**, **NASA** and more.
