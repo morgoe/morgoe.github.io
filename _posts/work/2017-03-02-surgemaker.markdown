@@ -48,22 +48,22 @@ relatedWork2:          "Deputy"
 <div class="grid-item when-lg-6" markdown="1">
 SurgeMaker GPS is basically split into two halves. The first is data-gathering. This is done by coaches, in-person, when they’re on-site.
 </div>
-  <div class="grid-item when-lg-6">
+  <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
     {% include image.html style="right" url="/assets/images/work/surgemaker/index.png" description="Coaches use Scrum or Agile models to track a team’s improvement over time, to see if the coaching they’re doing is having the intended effect." %}
   </div>
 </div>
 
-<div class="grid m-top--xl">
+<div class="grid m-top--sm when-lg-m-top--xl">
 <div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
 The second half is visualisation. This is where the executives—generally removed from the ground-level operations of the company—can investigate the data gathered by the coaches and use it to make decisions.
 </div>
 </div>
 
-<div class="m-top--lg">
+<div class="m-top--sm when-lg-m-top--xl">
   {% include image.html style="full" url="/assets/images/work/surgemaker/radial-tree.png" description="The singers and the drummers are causing all the trouble. Typical." %}
 </div>
 
-<div class="grid m-top--xl">
+<div class="grid m-top--sm when-lg-m-top--xl">
 <div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
 There’s a massive amount of data: Companies contain Lines of Businesses which contain groups of Teams which contain Indexes, Improvements and Impediments which contain Disciplines, Practices, Observations, Notes and Actions. And all of this is tracked over time and compared to previous scores.
 
@@ -84,7 +84,7 @@ Essentially, every page of the app is showing the same information, aggregated a
       {% include video.html style="left" url="/assets/images/work/surgemaker/animation.mp4" %}
     </div>
 
-<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
 The hierarchy I mentioned was both deep and wide, and it was easy to get lost and not know where you are or how you got there. Our first step was to create an information architecture that was intuitive to navigate. We removed as many layers as we could to make the hierarchy as shallow and flexible as possible.
 
 Next, we used animations to help communicate where you were navigating—as you dived down into areas of interest, the app would animate in and out in 3D space.
@@ -98,26 +98,26 @@ Next, we used animations to help communicate where you were navigating—as you 
     <p class="font-serif color-muted">Standing out in a boring crowd</p>
   </h2>
   <div class="grid">
-<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+<div class="grid-item when-lg-6" markdown="1">
 Enterprise software is typically pretty visually depressing. We wanted SurgeMaker GPS to be a breath of fresh air. The visual design progressed from something Microsoft would be (wrongly) proud of, to using quirky typeface, bold colours, and allowing teams to select fun, custom-built avatars to express their identities.
 </div>
 
-    <div class="grid-item when-lg-6">
+    <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--xl">
       {% include image.html style="right" url="/assets/images/work/surgemaker/ui-kit.png" description="Our design system contains custom versions of every component in Bootstrap, and then our own modules based on various combinations of those components." %}
     </div>
 </div>
 
-<div class="grid m-top--lg align-center">
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
 
   <div class="grid-item when-lg-6">
     {% include image.html url="/assets/images/work/surgemaker/colours.png" %}
   </div>
-<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
 Colour was very important, as it didn’t just have to make the app look pretty, but be differentiable within data visualisations. We picked a set of colours that not only came together in a stunning rainbow-gradient, but could be picked apart by people with various forms of colour-blindness.
 </div>
 </div>
 
-<div class="grid m-top--lg">
+<div class="grid m-top--sm when-lg-m-top--xl">
   <div class="grid-item when-lg-6 when-lg-push-6">
     {% include image.html style="right" url="/assets/images/work/surgemaker/avatars.png" description="Teams could pick from a variety of cartoony avatars to represent their team." %}
   </div>
@@ -134,7 +134,7 @@ Colour was very important, as it didn’t just have to make the app look pretty,
       {% include image.html style="left" url="/assets/images/work/surgemaker/trending-health.gif" description="This design looks simple and obvious! If only it was simple and obvious to create." %}
     </div>
 
-<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0" markdown="1">
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
 Such a long-term project gave us time to iterate on our ideas and produce really great interactions. I’ve written more about this in [_“Iterative Design in Action”_](/design-solutions/iterative-design-in-action).
 </div>
 </div>
