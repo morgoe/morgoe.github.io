@@ -7,12 +7,12 @@
 	ul {
 		li {
 			&:before {
-				content: "→";
+				content: "";
 				display: inline-block;
-				font-family: $font-mono;
-				width: $spacing-md;
-				margin-top: 1px;
-				margin-left: -$spacing-md;
+				background: url(/assets/icon/arrow-forward.svg);
+				width: 24px;
+				height: 24px;
+				margin-left: -24px;
 				vertical-align: top;
 			}
 		}
@@ -39,5 +39,11 @@
 	h4,
 	h5 {
 		margin-top: 1.5em;
+	}
+}
+
+@media (min-width: $media-lg) {
+	.Essay ul li:before {
+		background-size: 27px;
 	}
 }
