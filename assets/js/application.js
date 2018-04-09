@@ -1,6 +1,7 @@
 ---
 ---
 
+{% include_relative lib/modernizr.js %}
 {% include_relative lib/medium-zoom.min.js %}
 {% include_relative lib/jquery.easing.js %}
 {% include_relative lib/sly.min.js %}

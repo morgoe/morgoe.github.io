@@ -1,0 +1,7 @@
+.touch {
+	.button:active,
+	.Post-link:active,
+	.Navbar-link:active > span {
+		transform: none;
+	}
+}

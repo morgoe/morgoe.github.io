@@ -19,13 +19,6 @@
 	color: inherit;
 	text-align: left;
 	@include flexbox();
-	&:hover,
-	&:focus {
-		background: none;
-	}
-	&:active {
-		transform: scale(0.99);
-	}
 }
 .Post-image {
 	padding-bottom: 100%;
@@ -68,9 +61,6 @@
 					transform: scaleX(1);
 				}
 			}
-		}
-		&:active {
-			transform: scale(0.99);
 		}
 	}
 }
