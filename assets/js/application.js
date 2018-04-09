@@ -18,4 +18,5 @@
 {% include_relative app/externalLinks.js %}
 {% include_relative app/expandSvgs.js %}
 {% include_relative app/scrollTo.js %}
+{% include_relative app/googleAnalytics.js %}
 {% include_relative app/instantClick.js %}
