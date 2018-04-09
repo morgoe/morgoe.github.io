@@ -9,6 +9,7 @@ $(document).ready(function() {
 		expandSVGs();
 		imageZoom();
 		initVideoScrubbers();
+
 		$(window).on('resize', initMasonry).resize();
 	});
 

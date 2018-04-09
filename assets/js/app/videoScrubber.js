@@ -1,12 +1,14 @@
 function initVideoScrubbers() {
-	$('video').each(function() {
+	$('.video').each(function() {
 		initVideoScrubber(this);
 	});
 }
 
 function initVideoScrubber(_video) {
+	$(_video).append('<video muted playsinline loop>');
+
 	// Video
-	var video = $(_video)[0],
+	var video = $(_video).find('video')[0],
 		scrubber = $(_video).siblings('.video-controls').find('.video-scrubber'),
 		prevMouseX = 0,
 		nowMouseX = 0,
@@ -109,7 +111,7 @@ function initVideoScrubber(_video) {
 
 	// Pre-load the video before starting playback, so we get no issues on scrubbing.
 	var req = new XMLHttpRequest();
-		req.open('GET', $(video).find('source').data('src'), true);
+		req.open('GET', $(_video).data('src'), true);
 		req.responseType = 'blob';
 
 	req.onload = function() {
@@ -117,6 +119,7 @@ function initVideoScrubber(_video) {
 	   // so we need to check the status code
 	   if (this.status === 200) {
 	      var videoBlob = this.response;
+
 	      var vid = URL.createObjectURL(videoBlob); // IE10+
 	      // Video is now downloaded
 	      // and we can set it as source on the video element
@@ -129,4 +132,8 @@ function initVideoScrubber(_video) {
 	}
 
 	req.send();
+
+	$('.js-startPlayback').click(function() {
+		video.play();
+	})
 }

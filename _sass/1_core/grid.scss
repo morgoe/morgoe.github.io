@@ -14,7 +14,6 @@
 	@include flex-wrap(wrap);
 	margin-left: -$spacing-sm;
 	margin-right: -$spacing-sm;
-	clear: both;
 }
 .grid-item {
 	position: relative;
@@ -662,12 +661,4 @@
 		padding-left: $spacing-lg;
 		padding-right: $spacing-lg;
 	}
-}
-.grid:before,
-.grid:after {
-	content: " ";
-	display: table;
-}
-.grid:after {
-	clear: both;
 }
