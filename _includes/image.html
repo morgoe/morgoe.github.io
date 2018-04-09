@@ -1,0 +1,10 @@
+<figure class="image-figure {% if include.style %}figure--{{include.style}}{% endif %}">
+	<div class="figure-content">
+		<img class="js-imageZoom" src="{{ include.url }}" alt="{{ include.description }}" {% if include.style %}width="{{include.width}}"{% endif %}>
+	</div>
+	{% if include.description %}
+		<figcaption>
+			<p>{{ include.description }}</p>
+		</figcaption>
+	{% endif %}
+</figure>

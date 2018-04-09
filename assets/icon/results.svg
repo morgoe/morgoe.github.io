@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="currentColor" stroke-width="1.5" d="M24,22.25 L1,22.25"/>
+    <polyline stroke="currentColor" stroke-width="1.5" points="10.75 22.25 10.75 10.25 14.25 10.25 14.25 22.25"/>
+    <polyline stroke="currentColor" stroke-width="1.5" points="17.75 22.25 17.75 2.25 21.25 2.25 21.25 22.25"/>
+    <polyline stroke="currentColor" stroke-width="1.5" points="3.75 22.25 3.75 15.25 7.25 15.25 7.25 22.25"/>
+  </g>
+</svg>

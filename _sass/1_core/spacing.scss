@@ -1,0 +1,59 @@
+@for $i from 1 through length($spacing-directions) {
+	@for $j from 1 through length($spacing-names) {
+		.m#{nth($spacing-directions, $i)}--#{nth($spacing-names, $j)} {
+			margin#{nth($spacing-directions, $i)}: #{nth($spacing-amounts, $j)} !important;
+		}
+		.p#{nth($spacing-directions, $i)}--#{nth($spacing-names, $j)} {
+			padding#{nth($spacing-directions, $i)}: #{nth($spacing-amounts, $j)} !important;
+		}
+	}
+}
+
+@for $i from 1 through length($media-names) {
+	@media (min-width: nth($media-amounts, $i)) {
+		@for $j from 1 through length($spacing-directions) {
+			@for $k from 1 through length($spacing-names) {
+				.when-#{nth($media-names, $i)}-m#{nth($spacing-directions, $j)}--#{nth($spacing-names, $k)} {
+					margin#{nth($spacing-directions, $j)}: #{nth($spacing-amounts, $k)} !important;
+				}
+				.when-#{nth($media-names, $i)}-p#{nth($spacing-directions, $j)}--#{nth($spacing-names, $k)} {
+					padding#{nth($spacing-directions, $j)}: #{nth($spacing-amounts, $k)} !important;
+				}
+			}
+		}
+	}
+}
+
+@for $i from 1 through length($spacing-directions) {
+	@for $j from 1 through length($whitespace-names) {
+		.whitespace#{nth($spacing-directions, $i)}--#{nth($whitespace-names, $j)} {
+			padding#{nth($spacing-directions, $i)}: #{nth($whitespace-amounts-mobile, $j)} !important;
+		}
+	}
+}
+
+@media (min-width: $media-md) {
+	@for $i from 1 through length($spacing-directions) {
+		@for $j from 1 through length($whitespace-names) {
+			.whitespace#{nth($spacing-directions, $i)}--#{nth($whitespace-names, $j)} {
+				padding#{nth($spacing-directions, $i)}: #{nth($whitespace-amounts-ipad, $j)} !important;
+			}
+			.when-md-whitespace#{nth($spacing-directions, $i)}--#{nth($whitespace-names, $j)} {
+				padding#{nth($spacing-directions, $i)}: #{nth($whitespace-amounts-ipad, $j)} !important;
+			}
+		}
+	}
+}
+
+@media (min-width: $media-lg) {
+	@for $i from 1 through length($spacing-directions) {
+		@for $j from 1 through length($whitespace-names) {
+			.whitespace#{nth($spacing-directions, $i)}--#{nth($whitespace-names, $j)} {
+				padding#{nth($spacing-directions, $i)}: #{nth($whitespace-amounts-desktop, $j)} !important;
+			}
+			.when-lg-whitespace#{nth($spacing-directions, $i)}--#{nth($whitespace-names, $j)} {
+				padding#{nth($spacing-directions, $i)}: #{nth($whitespace-amounts-desktop, $j)} !important;
+			}
+		}
+	}
+}

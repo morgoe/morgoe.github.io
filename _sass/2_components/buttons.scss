@@ -1,0 +1,80 @@
+.button {
+	@include inline-flex();
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+	touch-action: manipulation;
+	cursor: pointer;
+	white-space: nowrap;
+	background: none;
+	@include noSelect();
+	border: none;
+
+	position: relative;
+	height: 40px;
+	color: $text-dark;
+	text-decoration: none;
+	font-weight: 600;
+	font-style: italic;
+	font-family: $font-system;
+	padding: 9px $spacing-md;
+	transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	z-index: 1;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 40px;
+		background: rgba($text-dark, 0.1);
+		transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		z-index: -1;
+	}
+	&:before {
+		left: 0;
+		width: 40px;
+	}
+	&:after {
+		left: 40px;
+		width: calc(100% - 40px);
+		transform: scaleX(0);
+		transform-origin: 0 0;
+	}
+	&:hover,
+	&:focus {
+		color: $background;
+		background: none;
+		&:before,
+		&:after {
+			background: $text-dark;
+		}
+		&:after {
+			transform: scaleX(1);
+		}
+	}
+	&:active {
+		transform: scale(0.95);
+		transition: none;
+	}
+}
+.button--mobile {
+	font-weight: 600;
+	font-style: italic;
+	font-family: $font-system;
+}
+.button--inverted {
+	color: $background;
+	&:before,
+	&:after {
+		background: rgba($background, 0.1);
+	}
+	&:hover,
+	&:focus {
+		color: $text-dark;
+		&:before,
+		&:after {
+			background: $background;
+		}
+	}
+}

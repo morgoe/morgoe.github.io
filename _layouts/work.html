@@ -1,0 +1,84 @@
+---
+layout: default
+body-id: work
+---
+
+<div class="Page">
+	<section class="whitespace--sm" style="{{page.hero_css}}">
+		<div class="container">
+			<section class="Page-hero">
+				<h1>{{ page.hero_title }}</h1>
+
+				<img src="{{ page.hero_image }}" class="Page-heroImage" width="{{ page.hero_image_width }}">
+			</section>
+		</div>
+	</section>
+	<section class="whitespace--sm whitespace-top--md whitespace-bottom--md">
+		<div class="container">
+			{% unless page.hide_subhero %}
+			<section class="Page-subhero">
+				<div class="grid">
+					<div class="grid-item when-lg-6">
+						<h4>
+							<p>{{ page.subhero_title }}</p>
+							<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
+						</h4>
+
+						<div class="Page-introduction m-top--lg">
+							{{ page.subhero_description }}
+						</div>
+						
+						{% if page.subhero_button_link %}
+							<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
+						{% endif %}
+					</div>
+					<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+						<ul class="Page-jumpLinks">
+							<li class="Page-jumpLinks-title">
+								Jump to
+							</li>
+							
+							{% for link in page.jumpLinks %}
+								<li>
+									<a class="js-scrollTo" href="#{{ link.url }}">
+										<img class="icon" src="/assets/icon/{{link.icon}}.svg">
+										<span>{{ link.text }}</span>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</section>
+			{% endunless %}
+
+			<article class="Page-content Essay">
+				{{ content }}
+			</article>
+			
+		</div>
+	</section>
+
+	<section class="whitespace--sm whitespace-top--md bg-light">
+		<div class="container">
+			<section class="">
+				<header class="grid align-center">
+					<h2 class="grid-item when-sm-8">Browse more work</h2>
+					<div class="grid-item when-sm-4 text-right below-sm-hidden">
+						<a href="/work/">See all work</a>
+					</div>
+				</header>
+				<ul class="grid m-top--lg">
+					{% assign posts = site.categories['work'] | where:"client", page.relatedWork1 %}
+					{% for post in posts %}
+						{% include work_block.html post=post %}
+					{% endfor %}
+					{% assign posts = site.categories['work'] | where:"client", page.relatedWork2 %}
+					{% for post in posts %}
+						{% include work_block.html post=post %}
+					{% endfor %}
+				</ul>
+			</section>
+		</div>
+	</section>
+</div>

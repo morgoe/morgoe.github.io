@@ -1,0 +1,7 @@
+<li class="grid-item when-sm-6 Post-listItem">
+	<a class="Post-link" href="{{ include.post.url | prepend: site.baseurl }}">
+		<div class="Post-image" style="padding-bottom: {{include.post.thumbnail_ratio}}%; background-image: url({{include.post.thumbnail}});"></div>
+		<div class="button--mobile when-laptop-hidden">{{include.post.hero_title}}</div>
+		<div class="button below-laptop-hidden m-top--sm">{{include.post.hero_title}}</div>
+	</a>
+</li>

@@ -1,0 +1,88 @@
+.carousel-figure {
+	.figure-content {
+		// margin-left: auto;
+	}
+}
+
+.carousel {
+	position: relative;
+}
+
+.carousel-frame {
+	max-width: $container-sm;
+	margin-left: auto;
+	margin-right: auto;
+}
+.carousel-listItem {
+	position: relative;
+	float: left;
+	width: calc(100vw - 2rem);
+	margin: 0 !important;
+	figcaption {
+		display: none;
+	}
+}
+.carousel-scrollbar {
+	margin-top: $spacing-xs;
+	height: 2rem;
+	background: rgba($text-dark, 0.1);
+	position: relative;
+	cursor: pointer;
+	z-index: 0;
+	&:before,
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: $background;
+		z-index: 1;
+		pointer-events: none;
+	}
+	&:before {
+		top: 0;
+		height: 1rem;
+	}
+	&:after {
+		bottom: 0;
+		height: calc(1rem - 1px);
+	}
+}
+.carousel-scrollbarHandle {
+	height: 2rem;
+	background: $text-dark;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	touch-action: manipulation;
+	cursor: pointer;
+	@include noSelect();
+	border: none;
+	border-radius: 0;
+	background: none;
+}
+.carousel-button--prev {
+	left: 0;
+	width: 20%;
+	cursor: w-resize;
+}
+.carousel-button--next {
+	right: 0;
+	width: 80%;
+	cursor: e-resize;
+}
+
+@media (min-width: $media-md) {
+	.carousel-listItem {
+		width: calc(100vw - 3rem);
+	}
+}
+@media (min-width: 1408px) {
+	.carousel-listItem {
+		width: 640px;
+	}
+}
