@@ -32,7 +32,6 @@
 	touch-action: manipulation;
 	cursor: text;
 	background: none;
-	@include noSelect();
 	border: none;
 
 	height: 40px;
