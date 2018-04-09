@@ -9,6 +9,7 @@
 {% include_relative lib/instantclick.min.js %}
 
 {% include_relative app/imageZoom.js %}
+{% include_relative app/videoScrubber.js %}
 {% include_relative app/carousel.js %}
 {% include_relative app/masonry.js %}
 {% include_relative app/contactForm.js %}
