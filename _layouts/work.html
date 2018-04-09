@@ -71,15 +71,11 @@ body-id: work
 				<ul class="grid m-top--lg">
 					{% assign posts = site.categories['work'] | where:"client", page.relatedWork1 %}
 					{% for post in posts %}
-						<li class="grid-item when-md-6 Post-listItem">
-							{% include work_block.html post=post %}
-						</li>
+						{% include work_block.html post=post %}
 					{% endfor %}
 					{% assign posts = site.categories['work'] | where:"client", page.relatedWork2 %}
 					{% for post in posts %}
-						<li class="grid-item when-md-6 Post-listItem">
-							{% include work_block.html post=post %}
-						</li>
+						{% include work_block.html post=post %}
 					{% endfor %}
 				</ul>
 			</section>

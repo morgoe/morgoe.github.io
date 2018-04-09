@@ -8,8 +8,6 @@ permalink: /work/
 
 <ul class="grid js-masonry">
 	{% for post in site.categories['work'] %}
-		<li class="grid-item when-md-6 Post-listItem">
-			{% include work_block.html post=post %}
-		</li>
+		{% include work_block.html post=post %}
 	{% endfor %}
 </ul>

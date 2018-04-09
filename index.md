@@ -9,11 +9,14 @@ body-id: home
 		<div class="container">
 			<article class="Page-content">
 				<div class="grid">
-					<div class="grid-item when-lg-6">
-						<img src="/assets/images/home/neue_me.jpg">
+					<div class="grid-item when-sm-6">
+						<picture>
+							<source media="(min-width: 568px)" srcset="/assets/images/home/neue_me.jpg">
+							<img src="/assets/images/home/neue_me_mobile.jpg">
+						</picture>
 					</div>
-					<div class="grid-item when-lg-6 Essay Essay--blog" markdown="1">
-<h1 class="m-top--lg when-lg-m-top--0">
+					<div class="grid-item when-sm-6 Essay Essay--blog" markdown="1">
+<h1 class="m-top--lg when-sm-m-top--0">
 	Hi, I’m
 	<br class="below-lg-hidden">
 	Morgan Carter
@@ -109,7 +112,7 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 		<div class="container">
 			<article class="Page-content">
 				<ul class="grid js-masonry">
-					<li class="grid-item when-lg-6 Post-listItem">
+					<li class="grid-item when-sm-6 Post-listItem">
 						<h5 class="m-bottom--sm color-muted">Recent Work</h5>
 						<a class="Post-link" href="/work/aeroster">
 							<div class="Post-image" style="padding-bottom: 56.25%; background-image: url(/assets/images/work/aeroster/thumbnail.jpg);"></div>
@@ -117,7 +120,7 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 							<div class="button below-laptop-hidden m-top--sm">Fulfilling a childhood ambition and a gap in the market</div>
 						</a>
 					</li>
-					<li class="grid-item when-lg-6 Post-listItem">
+					<li class="grid-item when-sm-6 Post-listItem">
 						<h5 class="m-bottom--sm color-muted">Recent Writing</h5>
 						<a class="Post-link" href="/design-solutions/iterative-design-in-action">
 							<div class="Post-image" style="padding-bottom: 56.25%; background-image: url(/assets/images/blog/design-process/thumbnail-lg.gif);"></div>
