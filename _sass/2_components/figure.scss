@@ -69,8 +69,12 @@ figcaption {
 	}
 }
 
-
 @media (min-width: $media-lg) {
+	figure {
+		figcaption {
+			height: auto !important;
+		}
+	}
 	.figure--left,
 	.figure--right {
 		figcaption {

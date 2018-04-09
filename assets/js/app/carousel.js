@@ -31,7 +31,23 @@ function initCarousels() {
 		// 	sly.set('cycleBy', null);
 		// });
 
+		function setMaxCaptionHeight() {
+			var $caption = $figure.find('> figcaption').height('auto');
+			var h = 0;
+			
+			$figure.find('.js-carouselItemCaption').each(function() {
+				$figure.find('.js-carouselCaption').text($(this).text());
+				if ($figure.find('.js-carouselCaption').height() > h)
+					h = $figure.find('.js-carouselCaption').height();
+			});
+			
+			$figure.find('.js-carouselCaption').text($figure.find('.js-carouselItemCaption').eq(0).text());
+			$caption.height(h);
+		}
+
 		if ($figure.find('.js-carouselCaption').length) {
+			setMaxCaptionHeight();
+
 			sly.on('move', function(eventName, itemIndex) {
 				var itemIndex = Math.round(sly.pos.dest / sly.pos.end * (sly.items.length-1));
 				$figure.find('.js-carouselCaption').text($figure.find('.carousel-listItem').eq(itemIndex).find('.js-carouselItemCaption').text());
@@ -40,6 +56,9 @@ function initCarousels() {
 
 		$(window).resize(function() {
 			sly.reload();	
+			if ($figure.find('.js-carouselCaption').length) {
+				setMaxCaptionHeight();
+			}
 		});
 	});
 }
