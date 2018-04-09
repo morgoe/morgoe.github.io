@@ -25,8 +25,8 @@ figure {
 	img:last-child {
 		display: none;
 	}
-	&:focus,
-	&:hover {
+	.no-touch &:hover,
+	.touch &.now-toggling {
 		img:first-child {
 			display: none;
 		}

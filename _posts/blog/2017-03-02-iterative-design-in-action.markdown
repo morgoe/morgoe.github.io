@@ -141,11 +141,16 @@ At the beginning of this adventure we were concerned about 4 different problems 
 
 4/4. Not bad 🙂
 
-<div class="image-figure figure--large figure--swap" tabindex="5">
+<div class="image-figure figure--large figure--swap js-beforeAfterView" tabindex="5">
 	<div class="figure-content">
 		<img src="/assets/images/blog/design-process/trending-health-before-after-1.png" alt="Before">
 		<img src="/assets/images/blog/design-process/trending-health-before-after-2.png" alt="After">
 	</div>
+	<figcaption class="text-center">
+		<span class="when-touch-hidden">Hover</span>
+		<span class="when-noTouch-hidden">Tap</span>
+		to see before/after.
+	</figcaption>
 </div>
 
 [spotify-before-after]: /assets/images/blog/design-process/spotify-before-after.png

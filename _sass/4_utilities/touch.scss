@@ -4,4 +4,12 @@
 	.Navbar-link:active > span {
 		transform: none;
 	}
+	.when-touch-hidden {
+		display: none !important;
+	}
+}
+.no-touch {
+	.when-noTouch-hidden {
+		display: none !important;
+	}
 }
