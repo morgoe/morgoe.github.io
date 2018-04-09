@@ -113,6 +113,7 @@ function initVideoScrubber(_video) {
 		req.responseType = 'blob';
 
 	req.onload = function() {
+		console.log(this.status, this.responseText)
 	   // Onload is triggered even on 404
 	   // so we need to check the status code
 	   if (this.status === 200) {

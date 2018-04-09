@@ -8,7 +8,7 @@ $(document).ready(function() {
 		initCarousels();
 		expandSVGs();
 		imageZoom();
-		initVideoScrubbers();
+		// initVideoScrubbers();
 		$(window).on('resize', initMasonry).resize();
 	});
 
