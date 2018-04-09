@@ -1,3 +1,13 @@
+.video {
+	&.now-loading {
+		background: rgba($text-dark, 0.05);
+		padding-bottom: 62.5%;
+		video {
+			position: absolute;
+			opacity: 0;
+		}
+	}
+}
 .video-scrubber {
 	background: rgba($text-dark, 0.1);
 	width: 100%;

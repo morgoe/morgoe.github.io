@@ -88,6 +88,9 @@ function initVideoScrubber(_video) {
 	// Once the video is completely loaded, start playback and intialise eventListeners.
 	function initVideo() {
 		startPlayback();
+		setTimeout(function() {
+			$(_video).removeClass('now-loading');
+		}, 100);
 
 		scrubber.on("mousedown", function(e) {
 			mouseDown = true;
