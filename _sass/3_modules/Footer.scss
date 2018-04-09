@@ -1,8 +1,7 @@
-
-
 .Footer-links {
 	order: 1;
 	a {
+		@include noSelect();
 		display: inline-block;
 		color: inherit;
 		padding: $spacing-xs;

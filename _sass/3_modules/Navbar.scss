@@ -29,6 +29,7 @@
 	text-align: center;
 }
 .Navbar-link {
+	@include noSelect();
 	display: block;
 	color: inherit;
 	text-decoration: none;

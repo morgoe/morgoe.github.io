@@ -4,6 +4,7 @@
 	margin-bottom: 4rem;
 }
 .Post-link {
+	@include noSelect();
 	color: inherit;
 	display: block;
 	&:hover,
