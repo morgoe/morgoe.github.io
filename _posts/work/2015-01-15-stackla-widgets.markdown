@@ -5,7 +5,7 @@ categories:
 - work
 siteNav: work
 
-hero_css: "background: rgb(252, 194, 0);"
+hero_css: "background: #fbc100"
 
 jumpLinks:
   - url: widgets

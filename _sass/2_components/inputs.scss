@@ -53,6 +53,9 @@
 			}
 		}
 	}
+	&:-webkit-autofill {
+		border-radius: 0;
+	}
 }
 .input-interaction {
 	.input-label ~ & {
