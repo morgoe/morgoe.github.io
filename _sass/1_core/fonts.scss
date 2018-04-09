@@ -26,17 +26,17 @@
     src: url('/assets/fonts/DomaineTextWeb-RegularItalic.woff2') format('woff2'),
          url('/assets/fonts/DomaineTextWeb-RegularItalic.woff') format('woff');
 }
-
-// Not purchased yet:
 @font-face{
     font-family: "Canela-Web";
     font-style: normal;
     font-weight: 100;
-    src: url('/assets/fonts/Canela-Thin-Reduced.woff') format('woff');
+    src: url('/assets/fonts/Canela-Thin-Web.woff2') format('woff2'),
+         url('/assets/fonts/Canela-Thin-Web.woff') format('woff');
 }
 @font-face{
     font-family: "Canela-Web";
     font-style: normal;
     font-weight: 200;
-    src: url('/assets/fonts/Canela-Light-Reduced.woff') format('woff');
+    src: url('/assets/fonts/Canela-Light-Web.woff2') format('woff2'),
+         url('/assets/fonts/Canela-Light-Web.woff') format('woff');
 }
