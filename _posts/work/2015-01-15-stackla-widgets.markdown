@@ -22,7 +22,7 @@ client:                "Stackla"
 title:                 "Stackla — Letting customers tell the story"
 description:           "Placeholder"
 hero_title:            "Letting customers tell the story"
-hero_image:            /assets/images/work/stackla-widgets/hero.png
+hero_image:            /assets/images/work/stackla-widgets/hero.jpg
 
 subhero_title:         "The world’s smartest visual content engine"
 subhero_subtitle:      "Placeholder"

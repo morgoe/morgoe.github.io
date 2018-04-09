@@ -4,6 +4,10 @@
 .Page-hero {
 	margin-top: $spacing-lg;
 	margin-bottom: $spacing-lg;
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .Page-subhero {
 	h4 {
