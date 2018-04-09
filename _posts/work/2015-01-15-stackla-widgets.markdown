@@ -15,17 +15,17 @@ jumpLinks:
     text: "Responsification"
     icon: responsive
   - url: demand
-    text: "Demand, meet supply"
+    text: "Demand, supply"
     icon: demand
 
 client:                "Stackla"
 title:                 "Stackla — Letting customers tell the story"
-description:           "Placeholder"
+description:           "The World’s Smartest Visual Content Engine"
 hero_title:            "Letting customers tell the story"
 hero_image:            /assets/images/work/stackla-widgets/hero.jpg
 
 subhero_title:         "The world’s smartest visual content engine"
-subhero_subtitle:      "Placeholder"
+subhero_subtitle:      "Using social media to generate content for marketers"
 subhero_description:   "<p>Stackla allows users to discover, manage and display the most engaging visual content from social media across every marketing touchpoints.</p><blockquote>“Morgan is not afraid to voice his opinion and constructively challenge ideas. He acts proactively and takes the initiative on tasks, which has resulted in great products for Stackla and very happy clients.” <strong>–Peter Cassidy, Co-founder of <a href='https://stackla.com/'>Stackla</a></strong></blockquote>"
 subhero_button_link:   https://stackla.com
 
@@ -39,7 +39,7 @@ relatedWork2:          "SurgeMaker"
 <section class="Page-section" id="widgets">
 	<h2 class="m-bottom--lg">
 		<p>Embeddable widgets</p>
-		<p class="font-serif color-muted">Placeholder</p>
+		<p class="font-serif color-muted">Wherever you want</p>
 	</h2>
 <div class="m-top--lg when-lg-m-top--0" markdown="1">
 When I joined Stackla, they already had a Widget system in place that would allow clients to embed the product into their websites. The Widgets had a lot of clever code behind it to make it super fast, bandwidth-efficient, and live-updating. They were also used for any live event displays we did at that time. However, the Widgets had a number of issues:
@@ -73,7 +73,7 @@ I created a prototype over a couple of days that ended up serving as the basis f
 
 <section class="Page-section" id="demand">
 	<h2 class="m-bottom--lg">
-		<p>Demand, meet supply</p>
+		<p>Demand, supply</p>
 		<p class="font-serif color-muted">More features, more customisations, more differentiation</p>
 	</h2>
 <div class="m-top--lg when-lg-m-top--0" markdown="1">

@@ -104,17 +104,23 @@ One problem we ran into again and again was the lack of time. A few really inter
 
 Another major issue was that we were trying to bring the desktop visually in line with the mobile apps, but many design decisions simply didn’t translate from mobile to desktop. We started by questioning some of the assumptions that had been made previously, and we ended up overhauling some key aspects of the mobile apps and meeting the designs in the middle.
 
-<div class="m-top--lg when-lg-m-top--xl">
-	{% include image.html style="full" url="/assets/images/work/deputy/transition.png" width="768" %}
-</div>
 
+<div class="image-figure figure--full figure--swap m-top--lg when-lg-m-top--xl" tabindex="5">
+	<div class="figure-content">
+		<img src="/assets/images/work/deputy/transition1.jpg" alt="Before">
+		<img src="/assets/images/work/deputy/transition2.jpg" alt="After">
+	</div>
+	<figcaption class="text-center">
+		Hover or tap to see before/after.
+	</figcaption>
+</div>
 </div>
 </section>
 
 <section class="Page-section" id="results">
 	<h2 class="m-bottom--lg">
 		<p>Results</p>
-		<p class="font-serif color-muted">Placeholder</p>
+		<p class="font-serif color-muted">40k to 270k users in 1 year</p>
 	</h2>
 <div class="m-top--lg when-lg-m-top--0" markdown="1">
 In the end we finished coding right on the 6 month mark, and after a few weeks of QA, we launched in June. I was expecting a substantial amount of push-back, as it was a massive redesign (and I've seen how Reddit [reacted](https://www.reddit.com/r/changelog/comments/2tw6pm/reddit_change_changes_to_default_text_styling/) when the design team increased the font size by 1px), but the response to the new version has been really positive. With this new release, and a few other key strategies, Deputy has gone from 40,000 users to 270,000 in less than a year.
