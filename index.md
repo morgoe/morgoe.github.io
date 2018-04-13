@@ -72,7 +72,7 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 									<em>how it works.</em>
 								</div>
 							</header>
-							<p class="text-sm color-muted m-top--0">We definine product features, lay out user interfaces, choose an appropriate visual direction, and use motion design in a helpful, not flashy way.</p>
+							<p class="text-sm color-muted m-top--0">We define product features, lay out user interfaces, choose an appropriate visual direction, and use motion design in a helpful, not flashy way.</p>
 						</div>
 					</div>
 					<div class="grid-item when-lg-4 m-top--xl">
