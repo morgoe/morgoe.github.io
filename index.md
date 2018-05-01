@@ -114,10 +114,10 @@ The products I’ve helped design have been used by **Amazon**, **McDonalds**, *
 				<ul class="grid js-masonry">
 					<li class="grid-item when-sm-6 Post-listItem">
 						<h5 class="m-bottom--sm color-muted">Recent Work</h5>
-						<a class="Post-link" href="/work/aeroster">
-							<div class="Post-image" style="padding-bottom: 56.25%; background-image: url(/assets/images/work/aeroster/thumbnail.jpg);"></div>
-							<div class="button--mobile when-laptop-hidden">Fulfilling a childhood ambition and a gap in the market</div>
-							<div class="button below-laptop-hidden m-top--sm">Fulfilling a childhood ambition and a gap in the market</div>
+						<a class="Post-link" href="/work/medify">
+							<div class="Post-image" style="padding-bottom: 53.125%; background-image: url(/assets/images/work/medify/thumbnail.jpg);"></div>
+							<div class="button--mobile when-laptop-hidden">Lowering the barrier to entry of medicine</div>
+							<div class="button below-laptop-hidden m-top--sm">Lowering the barrier to entry of medicine</div>
 						</a>
 					</li>
 					<li class="grid-item when-sm-6 Post-listItem">

@@ -1,0 +1,196 @@
+---
+layout:                work
+date:                  2017-12-12
+categories:    
+- work
+siteNav: work
+featured: true
+
+hero_css: "background: rgb(36, 68, 121); color: white;"
+
+jumpLinks:
+  - url: launch
+    text: "From concept to launch in 8 weeks"
+    icon: time
+  - url: brand
+    text: "Crafting a coherent product suite and brand"
+    icon: paint
+  - url: css
+    text: "Coding a custom BEM-based CSS framework"
+    icon: code
+  - url: dataviz
+    text: "Designing insightful data visualisations"
+    icon: data-viz
+
+client:                "Medify"
+title:                 "Medify — Levelling the playing field"
+description:           "Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company."
+hero_title:            "Lowering the barrier to entry of medicine"
+hero_image:            /assets/images/work/medify/hero.jpg
+
+subhero_title:         "Serving 1 in 3 UK medical students"
+subhero_subtitle:      "Medify levels the playing field"
+subhero_description:   "<p>Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company.</p><p>They initially approached me to design and develop a new product, the <a href='#launch'>BMAT Grader</a>. We launched that after 8 weeks. Then we rebranded, unified their entire product suite, and designed and launched a few more products.</p><p>Their sales have more than doubled, and the competition is scrambling to keep up. Which just raises the bar for everyone.</p>"
+subhero_button_link:   https://www.medify.co.uk/
+
+thumbnail:             /assets/images/work/medify/thumbnail.jpg
+thumbnail_ratio:       53.125
+image:                 /assets/images/work/medify/medify-user.gif
+
+relatedWork1:          "Aeroster"
+relatedWork2:          "SurgeMaker"
+---
+
+<section class="Page-section" id="launch">
+	<h2 class="m-bottom--lg">
+		<p>From concept to launch in 8 weeks</p>
+		<p class="font-serif color-muted">“We need this yesterday.”</p>
+	</h2>
+
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+My first project with Medify was to develop the “BMAT Grader”. This would allow users to take past papers of the BioMedical Admissions Test (BMAT), mark them, and get explanations for any questions they got wrong.
+
+We had a total of _8 weeks_ to launch this—I joined in early September, and the actual BMAT took place on November 2nd, so there wasn’t much point in releasing after that. 
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+	{% include image.html style="right" url="/assets/images/work/medify/bmat/final.png" %}
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl">
+<div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
+This project had 3 parts to it:
+
+1. The UX of the app itself, including wireframes and user flows
+2. The beginnings of a [new visual style and branding](#brand)
+3. A from-scratch [custom CSS framework](#css) (their existing CSS was a complete mess—their words, not mine).
+
+Although each part was needed to launch the finished product, they were able to be separated enough to be worked on individually and concurrently, instead of a waterfall approach. This made it possible to get all of this done in the first 4 weeks, leaving the second 4 weeks for development, and successfully meeting the deadline.
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6">
+	{% include carousel.html style="full" image1="/assets/images/work/medify/bmat/wireframe1.png" image2="/assets/images/work/medify/bmat/wireframe2.png" image3="/assets/images/work/medify/bmat/wireframe3.png" image4="/assets/images/work/medify/bmat/wireframe4.png" image5="/assets/images/work/medify/bmat/wireframe5.png" %}
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
+We started with wireframes and went back and forth a lot to minimise the number of features needed for an MVP. Although most of the work was remote, I was able to meet the CEO Sajeev in London a couple of times—when possible, I _always_ prefer to do collaborative work in-person.
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6" markdown="1">
+Since I was designing the visual style and writing the CSS framework simultaneously, as soon as the wireframes were done, we quickly converted them into real code in a couple of hours.
+
+With 5 days to go to our hard deadline, we successfully launched the <a href="https://www.medify.co.uk/bmat">BMAT Grader</a>.
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+	{% include image.html style="full" url="/assets/images/work/medify/bmat/wireframe-to-code.gif" description="" %}
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="brand">
+	<h2 class="m-bottom--lg">
+		<p>Crafting a coherent product suite and brand</p>
+		<p class="font-serif color-muted">Bringing everything together</p>
+	</h2>
+	
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+During the BMAT Grader project we had started on a brand refresh, but didn’t have time for a complete overhaul. After we launched, that became our new focus.
+
+Medify, along with everyone else in the healthcare education sector, used a dull blue colour and the font Lato as the main trademarks of their brand.
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+	{% include carousel.html style="full" image1="/assets/images/work/medify/brand/competitor-kaplan.png" image2="/assets/images/work/medify/brand/competitor-tmp.png" image3="/assets/images/work/medify/brand/competitor-6med.png" image4="/assets/images/work/medify/brand/medify-before.png" description="Spot the difference (hint: there is none)." %}
+</div>
+</div>
+	
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
+In distinguishing Medify from our competitors, we wanted to highlight a few traits that defined us:
+	
+- High-quality content, despite the cheap price tag
+- Useful feedback via data visualisations
+- A focus on user-friendly and intuitive design
+- Bold, future-facing vision for the digital world
+
+However, we were already serving 1 in 3 UK students, so we didn’t want to throw away the existing brand completely. We launched the new branding in 2017.
+
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl">
+<div class="grid-item when-lg-6">
+{% include carousel.html style="left" image1="/assets/images/work/medify/brand/medify-before.png" image2="/assets/images/work/medify/brand/medify-after.png" image3="/assets/images/work/medify/brand/medify-2018.png" image1_description="2016, before I joined." image2_description="2017, after the brand overhaul." image3_description="Coming soon in 2018, a refresh to better demonstrate the breadth of new products." %}
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="css">
+	<h2 class="m-bottom--lg">
+		<p>Coding a custom BEM-based CSS framework</p>
+		<p class="font-serif color-muted">I can’t believe it’s not Bootstrap!</p>
+	</h2>
+<div class="grid">
+<div class="grid-item when-lg-6 when-lg-push-6">
+{% include image.html style="full" url="/assets/images/work/medify/css/ui-kit.png" %}
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0 when-lg-pull-6" markdown="1">
+The original Medify website used a modified Bootstrap for its CSS framework—a typical situation for a startup. However, Bootstrap has a couple of problems that make it unsuitable for startups beyond the early stages:
+
+1. To veer away from Bootstrap’s visual design, you still need to include all the CSS for their design choices, and then additional CSS to override them. This leads to weight CSS and longer load times.
+2. Bootstrap was first released in 2011, and has retained pretty much the same syntax since its release. CSS syntax has improved significantly since then, particularly with the idea of [Block-Element-Modifier](http://getbem.com/) (BEM) syntax. 
+
+So in almost every situation I find myself in now, I find writing a custom CSS framework from scratch not only results in better CSS, but is actually faster to develop than using a framework like Bootstrap.
+
+So that’s what we did for Medify. 
+</div>
+</div>
+
+<div class="grid m-top--sm">
+<div class="grid-item when-lg-6">
+	{% include video.html style="left" url="/assets/images/work/medify/css/documentation.mp4" description="I wrote comprehensive documentation (ala Bootstrap) so that the devs could implement new features using the framework without needing my help." %}
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="dataviz">
+	<h2 class="m-bottom--lg">
+		<p>Designing insightful data visualisations</p>
+		<p class="font-serif color-muted">Not just a pretty datum</p>
+	</h2>
+
+<div class="grid">
+	<div class="grid-item when-lg-6">
+		{% include video.html style="left" url="/assets/images/work/medify/data-viz/data-viz.mp4" description="We took a great deal of time and care preparing data visualisations that would be helpful and insightful, not just pretty. Repeated iterations of user testing helped us get closer to our goals. This video demonstrates some of the small UI interactions." %}
+	</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
+We then began on the complex task of creating the data visualization “widgets,” each with a particular insight as a goal. <span class="between-lg-xl-hidden">We began with sketching, wireframing, and prototyping, and then I built the widget templates using HTML, CSS, and JavaScript. The templates were then handed over to the development team to hook into the database.</span>
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6 when-lg-push-3" markdown="1">
+I actually took the UKCAT last year, and while studying for it I plugged my practice data into the widgets to get feedback even though they weren’t fully developed yet. This dog-fooding let us identify which widgets were most useful, and make some important changes.
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6" markdown="1">
+The most impressive widget takes the score from a mock paper, and compares it to a matrix of other users scores in that same mock vs. the scores in the real test. The widget then spits out a remarkably accurate prediction of what the user will score in the real test, which gives valuable information about what universities may be available to them (or how much harder they need to practise).
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+	{% include image.html style="left" url="/assets/images/work/medify/data-viz/prediction.png" %}
+</div>
+</div>
+
+</section>
