@@ -26,16 +26,16 @@ client:                "Medify"
 title:                 "Medify — Levelling the playing field"
 description:           "Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company."
 hero_title:            "Lowering the barrier to entry of medicine"
-hero_image:            /assets/images/work/medify/hero.jpg
+hero_image:            /assets/images/work/medify-new/hero.jpg
 
 subhero_title:         "Serving 1 in 3 UK medical students"
 subhero_subtitle:      "Medify levels the playing field"
 subhero_description:   "<p>Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company.</p><p>They initially approached me to design and develop a new product, the <a href='#launch'>BMAT Grader</a>. We launched that after 8 weeks. Then we rebranded, unified their entire product suite, and designed and launched a few more products.</p><p>Their sales have more than doubled, and the competition is scrambling to keep up. Which just raises the bar for everyone.</p>"
 subhero_button_link:   https://www.medify.co.uk/
 
-thumbnail:             /assets/images/work/medify/thumbnail.jpg
+thumbnail:             /assets/images/work/medify-new/thumbnail.jpg
 thumbnail_ratio:       53.125
-image:                 /assets/images/work/medify/medify-user.gif
+image:                 /assets/images/work/medify-new/medify-user.gif
 
 relatedWork1:          "Aeroster"
 relatedWork2:          "SurgeMaker"
@@ -54,7 +54,7 @@ My first project with Medify was to develop the “BMAT Grader”. This would al
 We had a total of _8 weeks_ to launch this—I joined in early September, and the actual BMAT took place on November 2nd, so there wasn’t much point in releasing after that. 
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-	{% include image.html style="right" url="/assets/images/work/medify/bmat/final.png" %}
+	{% include image.html style="right" url="/assets/images/work/medify-new/bmat/final.png" %}
 </div>
 </div>
 
@@ -72,7 +72,7 @@ Although each part was needed to launch the finished product, they were able to 
 
 <div class="grid m-top--sm when-lg-m-top--xl align-center">
 <div class="grid-item when-lg-6">
-	{% include carousel.html style="full" image1="/assets/images/work/medify/bmat/wireframe1.png" image2="/assets/images/work/medify/bmat/wireframe2.png" image3="/assets/images/work/medify/bmat/wireframe3.png" image4="/assets/images/work/medify/bmat/wireframe4.png" image5="/assets/images/work/medify/bmat/wireframe5.png" %}
+	{% include carousel.html style="full" image1="/assets/images/work/medify-new/bmat/wireframe1.png" image2="/assets/images/work/medify-new/bmat/wireframe2.png" image3="/assets/images/work/medify-new/bmat/wireframe3.png" image4="/assets/images/work/medify-new/bmat/wireframe4.png" image5="/assets/images/work/medify-new/bmat/wireframe5.png" %}
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
 We started with wireframes and went back and forth a lot to minimise the number of features needed for an MVP. Although most of the work was remote, I was able to meet the CEO Sajeev in London a couple of times—when possible, I _always_ prefer to do collaborative work in-person.
@@ -86,7 +86,7 @@ Since I was designing the visual style and writing the CSS framework simultaneou
 With 5 days to go to our hard deadline, we successfully launched the <a href="https://www.medify.co.uk/bmat">BMAT Grader</a>.
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-	{% include image.html style="full" url="/assets/images/work/medify/bmat/wireframe-to-code.gif" description="" %}
+	{% include image.html style="full" url="/assets/images/work/medify-new/bmat/wireframe-to-code.gif" description="" %}
 </div>
 </div>
 </section>
@@ -106,7 +106,7 @@ During the BMAT Grader project we had started on a brand refresh, but didn’t h
 Medify, along with everyone else in the healthcare education sector, used a dull blue colour and the font Lato as the main trademarks of their brand.
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-	{% include carousel.html style="full" image1="/assets/images/work/medify/brand/competitor-kaplan.png" image2="/assets/images/work/medify/brand/competitor-tmp.png" image3="/assets/images/work/medify/brand/competitor-6med.png" image4="/assets/images/work/medify/brand/medify-before.png" description="Spot the difference (hint: there is none)." %}
+	{% include carousel.html style="full" image1="/assets/images/work/medify-new/brand/competitor-kaplan.png" image2="/assets/images/work/medify-new/brand/competitor-tmp.png" image3="/assets/images/work/medify-new/brand/competitor-6med.png" image4="/assets/images/work/medify-new/brand/medify-before.png" description="Spot the difference (hint: there is none)." %}
 </div>
 </div>
 	
@@ -126,7 +126,7 @@ However, we were already serving 1 in 3 UK students, so we didn’t want to thro
 
 <div class="grid m-top--sm when-lg-m-top--xl">
 <div class="grid-item when-lg-6">
-{% include carousel.html style="left" image1="/assets/images/work/medify/brand/medify-before.png" image2="/assets/images/work/medify/brand/medify-after.png" image3="/assets/images/work/medify/brand/medify-2018.png" image1_description="2016, before I joined." image2_description="2017, after the brand overhaul." image3_description="Coming soon in 2018, a refresh to better demonstrate the breadth of new products." %}
+{% include carousel.html style="left" image1="/assets/images/work/medify-new/brand/medify-before.png" image2="/assets/images/work/medify-new/brand/medify-after.png" image3="/assets/images/work/medify-new/brand/medify-2018.png" image1_description="2016, before I joined." image2_description="2017, after the brand overhaul." image3_description="Coming soon in 2018, a refresh to better demonstrate the breadth of new products." %}
 </div>
 </div>
 </section>
@@ -140,7 +140,7 @@ However, we were already serving 1 in 3 UK students, so we didn’t want to thro
 	</h2>
 <div class="grid">
 <div class="grid-item when-lg-6 when-lg-push-6">
-{% include image.html style="full" url="/assets/images/work/medify/css/ui-kit.png" %}
+{% include image.html style="full" url="/assets/images/work/medify-new/css/ui-kit.png" %}
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0 when-lg-pull-6" markdown="1">
 The original Medify website used a modified Bootstrap for its CSS framework—a typical situation for a startup. However, Bootstrap has a couple of problems that make it unsuitable for startups beyond the early stages:
@@ -156,7 +156,7 @@ So that’s what we did for Medify.
 
 <div class="grid m-top--sm">
 <div class="grid-item when-lg-6">
-	{% include video.html style="left" url="/assets/images/work/medify/css/documentation.mp4" description="I wrote comprehensive documentation (ala Bootstrap) so that the devs could implement new features using the framework without needing my help." %}
+	{% include video.html style="left" url="/assets/images/work/medify-new/css/documentation.mp4" description="I wrote comprehensive documentation (ala Bootstrap) so that the devs could implement new features using the framework without needing my help." %}
 </div>
 </div>
 </section>
@@ -171,7 +171,7 @@ So that’s what we did for Medify.
 
 <div class="grid">
 	<div class="grid-item when-lg-6">
-		{% include video.html style="left" url="/assets/images/work/medify/data-viz/data-viz.mp4" description="We took a great deal of time and care preparing data visualisations that would be helpful and insightful, not just pretty. Repeated iterations of user testing helped us get closer to our goals. This video demonstrates some of the small UI interactions." %}
+		{% include video.html style="left" url="/assets/images/work/medify-new/data-viz/data-viz.mp4" description="We took a great deal of time and care preparing data visualisations that would be helpful and insightful, not just pretty. Repeated iterations of user testing helped us get closer to our goals. This video demonstrates some of the small UI interactions." %}
 	</div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
 We then began on the complex task of creating the data visualization “widgets,” each with a particular insight as a goal. <span class="between-lg-xl-hidden">We began with sketching, wireframing, and prototyping, and then I built the widget templates using HTML, CSS, and JavaScript. The templates were then handed over to the development team to hook into the database.</span>
@@ -189,7 +189,7 @@ I actually took the UKCAT last year, and while studying for it I plugged my prac
 The most impressive widget takes the score from a mock paper, and compares it to a matrix of other users scores in that same mock vs. the scores in the real test. The widget then spits out a remarkably accurate prediction of what the user will score in the real test, which gives valuable information about what universities may be available to them (or how much harder they need to practise).
 </div>
 <div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-	{% include image.html style="left" url="/assets/images/work/medify/data-viz/prediction.png" %}
+	{% include image.html style="left" url="/assets/images/work/medify-new/data-viz/prediction.png" %}
 </div>
 </div>
 
