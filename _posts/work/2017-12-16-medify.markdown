@@ -80,13 +80,13 @@ We started with wireframes and went back and forth a lot to minimise the number 
 </div>
 
 <div class="grid m-top--sm when-lg-m-top--xl align-center">
-<div class="grid-item when-lg-6" markdown="1">
+<div class="grid-item when-lg-6 when-lg-push-6">
+	{% include image.html style="full" url="/assets/images/work/medify-new/bmat/wireframe-to-code.gif" description="" %}
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0 when-lg-pull-6" markdown="1">
 Since I was designing the visual style and writing the CSS framework simultaneously, as soon as the wireframes were done, we quickly converted them into real code in a couple of hours.
 
 With 5 days to go to our hard deadline, we successfully launched the <a href="https://www.medify.co.uk/bmat">BMAT Grader</a>.
-</div>
-<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
-	{% include image.html style="full" url="/assets/images/work/medify-new/bmat/wireframe-to-code.gif" description="" %}
 </div>
 </div>
 </section>
