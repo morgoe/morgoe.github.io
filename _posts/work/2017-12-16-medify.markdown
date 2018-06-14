@@ -126,7 +126,7 @@ However, we were already serving 1 in 3 UK students, so we didn’t want to thro
 
 <div class="grid m-top--sm when-lg-m-top--xl">
 <div class="grid-item when-lg-6">
-{% include carousel.html style="left" image1="/assets/images/work/medify-new/brand/medify-before.png" image2="/assets/images/work/medify-new/brand/medify-after.png" image3="/assets/images/work/medify-new/brand/medify-2018.png" image1_description="2016, before I joined." image2_description="2017, after the brand overhaul." image3_description="Coming soon in 2018, a refresh to better demonstrate the breadth of new products." %}
+{% include carousel.html style="left" image1="/assets/images/work/medify-new/brand/medify-before.png" image2="/assets/images/work/medify-new/brand/medify-after.png" image1_description="2016, before I joined." image2_description="2017, after the brand overhaul." %}
 </div>
 </div>
 </section>
@@ -156,7 +156,7 @@ So that’s what we did for Medify.
 
 <div class="grid m-top--sm">
 <div class="grid-item when-lg-6">
-	{% include video.html style="left" url="/assets/images/work/medify-new/css/documentation.mp4" description="I wrote comprehensive documentation (ala Bootstrap) so that the devs could implement new features using the framework without needing my help." %}
+	{% include image.html style="left" url="/assets/images/work/medify-new/css/documentation.png" description="I wrote comprehensive documentation (ala Bootstrap) so that the devs could implement new features using the framework without needing my help." %}
 </div>
 </div>
 </section>
