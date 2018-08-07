@@ -1,6 +1,59 @@
 ---
-layout: redirected
-sitemap: false
+layout: page
+siteNav: contact
+title:  "Contact Me"
+categories: jekyll update
 permalink: /contact/
-redirect_to: /?contact
 ---
+
+<p class="text-lg">
+	If you’d like to chat, I’m always available for a coffee in the city, or Drummoyne, or even over Skype (coffee not included).
+</p>
+<p class="text-lg">
+	Please get in touch.
+</p>
+
+<div class="grid">
+	<div class="grid-item when-lg-6 m-top--lg">
+		<form class="bg-black color-bg whitespace--sm container container--sm text-center" id="contactForm">
+			<h3 class="m-bottom--lg">Right here</h3>
+			<div class="input-wrapper input-wrapper--inverted">
+				<label class="input-label" for="contactForm-name">Name</label>
+				<input id="contactForm-name" type="text" name="name" class="input" placeholder="Johnny Placeholder">
+				<div class="input-interaction"></div>
+			</div>
+			<div class="input-wrapper input-wrapper--inverted">
+				<label class="input-label" for="contactForm-email">Email Address</label>
+				<input id="contactForm-email" type="email" name="email" class="input" placeholder="email@domain.com">
+				<div class="input-interaction"></div>
+			</div>
+			<div class="input-wrapper input-wrapper--inverted">
+				<label class="input-label" for="contactForm-email">Message</label>
+				<textarea id="contactForm-message" name="message" class="input" placeholder="Let's make something awesome"></textarea>
+				<div class="input-interaction"></div>
+			</div>
+
+			<button id="contactForm-submit" class="button button--inverted">Submit</button>
+		</form>
+		<div id="contactForm-feedback" class="color-white whitespace--sm container container--sm text-center now-hidden">
+			Thanks for contacting me!<br> I'll be in touch within a couple of days.
+		</div>
+	</div>
+	<div class="grid-item when-lg-6 m-top--lg">
+		<form class="border-light whitespace--sm container container--sm text-center">
+			<h3 class="m-bottom--lg">Elsewhere</h3>
+			<div class="input-wrapper">
+				<label class="input-label">Email</label>
+				<a class="button" href="mailto:hello@morgancarter.com.au">hello@morgancarter.com.au</a>
+			</div>
+			<div class="input-wrapper">
+				<label class="input-label">Phone</label>
+				<a class="button" href="tel:+61426395232">+61 426 395 232</a>
+			</div>
+			<div class="input-wrapper">
+				<label class="input-label">Dribbbble</label>
+				<a class="button" href="https://dribbble.com/morgoe">morgoe</a>
+			</div>
+		</form>
+	</div>
+</div>

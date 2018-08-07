@@ -3,44 +3,59 @@
 ---
 @charset "utf-8";
 
-@import '0_bourbon/bourbon';
-
 // Base Settings
-@import 'base/variables';
-@import 'base/reset';
-@import 'base/grid';
-@import 'base/mixins';
-@import 'base/typography';
+@import '1_core/mixins';
+@import '1_core/normalize';
+@import '1_core/variables';
+
+@import '1_core/fonts';
+
+@import '1_core/spacing';
+@import '1_core/containers';
+
+@import '1_core/grid';
+@import '1_core/flexGrid';
+@import '1_core/icons';
+@import '1_core/typography';
 
 // Components
-@import 'components/layout';
-@import 'components/defaults';
-@import 'components/buttons';
-@import 'components/code';
+@import '2_components/defaults';
+@import '2_components/figure';
+@import '2_components/image';
+@import '2_components/video';
+@import '2_components/carousel';
+@import '2_components/buttons';
+@import '2_components/inputs';
+@import '2_components/media';
+@import '2_components/instantClick';
 
-// Plugins
-@import 'plugins/instantClick';
+// // Plugins
+// @import 'plugins/instantClick';
 
-// Modules
-@import 'modules/about';
-@import 'modules/blogPost';
-@import 'modules/form';
-@import 'modules/heroText';
-@import 'modules/home';
-@import 'modules/input';
-@import 'modules/latestWork';
-@import 'modules/modal';
-@import 'modules/services';
-@import 'modules/siteNavigation';
-@import 'modules/social';
-@import 'modules/work';
-@import 'modules/animation';
+// // Modules
+@import '3_modules/Page';
+@import '3_modules/Navbar';
+@import '3_modules/Footer';
+@import '3_modules/Essay';
+@import '3_modules/Post';
+// @import 'modules/form';
+// @import 'modules/heroText';
+// @import 'modules/home';
+// @import 'modules/input';
+// @import 'modules/latestWork';
+// @import 'modules/modal';
+// @import 'modules/services';
+// @import 'modules/siteNavigation';
+// @import 'modules/social';
+// @import 'modules/work';
+// @import 'modules/animation';
 
-// Utilities
-@import 'utilities/color';
-@import 'utilities/display';
-@import 'utilities/layout';
-@import 'utilities/typography';
+// // Utilities
+@import '4_utilities/color';
+@import '4_utilities/font';
+@import '4_utilities/display';
+@import '4_utilities/layout';
+@import '4_utilities/text';
 
 
 

@@ -4,12 +4,12 @@
 	{% include head.html %}
 
 	<body {% if page.body-id %}id="{{ page.body-id }}"{% endif %}>
-	
-		{% include contact.html %}
 
-		{% include header.html %}
+		{% include header.html index=page.index index_url=page.index_url %}
 		
 		{{ content }}	
+
+		{% include footer.html %}
 
 		{% include foot.html %}
 

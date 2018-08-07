@@ -1,0 +1,68 @@
+.Page {
+	min-height: calc(100vh - 224px);
+}
+.Page-hero {
+	margin-top: $spacing-lg;
+	margin-bottom: $spacing-lg;
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.Page-subhero {
+	h4 {
+		font-size: 32px;
+	}
+}
+.Page-jumpLinks {
+	font-size: $fontSize-md;
+	font-family: $font-system;
+	font-weight: 500;
+	li + li {
+		margin-top: $spacing-md;
+	}
+	.Page-jumpLinks-title {
+		margin-left: 40px;
+	}
+	a {
+		@include flexbox();
+		@include align-items(center);
+		padding: 0;
+		margin: 0;
+		span {
+			padding: 0 4px;
+		}
+		&:hover {
+			background: none;
+			span {
+				background: rgba($blue, 0.1);
+			}
+		}
+	}
+	.icon {
+		margin-right: 0.75rem;
+	}
+}
+.Page-section {
+	margin-top: 4rem;
+	padding-top: 4rem;
+	border-top: 1px solid rgba($text-dark, 0.1);
+}
+
+@media (min-width: $media-md) {
+	.Page-hero {
+		margin-top: $spacing-xl;
+		margin-bottom: $spacing-xl;
+	}
+	.Page-section {
+		margin-top: 6rem;
+		padding-top: 6rem;
+	}
+}
+
+@media (min-width: $media-lg) {
+	.Page-section {
+		margin-top: 8rem;
+		padding-top: 8rem;
+	}
+}

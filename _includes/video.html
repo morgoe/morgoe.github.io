@@ -1,0 +1,17 @@
+<figure class="video-figure {% if include.style %}figure--{{include.style}}{% endif %}">
+	<div class="figure-content">
+		<video loop muted playsinline {% if include.style %}width="{{include.width}}"{% endif %} {% if include.style %}height="{{include.height}}"{% endif %} >
+			<source data-src="{{ include.url }}" type="video/mp4">
+		</video>
+		<div class="video-controls">
+			<div class="video-scrubber">
+				<div class="video-scrubbed"></div>
+			</div>
+		</div>
+	</div>
+	{% if include.description %}
+		<figcaption>
+			<p>{{ include.description }}</p>
+		</figcaption>
+	{% endif %}
+</figure>

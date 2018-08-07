@@ -1,0 +1,49 @@
+.Essay {
+	li {
+		margin-top: $spacing-sm;
+		margin-left: $spacing-md;
+		max-width: $container-sm;
+	}
+	ul {
+		li {
+			&:before {
+				content: "";
+				display: inline-block;
+				background: url(/assets/icon/arrow-forward.svg);
+				width: 24px;
+				height: 24px;
+				margin-left: -24px;
+				vertical-align: top;
+			}
+		}
+	}
+	ol {
+		list-style: decimal;
+	}
+	ul.carousel-list,
+	ul.Page-jumpLinks {
+		li {
+			margin-left: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+.Essay--blog {
+	h2 {
+		font-size: 2rem;
+	}
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-top: 1.5em;
+	}
+}
+
+@media (min-width: $media-lg) {
+	.Essay ul li:before {
+		background-size: 27px;
+	}
+}

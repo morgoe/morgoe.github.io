@@ -1,0 +1,7 @@
+.media {
+	header {
+		@include flexbox();
+		@include align-items(center);
+		line-height: $font-lineHeight-tight;
+	}
+}
