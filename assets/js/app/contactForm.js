@@ -14,7 +14,7 @@ $(document).ready(function() {
 		sendButton.text("Sending...");
 
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', '//formspree.io/hello@morgancarter.com.au', true);
+		xhr.open('POST', 'https://formspree.io/xjvkejoy', true);
 		xhr.setRequestHeader("Accept", "application/json")
 		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 
@@ -29,7 +29,6 @@ $(document).ready(function() {
 				formFeedback.removeClass('now-hidden').html('Thanks for contacting me!<br> I\'ll be in touch within a couple of days.').addClass('bg-green');
 			}
 			else {
-				contactForm.addClass('now-hidden');
 				formFeedback.removeClass('now-hidden').text('Something went wrong. Please double check your details.').addClass('bg-red');
 
 				setTimeout(function() {
