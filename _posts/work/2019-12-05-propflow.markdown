@@ -1,0 +1,199 @@
+---
+layout:                work
+date:                  2019-12-05
+categories:    
+- work
+siteNav: work
+featured: true
+
+hero_css: "background: #434e6a; color: white;"
+
+jumpLinks:
+  - url: grok
+    text: "Grokking a new industry"
+    icon: grok
+  - url: react
+    text: "Learning React"
+    icon: coding
+  - url: mvp
+    text: "Building MVP"
+    icon: build
+  - url: ship
+    text: "Ship it!"
+    icon: rocket
+
+client:                "Propflow"
+title:                 "Propflow — Managing a thousand leases at once"
+description:           "Propflow drags Excel kicking and screaming into 2019. Manage thousands of properties at your fingertips."
+hero_title:            "A thousand properties at your fingertips"
+hero_image:            /assets/images/work/propflow/hero.png
+
+subhero_title:         "Managing a thousand leases at once"
+subhero_subtitle:      "Moving from Excel to 2019"
+subhero_description:   "<p>Sports Direct International has around a thousand properties world-wide across its various subsidiaries, and manages them primarily in Excel. Everything from choosing where to open a new store, selecting a property, negotiating legals, and managing a lease over 10+ years, involves sending Excel files back-and-forth.</p><p>An interim solution was built with <a href='http://pipefy.com'>Pipefy</a> and <a href='http://airtable.com'>Airtable</a>, but it was hacky and only covered half the workflow. It was time to drag the property management sector into 2019. Thankfully, they came willingly (even helpfully!), no kicking nor screaming needed.</p>"
+
+thumbnail:             /assets/images/work/propflow/hero.png
+thumbnail_ratio:       53.125
+
+relatedWork1:          "Aeroster"
+relatedWork2:          "Medify"
+---
+
+<section class="Page-section" id="grok">
+	<h2 class="m-bottom--lg">
+		<p>Grokking a new industry</p>
+		<p class="font-serif color-muted">Learning 10 different jobs in a week</p>
+	</h2>
+
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+One of my favourite and simultaneously least-favourite parts of my work is starting a new project in a new industry.
+
+First you learn the language:
+
+- Leasehold vs Freehold,
+- EBITDA,
+- Capital Contribution,
+- Fixed vs Rolling vs Recurring breaks.
+
+Next you learn what each person does, and how they do it. If only this were as simple as learning which title correlates with what work, but often two people in the same role will have completely different day-to-day experiences. I had 5 days to learn what 10 different people learnt in 10 years each—it was exhausting, but challenging in a way that I love.
+
+I flew to London and spent the first week wrestling with understanding this foreign industry. We whiteboarded, sticky-noted, wireframed and interviewed. We emerged with a decent understanding of how all of these different roles interacted, the common elements we could lean into, and had a clear path forward.
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+  <div class="container container--sm p-left--xs p-right--xs when-sm-p-left--0 when-sm-p-right--0">
+    <div class="grid js-masonry">
+      <div class="grid-item when-xs-6 p--xs when-sm-p--sm">
+        {% include image.html url="/assets/images/work/propflow/grok/whiteboard1.jpg" width="640" height="75" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-sm-p--sm">
+        {% include image.html url="/assets/images/work/propflow/grok/whiteboard4.jpg" width="640" height="133" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-sm-p--sm">
+        {% include image.html url="/assets/images/work/propflow/grok/whiteboard5.jpg" width="640" height="75" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-sm-p--sm">
+        {% include image.html url="/assets/images/work/propflow/grok/whiteboard6.jpg" width="640" height="75" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-sm-p--sm">
+        {% include image.html url="/assets/images/work/propflow/grok/whiteboard7.jpg" width="640" height="75" %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="grid m-top--sm when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6">
+	{% include carousel.html style="full" image1="/assets/images/work/propflow/grok/wireframe1.png" image2="/assets/images/work/propflow/grok/wireframe2.png" %}
+</div>
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0" markdown="1">
+> Almost none of the decisions we made in this week survived MVP intact, but that doesn't in the slightest mean the week was useless. Rather, the decisions we were making here were a way to link everything together enough to start doing work.
+</div>
+</div>
+
+</section>
+
+
+
+<section class="Page-section" id="react">
+	<h2 class="m-bottom--lg">
+		<p>Learning React</p>
+		<p class="font-serif color-muted">And falling in love</p>
+	</h2>
+	
+<div class="grid m-top--sm when-lg-m-top--xl">
+<div class="grid-item when-lg-6" markdown="1">
+I’m a designer who codes. I’ve worked with various Javascript frameworks over the years, but this was my first experience in React. And it was love at first sight. Suddenly I was no longer wrestling with the design principles of atomic design against the global nature of CSS, or the local/inline nature of HTML.
+
+Because I found React so intuitive, we began coding immediately—during the first week. One of the benefits of being a-designer-who-codes is that I can operate on 3 levels of a project at once:
+
+- **UX**: wireframing, user flows, interviews
+- **UI**: user interfaces, layouts, visual design
+- **Dev**: design systems, ui templates
+
+Developing a button with a range of props is somewhat isolated from where that button lives and what it looks like, which is again somewhat isolated from what that button *does*.
+</div>
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+  {% include image.html url="/assets/images/work/propflow/react/code.png" width="640" %}
+</div>
+</div>
+  
+<div class="grid when-lg-m-top--xl align-center">
+<div class="grid-item when-lg-6 when-lg-push-6 m-top--lg when-lg-m-top--0" markdown="1">
+We wanted to get moving quickly, so we decided to fork Shopify’s [Polaris](https://polaris.shopify.com/) design system to use as a base. It wasn’t intended to be customised in this way, but it’s an incredibly well-thought-out and well-developed open-source system with a ton of generic components that we could hijack and repurpose.
+
+> However, in retrospect, I found the non-generic components of Polaris began to steer the direction of the design. They were so good that they became the “obvious solution” that then removed the need to explore alternate solutions. In later iterations we revisited these instances and designed components specialised to our needs.
+</div>
+<div class="grid-item when-lg-6 when-lg-pull-6 m-top--lg when-lg-m-top--0">
+  {% include image.html url="/assets/images/work/propflow/react/polaris.gif" style="full" description="Stock Polaris vs. Combine Polaris" width="640" %}
+</div>
+</div>
+
+</section>
+
+
+
+<section class="Page-section" id="mvp">
+	<h2 class="m-bottom--lg">
+		<p>Building MVP</p>
+		<p class="font-serif color-muted">Designing and developing</p>
+	</h2>
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+Over the next 9 weeks (I was working part-time, so actually 4.5wks of work) we:
+
+- narrowed down the features we needed for MVP
+- developed the workflow users would step through
+- customised Polaris to suit our needs, and distinguish ourselves visually
+- settled on the information architecture
+- built out all of the designs in React (as front-end templates only)
+- used the React templates to user test in-the-browser (and on-the-phone)
+
+After that, I moved on to another project, while the devs began work. The design iterated significantly during this time, even though the majority of my attention was elsewhere, because everyone was involved and contributing to the designs. I *always* encourage this. Often my work is asking the right question to prompt someone else's right answer.
+
+> I love designing in the browser because it's ultimately what the user will use. The user doesn't care about the flashy designs that are posted on Dribbble, they care about the end product, and often these two things diverge dramatically. By designing in the browser, it's more like handcraft—you're building the thing they'll get, not just the blueprint.
+>
+> Plus, it's just faster than any prototyping tool out there.
+</div>
+  <div class="grid-item when-lg-6 p-left--xs when-lg-p-left--sm p-right--xs when-lg-p-right--sm">
+    <div class="grid m--0 m-top--xs">
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/filters.png" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/icons.png" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/leases.png" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/media.png" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/popovers.png" %}
+      </div>
+      <div class="grid-item when-xs-6 p--xs when-lg-p--sm">
+        {% include image.html url="/assets/images/work/propflow/mvp/tables.png" %}
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="ship">
+	<h2 class="m-bottom--lg">
+		<p>Ship it!</p>
+		<p class="font-serif color-muted">The sky and beyond</p>
+	</h2>
+
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+  Propflow isn’t done (is design ever? ha-hah). The intention is to launch the MVP internally within SDI, and use SDI as a test-bed to gather feedback and conduct interviews while using the real product. It’s a godsend being able to build a product alongside the actual users who need it.
+
+  Once the MVP is validated internally, Propflow will be released to the wider market.
+</div>
+</div>
+</section>
