@@ -115,7 +115,7 @@ Because I found React so intuitive, we began coding immediately—during the fir
 Developing a button with a range of props is somewhat isolated from where that button lives and what it looks like, which is again somewhat isolated from what that button *does*.
 </div>
 <div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-  {% include image.html url="/assets/images/work/propflow/react/code.png" width="640" %}
+  {% include image.html url="/assets/images/work/propflow/react/code.png" width="640" description="One of the custom components I coded from scratch." style="full" %}
 </div>
 </div>
   
