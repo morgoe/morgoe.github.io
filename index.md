@@ -11,8 +11,8 @@ body-id: home
 				<div class="grid">
 					<div class="grid-item when-sm-6">
 						<picture>
-							<source media="(min-width: 568px)" srcset="/assets/images/home/neue_me.jpg">
-							<img src="/assets/images/home/neue_me_mobile.jpg">
+							<source media="(min-width: 568px)" srcset="/assets/images/home/me_yoga.jpg">
+							<img src="/assets/images/home/me_yoga_mobile.jpg">
 						</picture>
 					</div>
 					<div class="grid-item when-sm-6 Essay Essay--blog" markdown="1">
@@ -21,22 +21,29 @@ body-id: home
 	<br class="below-lg-hidden">
 	Morgan Carter
 </h1>
-<h3 class="h3--alt color-muted m-top--0 m-bottom--lg">Freelance Product Designer-Developer</h3>
-I’m a freelance digital product designer currently living in **Sydney**. I help startups and small businesses turn complex ideas into intuitive, beautiful products.
 
-The products I’ve helped design have been used by **Amazon**, **McDonalds**, **Nike**, **Qantas**, **NVidia**, **Telstra**, **NASA** and more.
+##### Jack of all trades, master of some:
 
-##### I work on:
+- Founder of [Bolstr](http://bolstr.app/)
+- Freelance Product Designer
+- Full-stack Developer
 
-- Digital tools that help people do things better, whatever that may be.
-- Genuinely useful products that help make the world a better place. *“Do some good, have some fun, make some money—in that order.”*
-- Design that gets out of the way, and is effective without stealing the scene.
-- Not another marketing tool. 
+---
 
-##### I work with:
+##### I’m currently:
 
-- Early-stage or small start-ups who want to keep costs low while providing world-class design. Although my hourly rate seems high, the long-term cost is cheaper than hiring a junior designer full-time, and my output is faster and significantly higher quality.
-- Creative, interesting people who want to collaborate with me on a design.
+- Living in Sydney, working remotely world-wide for the past 5 years
+- Helping startups and small businesses turn complex ideas into intuitive, beautiful products
+- Building products that are used by **Amazon**, **McDonalds**, **Nike**, **Qantas**, **NVidia**, **Telstra**, **NASA**, as well as the guy or girl next door.
+
+---
+
+##### You’ll enjoy working with me if:
+
+- You’re comfortable (or want to become comfortable with) making decisions under uncertainty
+- You like exposing ideas to the real world via trial and error
+- You want to ship within the next 3 months
+
 </div>
 				</div>
 			</article>
