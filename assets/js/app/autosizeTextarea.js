@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function initAutosize() {
 	autosize($('#contactForm-message'));
 
 	$(document)
@@ -8,4 +8,4 @@ $(document).ready(function() {
 			else
 				$(this).closest('.input-wrapper').removeClass('now-notEmpty')
 		})
-});
+};

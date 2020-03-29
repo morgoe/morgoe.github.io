@@ -5,6 +5,7 @@ $(document).ready(function() {
 		sendGoogleAnalyticsPageView();
 		initExternalLinks();
 		initCarousels();
+		initAutosize();
 		expandSVGs();
 		imageZoom();
 		initVideoScrubbers();
