@@ -1,0 +1,159 @@
+---
+layout:                work
+date:                  2020-03-15
+categories:    
+- work
+siteNav: work
+featured: true
+
+hero_css: "background: #f7f4f0; color: #262627;"
+
+jumpLinks:
+  - url: backend
+    text: "Back-end Developer?!"
+    icon: server
+  - url: videographer
+    text: "and Videographer, and Marketer…"
+    icon: video
+  - url: launch
+    text: "Launch!"
+    icon: rocket
+  - url: covid
+    text: "Coronavirus"
+    icon: alert
+
+client:                "Bolstr"
+title:                 "Bolstr — Managing a thousand leases at once"
+description:           "Bolstr drags Excel kicking and screaming into 2019. Manage thousands of properties at your fingertips."
+hero_title:            "Solo founding, then launching in 3 months"
+hero_image:            /assets/images/work/bolstr/hero.png
+hero_image_width:      1143
+
+subhero_title:         "Bolstr: a marketplace for movement studios and teachers"
+subhero_subtitle:      "Idea: December. Launch: February."
+subhero_description:   "<p>My girlfriend runs a <a href='http://yogaruka.com/'>movement studio</a> here in Sydney. I teach a couple of classes a week. Over the years I’ve got to meet lots of teachers and studio owners, and noticed that it was surprisingly hard for them to find and qualify each other.</p>
+
+<p>I had the idea to build a marketplace where studios and teachers could each have profiles, message each other within the platform, and organise work. I gave myself 3 months to build a basic functioning app to determine whether I could find Product-Market Fit.</p>
+
+<p>I did, and I did.</p>
+
+<p><a href='https://bolstr.app/'>Launch Bolstr →</a></p>"
+
+thumbnail:             /assets/images/work/bolstr/thumbnail.png
+thumbnail_ratio:       74.219
+
+relatedWork1:          "Aeroster"
+relatedWork2:          "Propflow"
+---
+
+<section class="Page-section" id="backend">
+	<h2 class="m-bottom--lg">
+		<p>Back-end Developer?!</p>
+		<p class="font-serif color-muted">Learn, Code, Ship, Repeat</p>
+	</h2>
+
+<div class="grid">
+<div class="grid-item when-lg-6 m-top--sm when-lg-m-top--0">
+  {% include image.html url="/assets/images/work/bolstr/database.png" description="What do you get when you cross a designer with a database?" %}
+</div>
+<div class="grid-item when-lg-6" markdown="1">
+I’m an experienced designer and front-end development, but my work usually stops when the front-end connects to the back-end. I’d tried learning back-end development years ago, but for many reasons (one being my own impatience), it didn’t take.
+
+I would like to take credit for learning production-ready back-end code within 3 months, but honestly, the platforms have improved so much that a monkey could do it at this point. Bolstr uses:
+
+- [Firebase](https://firebase.google.com/) for database, storage, authentication, and back-end functions
+- [ZEIT Now](https://zeit.co/) for hosting
+- [React](https://reactjs.org/) and [Material-UI](https://material-ui.com/) for UI
+- [Next.js](https://nextjs.org/) for server-side rendering
+- [Sanity](https://www.sanity.io/) as a custom CMS
+- [Sendgrid](https://sendgrid.com/) for transactional emails
+
+Of these, I’d only used React and Material-UI before. The rest I had to learn from scratch. I made a lot of mistakes. I refactored my code a lot. But the end result works! And that’s all I needed.
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="videographer">
+	<h2 class="m-bottom--lg">
+		<p>and Videographer, and Marketer…</p>
+		<p class="font-serif color-muted">and Researcher, and Designer…</p>
+	</h2>
+	
+<div class="grid m-top--sm when-lg-m-top--xl">
+<div class="grid-item when-lg-6" markdown="1">
+I didn’t want to build out the platform, and then launch to an empty crowd. So while building the platform in the background, I started to onboard teachers. They formed the supply, and would create the demand in the marketplace upon launch.
+
+One of the key features of Bolstr is that every profile page has a little introduction video, where the teacher tells you a little bit about themselves in about 60s. This means that instead of having to meet each teacher in person, you can qualify them directly from the website, before contacting them.
+
+I used this time to go around filming teachers. An iPhone XS, a lavalier microphone, and Premiere Pro were enough to get the job done in an almost-professional way. 
+
+One **massive** bonus of this is that before filming each teacher, we had some tea, got to know each other, relaxed their nerves, and I had half an hour to pick their brain:
+
+- How would they use the platform?
+- What other, similar platforms had they used?
+- Who else did they know who might be interested?
+
+This was essentially in-person market-research, for free, while onboarding early-access members onto the platform with high-quality profiles. This was one of the best decisions I made early-on.
+</div>
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+  {% include video.html style="full" url="/assets/images/work/bolstr/teacher-detail.mp4" description="You can check out my <a href='http://bolstr.app/teachers/morgan'>profile</a> on the live website." width="768" height="384" %}
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="launch">
+	<h2 class="m-bottom--lg">
+		<p>Launch!</p>
+		<p class="font-serif color-muted">Iterate, iterate, iterate</p>
+	</h2>
+<div class="grid">
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+  {% include image.html url="/assets/images/work/bolstr/video.png" style="full" description="Me, using a profile video to teach how to record a profile video." %}
+</div>
+<div class="grid-item when-lg-6" markdown="1">
+On February 6th, less than 3 months after starting work, we soft-launched Bolstr to the early-access teachers. The platform was surprisingly rock-solid, and we publicly launched a few days later.
+
+Throughout February, more and more teachers signed up. Most teachers spent around 15 minutes in one sitting carefully crafting their profiles. I was really blown away by this—I didn’t expect so much trust in such a new platform. 
+
+Unfortunately, many teachers simply skipped the profile video step in the onboarding process. I went back and redesigned this step, to allow teachers to record their videos directly on that step, instead of recording elsewhere and uploading.
+
+This *still* didn’t have the impact I was after. I realised that there was no real incentive yet—there were no jobs on the platform. My bet proved right, when just 2 weeks later, as jobs began to be posted on the platform, teachers began to record and upload their own videos to stand out.
+
+By the start of March, exponential growth meant we had over 150 users on the platform. Unfortunately, something else was also growing exponentially…
+</div>
+</div>
+</section>
+
+
+
+<section class="Page-section" id="covid">
+	<h2 class="m-bottom--lg">
+		<p>Coronavirus</p>
+		<p class="font-serif color-muted">If no-one is hiring, no-one needs a hiring platform</p>
+	</h2>
+
+<div class="grid">
+<div class="grid-item when-lg-6" markdown="1">
+COVID-19 hit Australia later than other countries, but the air changed in early March. Hiring began to slow down, and then stop altogether. Students began to drop off from classes, and schedules were reduced. With a heavy heart, I emailed all the users of Bolstr with a solemn but hopeful message:
+
+- This is bad, and will get worse
+- It will pass
+- Bolstr will be here when it does
+
+Thankfully, the running costs of Bolstr are next-to-nothing, so I’ve essentially hit *“pause”*, and will pick up Bolstr once studios re-open and start hiring again. This could be anything from 3-18 months. 
+
+I’m honestly blown away at what was achieved in 3 months, and the support gained from the community. User growth was almost entirely organic, driven by the word-of-mouth of excited teachers.
+
+The one thing that stuck with me throughout the whole process was a [thought from Chuck Palahniuk](https://youtu.be/v8ZCX0eywXw?t=736), who said one of the best ways to test an idea is to tell it to people and see if they start adding their own ideas onto it. A good idea doesn’t leave someone speechless, it makes them excited to contribute or improve. And I found this again and again with Bolstr. Each person I spoke to not only said *“This is a great idea”*, but added their own ideas: *“Oh yeah! And then if you just add X, then you can do all these other things!”*
+
+This not only gave me the encouragement to continue working, but these ideas genuinely improved the platform to the point where I don’t even feel it’s purely “mine” anymore. 
+</div>
+<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
+  {% include image.html url="/assets/images/work/bolstr/covid.png" %}
+</div>
+</div>
+</section>
