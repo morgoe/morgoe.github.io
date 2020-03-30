@@ -6,7 +6,7 @@ categories:
 siteNav: work
 featured: true
 
-hero_css: "background: #f7f4f0; color: #262627;"
+hero_css: "background: #f9f7f3; color: #262627;"
 
 jumpLinks:
   - url: backend
