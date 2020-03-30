@@ -121,10 +121,10 @@ body-id: home
 				<ul class="grid js-masonry">
 					<li class="grid-item when-sm-6 Post-listItem">
 						<h5 class="m-bottom--sm color-muted">Recent Work</h5>
-						<a class="Post-link" href="/work/propflow">
-							<div class="Post-image" style="padding-bottom: 53.125%; background-image: url(/assets/images/work/propflow/hero.png);"></div>
-							<div class="button--mobile when-laptop-hidden">A thousand properties at your fingertips</div>
-							<div class="button below-laptop-hidden m-top--sm">A thousand properties at your fingertips</div>
+						<a class="Post-link" href="/work/bolstr">
+							<div class="Post-image" style="padding-bottom: 74.219%; background-image: url(/assets/images/work/bolstr/thumbnail.png);"></div>
+							<div class="button--mobile when-laptop-hidden">Solo founding, then launching in 3 months</div>
+							<div class="button below-laptop-hidden m-top--sm">Solo founding, then launching in 3 months</div>
 						</a>
 					</li>
 					<li class="grid-item when-sm-6 Post-listItem">
