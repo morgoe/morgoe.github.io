@@ -31,7 +31,7 @@ hero_image_width:      1143
 
 subhero_title:         "Bolstr: a marketplace for movement studios and teachers"
 subhero_subtitle:      "Idea: December. Launch: February."
-subhero_description:   "<p>My girlfriend runs a <a href='http://yogaruka.com/'>movement studio</a> here in Sydney. I teach a couple of classes a week. Over the years I’ve got to meet lots of teachers and studio owners, and noticed that it was surprisingly hard for them to find and qualify each other.</p>
+subhero_description:   "<p>My girlfriend runs a <a href='http://yogaruka.com/'>movement studio</a> here in Sydney. I teach a couple of classes a week. Over the years I’ve got to meet lots of teachers and studio owners, and noticed that it was surprisingly hard for the right studio to find the right teacher.</p>
 
 <p>I had the idea to build a marketplace where studios and teachers could each have profiles, message each other within the platform, and organise work. I gave myself 3 months to build a basic functioning app to determine whether I could find Product-Market Fit.</p>
 
@@ -57,7 +57,7 @@ relatedWork2:          "Propflow"
   {% include image.html url="/assets/images/work/bolstr/database.png" description="What do you get when you cross a designer with a database?" %}
 </div>
 <div class="grid-item when-lg-6" markdown="1">
-I’m an experienced designer and front-end development, but my work usually stops when the front-end connects to the back-end. I’d tried learning back-end development years ago, but for many reasons (one being my own impatience), it didn’t take.
+I’m an experienced designer and front-end developer, but my work usually stops when the front-end connects to the back-end. I’d tried learning back-end development years ago, but for many reasons (one being my own impatience), it didn’t take.
 
 I would like to take credit for learning production-ready back-end code within 3 months, but honestly, the platforms have improved so much that a monkey could do it at this point. Bolstr uses:
 
@@ -115,7 +115,7 @@ This was essentially in-person market-research, for free, while onboarding early
   {% include image.html url="/assets/images/work/bolstr/video.png" style="full" description="Me, using a profile video to teach how to record a profile video." %}
 </div>
 <div class="grid-item when-lg-6" markdown="1">
-On February 6th, less than 3 months after starting work, we soft-launched Bolstr to the early-access teachers. The platform was surprisingly rock-solid, and we publicly launched a few days later.
+On February 6th, less than 3 months after starting work, I soft-launched Bolstr to the early-access teachers. The platform was surprisingly rock-solid, and I publicly launched a few days later.
 
 Throughout February, more and more teachers signed up. Most teachers spent around 15 minutes in one sitting carefully crafting their profiles. I was really blown away by this—I didn’t expect so much trust in such a new platform. 
 
@@ -123,7 +123,7 @@ Unfortunately, many teachers simply skipped the profile video step in the onboar
 
 This *still* didn’t have the impact I was after. I realised that there was no real incentive yet—there were no jobs on the platform. My bet proved right, when just 2 weeks later, as jobs began to be posted on the platform, teachers began to record and upload their own videos to stand out.
 
-By the start of March, exponential growth meant we had over 150 users on the platform. Unfortunately, something else was also growing exponentially…
+By the start of March, exponential growth meant Bolstr already had over 150 users on the platform. Unfortunately, something else was also growing exponentially…
 </div>
 </div>
 </section>
