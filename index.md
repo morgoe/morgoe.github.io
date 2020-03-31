@@ -24,7 +24,7 @@ body-id: home
 
 ##### Jack of all trades, master of some:
 
-- Founder of [Bolstr](http://bolstr.app/) <span class="color-muted">(currently on hold due to COVID-19)</span>
+- Founder of [Bolstr](/work/bolstr) <span class="color-muted">(currently on hold due to COVID-19)</span>
 - Freelance Product Designer
 - Full-stack Developer
 
