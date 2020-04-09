@@ -129,10 +129,10 @@ body-id: home
 					</li>
 					<li class="grid-item when-sm-6 Post-listItem">
 						<h5 class="m-bottom--sm color-muted">Recent Writing</h5>
-						<a class="Post-link" href="/design-solutions/iterative-design-in-action">
-							<div class="Post-image" style="padding-bottom: 56.25%; background-image: url(/assets/images/blog/design-process/thumbnail-lg.gif);"></div>
-							<div class="button--mobile when-laptop-hidden">Iterative Design in Action</div>
-							<div class="button below-laptop-hidden m-top--sm">Iterative Design in Action</div>
+						<a class="Post-link" href="/design-solutions/designing-design-systems">
+							<div class="Post-image" style="padding-bottom: 93.75%; background-image: url(/assets/images/work/surgemaker/ui-kit.png);"></div>
+							<div class="button--mobile when-laptop-hidden">Designing Design Systems</div>
+							<div class="button below-laptop-hidden m-top--sm">Designing Design Systems</div>
 						</a>
 					</li>
 				</ul>
