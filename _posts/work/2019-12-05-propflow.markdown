@@ -189,11 +189,22 @@ After that, I moved on to another project, while the devs began work. The design
 		<p class="font-serif color-muted">The sky and beyond</p>
 	</h2>
 
-<div class="grid">
+<div class="grid m-bottom--lg">
 <div class="grid-item when-lg-6" markdown="1">
   Propflow isn’t done (is design ever? ha-hah). The intention is to launch the MVP internally within SDI, and use SDI as a test-bed to gather feedback and conduct interviews while using the real product. It’s a godsend being able to build a product alongside the actual users who need it.
 
   Once the MVP is validated internally, Propflow will be released to the wider market.
 </div>
 </div>
+
+<figure class="image-figure figure--full">
+  <div class="figure-content">
+    <div class="figure-iframeWrapper" style="padding-bottom: 56.95%">
+      <iframe src="https://marvelapp.com/390d7ce?emb=1&iosapp=false&frameless=false" width="1440" height="820" allowTransparency="true" frameborder="0"></iframe>
+    </div>
+  </div>
+    <figcaption>
+      <p>Feel free to click through the Marvel prototype!</p>
+    </figcaption>
+</figure>
 </section>
