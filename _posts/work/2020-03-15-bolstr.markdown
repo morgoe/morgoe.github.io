@@ -19,7 +19,7 @@ jumpLinks:
     text: "Launch!"
     icon: rocket
   - url: covid
-    text: "Coronavirus"
+    text: "Coronavirus & Antifragility"
     icon: alert
 
 client:                "Bolstr"
@@ -132,28 +132,30 @@ By the start of March, exponential growth meant Bolstr already had over 150 user
 
 <section class="Page-section" id="covid">
 	<h2 class="m-bottom--lg">
-		<p>Coronavirus</p>
-		<p class="font-serif color-muted">If no-one is hiring, no-one needs a hiring platform</p>
+		<p>Coronavirus & Antifragility</p>
+		<p class="font-serif color-muted">A harsh but useful lesson</p>
 	</h2>
 
 <div class="grid">
 <div class="grid-item when-lg-6" markdown="1">
-COVID-19 hit Australia later than other countries, but the air changed in early March. Hiring began to slow down, and then stop altogether. Students began to drop off from classes, and schedules were reduced. With a heavy heart, I emailed all the users of Bolstr with a solemn but hopeful message:
+COVID-19 hit Australia later than other countries, but the air changed in early March. Hiring began to slow down, and then stop altogether. Students began to drop off from classes, and schedules were reduced. 
 
-- This is bad, and will get worse
-- It will pass
-- Bolstr will be here when it does
+The environment had changed and what had seemed like a useful solution to an important problem became irrelevant, overnight. This was a harsh lesson for such an early-stage and seemingly-successful product. 
 
-Thankfully, the running costs of Bolstr are next-to-nothing, so I’ve essentially hit *“pause”*, and will pick up Bolstr once studios re-open and start hiring again. This could be anything from 3-18 months. 
+However, it was also a useful lesson in antifragility. How could we adapt to changing circumstances, using them to our benefit, rather than cracking like glass?
 
-I’m honestly blown away at what was achieved in 3 months, and the support gained from the community. User growth was almost entirely organic, driven by the word-of-mouth of excited teachers.
+The world of health and fitness quickly moved online, and it made sense for Bolstr to follow. Many teachers started to create their own websites on Squarespace and Wix to account for their online offerings. I realised that the teachers had already put so much effort into their profiles, and with just a little more, they could easily turn their profile into a standalone website.
 
-The one thing that stuck with me throughout the whole process was a [thought from Chuck Palahniuk](https://youtu.be/v8ZCX0eywXw?t=736), who said one of the best ways to test an idea is to tell it to people and see if they start adding their own ideas onto it. A good idea doesn’t leave someone speechless, it makes them excited to contribute or improve. And I found this again and again with Bolstr. Each person I spoke to not only said *“This is a great idea”*, but added their own ideas: *“Oh yeah! And then if you just add X, then you can do all these other things!”*
+In just 3 weeks, we had allowed teachers to:
 
-This not only gave me the encouragement to continue working, but these ideas genuinely improved the platform to the point where I don’t even feel it’s purely “mine” anymore. 
+- Create a standalone website
+- Using their own domain name
+- Linking off to their schedules and online bookings software
+
+I'm excited to see where Bolstr goes next. The world has changed, and no-one knows what the future of the health and fitness industry will be, but Bolstr has proven itself both well-positioned and capable to adapt to whatever that future is.
 </div>
 <div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-  {% include image.html url="/assets/images/work/bolstr/covid.png" %}
+  {% include carousel.html style="full" image1='/assets/images/work/bolstr/themes/default.png' image2='/assets/images/work/bolstr/themes/namaste.png' image3='/assets/images/work/bolstr/themes/mindful.png' description="A variety of themes using much the same content as the already-made teacher profiles." %}
 </div>
 </div>
 </section>
