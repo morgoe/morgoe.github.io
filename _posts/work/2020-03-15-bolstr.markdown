@@ -23,8 +23,8 @@ jumpLinks:
     icon: alert
 
 client:                "Bolstr"
-title:                 "Bolstr — Managing a thousand leases at once"
-description:           "Bolstr drags Excel kicking and screaming into 2019. Manage thousands of properties at your fingertips."
+title:                 "Bolstr — a marketplace for movement studios and teachers"
+description:           "Solo founding, then launching in 3 months."
 hero_title:            "Solo founding, then launching in 3 months"
 hero_image:            /assets/images/work/bolstr/hero.png
 hero_image_width:      1143
