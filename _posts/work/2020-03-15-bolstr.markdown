@@ -37,7 +37,7 @@ subhero_description:   "<p>My girlfriend runs a <a href='http://yogaruka.com/'>m
 
 <p>I did, and I did.</p>
 
-<p><a href='https://bolstr.app/'>Launch Bolstr →</a></p>"
+<p><a href='https://bolstr.app/' class='button button--link'>Launch Bolstr →</a></p>"
 
 thumbnail:             /assets/images/work/bolstr/thumbnail.png
 thumbnail_ratio:       74.219

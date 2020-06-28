@@ -1,5 +1,6 @@
 .button {
 	@include inline-flex();
+  @include align-items(center);
 	text-align: center;
 	vertical-align: middle;
 	line-height: normal;
@@ -64,17 +65,35 @@
 	font-family: $font-system;
 }
 .button--inverted {
-	color: $background;
-	&:before,
-	&:after {
-		background: rgba($background, 0.1);
-	}
-	&:hover,
-	&:focus {
-		color: $text-dark;
-		&:before,
-		&:after {
-			background: $background;
-		}
-	}
+  color: $background;
+  &:before,
+  &:after {
+    background: rgba($background, 0.1);
+  }
+  &:hover,
+  &:focus {
+    color: $text-dark;
+    &:before,
+    &:after {
+      background: $background;
+    }
+  }
+}
+.button--link {
+  color: white;
+  &:before,
+  &:after {
+    background: $blue;
+  }
+  &:after {
+    transform: scaleX(1);
+  }
+  &:hover,
+  &:focus {
+    color: white;
+    &:before,
+    &:after {
+      background: $blue;
+    }
+  }
 }
