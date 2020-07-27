@@ -11,8 +11,8 @@ body-id: home
 				<div class="grid">
 					<div class="grid-item when-sm-6">
 						<picture>
-							<source media="(min-width: 568px)" srcset="/assets/images/home/me_yoga.jpg">
-							<img src="/assets/images/home/me_yoga_mobile.jpg">
+							<source media="(min-width: 568px)" srcset="/assets/images/home/me_mf.jpg">
+							<img src="/assets/images/home/me_mf_mobile.jpg">
 						</picture>
 					</div>
 					<div class="grid-item when-sm-6 Essay Essay--blog" markdown="1">
@@ -22,11 +22,11 @@ body-id: home
 	Morgan Carter
 </h1>
 
-##### Jack of all trades, master of some:
+##### Jack of all trades, master of some.
 
+- Lead Product Designer
+- Full-Stack Developer
 - Founder of [Bolstr](/work/bolstr)
-- Freelance Product Designer
-- Full-stack Developer
 
 ---
 
