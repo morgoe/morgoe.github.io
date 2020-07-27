@@ -10,19 +10,20 @@ hero_css: "background: #f9f7f3; color: #262627;"
 
 jumpLinks:
   - url: backend
-    text: "Back-end Developer?!"
+    text: "Back-end Development"
     icon: server
   - url: videographer
-    text: "and Videographer, and Marketer…"
+    text: "Ideation and Iterative Design"
     icon: video
   - url: launch
-    text: "Launch!"
+    text: "Launch"
     icon: rocket
   - url: covid
-    text: "Coronavirus & Antifragility"
+    text: "Coronavirus & Antifragility: Retrospective"
     icon: alert
 
 client:                "Bolstr"
+responsibilities:      "Product Design, Branding, Marketing, Full-Stack Development"
 title:                 "Bolstr — a marketplace for movement studios and teachers"
 description:           "Solo founding, then launching in 3 months."
 hero_title:            "Solo founding, then launching in 3 months"
@@ -31,6 +32,10 @@ hero_image_width:      1143
 
 subhero_title:         "Bolstr: a marketplace for movement studios and teachers"
 subhero_subtitle:      "Idea: December. Launch: February."
+subhero_resume:        "As <strong>solo founder</strong> of Bolstr, I was responsible for the end-to-end pipeline of work: <strong>ideation, customer interviews, UI/UX design, design system creation, marketing, videography, and full-stack development</strong> in React, Next.js, Firebase and Vercel."
+resume_bullets:
+  - Took Bolstr from ideation to launch in 3 months, solo
+  - Userbase growing <strong>25% month-on-month</strong>, despite heavy impact by COVID-19
 subhero_description:   "<p>My girlfriend runs a <a href='http://yogaruka.com/'>movement studio</a> here in Sydney. I teach a couple of classes a week. Over the years I’ve got to meet lots of teachers and studio owners, and noticed that it was surprisingly hard for the right studio to find the right teacher.</p>
 
 <p>I had the idea to build a marketplace where studios and teachers could each have profiles, message each other within the platform, and organise work. I gave myself 3 months to build a basic functioning app to determine whether I could find Product-Market Fit.</p>

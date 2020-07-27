@@ -10,29 +10,29 @@ hero_css: "background: #4f4373; color: white;"
 
 jumpLinks:
   - url: pair
-    text: "Pair designing"
+    text: "Pair Designing & Wireframing"
     icon: pair
   - url: rebrand
-    text: "A sudden re-brand"
+    text: "Branding and Visual Design"
     icon: paint
   - url: mobile
-    text: "Mobile-first, desktop-next"
+    text: "MVP Design & Development"
     icon: iphone
   - url: illustrations
-    text: "Occasional illustrations"
+    text: "Additional Illustrations"
     icon: illustrations
 
 client:                "Aeroster"
+responsibilities:      "Product Design, Branding, Front-End Development"
 title:                 "Aeroster — Smarter rosters for pilots and cabin crew"
 hero_title:            "Fulfilling a childhood ambition and a gap in the market"
 hero_image:            /assets/images/work/aeroster/hero.jpg
 hero_image_width:      1143
 
-hide_subhero:          true
-subhero_title:         "Smarter rosters for pilots and cabin crew"
-subhero_subtitle:      "A 10 week accelerated sprint"
-subhero_description:   "<p>Chris approached me to help design an app he’d been thinking about since he was a kid. His dad was a pilot, and was in and away from home non-stop. The golden rule was the roster, but they were incomprehensible, especially to a 6-year-old.</p><p>Chris had been accepted into the <em><a href='http://avroaccelerator.qantas.com/'>Qantas AVRO Accelerator Program</a></em>. He had 12 weeks in total, and he was already two weeks in. We needed to build him something to present to investors at the end of the program.</p>"
-subhero_button_link:   https://www.aeroster.com/
+<!-- hide_subhero:          true -->
+subhero_resume:        "I led a 3-month <strong>design sprint</strong> for Aeroster during their participation of the Qantas AVRO program accelerated by Slingshot. The sprint took Aeroster from idea through <strong>wireframing, branding, prototype development, and development</strong> in Vue.js"
+resume_bullets:
+  - Led the design of MVP, and <strong>launched in 10 weeks</strong>
 
 thumbnail:             /assets/images/work/aeroster/thumbnail.jpg
 thumbnail_ratio:       56.25
@@ -44,12 +44,7 @@ relatedWork2:          "Deputy"
 <section class="Page-subhero">
 	<div class="grid">
 		<div class="grid-item when-lg-6">
-			<h4>
-				<p>{{ page.subhero_title }}</p>
-				<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
-			</h4>
-
-			<div class="Page-introduction m-top--lg">
+			<div class="Page-introduction">
 				<p>Chris approached me to help design an app he’d been thinking about since he was a kid. His dad was a pilot, and was in and away from home non-stop. The golden rule was the roster, but they were incomprehensible, especially to a 6-year-old.</p>
 
 				<div class="m-top--sm">
@@ -61,22 +56,6 @@ relatedWork2:          "Deputy"
 			{% if page.subhero_button_link %}
 				<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
 			{% endif %}
-		</div>
-		<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-			<ul class="Page-jumpLinks">
-				<li class="Page-jumpLinks-title">
-					Jump to
-				</li>
-				
-				{% for link in page.jumpLinks %}
-					<li>
-						<a href="#{{ link.url }}">
-							<img class="icon" src="/assets/icon/{{link.icon}}.svg">
-							<span>{{ link.text }}</span>
-						</a>
-					</li>
-				{% endfor %}
-			</ul>
 		</div>
 	</div>
 </section>

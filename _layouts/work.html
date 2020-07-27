@@ -18,11 +18,44 @@ body-id: work
 			{% unless page.hide_subhero %}
 			<section class="Page-subhero">
 				<div class="grid">
-					<div class="grid-item when-lg-6">
+					<div class="grid-item when-lg-8">
 						<h4>
 							<p>{{ page.subhero_title }}</p>
 							<p class="font-serif color-muted">{{ page.subhero_subtitle }}</p>
 						</h4>
+
+						<div class="border-light whitespace--sm m-top--lg Essay">
+							{% if page.subhero_resume %}
+								{{ page.subhero_resume }}
+
+								{% if page.resume_bullets %}
+									<ul>
+										{% for bullet in page.resume_bullets %}
+											<li>
+												<span>{{ bullet }}</span>
+											</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+								
+								<hr class="m-bottom--lg">
+							{% endif %}
+
+							<ul class="Page-jumpLinks">
+								<li class="Page-jumpLinks-title">
+									Jump to
+								</li>
+								
+								{% for link in page.jumpLinks %}
+									<li>
+										<a class="js-scrollTo" href="#{{ link.url }}">
+											<img class="icon" src="/assets/icon/{{link.icon}}.svg">
+											<span>{{ link.text }}</span>
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
 
 						<div class="Page-introduction m-top--lg">
 							{{ page.subhero_description }}
@@ -31,22 +64,6 @@ body-id: work
 						{% if page.subhero_button_link %}
 							<a class="button m-top--lg" href="{{ page.subhero_button_link }}">Launch site</a>
 						{% endif %}
-					</div>
-					<div class="grid-item when-lg-6 m-top--lg when-lg-m-top--0">
-						<ul class="Page-jumpLinks">
-							<li class="Page-jumpLinks-title">
-								Jump to
-							</li>
-							
-							{% for link in page.jumpLinks %}
-								<li>
-									<a class="js-scrollTo" href="#{{ link.url }}">
-										<img class="icon" src="/assets/icon/{{link.icon}}.svg">
-										<span>{{ link.text }}</span>
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
 					</div>
 				</div>
 			</section>

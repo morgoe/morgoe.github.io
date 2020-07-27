@@ -19,6 +19,7 @@ jumpLinks:
     icon: demand
 
 client:                "Stackla"
+responsibilities:      "Product Design, Front-End Development"
 title:                 "Stackla — Letting customers tell the story"
 description:           "The World’s Smartest Visual Content Engine"
 hero_title:            "Letting customers tell the story"

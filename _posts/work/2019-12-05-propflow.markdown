@@ -10,19 +10,20 @@ hero_css: "background: #434e6a; color: white;"
 
 jumpLinks:
   - url: grok
-    text: "Grokking a new industry"
+    text: "Customer Interviews & Wireframing"
     icon: grok
   - url: react
-    text: "Learning React"
+    text: "Learning React & Creating Design System"
     icon: coding
   - url: mvp
-    text: "Building MVP"
+    text: "MVP Design and Development"
     icon: build
   - url: ship
-    text: "Ship it!"
+    text: "Launch"
     icon: rocket
 
-client:                "Propflow"
+client:                "Propflow (Frasers Labs)"
+responsibilities:      "Product Design, Front-End Development"
 title:                 "Propflow — Managing a thousand leases at once"
 description:           "Propflow drags Excel kicking and screaming into 2019. Manage thousands of properties at your fingertips."
 hero_title:            "A thousand properties at your fingertips"
@@ -30,6 +31,9 @@ hero_image:            /assets/images/work/propflow/hero.png
 
 subhero_title:         "Managing a thousand leases at once"
 subhero_subtitle:      "Moving from Excel to 2019"
+subhero_resume:        "I flew to London for a <strong>design sprint</strong> to kick off the project by interviewing key customers across Frasers Group property development. The sprint included <strong>research, wireframing, prototype development, and customer validation</strong>. Back in Australia, I finalised the designs and built out the front-end of validated designs in <strong>React</strong> for handover to back-end devs."
+resume_bullets:
+  - Designed MVP in 9 weeks, resulting in <strong>US$1.5million</strong> in committed funding
 subhero_description:   "<p>Sports Direct International has around a thousand properties world-wide across its various subsidiaries, and manages them primarily in Excel. Everything from choosing where to open a new store, selecting a property, negotiating legals, and managing a lease over 10+ years, involves sending Excel files back-and-forth.</p><p>An interim solution was built with <a href='http://pipefy.com'>Pipefy</a> and <a href='http://airtable.com'>Airtable</a>, but it was hacky and only covered half the workflow. It was time to drag the property management sector into 2019. Thankfully, they came willingly (even helpfully!), no kicking nor screaming needed.</p>"
 
 thumbnail:             /assets/images/work/propflow/hero.png

@@ -9,20 +9,21 @@ hero_css: "background: #589963; color: white;"
 
 jumpLinks:
   - url: data-viz
-    text: "Data, data everywhere"
+    text: "Details: Data Visualisation"
     icon: results
   - url: animation
-    text: "Animation as communication"
+    text: "Details: Motion Design"
     icon: design
   - url: branding
-    text: "Unique look-and-feel"
+    text: "Branding and Visual Design"
     icon: paint
   - url: iterative
-    text: "Iterative design"
+    text: "Iterative Design"
     icon: iterative
 
 
 client:                "SurgeMaker"
+responsibilities:      "Product Design, Branding, Front-End Development"
 title:                 "SurgeMaker GPS — Helping large companies move as nimbly as startups"
 description:           "SurgeMaker GPS is a B2B SaaS web application that visualizes the improvements made by teams under coaching and helps inform executives' decisions by drawing insights from data."
 hero_title:            "Teaching large companies to move as nimbly as startups"
@@ -30,6 +31,9 @@ hero_image:            /assets/images/work/surgemaker/hero.jpg
 
 subhero_title:         "Tracking the results of agile coaching"
 subhero_subtitle:      "MFMVP: Massively-Featured Minimum Viable Product"
+subhero_resume:        "Hired to improve UX of SAAS web app, I began with an <strong>expert review, user interviews and heuristic evaluation</strong>, and ended two years later with an overhaul of <strong>information architecture, a rebrand, and the implementation of a custom design system</strong> in Backbone."
+resume_bullets:
+  - Launched into beta with enterprise clients such as Comcast and JP Morgan
 subhero_description:   "<p>SurgeMaker GPS is the first in a suite of apps by agile coaching company <a href='http://www.gearstream.com/'>GearStream</a>. They approached me to help redesign their web app that visualised the improvements made by teams under coaching and informed executives' decisions by drawing insights from data.</p><p>We started with a revision of the app’s basic functionality, and we worked so well together we continued for the next 2 years, designing a wealth of new features. Designing an enterprise application is very different to designing a B2C app—the feature set expected from an MVP is basically <em>“everything”</em>. This is why so many massive companies are still using software from 10 years ago, because they’ve got <em>“everything”</em>.</p><p><p>So it took us over 2 years to launch an MVP, and it’s the most extensive product I’ve ever worked on.</p>"
 
 thumbnail:             /assets/images/work/surgemaker/thumbnail2.jpg

@@ -10,19 +10,20 @@ hero_css: "background: rgb(36, 68, 121); color: white;"
 
 jumpLinks:
   - url: launch
-    text: "From concept to launch in 8 weeks"
+    text: "New Product Design and Development"
     icon: time
   - url: brand
-    text: "Crafting a coherent product suite and brand"
+    text: "Rebrand and Redesign of Product Suite"
     icon: paint
   - url: css
-    text: "Coding a custom BEM-based CSS framework"
+    text: "Custom Design System"
     icon: code
   - url: dataviz
-    text: "Designing insightful data visualisations"
+    text: "Details: Data Visualisations"
     icon: data-viz
 
 client:                "Medify"
+responsibilities:      "Product Design, Branding, Front-End Development"
 title:                 "Medify — Levelling the playing field"
 description:           "Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company."
 hero_title:            "Lowering the barrier to entry of medicine"
@@ -30,6 +31,10 @@ hero_image:            /assets/images/work/medify-new/hero.jpg
 
 subhero_title:         "Serving 1 in 3 UK medical students"
 subhero_subtitle:      "Medify levels the playing field"
+subhero_resume:        "As the first design hire, I led an overhaul of the design of the entire product suite as a freelancer over two years, including a <strong>rebrand, creation of design system, and development</strong> in Rails and Ember. As part of my research, I also took the medical school entrance exam (and got in)."
+resume_bullets:
+  - <strong>Doubled sales</strong> in the year following redesign of entire product suite
+  - Created design system, used by devs to add features with minimal design oversight
 subhero_description:   "<p>Medify provides everything an aspiring medic needs to get into medical school. From preparing for exams to writing and reviewing essays, Medify covers more of the timeline than any other company.</p><p>They initially approached me to design and develop a new product, the <a href='#launch'>BMAT Grader</a>. We launched that after 8 weeks. Then we rebranded, unified their entire product suite, and designed and launched a few more products.</p><p>Their sales have more than doubled, and the competition is scrambling to keep up. Which just raises the bar for everyone.</p>"
 subhero_button_link:   https://www.medify.co.uk/
 
