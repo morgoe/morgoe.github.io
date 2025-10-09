@@ -27,6 +27,10 @@ body-id: home
 - Lead Product Designer
 - Full-Stack Developer
 - Founder of [Bolstr](/work/bolstr)
+                      
+<div class="m-top--sm p--sm bg-light">
+  <strong>Note:</strong> I’m currently in the process of porting my website to Framer. See the in-progress new website here: <a href="https://morgoe.framer.website/">morgoe.framer.website</a>.
+</div>
 
 ---
 
